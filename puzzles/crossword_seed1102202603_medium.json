@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:41:51",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "DRESS",
+    "RULTE",
+    "ORDET",
+    "PARRE",
+    "SLEKT"
+  ],
+  "answers": {
+    "across": {
+      "1": "DRESS",
+      "2": "RULTE",
+      "3": "ORDET",
+      "4": "PARRE",
+      "5": "SLEKT"
+    },
+    "down": {
+      "1": "DROPS",
+      "2": "RURAL",
+      "3": "ELDRE",
+      "4": "STERK",
+      "5": "SETET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "plagg",
+      "2": "rult",
+      "3": "antonyme",
+      "4": "formere",
+      "5": "avstamning"
+    },
+    "down": {
+      "1": "snop",
+      "2": "landlig",
+      "3": "gammelt",
+      "4": "knallhard",
+      "5": "oppholdsstedet"
+    }
+  }
+}

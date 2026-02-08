@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:38:16",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "HETTE",
+    "ELVER",
+    "KVIST",
+    "SISTE",
+    "ESTET"
+  ],
+  "answers": {
+    "across": {
+      "1": "HETTE",
+      "2": "ELVER",
+      "3": "KVIST",
+      "4": "SISTE",
+      "5": "ESTET"
+    },
+    "down": {
+      "1": "HEKSE",
+      "2": "ELVIS",
+      "3": "TVIST",
+      "4": "TESTE",
+      "5": "ERTET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bar navnet",
+      "2": "drikkevannskilder",
+      "3": "gren",
+      "4": "forrige",
+      "5": "kunstentusiast"
+    },
+    "down": {
+      "1": "øve trolldom",
+      "2": "rockestjerne",
+      "3": "uenighet",
+      "4": "sjekke",
+      "5": "irritert"
+    }
+  }
+}

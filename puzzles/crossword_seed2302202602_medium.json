@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:48:54",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "GRETE",
+    "LOSJI",
+    "ASKEN",
+    "STENE",
+    "SENER"
+  ],
+  "answers": {
+    "across": {
+      "1": "GRETE",
+      "2": "LOSJI",
+      "3": "ASKEN",
+      "4": "STENE",
+      "5": "SENER"
+    },
+    "down": {
+      "1": "GLASS",
+      "2": "ROSTE",
+      "3": "ESKEN",
+      "4": "TJENE",
+      "5": "EINER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "eventyrskikkelse",
+      "2": "overnattingssted",
+      "3": "guttenavnet",
+      "4": "skøyteløper",
+      "5": "forkortinger"
+    },
+    "down": {
+      "1": "drikkeredskap",
+      "2": "lovprisa",
+      "3": "pappboksen",
+      "4": "skaffe",
+      "5": "busk"
+    }
+  }
+}

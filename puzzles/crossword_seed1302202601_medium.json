@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:42:43",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "MAGNE",
+    "EVJEN",
+    "STERK",
+    "SALVE",
+    "ELDER"
+  ],
+  "answers": {
+    "across": {
+      "1": "MAGNE",
+      "2": "EVJEN",
+      "3": "STERK",
+      "4": "SALVE",
+      "5": "ELDER"
+    },
+    "down": {
+      "1": "MESSE",
+      "2": "AVTAL",
+      "3": "GJELD",
+      "4": "NERVE",
+      "5": "ENKER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "idrettsutøver",
+      "2": "grenen",
+      "3": "seig",
+      "4": "rensekrem",
+      "5": "bielver"
+    },
+    "down": {
+      "1": "gudstjeneste",
+      "2": "bli enig om",
+      "3": "tilgodehavender",
+      "4": "hovedlinje",
+      "5": "kvinnemennesker"
+    }
+  }
+}

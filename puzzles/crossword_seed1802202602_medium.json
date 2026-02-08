@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:45:55",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "GLASS",
+    "RISTE",
+    "ANKET",
+    "VEIDE",
+    "ERMET"
+  ],
+  "answers": {
+    "across": {
+      "1": "GLASS",
+      "2": "RISTE",
+      "3": "ANKET",
+      "4": "VEIDE",
+      "5": "ERMET"
+    },
+    "down": {
+      "1": "GRAVE",
+      "2": "LINER",
+      "3": "ASKIM",
+      "4": "STEDE",
+      "5": "SETET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "drikkebeger",
+      "2": "skjelve",
+      "3": "beklagd seg",
+      "4": "målte",
+      "5": "plaggdelen"
+    },
+    "down": {
+      "1": "trevle opp",
+      "2": "snorverk",
+      "3": "by i østfold",
+      "4": "anbringe",
+      "5": "taburetten"
+    }
+  }
+}

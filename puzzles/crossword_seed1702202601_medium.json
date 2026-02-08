@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:45:17",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ORDRE",
+    "FORER",
+    "FLYKT",
+    "ELSKE",
+    "RASER"
+  ],
+  "answers": {
+    "across": {
+      "1": "ORDRE",
+      "2": "FORER",
+      "3": "FLYKT",
+      "4": "ELSKE",
+      "5": "RASER"
+    },
+    "down": {
+      "1": "OFFER",
+      "2": "ROLLA",
+      "3": "DRYSS",
+      "4": "REKKE",
+      "5": "ERTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "anmodning",
+      "2": "fostrer",
+      "3": "fortrekk",
+      "4": "ligge sammen",
+      "5": "gyver"
+    },
+    "down": {
+      "1": "ofre",
+      "2": "stillingene",
+      "3": "drøss",
+      "4": "oppstilling",
+      "5": "matplanter"
+    }
+  }
+}

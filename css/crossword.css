@@ -1,0 +1,560 @@
+/* CSS Variables for consistent theming */
+:root {
+    /* Color palette inspired by kryssord.no */
+    --primary-color: #c8102e;
+    --primary-hover: #a10d25;
+    --secondary-color: #111827;
+    --success-color: #15803d;
+    --error-color: #b91c1c;
+    --warning-color: #b45309;
+    --background: #f3f4f6;
+    --surface: #ffffff;
+    --border: #d1d5db;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --shadow: 0 1px 2px 0 rgb(15 23 42 / 0.08);
+    --shadow-lg: 0 10px 25px -8px rgb(15 23 42 / 0.18);
+    --cell-size: 36px;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.puzzle-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.puzzle-selector label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.puzzle-selector select {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background: var(--surface);
+    color: var(--text-primary);
+    min-width: 220px;
+}
+
+.puzzle-selector select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Button styles (global baseline) */
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+button:hover:not(:disabled) {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+button:disabled {
+    background: #e5e7eb;
+    border-color: #e5e7eb;
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+/* Variant buttons if needed elsewhere */
+button.success {
+    background: var(--success-color);
+    border-color: var(--success-color);
+}
+
+button.error {
+    background: var(--error-color);
+    border-color: var(--error-color);
+}
+
+button.warning {
+    background: var(--warning-color);
+    border-color: var(--warning-color);
+}
+
+/* Main content */
+.main-content {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.puzzle-info {
+    margin-bottom: 20px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    display: none; /* Skjul "Dagens kryssord"-boksen midlertidig */
+}
+
+.puzzle-info h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.puzzle-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Skjul vanskelighetsgrad: vi viser kun antall løste ord */
+#puzzle-difficulty {
+    display: none;
+}
+
+/* Game container */
+.game-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
+    gap: 24px;
+    align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Crossword grid */
+.crossword-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+.crossword-grid {
+    display: grid;
+    gap: 0;
+    background: transparent;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    grid-auto-rows: var(--cell-size);
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.cell.block {
+    background: #000000;
+    cursor: default;
+}
+
+.cell.empty {
+    background: #ffffff;
+    color: var(--text-primary);
+}
+
+/* When cell has content we keep it white, but can adjust typography if needed */
+.cell.empty.filled {
+    background: #ffffff;
+    color: var(--text-primary);
+}
+
+.cell.empty input {
+    background: transparent;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cell numbers on dark cells should be white */
+.cell-number {
+    color: var(--text-secondary);
+    font-size: 0.6rem;
+    font-weight: 600;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 2;
+}
+
+.cell.selected {
+    background: #fff3b0 !important;
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.cell.highlighted {
+    background: #fef9c3 !important;
+}
+
+/*. Correct / incorrect / revealed states keep a subtle indication */
+.cell.incorrect input {
+    color: var(--error-color);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+}
+
+@keyframes correctBlink {
+    0% { color: var(--success-color); }
+    50% { color: var(--success-color); }
+    100% { color: var(--text-primary); }
+}
+
+.cell.revealed input {
+    color: var(--text-primary);
+}
+
+.cell input {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: inherit;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.controls {
+    background: #ecfeff; /* svak cyan bakgrunn som står i fin kontrast til rødt */
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 8px;
+}
+
+.controls h3 {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    grid-column: 1 / -1; /* overskriften går over begge kolonner */
+}
+
+.control-group {
+    margin-bottom: 0;
+}
+
+.control-group:last-child {
+    margin-bottom: 0;
+}
+
+.control-group h4 {
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.control-group button {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.control-group button:last-child {
+    margin-bottom: 0;
+}
+
+/* Tonet bakgrunn + outline-knapper i kontrollpanelet */
+.controls button {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: transparent;
+    padding: 4px 0; /* tekst-lenke-følelse */
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    box-shadow: none;
+}
+
+.controls button:hover:not(:disabled) {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: transparent; /* ingen ramme ved hover */
+}
+
+.controls button:disabled {
+    background: transparent;
+    color: var(--text-muted);
+    border-color: transparent;
+}
+
+/* Ikoner for en mer app-aktig følelse på kontrollknappene */
+#check-letter::before,
+#check-word::before,
+#check-all::before,
+#reveal-letter::before,
+#reveal-word::before {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+#check-letter::before,
+#check-word::before,
+#check-all::before {
+    content: "✔";
+}
+
+#reveal-letter::before,
+#reveal-word::before {
+    content: "👁";
+}
+
+/* På veldig små skjermer stabler vi kontrollgruppene under hverandre */
+@media (max-width: 400px) {
+    .controls {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Clues */
+.clues {
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    padding: 16px;
+    max-height: 640px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 0;
+}
+
+.clues h3 {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+}
+
+.clues-section {
+    margin-bottom: 0;
+}
+
+.clues-section:last-child {
+    margin-bottom: 0;
+}
+
+.clues-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.clue-item {
+    padding: 4px 0;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 0.9rem;
+}
+
+.clue-item:hover {
+    background: #f3f4f6;
+}
+
+.clue-item.active {
+    background: #fff3b0;
+}
+
+.clue-item.completed {
+    color: var(--text-muted);
+}
+
+.clue-number {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.clue-text {
+    font-size: 0.95rem;
+}
+
+/* Current clue display */
+.current-clue {
+    position: relative;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    background: #fff7ed;
+    border-radius: 4px;
+    border: 1px solid #fed7aa;
+    font-size: 0.9rem;
+}
+
+.current-clue strong {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 16px 10px 32px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .puzzle-selector {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .puzzle-selector select {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .cell {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cell {
+        font-size: 0.85rem;
+    }
+    
+    .cell-number {
+        font-size: 0.6rem;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e5e7eb;
+    border-top: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

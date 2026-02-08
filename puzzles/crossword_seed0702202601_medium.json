@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:39:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ANKES",
+    "RENSE",
+    "SKUTE",
+    "ETTER",
+    "NATTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ANKES",
+      "2": "RENSE",
+      "3": "SKUTE",
+      "4": "ETTER",
+      "5": "NATTE"
+    },
+    "down": {
+      "1": "ARSEN",
+      "2": "NEKTA",
+      "3": "KNUTT",
+      "4": "ESTET",
+      "5": "SEERE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "refses",
+      "2": "reindyrke",
+      "3": "motorbåt",
+      "4": "konjunksjon",
+      "5": "sove"
+    },
+    "down": {
+      "1": "grunnstoffer",
+      "2": "forbød",
+      "3": "katt",
+      "4": "kunstentusiast",
+      "5": "tv-tittere"
+    }
+  }
+}

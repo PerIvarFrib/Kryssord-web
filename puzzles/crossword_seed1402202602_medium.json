@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:43:38",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SVAKE",
+    "LOSJI",
+    "OKSEN",
+    "STEKE",
+    "SENTR"
+  ],
+  "answers": {
+    "across": {
+      "1": "SVAKE",
+      "2": "LOSJI",
+      "3": "OKSEN",
+      "4": "STEKE",
+      "5": "SENTR"
+    },
+    "down": {
+      "1": "SLOSS",
+      "2": "VOKTE",
+      "3": "ASSEN",
+      "4": "KJEKT",
+      "5": "EINER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "foraktelige",
+      "2": "gjestgiveri",
+      "3": "dyret",
+      "4": "lage mat",
+      "5": "send"
+    },
+    "down": {
+      "1": "knivet",
+      "2": "ha oppsyn med",
+      "3": "forkortingen",
+      "4": "attraktivt",
+      "5": "busk"
+    }
+  }
+}

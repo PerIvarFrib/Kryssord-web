@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:44:03",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ERFAR",
+    "SALTE",
+    "PLATT",
+    "ELTET",
+    "NYERE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ERFAR",
+      "2": "SALTE",
+      "3": "PLATT",
+      "4": "ELTET",
+      "5": "NYERE"
+    },
+    "down": {
+      "1": "ESPEN",
+      "2": "RALLY",
+      "3": "FLATE",
+      "4": "ATTER",
+      "5": "RETTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "føl",
+      "2": "festede",
+      "3": "sjøuttrykk",
+      "4": "bearbeidde",
+      "5": "hippere"
+    },
+    "down": {
+      "1": "eventyrfigur",
+      "2": "idrettsgren",
+      "3": "horisontale",
+      "4": "fremdeles",
+      "5": "nyttige"
+    }
+  }
+}

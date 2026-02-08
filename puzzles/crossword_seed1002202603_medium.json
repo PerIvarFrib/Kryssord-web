@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:41:07",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ATLET",
+    "GROVE",
+    "NEVEN",
+    "EGENT",
+    "TETTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ATLET",
+      "2": "GROVE",
+      "3": "NEVEN",
+      "4": "EGENT",
+      "5": "TETTE"
+    },
+    "down": {
+      "1": "AGNET",
+      "2": "TREGE",
+      "3": "LOVET",
+      "4": "EVENT",
+      "5": "TENTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "sportsmann",
+      "2": "unyanserte",
+      "3": "håndflaten",
+      "4": "ualminnelig",
+      "5": "kraftige"
+    },
+    "down": {
+      "1": "åten",
+      "2": "uvirksomme",
+      "3": "bebudet",
+      "4": "evenement",
+      "5": "brant"
+    }
+  }
+}

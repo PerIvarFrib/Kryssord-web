@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:47:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ISBRE",
+    "BARON",
+    "SNART",
+    "ENKER",
+    "NATTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ISBRE",
+      "2": "BARON",
+      "3": "SNART",
+      "4": "ENKER",
+      "5": "NATTE"
+    },
+    "down": {
+      "1": "IBSEN",
+      "2": "SANNA",
+      "3": "BRAKT",
+      "4": "RORET",
+      "5": "ENTRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bre",
+      "2": "aristokrat",
+      "3": "hurtig",
+      "4": "alenemødrer",
+      "5": "køye"
+    },
+    "down": {
+      "1": "norsk forfatter",
+      "2": "egennavnene",
+      "3": "overrakt",
+      "4": "rattet",
+      "5": "inntreden"
+    }
+  }
+}

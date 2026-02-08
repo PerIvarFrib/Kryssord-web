@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:37:15",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "EKSOS",
+    "KJEFT",
+    "SEIRE",
+    "EVNEN",
+    "METTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "EKSOS",
+      "2": "KJEFT",
+      "3": "SEIRE",
+      "4": "EVNEN",
+      "5": "METTE"
+    },
+    "down": {
+      "1": "EKSEM",
+      "2": "KJEVE",
+      "3": "SEINT",
+      "4": "OFRET",
+      "5": "STENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "avløpsgass",
+      "2": "gnål",
+      "3": "overvinne",
+      "4": "produktiviteten",
+      "5": "navnedag 14. mars"
+    },
+    "down": {
+      "1": "hudsykdom",
+      "2": "ansiktdel",
+      "3": "til langt på natt",
+      "4": "gitt avkall på",
+      "5": "skøyteløper"
+    }
+  }
+}

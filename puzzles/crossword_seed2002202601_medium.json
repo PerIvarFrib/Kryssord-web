@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:47:12",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "RIKKE",
+    "ADVAR",
+    "MEINT",
+    "MASTE",
+    "ALTER"
+  ],
+  "answers": {
+    "across": {
+      "1": "RIKKE",
+      "2": "ADVAR",
+      "3": "MEINT",
+      "4": "MASTE",
+      "5": "ALTER"
+    },
+    "down": {
+      "1": "RAMMA",
+      "2": "IDEAL",
+      "3": "KVIST",
+      "4": "KANTE",
+      "5": "ERTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "flytte på",
+      "2": "minn om",
+      "3": "aktet",
+      "4": "anmodede",
+      "5": "møbel"
+    },
+    "down": {
+      "1": "hamret",
+      "2": "utopi",
+      "3": "varbusk",
+      "4": "stikke",
+      "5": "matplanter"
+    }
+  }
+}

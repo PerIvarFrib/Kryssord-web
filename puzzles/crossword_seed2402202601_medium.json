@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:49:27",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SKAFF",
+    "TALER",
+    "UNDRE",
+    "BARSK",
+    "BLIKK"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKAFF",
+      "2": "TALER",
+      "3": "UNDRE",
+      "4": "BARSK",
+      "5": "BLIKK"
+    },
+    "down": {
+      "1": "STUBB",
+      "2": "KANAL",
+      "3": "ALDRI",
+      "4": "FERSK",
+      "5": "FREKK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "påfør",
+      "2": "prater",
+      "3": "bli forbløffet",
+      "4": "hardfør",
+      "5": "synsevne"
+    },
+    "down": {
+      "1": "kort stykke",
+      "2": "forbindelsesledd",
+      "3": "ingen gang",
+      "4": "ubearbeida",
+      "5": "sjofel"
+    }
+  }
+}

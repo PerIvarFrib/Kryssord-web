@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:38:37",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "MASTE",
+    "ANTEN",
+    "STYGG",
+    "SOGNE",
+    "ENTEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "MASTE",
+      "2": "ANTEN",
+      "3": "STYGG",
+      "4": "SOGNE",
+      "5": "ENTEN"
+    },
+    "down": {
+      "1": "MASSE",
+      "2": "ANTON",
+      "3": "STYGT",
+      "4": "TEGNE",
+      "5": "ENGEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bråkte",
+      "2": "prefikset",
+      "3": "motbydelig",
+      "4": "høre til",
+      "5": "konj."
+    },
+    "down": {
+      "1": "haugevis",
+      "2": "amerikansk bassist",
+      "3": "horribelt",
+      "4": "underskrive",
+      "5": "gate i bergen"
+    }
+  }
+}

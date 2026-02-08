@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:50:00",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "STEKE",
+    "KASUS",
+    "AKTET",
+    "UKENE",
+    "TATER"
+  ],
+  "answers": {
+    "across": {
+      "1": "STEKE",
+      "2": "KASUS",
+      "3": "AKTET",
+      "4": "UKENE",
+      "5": "TATER"
+    },
+    "down": {
+      "1": "SKAUT",
+      "2": "TAKKA",
+      "3": "ESTET",
+      "4": "KUENE",
+      "5": "ESTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "lage mat",
+      "2": "bøyningsform",
+      "3": "lovprist",
+      "4": "tidsperiodene",
+      "5": "sigøyner"
+    },
+    "down": {
+      "1": "skøt",
+      "2": "påskjønner",
+      "3": "kunstentusiast",
+      "4": "storfeene",
+      "5": "bibelsk navn"
+    }
+  }
+}

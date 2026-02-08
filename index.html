@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daglig gratis kryssord - Interaktivt kryssord</title>
+    <link rel="stylesheet" href="css/crossword.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🧩 Daglig kryssord</h1>
+            <p class="subtitle">Gratis norsk kryssord hver dag</p>
+            
+            <div class="puzzle-selector">
+                <label for="puzzle-select">Velg kryssord:</label>
+                <select id="puzzle-select">
+                    <option value="">-- Velg et kryssord --</option>
+                </select>
+                <button id="load-puzzle" disabled>Last inn</button>
+            </div>
+        </header>
+
+        <main class="main-content" id="main-content" style="display: none;">
+            <div class="puzzle-info">
+                <h2 id="puzzle-title">Daglig kryssord</h2>
+                <div class="puzzle-meta">
+                    <span id="puzzle-difficulty" style="display: none;">Medium</span>
+                    <span id="puzzle-stats">0/0 ord ferdig</span>
+                </div>
+            </div>
+
+            <div class="game-container">
+                <div class="crossword-container">
+                    <div class="current-clue" id="current-clue" style="display: none;">
+                        <strong id="current-clue-number"></strong>
+                        <span id="current-clue-text"></span>
+                    </div>
+                    <div id="crossword-grid" class="crossword-grid">
+                        <!-- Grid will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="controls">
+                        <h3>Kontroller</h3>
+                        <div class="control-group">
+                            <h4>Sjekk svar</h4>
+                            <button id="check-letter" disabled>Sjekk bokstav</button>
+                            <button id="check-word" disabled>Sjekk ord</button>
+                            <button id="check-all">Sjekk alt</button>
+                        </div>
+                        
+                        <div class="control-group">
+                            <h4>Vis svar</h4>
+                            <button id="reveal-letter" disabled>Vis bokstav</button>
+                            <button id="reveal-word" disabled>Vis ord</button>
+                        </div>
+
+                        <!-- Andre-kontroller fjernet: vi tilbyr ikke lenger "Tøm alt" eller "Start på nytt" -->
+                    </div>
+
+                    <div class="clues">
+                        <div class="clues-section">
+                            <h3>Vannrett</h3>
+                            <div id="across-clues" class="clues-list">
+                                <!-- Across clues will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="clues-section">
+                            <h3>Loddrett</h3>
+                            <div id="down-clues" class="clues-list">
+                                <!-- Down clues will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Laget med <a href="https://github.com/PerIvarFrib/Kryssord-Generator" target="_blank">Kryssord Generator</a></p>
+        </footer>
+    </div>
+
+    <script src="js/crossword.js"></script>
+</body>
+</html>

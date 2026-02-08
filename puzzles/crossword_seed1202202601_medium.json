@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:42:12",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "RAKTE",
+    "OVNEN",
+    "STANK",
+    "TALTE",
+    "ELLEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "RAKTE",
+      "2": "OVNEN",
+      "3": "STANK",
+      "4": "TALTE",
+      "5": "ELLEN"
+    },
+    "down": {
+      "1": "ROSTE",
+      "2": "AVTAL",
+      "3": "KNALL",
+      "4": "TENTE",
+      "5": "ENKEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forærte",
+      "2": "varmekilden",
+      "3": "vond lukt",
+      "4": "tisket",
+      "5": "l.s. christensen-skikkelse"
+    },
+    "down": {
+      "1": "priste",
+      "2": "bli enig om",
+      "3": "sterkt smell",
+      "4": "satte fyr",
+      "5": "alenemoren"
+    }
+  }
+}

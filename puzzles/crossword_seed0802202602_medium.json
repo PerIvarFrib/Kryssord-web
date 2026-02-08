@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:39:55",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "STEKT",
+    "LINNE",
+    "ELGEN",
+    "IBSEN",
+    "TYTTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "STEKT",
+      "2": "LINNE",
+      "3": "ELGEN",
+      "4": "IBSEN",
+      "5": "TYTTE"
+    },
+    "down": {
+      "1": "SLEIT",
+      "2": "TILBY",
+      "3": "ENGST",
+      "4": "KNEET",
+      "5": "TENNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "gratinert",
+      "2": "pikenavnet",
+      "3": "hovdyret",
+      "4": "dikterhøvding",
+      "5": "knutete"
+    },
+    "down": {
+      "1": "arbeidde",
+      "2": "bebude",
+      "3": "avskrekk",
+      "4": "kroppsdelen",
+      "5": "fyre opp"
+    }
+  }
+}

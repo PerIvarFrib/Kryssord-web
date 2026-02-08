@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-08 13:44:37",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "FUSKE",
+    "AKTOR",
+    "KLART",
+    "TANTE",
+    "ARKET"
+  ],
+  "answers": {
+    "across": {
+      "1": "FUSKE",
+      "2": "AKTOR",
+      "3": "KLART",
+      "4": "TANTE",
+      "5": "ARKET"
+    },
+    "down": {
+      "1": "FAKTA",
+      "2": "UKLAR",
+      "3": "STANK",
+      "4": "KORTE",
+      "5": "ERTET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tukle",
+      "2": "rettsaktør",
+      "3": "eklatant",
+      "4": "kvinnelig slektning",
+      "5": "papirbiten"
+    },
+    "down": {
+      "1": "konklusjoner",
+      "2": "tvetydig",
+      "3": "vond lukt",
+      "4": "absolutte",
+      "5": "provoserte"
+    }
+  }
+}
