@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 19:38:57",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ODDEN",
+    "KURSE",
+    "SMELT",
+    "YMTET",
+    "DYTTA"
+  ],
+  "answers": {
+    "across": {
+      "1": "ODDEN",
+      "2": "KURSE",
+      "3": "SMELT",
+      "4": "YMTET",
+      "5": "DYTTA"
+    },
+    "down": {
+      "1": "OKSYD",
+      "2": "DUMMY",
+      "3": "DRETT",
+      "4": "ESLET",
+      "5": "NETTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vei i akershus",
+      "2": "opplære",
+      "3": "skrallet",
+      "4": "mumlet",
+      "5": "knuffa"
+    },
+    "down": {
+      "1": "aluminiumoksid",
+      "2": "markør",
+      "3": "fiskefangst",
+      "4": "tåpen",
+      "5": "strukturene"
+    }
+  }
+}

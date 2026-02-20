@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 19:41:21",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "MASTA",
+    "ONKEL",
+    "DEISE",
+    "EMNER",
+    "MINST"
+  ],
+  "answers": {
+    "across": {
+      "1": "MASTA",
+      "2": "ONKEL",
+      "3": "DEISE",
+      "4": "EMNER",
+      "5": "MINST"
+    },
+    "down": {
+      "1": "MODEM",
+      "2": "ANEMI",
+      "3": "SKINN",
+      "4": "TESES",
+      "5": "ALERT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "knasten",
+      "2": "kusine",
+      "3": "falle",
+      "4": "materier",
+      "5": "minimum"
+    },
+    "down": {
+      "1": "utstyrsenhet",
+      "2": "sykelig tilstand",
+      "3": "perlemorglans",
+      "4": "læresetninger",
+      "5": "årvåkent"
+    }
+  }
+}

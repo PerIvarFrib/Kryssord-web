@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 20:51:18",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "OVALE",
+    "PEKES",
+    "IRISK",
+    "UNNSE",
+    "MAGET"
+  ],
+  "answers": {
+    "across": {
+      "1": "OVALE",
+      "2": "PEKES",
+      "3": "IRISK",
+      "4": "UNNSE",
+      "5": "MAGET"
+    },
+    "down": {
+      "1": "OPIUM",
+      "2": "VERNA",
+      "3": "AKING",
+      "4": "LESSE",
+      "5": "ESKET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "ellipseformede",
+      "2": "markeres",
+      "3": "finkefugl",
+      "4": "skamme seg",
+      "5": "abdominaene"
+    },
+    "down": {
+      "1": "heroin",
+      "2": "bevokta",
+      "3": "akesport",
+      "4": "laste av",
+      "5": "kassene"
+    }
+  }
+}

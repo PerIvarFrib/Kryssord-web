@@ -3,7 +3,7 @@
     "title": "Crossword Grid",
     "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
-    "generation_date": "2026-02-08 13:47:12",
+    "generation_date": "2026-02-19 21:06:11",
     "model_used": "norbert-multipos-word2clue",
     "pairs_db_path": "data\\word2clue_pairs_db.pkl",
     "difficulty": "medium",
@@ -17,42 +17,42 @@
     "....."
   ],
   "solved_layout": [
-    "RIKKE",
-    "ADVAR",
-    "MEINT",
-    "MASTE",
-    "ALTER"
+    "ISHUS",
+    "LUENE",
+    "TRIGG",
+    "ENDEN",
+    "REIRA"
   ],
   "answers": {
     "across": {
-      "1": "RIKKE",
-      "2": "ADVAR",
-      "3": "MEINT",
-      "4": "MASTE",
-      "5": "ALTER"
+      "1": "ISHUS",
+      "2": "LUENE",
+      "3": "TRIGG",
+      "4": "ENDEN",
+      "5": "REIRA"
     },
     "down": {
-      "1": "RAMMA",
-      "2": "IDEAL",
-      "3": "KVIST",
-      "4": "KANTE",
-      "5": "ERTER"
+      "1": "ILTER",
+      "2": "SURNE",
+      "3": "HEIDI",
+      "4": "UNGER",
+      "5": "SEGNA"
     }
   },
   "clues": {
     "across": {
-      "1": "flytte på",
-      "2": "minn om",
-      "3": "aktet",
-      "4": "anmodede",
-      "5": "møbel"
+      "1": "lagringsplass",
+      "2": "turbanene",
+      "3": "framkall",
+      "4": "trossen",
+      "5": "bola"
     },
     "down": {
-      "1": "hamret",
-      "2": "utopi",
-      "3": "varbusk",
-      "4": "stikke",
-      "5": "matplanter"
+      "1": "argsint",
+      "2": "bli sur",
+      "3": "en nilsen",
+      "4": "smågutter",
+      "5": "sagnet"
     }
   }
 }

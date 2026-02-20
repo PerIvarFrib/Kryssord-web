@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 20:42:53",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "BAUTA",
+    "ULLEN",
+    "GNIKK",
+    "GENER",
+    "ERGRE"
+  ],
+  "answers": {
+    "across": {
+      "1": "BAUTA",
+      "2": "ULLEN",
+      "3": "GNIKK",
+      "4": "GENER",
+      "5": "ERGRE"
+    },
+    "down": {
+      "1": "BUGGE",
+      "2": "ALNER",
+      "3": "ULING",
+      "4": "TEKER",
+      "5": "ANKRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "gravminne",
+      "2": "bustet",
+      "3": "gniing",
+      "4": "kromosomer",
+      "5": "forbitre"
+    },
+    "down": {
+      "1": "norsk jurist",
+      "2": "lengder",
+      "3": "vræling",
+      "4": "tæler",
+      "5": "legge bi"
+    }
+  }
+}

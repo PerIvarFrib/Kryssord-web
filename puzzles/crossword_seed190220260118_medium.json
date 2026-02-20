@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 07:36:22",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SPØRS",
+    "VAKET",
+    "ENIGE",
+    "VENNE",
+    "ELGEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SPØRS",
+      "2": "VAKET",
+      "3": "ENIGE",
+      "4": "VENNE",
+      "5": "ELGEN"
+    },
+    "down": {
+      "1": "SVEVE",
+      "2": "PANEL",
+      "3": "ØKING",
+      "4": "REGNE",
+      "5": "STEEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "begjæres",
+      "2": "våkne",
+      "3": "samstemmige",
+      "4": "canadisk komponist",
+      "5": "dyret"
+    },
+    "down": {
+      "1": "svive",
+      "2": "instrumentbord",
+      "3": "progresjon",
+      "4": "rekne",
+      "5": "statsminister"
+    }
+  }
+}

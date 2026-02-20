@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-19 21:11:39",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "HAITI",
+    "YNDER",
+    "SNØER",
+    "JAMNE",
+    "ELTET"
+  ],
+  "answers": {
+    "across": {
+      "1": "HAITI",
+      "2": "YNDER",
+      "3": "SNØER",
+      "4": "JAMNE",
+      "5": "ELTET"
+    },
+    "down": {
+      "1": "HYSJE",
+      "2": "ANNAL",
+      "3": "IDØMT",
+      "4": "TEENE",
+      "5": "IRRET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vest-indisk stat",
+      "2": "beundrer",
+      "3": "nedbører",
+      "4": "stabile",
+      "5": "redigerte"
+    },
+    "down": {
+      "1": "dempe",
+      "2": "årbok",
+      "3": "dømt",
+      "4": "skikkene",
+      "5": "ertet"
+    }
+  }
+}
