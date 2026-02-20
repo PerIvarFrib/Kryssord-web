@@ -1,0 +1,133 @@
+export interface HighscoreEntry {
+  name: string;
+  score: number;
+  dateKey: string;
+  completedAt: string;
+  totalLetters: number;
+  confirmedLetters: number;
+  revealedLetters: number;
+  completionTimeSeconds: number;
+  wrongCheckedLetters: number;
+}
+
+function sortEntries(entries: HighscoreEntry[]): HighscoreEntry[] {
+  return [...entries].sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    const aTime = new Date(a.completedAt).getTime();
+    const bTime = new Date(b.completedAt).getTime();
+    return aTime - bTime;
+  });
+}
+
+export async function getHighscoresForDate(
+  dateKey: string,
+): Promise<HighscoreEntry[]> {
+  try {
+    const res = await fetch(`/api/highscores?dateKey=${encodeURIComponent(dateKey)}`);
+    if (!res.ok) {
+      return [];
+    }
+    const data = (await res.json()) as HighscoreEntry[];
+    return sortEntries(data);
+  } catch {
+    return [];
+  }
+}
+
+export async function getHighscoresForTodayAndYesterday(
+  todayKey: string,
+  yesterdayKey: string,
+): Promise<{ today: HighscoreEntry[]; yesterday: HighscoreEntry[] }> {
+  const [today, yesterday] = await Promise.all([
+    getHighscoresForDate(todayKey),
+    getHighscoresForDate(yesterdayKey),
+  ]);
+  return {
+    today: sortEntries(today),
+    yesterday: sortEntries(yesterday),
+  };
+}
+
+export async function addHighscoreEntry(entry: HighscoreEntry): Promise<void> {
+  try {
+    await fetch("/api/highscores", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        dateKey: entry.dateKey,
+        name: entry.name,
+        score: entry.score,
+        completedAt: entry.completedAt,
+        totalLetters: entry.totalLetters,
+        confirmedLetters: entry.confirmedLetters,
+        revealedLetters: entry.revealedLetters,
+        completionTimeSeconds: entry.completionTimeSeconds,
+        wrongCheckedLetters: entry.wrongCheckedLetters,
+      }),
+    });
+  } catch {
+    // Ignore network errors for now
+  }
+}
+
+export async function updateHighscoreName(
+  dateKey: string,
+  completedAt: string,
+  name: string,
+): Promise<void> {
+  try {
+    await fetch("/api/highscores", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "rename",
+        dateKey,
+        completedAt,
+        name,
+      }),
+    });
+  } catch {
+    // Ignore network errors for now
+  }
+}
+
+export function calculateScore(params: {
+  totalLetters: number; // L
+  completionTimeSeconds: number; // T
+  wrongCheckedLetters: number; // W
+  revealedLetters: number; // R
+}): number {
+  const {
+    totalLetters: L,
+    completionTimeSeconds: T,
+    wrongCheckedLetters: W,
+    revealedLetters: R,
+  } = params;
+
+  if (L <= 0) return 0;
+
+  const S_max = 10 * L;
+  const T_target = 5 * L;
+
+  // Tidsstraff
+  let P_time_raw = 0;
+  if (T > T_target) {
+    P_time_raw = Math.floor((T - T_target) / 10);
+  }
+  const P_time_max = 0.2 * S_max;
+  const P_time = Math.min(P_time_raw, P_time_max);
+
+  // Straff for feilbokstaver
+  const P_wrong_raw = W;
+  const P_wrong_max = 0.4 * S_max;
+  const P_wrong = Math.min(P_wrong_raw, P_wrong_max);
+
+  const P_revealed = R * 10; // Hver avslørt bokstav gir 10 poeng i straff
+
+  let S = S_max - P_time - P_wrong - P_revealed;
+
+  if (S < 0) S = 0;
+  if (S > S_max) S = S_max;
+
+  return Math.round(S);
+}

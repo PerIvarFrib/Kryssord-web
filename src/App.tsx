@@ -11,6 +11,15 @@ import { type CrosswordPuzzle } from "./crossword/types";
 import samplePuzzleJson from "../puzzles/crossword_seed0402202601_medium.json";
 import CrosswordGrid from "./components/CrosswordGrid";
 import { useCrosswordController } from "./crossword/useCrosswordController";
+import CompletionPopup from "./components/CompletionPopup";
+import { getTodayKey, getYesterdayKey } from "./utils/dateKeys";
+import {
+  addHighscoreEntry,
+  calculateScore,
+  getHighscoresForTodayAndYesterday,
+  updateHighscoreName,
+  type HighscoreEntry,
+} from "./storage/highscore";
 
 const puzzleModules = import.meta.glob(
   "../puzzles/crossword_seed*_medium.json",
@@ -42,14 +51,31 @@ function App() {
   const [selectedPuzzleId, setSelectedPuzzleId] = useState("today");
   const [puzzle, setPuzzle] = useState<CrosswordPuzzle | null>(null);
   const { state, actions } = useCrosswordController(puzzle);
+  const [hasCompletedTodayPuzzle, setHasCompletedTodayPuzzle] = useState(false);
+  const [isCompletionPopupOpen, setIsCompletionPopupOpen] = useState(false);
+  const [completionStats, setCompletionStats] = useState<{
+    score: number;
+    totalLetters: number;
+    confirmedLetters: number;
+    revealedLetters: number;
+    completionTimeSeconds: number;
+    wrongCheckedLetters: number;
+    completedAt: string;
+  } | null>(null);
+  const [todayHighscores, setTodayHighscores] = useState<HighscoreEntry[]>([]);
+  const [yesterdayHighscores, setYesterdayHighscores] = useState<
+    HighscoreEntry[]
+  >([]);
+  const [startTimeMs, setStartTimeMs] = useState<number | null>(null);
+  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
+  const [hasSubmittedName, setHasSubmittedName] = useState(false);
+
+  const todayKey = getTodayKey();
+  const yesterdayKey = getYesterdayKey();
 
   // Midlertidige, statiske data for å komme i gang med React-strukturen.
   // Senere kobler vi dette mot de faktiske JSON-filene og spill-logikken.
-  const puzzles: PuzzleOption[] = [
-    { id: "today", label: "Dagens kryssord" },
-    { id: "example-1", label: "Eksempel-kryssord 1" },
-    { id: "example-2", label: "Eksempel-kryssord 2" },
-  ];
+  const puzzles: PuzzleOption[] = [{ id: "today", label: "Dagens kryssord" }];
 
   const handleChangeSelectedPuzzle = (id: string) => {
     setSelectedPuzzleId(id);
@@ -69,6 +95,14 @@ function App() {
     }
 
     setPuzzle(nextPuzzle);
+
+    if (selectedPuzzleId === "today" && nextPuzzle) {
+      setStartTimeMs(Date.now());
+      setHasCompletedTodayPuzzle(false);
+      setCompletionStats(null);
+      setElapsedSeconds(0);
+      setHasSubmittedName(false);
+    }
   };
 
   // Automatically load today's puzzle once on initial render when "Dagens kryssord" is selected
@@ -77,6 +111,108 @@ function App() {
       handleLoadPuzzle();
     }
   }, [puzzle, selectedPuzzleId]);
+
+  const { totalLetters, confirmedLetters, revealedLetters, wordPositions } =
+    state;
+  const { wrongCheckedLettersCount } = state;
+
+  const refreshHighscores = async () => {
+    const { today, yesterday } = await getHighscoresForTodayAndYesterday(
+      todayKey,
+      yesterdayKey,
+    );
+    setTodayHighscores(today);
+    setYesterdayHighscores(yesterday);
+  };
+
+  useEffect(() => {
+    void refreshHighscores();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [todayKey, yesterdayKey]);
+
+  useEffect(() => {
+    if (!puzzle) return;
+    if (selectedPuzzleId !== "today") return;
+    if (!startTimeMs) return;
+    if (hasCompletedTodayPuzzle) return;
+
+    const id = window.setInterval(() => {
+      setElapsedSeconds(
+        Math.max(0, Math.floor((Date.now() - startTimeMs) / 1000)),
+      );
+    }, 1000);
+
+    return () => {
+      window.clearInterval(id);
+    };
+  }, [puzzle, selectedPuzzleId, startTimeMs, hasCompletedTodayPuzzle]);
+
+  useEffect(() => {
+    if (!puzzle) return;
+    if (selectedPuzzleId !== "today") return;
+    if (totalLetters === 0) return;
+    if (!startTimeMs) return;
+
+    const filled = confirmedLetters + revealedLetters;
+    const isCompletedNow = filled === totalLetters;
+
+    if (!isCompletedNow || hasCompletedTodayPuzzle) return;
+
+    const completionTimeSeconds = elapsedSeconds;
+    const completedAt = new Date().toISOString();
+
+    const score = calculateScore({
+      totalLetters,
+      completionTimeSeconds,
+      wrongCheckedLetters: wrongCheckedLettersCount,
+      revealedLetters,
+    });
+
+    setCompletionStats({
+      score,
+      totalLetters,
+      confirmedLetters,
+      revealedLetters,
+      completionTimeSeconds,
+      wrongCheckedLetters: wrongCheckedLettersCount,
+      completedAt,
+    });
+
+    const autoEntry: HighscoreEntry = {
+      name: "Anonym",
+      score,
+      dateKey: todayKey,
+      completedAt,
+      totalLetters,
+      confirmedLetters,
+      revealedLetters,
+      completionTimeSeconds,
+      wrongCheckedLetters: wrongCheckedLettersCount,
+    };
+
+    void (async () => {
+      await addHighscoreEntry(autoEntry);
+      await refreshHighscores();
+    })();
+    setHasCompletedTodayPuzzle(true);
+    setIsCompletionPopupOpen(true);
+  }, [
+    puzzle,
+    selectedPuzzleId,
+    totalLetters,
+    confirmedLetters,
+    revealedLetters,
+    hasCompletedTodayPuzzle,
+  ]);
+
+  const handleSubmitName = async (name: string) => {
+    if (!completionStats) return;
+    if (hasSubmittedName) return;
+
+    await updateHighscoreName(todayKey, completionStats.completedAt, name);
+    setHasSubmittedName(true);
+    await refreshHighscores();
+  };
   const {
     values,
     cellStatus,
@@ -107,9 +243,6 @@ function App() {
       }))
     : [];
 
-  const { totalLetters, confirmedLetters, revealedLetters, wordPositions } =
-    state;
-
   return (
     <div className="container">
       <Header
@@ -130,7 +263,29 @@ function App() {
             totalLetters={totalLetters}
             confirmedLetters={confirmedLetters}
             revealedLetters={revealedLetters}
+            elapsedSeconds={elapsedSeconds}
+            liveScore={
+              totalLetters > 0 && startTimeMs
+                ? calculateScore({
+                    totalLetters,
+                    completionTimeSeconds: elapsedSeconds,
+                    wrongCheckedLetters: wrongCheckedLettersCount,
+                    revealedLetters,
+                  })
+                : undefined
+            }
           />
+
+          {hasCompletedTodayPuzzle && (
+            <div className="completion-reopen">
+              <button
+                type="button"
+                onClick={() => setIsCompletionPopupOpen(true)}
+              >
+                Vis resultat og highscore
+              </button>
+            </div>
+          )}
 
           <div className="game-container">
             <div className="crossword-container">
@@ -178,6 +333,18 @@ function App() {
             </div>
           </div>
         </main>
+      )}
+
+      {completionStats && (
+        <CompletionPopup
+          isOpen={isCompletionPopupOpen}
+          onClose={() => setIsCompletionPopupOpen(false)}
+          score={completionStats.score}
+          todayEntries={todayHighscores}
+          yesterdayEntries={yesterdayHighscores}
+          onSubmitName={handleSubmitName}
+          hasSubmittedName={hasSubmittedName}
+        />
       )}
 
       <Footer />
