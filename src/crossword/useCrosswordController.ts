@@ -21,6 +21,7 @@ export interface CrosswordControllerState {
   totalLetters: number;
   confirmedLetters: number;
   revealedLetters: number;
+    wrongCheckedLettersCount: number;
   focusTrigger: number;
   currentClueLabel?: string;
   currentClueText?: string;
@@ -64,6 +65,7 @@ export function useCrosswordController(
   const [totalLetters, setTotalLetters] = useState(0);
   const [confirmedLetters, setConfirmedLetters] = useState(0);
   const [revealedLetters, setRevealedLetters] = useState(0);
+  const [wrongCheckedLettersCount, setWrongCheckedLettersCount] = useState(0);
   const [focusTrigger, setFocusTrigger] = useState(0);
 
   // Reset state when puzzle changes
@@ -79,6 +81,7 @@ export function useCrosswordController(
       setTotalLetters(0);
       setConfirmedLetters(0);
       setRevealedLetters(0);
+      setWrongCheckedLettersCount(0);
       setFocusTrigger(0);
       return;
     }
@@ -114,6 +117,7 @@ export function useCrosswordController(
     setTotalLetters(letters);
     setConfirmedLetters(0);
     setRevealedLetters(0);
+    setWrongCheckedLettersCount(0);
   }, [puzzle]);
 
   const getWordCells = (
@@ -315,6 +319,54 @@ export function useCrosswordController(
       } else {
         selectCell(row, col, "down");
       }
+    } else if (event.key === "Enter") {
+      event.preventDefault();
+
+      // Move to the next word in the same direction as the currently selected word,
+      // wrapping around to the first word when reaching the end.
+      let dirForNext: Direction | null = null;
+      let currentNumber: number | null = null;
+
+      if (selectedWordKey) {
+        const [numberStr, dir] = selectedWordKey.split("-") as [
+          string,
+          Direction,
+        ];
+        currentNumber = Number(numberStr);
+        dirForNext = dir;
+      } else {
+        dirForNext = direction;
+      }
+
+      if (!dirForNext) return;
+
+      const wordsInDir = Object.values(wordPositions)
+        .filter((pos) => pos.direction === dirForNext)
+        .sort((a, b) => a.number - b.number);
+
+      if (wordsInDir.length === 0) return;
+
+      let target: WordPosition | undefined;
+      if (currentNumber == null) {
+        target = wordsInDir[0];
+      } else {
+        target = wordsInDir.find((pos) => pos.number > currentNumber) ??
+          wordsInDir[0];
+      }
+
+      if (target) {
+        selectWord(target.direction, target.number);
+      }
+    } else if (event.key === "Tab") {
+      event.preventDefault();
+
+      // Swap between across and down for the current selected cell
+      if (selectedCell) {
+        const toggledDirection: Direction =
+          direction === "across" ? "down" : "across";
+        selectCell(selectedCell.row, selectedCell.col, toggledDirection);
+        setFocusTrigger((prev) => prev + 1);
+      }
     }
   };
 
@@ -371,9 +423,14 @@ export function useCrosswordController(
       return;
     }
     
+    let wrongIncrement = 0;
+
     if (current && current.toUpperCase() === expected.toUpperCase()) {
       nextStatus[row][col] = "correctConfirmed";
     } else {
+      if (current && current.toUpperCase() !== expected.toUpperCase()) {
+        wrongIncrement = 1;
+      }
       nextStatus[row][col] = "empty";
       nextValues[row][col] = "";
     }
@@ -390,6 +447,9 @@ export function useCrosswordController(
     setConfirmedLetters(flat.filter((s) => s === "correctConfirmed").length);
     setRevealedLetters(flat.filter((s) => s === "revealed").length);
     setCompletedWordKeys(updatedCompleted);
+    if (wrongIncrement > 0) {
+      setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+    }
     setFocusTrigger(prev => prev + 1);
   };
 
@@ -401,16 +461,21 @@ export function useCrosswordController(
     const pos = wordPositions[key];
     if (!pos) return;
 
-    const nextValues = values.map((r) => [...r]);
-    const nextStatus = cellStatus.map((r) => [...r]);
+  const nextValues = values.map((r) => [...r]);
+  const nextStatus = cellStatus.map((r) => [...r]);
+  let wrongIncrement = 0;
     
     for (let i = 0; i < pos.length; i++) {
       const r = pos.direction === "across" ? pos.row : pos.row + i;
       const c = pos.direction === "across" ? pos.col + i : pos.col;
       const expected = puzzle.solved_layout[r][c];
+      const before = nextValues[r]?.[c] ?? "";
       fn(r, c, expected, nextValues);
       const current = nextValues[r]?.[c] ?? "";
       const status = nextStatus[r]?.[c];
+      if (before && !current) {
+        wrongIncrement += 1;
+      }
       if (status !== "revealed") {
         if (current && current.toUpperCase() === expected.toUpperCase()) {
           nextStatus[r][c] = "correctConfirmed";
@@ -433,6 +498,9 @@ export function useCrosswordController(
     setConfirmedLetters(flat.filter((s) => s === "correctConfirmed").length);
     setRevealedLetters(flat.filter((s) => s === "revealed").length);
     setCompletedWordKeys(updatedCompleted);
+    if (wrongIncrement > 0) {
+      setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+    }
     setFocusTrigger(prev => prev + 1);
   };
 
@@ -450,6 +518,7 @@ export function useCrosswordController(
     
     const nextValues = values.map((r) => [...r]);
     const nextStatus = cellStatus.map((r) => [...r]);
+    let wrongIncrement = 0;
     
     for (let r = 0; r < puzzle.layout.length; r++) {
       for (let c = 0; c < puzzle.layout[r].length; c++) {
@@ -461,6 +530,9 @@ export function useCrosswordController(
         if (current && current.toUpperCase() === expected.toUpperCase()) {
           nextStatus[r][c] = "correctConfirmed";
         } else {
+          if (current && current.toUpperCase() !== expected.toUpperCase()) {
+            wrongIncrement += 1;
+          }
           nextValues[r][c] = "";
           nextStatus[r][c] = "empty";
         }
@@ -478,6 +550,9 @@ export function useCrosswordController(
     setConfirmedLetters(flat.filter((s) => s === "correctConfirmed").length);
     setRevealedLetters(flat.filter((s) => s === "revealed").length);
     setCompletedWordKeys(updatedCompleted);
+    if (wrongIncrement > 0) {
+      setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+    }
     setFocusTrigger(prev => prev + 1);
   };
 
@@ -569,6 +644,7 @@ export function useCrosswordController(
     totalLetters,
     confirmedLetters,
     revealedLetters,
+    wrongCheckedLettersCount,
     focusTrigger,
     currentClueLabel: currentClue.label,
     currentClueText: currentClue.text,
