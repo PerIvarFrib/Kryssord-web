@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-23 18:31:47",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "MAKTA",
+    "ARVEN",
+    "SVETT",
+    "TEPTE",
+    "ESPEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "MAKTA",
+      "2": "ARVEN",
+      "3": "SVETT",
+      "4": "TEPTE",
+      "5": "ESPEN"
+    },
+    "down": {
+      "1": "MASTE",
+      "2": "ARVES",
+      "3": "KVEPP",
+      "4": "TETTE",
+      "5": "ANTEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "velstanden",
+      "2": "odelen",
+      "3": "kuldslått",
+      "4": "lappeteppa",
+      "5": "en olsen"
+    },
+    "down": {
+      "1": "tryglet",
+      "2": "overtaes",
+      "3": "støkk",
+      "4": "spunse",
+      "5": "kortuttrykk"
+    }
+  }
+}

@@ -263,17 +263,6 @@ function App() {
             totalLetters={totalLetters}
             confirmedLetters={confirmedLetters}
             revealedLetters={revealedLetters}
-            elapsedSeconds={elapsedSeconds}
-            liveScore={
-              totalLetters > 0 && startTimeMs
-                ? calculateScore({
-                    totalLetters,
-                    completionTimeSeconds: elapsedSeconds,
-                    wrongCheckedLetters: wrongCheckedLettersCount,
-                    revealedLetters,
-                  })
-                : undefined
-            }
           />
 
           {hasCompletedTodayPuzzle && (

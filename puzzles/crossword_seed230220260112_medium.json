@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-23 14:02:04",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "TUKLE",
+    "EGNER",
+    "SLITT",
+    "LESTE",
+    "ARTEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "TUKLE",
+      "2": "EGNER",
+      "3": "SLITT",
+      "4": "LESTE",
+      "5": "ARTEN"
+    },
+    "down": {
+      "1": "TESLA",
+      "2": "UGLER",
+      "3": "KNIST",
+      "4": "LETTE",
+      "5": "ERTEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "klusse",
+      "2": "distrikter",
+      "3": "sliten",
+      "4": "fulgte kurs",
+      "5": "kunsten"
+    },
+    "down": {
+      "1": "amerikansk bilmerke",
+      "2": "vesener med vinger",
+      "3": "knegget",
+      "4": "folkelige",
+      "5": "spøken"
+    }
+  }
+}

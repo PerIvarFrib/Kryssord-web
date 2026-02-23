@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-23 18:30:39",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "medium",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "PELLE",
+    "IDEER",
+    "SEINT",
+    "KREKE",
+    "ESTER"
+  ],
+  "answers": {
+    "across": {
+      "1": "PELLE",
+      "2": "IDEER",
+      "3": "SEINT",
+      "4": "KREKE",
+      "5": "ESTER"
+    },
+    "down": {
+      "1": "PISKE",
+      "2": "EDERS",
+      "3": "LEIET",
+      "4": "LENKE",
+      "5": "ERTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "barne-tv-figur",
+      "2": "assosiasjoner",
+      "3": "sakte",
+      "4": "krype",
+      "5": "bibelsk kvinnenavn"
+    },
+    "down": {
+      "1": "pryle",
+      "2": "foreldet pronomen",
+      "3": "bestyrt",
+      "4": "kjetting",
+      "5": "gjøner"
+    }
+  }
+}

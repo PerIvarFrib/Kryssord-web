@@ -3,7 +3,7 @@
     "title": "Crossword Grid",
     "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
-    "generation_date": "2026-02-19 21:08:28",
+    "generation_date": "2026-02-23 18:28:10",
     "model_used": "norbert-multipos-word2clue",
     "pairs_db_path": "data\\word2clue_pairs_db.pkl",
     "difficulty": "medium",
@@ -17,42 +17,42 @@
     "....."
   ],
   "solved_layout": [
-    "STOFF",
     "METRO",
-    "ARIER",
-    "TREDE",
-    "TAREN"
+    "YTRER",
+    "KLING",
+    "NEKTA",
+    "ESKEN"
   ],
   "answers": {
     "across": {
-      "1": "STOFF",
-      "2": "METRO",
-      "3": "ARIER",
-      "4": "TREDE",
-      "5": "TAREN"
+      "1": "METRO",
+      "2": "YTRER",
+      "3": "KLING",
+      "4": "NEKTA",
+      "5": "ESKEN"
     },
     "down": {
-      "1": "SMATT",
-      "2": "TERRA",
-      "3": "OTIER",
-      "4": "FREDE",
-      "5": "FOREN"
+      "1": "MYKNE",
+      "2": "ETLES",
+      "3": "TRIKK",
+      "4": "RENTE",
+      "5": "ORGAN"
     }
   },
   "clues": {
     "across": {
-      "1": "morfiner",
-      "2": "nyttekjøretøy",
-      "3": "musikkstykker",
-      "4": "stå",
-      "5": "sjøplanten"
+      "1": "reisemåte",
+      "2": "snakker",
+      "3": "svensk forfatter",
+      "4": "forhindra",
+      "5": "krukka"
     },
     "down": {
-      "1": "smøyg",
-      "2": "jordklode",
-      "3": "fritider",
-      "4": "forsvare",
-      "5": "forlik"
+      "1": "størkne",
+      "2": "tildeles",
+      "3": "ekspressbusser",
+      "4": "uttelling",
+      "5": "stamcelle"
     }
   }
 }
