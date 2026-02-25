@@ -87,6 +87,17 @@ function App() {
   };
 
   const handleLoadPuzzle = () => {
+    // Hvis dagens kryssord allerede er fullført, skal ikke "Last inn"
+    // laste det inn på nytt og lagre enda en highscore. Vis bare resultatet.
+    if (
+      selectedPuzzleId === "today" &&
+      hasCompletedTodayPuzzle &&
+      completionStats
+    ) {
+      setIsCompletionPopupOpen(true);
+      return;
+    }
+
     let nextPuzzle: CrosswordPuzzle | null = null;
 
     if (selectedPuzzleId === "today") {
@@ -254,7 +265,7 @@ function App() {
 
   const handleSubmitName = async (name: string) => {
     if (!completionStats) return;
-     if (!canSubmitHighscore) return;
+    if (!canSubmitHighscore) return;
     if (hasSubmittedName) return;
 
     await updateHighscoreName(todayKey, completionStats.completedAt, name);
