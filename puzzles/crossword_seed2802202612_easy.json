@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-25 09:34:10",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ABBED",
+    "SALTO",
+    "KNISE",
+    "EGNEN",
+    "REKTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ABBED",
+      "2": "SALTO",
+      "3": "KNISE",
+      "4": "EGNEN",
+      "5": "REKTE"
+    },
+    "down": {
+      "1": "ASKER",
+      "2": "BANGE",
+      "3": "BLINK",
+      "4": "ETSET",
+      "5": "DOENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "munkesjef",
+      "2": "akrobatikk",
+      "3": "hånflire",
+      "4": "sektoren",
+      "5": "turet"
+    },
+    "down": {
+      "1": "østlandskommune",
+      "2": "engstelig",
+      "3": "skytemål",
+      "4": "angrepen",
+      "5": "toaletta"
+    }
+  }
+}

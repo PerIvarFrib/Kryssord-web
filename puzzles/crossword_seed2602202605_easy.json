@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-25 09:24:56",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SEKEL",
+    "PILLE",
+    "OMEGN",
+    "LEDES",
+    "ENDRE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SEKEL",
+      "2": "PILLE",
+      "3": "OMEGN",
+      "4": "LEDES",
+      "5": "ENDRE"
+    },
+    "down": {
+      "1": "SPOLE",
+      "2": "EIMEN",
+      "3": "KLEDD",
+      "4": "ELGER",
+      "5": "LENSE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vektenhet",
+      "2": "medikament",
+      "3": "nabolag",
+      "4": "hjelpes",
+      "5": "forvandle"
+    },
+    "down": {
+      "1": "elektronisk komponent",
+      "2": "stanken",
+      "3": "antrukket",
+      "4": "hjortedyr",
+      "5": "pumpe"
+    }
+  }
+}

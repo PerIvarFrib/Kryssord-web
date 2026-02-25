@@ -34,7 +34,6 @@ export function PuzzleSelector({
         value={selectedPuzzleId}
         onChange={handleSelectChange}
       >
-        <option value="">-- Velg et kryssord --</option>
         {puzzles.map((puzzle) => (
           <option key={puzzle.id} value={puzzle.id}>
             {puzzle.label}

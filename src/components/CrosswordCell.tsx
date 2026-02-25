@@ -62,11 +62,14 @@ export function CrosswordCell({
       <input
         ref={inputRef}
         type="text"
-        maxLength={1}
         value={value}
         onChange={handleChange}
         onKeyDown={onKeyDown}
-        onFocus={(e) => e.target.select()}
+        spellCheck={false}
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="none"
+        inputMode="text"
       />
     </div>
   );

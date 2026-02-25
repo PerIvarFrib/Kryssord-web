@@ -216,15 +216,27 @@ export function useCrosswordController(
       });
     }
 
-    // Auto-advance to next cell if a value was typed (works for both locked and unlocked)
+    // Auto-advance to next cell if a value was typed (works for both locked and unlocked),
+    // but do NOT auto-advance when we're on the last cell of a word so the cell
+    // stays selected and the user can easily overwrite it.
     if (value && selectedCell) {
       const wordCells = getWordCells(row, col, direction);
       const currentIndex = wordCells.findIndex(
         (c) => c.row === row && c.col === col,
       );
-      if (currentIndex >= 0 && currentIndex < wordCells.length - 1) {
-        const nextCell = wordCells[currentIndex + 1];
-        selectCell(nextCell.row, nextCell.col, direction);
+      if (currentIndex >= 0) {
+        const isLastInWord = currentIndex === wordCells.length - 1;
+
+        if (isLastInWord) {
+          // Keep selection on the same cell (no auto-advance), but
+          // still go through selectCell so direction/word key stay in sync.
+          selectCell(row, col, direction);
+        } else {
+          const nextCell = wordCells[currentIndex + 1];
+          if (nextCell) {
+            selectCell(nextCell.row, nextCell.col, direction);
+          }
+        }
       }
     }
   };

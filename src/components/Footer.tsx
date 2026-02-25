@@ -2,13 +2,13 @@ export function Footer() {
   return (
     <footer className="footer">
       <p>
-        Laget med{" "}
+        Laget av{" "}
         <a
-          href="https://github.com/PerIvarFrib/Kryssord-Generator"
+          href="https://github.com/PerIvarFrib/Kryssord-web"
           target="_blank"
           rel="noreferrer"
         >
-          Kryssord Generator
+          Per Ivar Friborg
         </a>
       </p>
     </footer>

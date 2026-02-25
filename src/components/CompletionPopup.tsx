@@ -9,6 +9,7 @@ export interface CompletionPopupProps {
   yesterdayEntries: HighscoreEntry[];
   onSubmitName: (name: string) => void;
   hasSubmittedName: boolean;
+  canSubmitHighscore: boolean;
 }
 
 interface HighscoreSectionProps {
@@ -61,6 +62,7 @@ export function CompletionPopup({
   yesterdayEntries,
   onSubmitName,
   hasSubmittedName,
+  canSubmitHighscore,
 }: CompletionPopupProps) {
   const [name, setName] = useState("");
 
@@ -84,7 +86,7 @@ export function CompletionPopup({
       <div className="completion-dialog">
         <header className="completion-header">
           <h2>Gratulerer!</h2>
-          <p>Du har løst dagens kryssord.</p>
+          <p>Du har fullført kryssordet.</p>
         </header>
 
         <div className="completion-score">
@@ -92,26 +94,33 @@ export function CompletionPopup({
           <span className="completion-score-value">{score}</span>
         </div>
 
-        {!hasSubmittedName ? (
-          <form className="completion-form" onSubmit={handleSubmit}>
-            <label htmlFor="player-name" className="completion-label">
-              Skriv inn navnet ditt for highscore-listen (valgfritt):
-            </label>
-            <div className="completion-input-row">
-              <input
-                id="player-name"
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Navn eller kallenavn"
-                className="completion-input"
-              />
-              <button type="submit">Lagre resultat</button>
-            </div>
-          </form>
+        {canSubmitHighscore ? (
+          !hasSubmittedName ? (
+            <form className="completion-form" onSubmit={handleSubmit}>
+              <label htmlFor="player-name" className="completion-label">
+                Skriv inn navnet ditt for highscore-listen (valgfritt):
+              </label>
+              <div className="completion-input-row">
+                <input
+                  id="player-name"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Navn eller kallenavn"
+                  className="completion-input"
+                />
+                <button type="submit">Lagre resultat</button>
+              </div>
+            </form>
+          ) : (
+            <p className="highscore-empty">
+              Resultatet ditt er lagret. Takk for at du spilte!
+            </p>
+          )
         ) : (
           <p className="highscore-empty">
-            Resultatet ditt er lagret. Takk for at du spilte!
+            Highscore-listen gjelder bare dagens kryssord. Resultatet for dette
+            kryssordet lagres ikke i highscore.
           </p>
         )}
 
