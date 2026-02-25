@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-25 07:26:01",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "DADLA",
+    "AVVIK",
+    "USANT",
+    "ELSKE",
+    "TÅKET"
+  ],
+  "answers": {
+    "across": {
+      "1": "DADLA",
+      "2": "AVVIK",
+      "3": "USANT",
+      "4": "ELSKE",
+      "5": "TÅKET"
+    },
+    "down": {
+      "1": "DAUET",
+      "2": "AVSLÅ",
+      "3": "DVASK",
+      "4": "LINKE",
+      "5": "AKTET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "klandret",
+      "2": "fravikelse",
+      "3": "løgnaktig",
+      "4": "beundre",
+      "5": "dunkelt"
+    },
+    "down": {
+      "1": "visnet",
+      "2": "tilbakevise",
+      "3": "døsig",
+      "4": "sammenkoble",
+      "5": "lovprist"
+    }
+  }
+}
