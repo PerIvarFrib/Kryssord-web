@@ -9,6 +9,15 @@ import type {
 } from "./types";
 import { buildWordPositions } from "./wordPositions";
 
+export interface CrosswordProgressSnapshot {
+  values: string[][];
+  cellStatus: CellProgressStatus[][];
+  selectedCell: { row: number; col: number } | null;
+  direction: Direction;
+  selectedWordKey: WordKey | null;
+  wrongCheckedLettersCount: number;
+}
+
 export interface CrosswordControllerState {
   values: string[][];
   cellStatus: CellProgressStatus[][];
@@ -50,6 +59,8 @@ export interface CrosswordControllerResult {
 
 export function useCrosswordController(
   puzzle: CrosswordPuzzle | null,
+  initialProgress?: CrosswordProgressSnapshot | null,
+  onProgressChange?: (snapshot: CrosswordProgressSnapshot) => void,
 ): CrosswordControllerResult {
   const [values, setValues] = useState<string[][]>([]);
   const [cellStatus, setCellStatus] = useState<CellProgressStatus[][]>([]);
@@ -68,7 +79,7 @@ export function useCrosswordController(
   const [wrongCheckedLettersCount, setWrongCheckedLettersCount] = useState(0);
   const [focusTrigger, setFocusTrigger] = useState(0);
 
-  // Reset state when puzzle changes
+  // Reset or restore state when puzzle changes
   useEffect(() => {
     if (!puzzle) {
       setValues([]);
@@ -85,7 +96,6 @@ export function useCrosswordController(
       setFocusTrigger(0);
       return;
     }
-
     const emptyValues: string[][] = [];
     const statusMatrix: CellProgressStatus[][] = [];
     let letters = 0;
@@ -107,17 +117,54 @@ export function useCrosswordController(
       statusMatrix.push(statusRow);
     }
 
-    setValues(emptyValues);
-    setCellStatus(statusMatrix);
-    setWordPositions(buildWordPositions(puzzle));
-    setSelectedCell(null);
-    setSelectedWordKey(null);
-    setDirection("across");
-    setCompletedWordKeys(new Set());
+    const positions = buildWordPositions(puzzle);
+    setWordPositions(positions);
     setTotalLetters(letters);
-    setConfirmedLetters(0);
-    setRevealedLetters(0);
-    setWrongCheckedLettersCount(0);
+
+    if (initialProgress && initialProgress.values.length) {
+      const restoredValues = initialProgress.values;
+      const restoredStatus = initialProgress.cellStatus;
+
+      setValues(restoredValues);
+      setCellStatus(restoredStatus);
+      setSelectedCell(initialProgress.selectedCell);
+      setDirection(initialProgress.direction);
+      setSelectedWordKey(initialProgress.selectedWordKey);
+      setWrongCheckedLettersCount(initialProgress.wrongCheckedLettersCount);
+
+      const flat = restoredStatus.flat();
+      setConfirmedLetters(flat.filter((s) => s === "correctConfirmed").length);
+      setRevealedLetters(flat.filter((s) => s === "revealed").length);
+
+      const nextCompleted = new Set<WordKey>();
+      for (const pos of Object.values(positions)) {
+        let allCorrect = true;
+        for (let i = 0; i < pos.length; i++) {
+          const r = pos.direction === "across" ? pos.row : pos.row + i;
+          const c = pos.direction === "across" ? pos.col + i : pos.col;
+          const expected = puzzle.solved_layout[r][c];
+          const actual = restoredValues[r]?.[c] ?? "";
+          if (!actual || actual.toUpperCase() !== expected.toUpperCase()) {
+            allCorrect = false;
+            break;
+          }
+        }
+        if (allCorrect) {
+          nextCompleted.add(pos.key);
+        }
+      }
+      setCompletedWordKeys(nextCompleted);
+    } else {
+      setValues(emptyValues);
+      setCellStatus(statusMatrix);
+      setSelectedCell(null);
+      setSelectedWordKey(null);
+      setDirection("across");
+      setCompletedWordKeys(new Set());
+      setConfirmedLetters(0);
+      setRevealedLetters(0);
+      setWrongCheckedLettersCount(0);
+    }
   }, [puzzle]);
 
   const getWordCells = (
@@ -575,8 +622,17 @@ export function useCrosswordController(
     
     const nextValues = values.map((r) => [...r]);
     const nextStatus = cellStatus.map((r) => [...r]);
-    nextValues[row][col] = expected.toUpperCase();
-    nextStatus[row][col] = "revealed";
+    const current = nextValues[row]?.[col] ?? "";
+
+    // Hvis bokstaven allerede er korrekt, skal den ikke straffes som "avslørt".
+    // Marker den som bekreftet i stedet for avslørt.
+    if (current && current.toUpperCase() === expected.toUpperCase()) {
+      nextValues[row][col] = current.toUpperCase();
+      nextStatus[row][col] = "correctConfirmed";
+    } else {
+      nextValues[row][col] = expected.toUpperCase();
+      nextStatus[row][col] = "revealed";
+    }
 
     const updatedCompleted = updateCompletedWordsFromValues(
       nextValues,
@@ -605,8 +661,16 @@ export function useCrosswordController(
       const r = pos.direction === "across" ? pos.row : pos.row + i;
       const c = pos.direction === "across" ? pos.col + i : pos.col;
       const expected = puzzle.solved_layout[r][c];
-      nextValues[r][c] = expected.toUpperCase();
-      nextStatus[r][c] = "revealed";
+      const current = nextValues[r]?.[c] ?? "";
+
+      // Ikke straff bokstaver som allerede er riktige; bekreft dem i stedet.
+      if (current && current.toUpperCase() === expected.toUpperCase()) {
+        nextValues[r][c] = current.toUpperCase();
+        nextStatus[r][c] = "correctConfirmed";
+      } else {
+        nextValues[r][c] = expected.toUpperCase();
+        nextStatus[r][c] = "revealed";
+      }
     }
     
     const updatedCompleted = updateCompletedWordsFromValues(
@@ -665,6 +729,29 @@ export function useCrosswordController(
     canRevealLetter,
     canRevealWord,
   };
+
+  // Eksporter nåværende fremdrift til eventuell lytter (for lagring i App)
+  useEffect(() => {
+    if (!puzzle || !onProgressChange) return;
+    const snapshot: CrosswordProgressSnapshot = {
+      values,
+      cellStatus,
+      selectedCell,
+      direction,
+      selectedWordKey,
+      wrongCheckedLettersCount,
+    };
+    onProgressChange(snapshot);
+  }, [
+    puzzle,
+    values,
+    cellStatus,
+    selectedCell,
+    direction,
+    selectedWordKey,
+    wrongCheckedLettersCount,
+    onProgressChange,
+  ]);
 
   const actions: CrosswordControllerActions = {
     handleChangeCell,

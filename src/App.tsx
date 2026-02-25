@@ -10,7 +10,10 @@ import Footer from "./components/Footer";
 import { type CrosswordPuzzle } from "./crossword/types";
 import samplePuzzleJson from "../puzzles/crossword_seed0402202601_medium.json";
 import CrosswordGrid from "./components/CrosswordGrid";
-import { useCrosswordController } from "./crossword/useCrosswordController";
+import {
+  useCrosswordController,
+  type CrosswordProgressSnapshot,
+} from "./crossword/useCrosswordController";
 import CompletionPopup from "./components/CompletionPopup";
 import { getTodayKey, getYesterdayKey } from "./utils/dateKeys";
 import {
@@ -21,12 +24,9 @@ import {
   type HighscoreEntry,
 } from "./storage/highscore";
 
-const puzzleModules = import.meta.glob(
-  "../puzzles/crossword_seed*_medium.json",
-  {
-    eager: true,
-  },
-) as Record<string, unknown>;
+const puzzleModules = import.meta.glob("../puzzles/crossword_seed*.json", {
+  eager: true,
+}) as Record<string, unknown>;
 
 const getPuzzleForDate = (date: Date): CrosswordPuzzle | null => {
   const day = date.getDate().toString().padStart(2, "0");
@@ -50,7 +50,6 @@ const getPuzzleForDate = (date: Date): CrosswordPuzzle | null => {
 function App() {
   const [selectedPuzzleId, setSelectedPuzzleId] = useState("today");
   const [puzzle, setPuzzle] = useState<CrosswordPuzzle | null>(null);
-  const { state, actions } = useCrosswordController(puzzle);
   const [hasCompletedTodayPuzzle, setHasCompletedTodayPuzzle] = useState(false);
   const [isCompletionPopupOpen, setIsCompletionPopupOpen] = useState(false);
   const [completionStats, setCompletionStats] = useState<{
@@ -76,6 +75,28 @@ function App() {
   const todayKey = getTodayKey();
   const yesterdayKey = getYesterdayKey();
 
+  // Nøkkel som identifiserer det KJØRENDE kryssordet (ikke bare valgt i menyen).
+  // Denne settes når et kryssord faktisk lastes inn med "Last inn".
+  const [currentPuzzleKey, setCurrentPuzzleKey] = useState<string | null>(null);
+
+  const activePuzzleKey = currentPuzzleKey;
+
+  const [progressByKey, setProgressByKey] = useState<
+    Record<string, CrosswordProgressSnapshot | undefined>
+  >({});
+
+  const { state, actions } = useCrosswordController(
+    puzzle,
+    activePuzzleKey ? (progressByKey[activePuzzleKey] ?? null) : null,
+    (snapshot) => {
+      if (!activePuzzleKey) return;
+      setProgressByKey((prev) => ({
+        ...prev,
+        [activePuzzleKey]: snapshot,
+      }));
+    },
+  );
+
   // Tilgjengelige puslespillvalg i menyen.
   const puzzles: PuzzleOption[] = [
     { id: "today", label: "Dagens" },
@@ -87,20 +108,35 @@ function App() {
   };
 
   const handleLoadPuzzle = () => {
+    // Hvis dagens kryssord allerede er fullført, skal ikke "Last inn"
+    // laste det inn på nytt og lagre enda en highscore. Vis bare resultatet.
+    if (
+      selectedPuzzleId === "today" &&
+      hasCompletedTodayPuzzle &&
+      completionStats
+    ) {
+      setIsCompletionPopupOpen(true);
+      return;
+    }
+
     let nextPuzzle: CrosswordPuzzle | null = null;
+    let puzzleKey: string | null = null;
 
     if (selectedPuzzleId === "today") {
       nextPuzzle = getPuzzleForDate(new Date());
+      puzzleKey = todayKey;
     } else if (selectedPuzzleId === "yesterday") {
       const yesterdayDate = new Date();
       yesterdayDate.setDate(yesterdayDate.getDate() - 1);
       nextPuzzle = getPuzzleForDate(yesterdayDate);
+      puzzleKey = yesterdayKey;
     }
 
     if (!nextPuzzle) {
       nextPuzzle = samplePuzzleJson as CrosswordPuzzle;
     }
 
+    setCurrentPuzzleKey(puzzleKey);
     setPuzzle(nextPuzzle);
 
     // Nullstill fullførings-/navnestatus når et nytt kryssord lastes
@@ -137,16 +173,12 @@ function App() {
     return () => window.clearTimeout(id);
   }, [loadMessage]);
 
-  // Automatically load today's puzzle once on initial render when "Dagens kryssord" is selected
-  useEffect(() => {
-    if (!puzzle && selectedPuzzleId === "today") {
-      handleLoadPuzzle();
-    }
-  }, [puzzle, selectedPuzzleId]);
-
   const { totalLetters, confirmedLetters, revealedLetters, wordPositions } =
     state;
   const { wrongCheckedLettersCount } = state;
+
+  const isTodayCurrentPuzzle = currentPuzzleKey === todayKey;
+  const canReopenResult = !!completionStats && !!puzzle;
 
   const refreshHighscores = async () => {
     const { today, yesterday } = await getHighscoresForTodayAndYesterday(
@@ -161,6 +193,15 @@ function App() {
     void refreshHighscores();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [todayKey, yesterdayKey]);
+
+  // Last inn dagens kryssord automatisk første gang siden lastes
+  useEffect(() => {
+    if (!puzzle && selectedPuzzleId === "today") {
+      handleLoadPuzzle();
+    }
+    // Vi vil bare kjøre dette én gang ved første innlasting
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Oppdater tidstelling for aktivt kryssord (uansett hvilken dag)
   useEffect(() => {
@@ -254,7 +295,7 @@ function App() {
 
   const handleSubmitName = async (name: string) => {
     if (!completionStats) return;
-     if (!canSubmitHighscore) return;
+    if (!canSubmitHighscore) return;
     if (hasSubmittedName) return;
 
     await updateHighscoreName(todayKey, completionStats.completedAt, name);
@@ -316,13 +357,15 @@ function App() {
             revealedLetters={revealedLetters}
           />
 
-          {hasCompletedTodayPuzzle && (
+          {canReopenResult && (
             <div className="completion-reopen">
               <button
                 type="button"
                 onClick={() => setIsCompletionPopupOpen(true)}
               >
-                Vis resultat og highscore
+                {isTodayCurrentPuzzle
+                  ? "Vis resultat og highscore"
+                  : "Vis resultat"}
               </button>
             </div>
           )}

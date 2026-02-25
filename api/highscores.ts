@@ -14,6 +14,17 @@ type HighscoreRow = {
   wrongCheckedLetters: number;
 };
 
+function validateName(rawName: unknown): string | null {
+  if (typeof rawName !== "string") return null;
+  const trimmed = rawName.trim();
+
+  // Enkle regler for gyldig navn: ikke tomt, og ikke urimelig langt.
+  if (trimmed.length === 0) return null;
+  if (trimmed.length > 40) return null;
+
+  return trimmed;
+}
+
 export default async function handler(req: any, res: any) {
   if (req.method === "GET") {
     const { dateKey } = req.query;
@@ -53,13 +64,15 @@ export default async function handler(req: any, res: any) {
 
       if (action === "rename") {
         const { dateKey, completedAt, name } = body;
-        if (!dateKey || !completedAt || !name) {
+        const validName = validateName(name);
+
+        if (!dateKey || !completedAt || !validName) {
           return res.status(400).json({ error: "Invalid rename payload" });
         }
 
         await sql`
           UPDATE highscores
-          SET name = ${name}
+          SET name = ${validName}
           WHERE date_key = ${dateKey} AND completed_at = ${completedAt}
         `;
 
@@ -78,13 +91,55 @@ export default async function handler(req: any, res: any) {
         wrongCheckedLetters,
       } = body;
 
+      const validName = validateName(name);
+
       if (
         !dateKey ||
         typeof dateKey !== "string" ||
-        typeof name !== "string" ||
-        typeof score !== "number"
+        !validName ||
+        typeof score !== "number" ||
+        typeof totalLetters !== "number" ||
+        typeof confirmedLetters !== "number" ||
+        typeof revealedLetters !== "number" ||
+        typeof completionTimeSeconds !== "number" ||
+        typeof wrongCheckedLetters !== "number"
       ) {
         return res.status(400).json({ error: "Invalid payload" });
+      }
+
+      if (
+        !Number.isFinite(score) ||
+        !Number.isFinite(totalLetters) ||
+        !Number.isFinite(confirmedLetters) ||
+        !Number.isFinite(revealedLetters) ||
+        !Number.isFinite(completionTimeSeconds) ||
+        !Number.isFinite(wrongCheckedLetters)
+      ) {
+        return res.status(400).json({ error: "Invalid numeric payload" });
+      }
+
+      if (totalLetters <= 0 || totalLetters > 1000) {
+        return res.status(400).json({ error: "Unreasonable totalLetters" });
+      }
+
+      if (
+        confirmedLetters < 0 ||
+        revealedLetters < 0 ||
+        completionTimeSeconds < 0 ||
+        wrongCheckedLetters < 0
+      ) {
+        return res.status(400).json({ error: "Negative values not allowed" });
+      }
+
+      if (confirmedLetters + revealedLetters > totalLetters) {
+        return res.status(400).json({ error: "Letter counts inconsistent" });
+      }
+
+      const S_max = 10 * totalLetters;
+      if (score < 0 || score > S_max) {
+        return res
+          .status(400)
+          .json({ error: "Score out of allowed range" });
       }
 
       await sql`
@@ -100,7 +155,7 @@ export default async function handler(req: any, res: any) {
           wrong_checked_letters
         ) VALUES (
           ${dateKey},
-          ${name},
+          ${validName},
           ${score},
           ${completedAt},
           ${totalLetters},
