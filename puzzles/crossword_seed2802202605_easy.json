@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 08:34:23",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "VOGNA",
+    "IVRIG",
+    "RAUSE",
+    "ULVEN",
+    "START"
+  ],
+  "answers": {
+    "across": {
+      "1": "VOGNA",
+      "2": "IVRIG",
+      "3": "RAUSE",
+      "4": "ULVEN",
+      "5": "START"
+    },
+    "down": {
+      "1": "VIRUS",
+      "2": "OVALT",
+      "3": "GRUVA",
+      "4": "NISER",
+      "5": "AGENT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "minibussen",
+      "2": "entusiastisk",
+      "3": "storsinnede",
+      "4": "skogsdyret",
+      "5": "begynnelsessted"
+    },
+    "down": {
+      "1": "mikroorganisme",
+      "2": "rundaktig",
+      "3": "sjakten",
+      "4": "delfiner",
+      "5": "informatør"
+    }
+  }
+}

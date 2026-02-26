@@ -157,10 +157,6 @@ function App() {
     if (nextPuzzle) {
       setStartTimeMs(Date.now());
       setElapsedSeconds(0);
-
-      if (selectedPuzzleId === "today") {
-        setHasCompletedTodayPuzzle(false);
-      }
     }
   };
 
@@ -265,7 +261,7 @@ function App() {
     setIsCompletionPopupOpen(true);
     setCanSubmitHighscore(isTodayPuzzle);
 
-    if (isTodayPuzzle) {
+    if (isTodayPuzzle && !hasCompletedTodayPuzzle) {
       const autoEntry: HighscoreEntry = {
         name: "Anonym",
         score,
@@ -291,6 +287,7 @@ function App() {
     confirmedLetters,
     revealedLetters,
     completionStats,
+    hasCompletedTodayPuzzle,
   ]);
 
   const handleSubmitName = async (name: string) => {
