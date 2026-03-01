@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 13:34:08",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SKRED",
+    "KVELE",
+    "RENSK",
+    "ELSKA",
+    "IDEER"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKRED",
+      "2": "KVELE",
+      "3": "RENSK",
+      "4": "ELSKA",
+      "5": "IDEER"
+    },
+    "down": {
+      "1": "SKREI",
+      "2": "KVELD",
+      "3": "RENSE",
+      "4": "ELSKE",
+      "5": "DEKAR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "steinsprang",
+      "2": "underkue",
+      "3": "vask",
+      "4": "beundret",
+      "5": "filosofier"
+    },
+    "down": {
+      "1": "torsk",
+      "2": "natt",
+      "3": "reinvaske",
+      "4": "beundre",
+      "5": "flatemål"
+    }
+  }
+}

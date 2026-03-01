@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 12:00:13",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "DABBA",
+    "IVRER",
+    "SVULM",
+    "KISTE",
+    "OSTEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "DABBA",
+      "2": "IVRER",
+      "3": "SVULM",
+      "4": "KISTE",
+      "5": "OSTEN"
+    },
+    "down": {
+      "1": "DISKO",
+      "2": "AVVIS",
+      "3": "BRUST",
+      "4": "BELTE",
+      "5": "ARMEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "minket",
+      "2": "oppildner",
+      "3": "svell ut",
+      "4": "trekasse",
+      "5": "meieriproduktet"
+    },
+    "down": {
+      "1": "musikksjanger",
+      "2": "avfei",
+      "3": "sprudlet",
+      "4": "halsbånd",
+      "5": "albuen"
+    }
+  }
+}

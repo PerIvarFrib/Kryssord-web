@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 12:25:57",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "ANSLO",
+    "NOTER",
+    "ETIKK",
+    "MINKE",
+    "ISNET"
+  ],
+  "answers": {
+    "across": {
+      "1": "ANSLO",
+      "2": "NOTER",
+      "3": "ETIKK",
+      "4": "MINKE",
+      "5": "ISNET"
+    },
+    "down": {
+      "1": "ANEMI",
+      "2": "NOTIS",
+      "3": "STINN",
+      "4": "LEKKE",
+      "5": "ORKET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "overveiet",
+      "2": "huskelapper",
+      "3": "moralfilosofi",
+      "4": "svinne",
+      "5": "frosset"
+    },
+    "down": {
+      "1": "sykelig tilstand",
+      "2": "avismelding",
+      "3": "stappfull",
+      "4": "renne ut",
+      "5": "mestret"
+    }
+  }
+}

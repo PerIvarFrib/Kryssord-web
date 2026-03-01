@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 14:19:29",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SVEVA",
+    "YRKER",
+    "RASKE",
+    "IKONA",
+    "NASAL"
+  ],
+  "answers": {
+    "across": {
+      "1": "SVEVA",
+      "2": "YRKER",
+      "3": "RASKE",
+      "4": "IKONA",
+      "5": "NASAL"
+    },
+    "down": {
+      "1": "SYRIN",
+      "2": "VRAKA",
+      "3": "EKSOS",
+      "4": "VEKNA",
+      "5": "AREAL"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "svirra",
+      "2": "rådgiverer",
+      "3": "snarpe",
+      "4": "tegningene",
+      "5": "språklyd"
+    },
+    "down": {
+      "1": "prydbusk",
+      "2": "avvist",
+      "3": "avgass",
+      "4": "veiknet",
+      "5": "territorium"
+    }
+  }
+}

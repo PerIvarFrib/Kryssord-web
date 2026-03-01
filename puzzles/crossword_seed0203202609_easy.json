@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 11:52:26",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "DUMPA",
+    "ATOLL",
+    "UFRED",
+    "DREIE",
+    "TINER"
+  ],
+  "answers": {
+    "across": {
+      "1": "DUMPA",
+      "2": "ATOLL",
+      "3": "UFRED",
+      "4": "DREIE",
+      "5": "TINER"
+    },
+    "down": {
+      "1": "DAUDT",
+      "2": "UTFRI",
+      "3": "MOREN",
+      "4": "PLEIE",
+      "5": "ALDER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "hulene",
+      "2": "koralløy",
+      "3": "stridighet",
+      "4": "rotere",
+      "5": "smelter"
+    },
+    "down": {
+      "1": "livløst",
+      "2": "frigjøre",
+      "3": "onkelen",
+      "4": "forpleining",
+      "5": "ungdomstid"
+    }
+  }
+}

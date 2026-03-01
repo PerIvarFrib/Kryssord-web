@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 14:07:04",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "GOUDA",
+    "RASEN",
+    "USAMS",
+    "VEGRE",
+    "ANTAS"
+  ],
+  "answers": {
+    "across": {
+      "1": "GOUDA",
+      "2": "RASEN",
+      "3": "USAMS",
+      "4": "VEGRE",
+      "5": "ANTAS"
+    },
+    "down": {
+      "1": "GRUVA",
+      "2": "OASEN",
+      "3": "USAGT",
+      "4": "DEMRA",
+      "5": "ANSES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "ostetype",
+      "2": "familien",
+      "3": "uenige",
+      "4": "stritte imot",
+      "5": "anslås"
+    },
+    "down": {
+      "1": "sjakten",
+      "2": "byparken",
+      "3": "hemmeligholdt",
+      "4": "lysnet",
+      "5": "bedømmes"
+    }
+  }
+}

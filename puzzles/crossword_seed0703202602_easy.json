@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 12:21:33",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SKUBB",
+    "TOTAL",
+    "ELGKU",
+    "KJAKE",
+    "TEVES"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKUBB",
+      "2": "TOTAL",
+      "3": "ELGKU",
+      "4": "KJAKE",
+      "5": "TEVES"
+    },
+    "down": {
+      "1": "STEKT",
+      "2": "KOLJE",
+      "3": "UTGAV",
+      "4": "BAKKE",
+      "5": "BLUES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dunk",
+      "2": "slutt-tall",
+      "3": "hjortedyr",
+      "4": "neserygg",
+      "5": "snuses"
+    },
+    "down": {
+      "1": "brent",
+      "2": "torskefisk",
+      "3": "redigerte",
+      "4": "fjellside",
+      "5": "musikksjanger"
+    }
+  }
+}

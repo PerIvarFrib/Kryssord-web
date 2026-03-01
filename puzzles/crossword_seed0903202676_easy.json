@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 13:17:24",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SJELA",
+    "TALER",
+    "OMGAV",
+    "FRESE",
+    "FARER"
+  ],
+  "answers": {
+    "across": {
+      "1": "SJELA",
+      "2": "TALER",
+      "3": "OMGAV",
+      "4": "FRESE",
+      "5": "FARER"
+    },
+    "down": {
+      "1": "STOFF",
+      "2": "JAMRA",
+      "3": "ELGER",
+      "4": "LEASE",
+      "5": "ARVER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bevisstheten",
+      "2": "snakker",
+      "3": "omkranset",
+      "4": "knitre",
+      "5": "risikoer"
+    },
+    "down": {
+      "1": "purinbase",
+      "2": "klynkede",
+      "3": "hjortedyr",
+      "4": "leie ut",
+      "5": "overtar"
+    }
+  }
+}

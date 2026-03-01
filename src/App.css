@@ -602,7 +602,7 @@ button.warning {
 #check-letter::before,
 #check-word::before,
 #check-all::before {
-    content: "✔";
+    content: "🔍";
 }
 
 #reveal-letter::before,

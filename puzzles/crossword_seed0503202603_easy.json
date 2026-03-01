@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 12:02:28",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "SKULK",
+    "LINER",
+    "ORIGO",
+    "SKOEN",
+    "SANNE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKULK",
+      "2": "LINER",
+      "3": "ORIGO",
+      "4": "SKOEN",
+      "5": "SANNE"
+    },
+    "down": {
+      "1": "SLOSS",
+      "2": "KIRKA",
+      "3": "UNION",
+      "4": "LEGEN",
+      "5": "KRONE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "unnasluntring",
+      "2": "tauer",
+      "3": "nullpunkt",
+      "4": "fottøyet",
+      "5": "bekrefte"
+    },
+    "down": {
+      "1": "kjemper",
+      "2": "gudshuset",
+      "3": "allianse",
+      "4": "homeopaten",
+      "5": "sølvmynt"
+    }
+  }
+}
