@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 14:40:53",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "NASKE",
+    "AVKOM",
+    "STILN",
+    "KAKLE",
+    "ASKER"
+  ],
+  "answers": {
+    "across": {
+      "1": "NASKE",
+      "2": "AVKOM",
+      "3": "STILN",
+      "4": "KAKLE",
+      "5": "ASKER"
+    },
+    "down": {
+      "1": "NASKA",
+      "2": "AVTAS",
+      "3": "SKIKK",
+      "4": "KOLLE",
+      "5": "EMNER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "knabbe",
+      "2": "etterkommerer",
+      "3": "blekn",
+      "4": "skravle",
+      "5": "østlandskommune"
+    },
+    "down": {
+      "1": "knabbet",
+      "2": "forsvinnes",
+      "3": "stand",
+      "4": "fjellknatt",
+      "5": "temaer"
+    }
+  }
+}

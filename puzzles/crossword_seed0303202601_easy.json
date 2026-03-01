@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 11:53:18",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "TROER",
+    "RINGA",
+    "UGAGN",
+    "EGNET",
+    "REISE"
+  ],
+  "answers": {
+    "across": {
+      "1": "TROER",
+      "2": "RINGA",
+      "3": "UGAGN",
+      "4": "EGNET",
+      "5": "REISE"
+    },
+    "down": {
+      "1": "TRUER",
+      "2": "RIGGE",
+      "3": "ONANI",
+      "4": "EGGES",
+      "5": "RANTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "overbevisninger",
+      "2": "kimet",
+      "3": "skadeverk",
+      "4": "brukbar",
+      "5": "biltur"
+    },
+    "down": {
+      "1": "terroriserer",
+      "2": "forsyne",
+      "3": "kjønnslig selvtilfredsstillelse",
+      "4": "oppmuntres",
+      "5": "knabbet"
+    }
+  }
+}

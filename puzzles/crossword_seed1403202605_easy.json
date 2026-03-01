@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 14:02:27",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "YMTES",
+    "SURRA",
+    "TRUMF",
+    "ERTET",
+    "TETTA"
+  ],
+  "answers": {
+    "across": {
+      "1": "YMTES",
+      "2": "SURRA",
+      "3": "TRUMF",
+      "4": "ERTET",
+      "5": "TETTA"
+    },
+    "down": {
+      "1": "YSTET",
+      "2": "MURRE",
+      "3": "TRUTT",
+      "4": "ERMET",
+      "5": "SAFTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tiskes",
+      "2": "virvlet",
+      "3": "spillkort",
+      "4": "forulempet",
+      "5": "lukket"
+    },
+    "down": {
+      "1": "foredlet",
+      "2": "brumme",
+      "3": "ufortrødent",
+      "4": "plaggdelen",
+      "5": "miksturen"
+    }
+  }
+}

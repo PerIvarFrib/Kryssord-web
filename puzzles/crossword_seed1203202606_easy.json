@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 13:37:26",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "TVIST",
+    "JAKKE",
+    "UKLAR",
+    "KNEPP",
+    "TESTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "TVIST",
+      "2": "JAKKE",
+      "3": "UKLAR",
+      "4": "KNEPP",
+      "5": "TESTE"
+    },
+    "down": {
+      "1": "TJUKT",
+      "2": "VAKNE",
+      "3": "IKLES",
+      "4": "SKAPT",
+      "5": "TERPE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "krangel",
+      "2": "undertrøye",
+      "3": "tvetydig",
+      "4": "klemting",
+      "5": "undersøke"
+    },
+    "down": {
+      "1": "stort",
+      "2": "oppvakte",
+      "3": "dekoreres",
+      "4": "frembrakt",
+      "5": "repetere"
+    }
+  }
+}

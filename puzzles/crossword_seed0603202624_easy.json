@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 12:19:44",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "GODTA",
+    "ARRIG",
+    "SKADD",
+    "JAGDE",
+    "ENSER"
+  ],
+  "answers": {
+    "across": {
+      "1": "GODTA",
+      "2": "ARRIG",
+      "3": "SKADD",
+      "4": "JAGDE",
+      "5": "ENSER"
+    },
+    "down": {
+      "1": "GASJE",
+      "2": "ORKAN",
+      "3": "DRAGS",
+      "4": "TIDDE",
+      "5": "AGDER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "akseptere",
+      "2": "illsint",
+      "3": "kvestet",
+      "4": "stormet",
+      "5": "oppdager"
+    },
+    "down": {
+      "1": "bergingslønn",
+      "2": "vindsystem",
+      "3": "blaffs",
+      "4": "ble taus",
+      "5": "fylke i norge"
+    }
+  }
+}

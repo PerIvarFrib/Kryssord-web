@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 13:57:54",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "YPPIG",
+    "RULLA",
+    "KRATT",
+    "ERGRE",
+    "NEGER"
+  ],
+  "answers": {
+    "across": {
+      "1": "YPPIG",
+      "2": "RULLA",
+      "3": "KRATT",
+      "4": "ERGRE",
+      "5": "NEGER"
+    },
+    "down": {
+      "1": "YRKEN",
+      "2": "PURRE",
+      "3": "PLAGG",
+      "4": "ILTRE",
+      "5": "GATER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fyldig",
+      "2": "virvlet",
+      "3": "skogbryn",
+      "4": "forarge",
+      "5": "afroamerikansk"
+    },
+    "down": {
+      "1": "pedagogen",
+      "2": "grønnsaksplante",
+      "3": "ullbukse",
+      "4": "forbitrede",
+      "5": "bilveier"
+    }
+  }
+}

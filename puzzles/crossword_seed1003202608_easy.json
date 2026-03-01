@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-02-28 13:22:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "FAKTA",
+    "AVLEN",
+    "BLINK",
+    "LYKKE",
+    "ESKEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "FAKTA",
+      "2": "AVLEN",
+      "3": "BLINK",
+      "4": "LYKKE",
+      "5": "ESKEN"
+    },
+    "down": {
+      "1": "FABLE",
+      "2": "AVLYS",
+      "3": "KLIKK",
+      "4": "TENKE",
+      "5": "ANKEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fenomener",
+      "2": "dretten",
+      "3": "skytemål",
+      "4": "fornøyelse",
+      "5": "trekassen"
+    },
+    "down": {
+      "1": "skrøne",
+      "2": "avbryt",
+      "3": "klemting",
+      "4": "overveie",
+      "5": "klagemålet"
+    }
+  }
+}
