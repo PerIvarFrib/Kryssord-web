@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-03-15 10:35:30",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    "#..##.#.",
+    "........",
+    "#.#..#..",
+    "#..#....",
+    "......#.",
+    "#......."
+  ],
+  "solved_layout": [
+    "#RN##M#V",
+    "RYSTELSE",
+    "#S#TB#AR",
+    "#TC#BYGG",
+    "HERMET#E",
+    "#RUSTENT"
+  ],
+  "answers": {
+    "across": {
+      "1": "RN",
+      "2": "RYSTELSE",
+      "3": "TB",
+      "4": "AR",
+      "5": "TC",
+      "6": "BYGG",
+      "7": "HERMET",
+      "8": "RUSTENT"
+    },
+    "down": {
+      "1": "RYSTER",
+      "2": "NS",
+      "3": "CRU",
+      "4": "TT",
+      "5": "MS",
+      "6": "EBBET",
+      "7": "ML",
+      "8": "YTE",
+      "9": "SAG",
+      "10": "VERGET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkortelse for grunnstoff",
+      "2": "etterskjelv",
+      "3": "dataenhet",
+      "4": "stat i usa",
+      "5": "kjemisk tegn",
+      "6": "bilhus",
+      "7": "etterlignet",
+      "8": "slitta"
+    },
+    "down": {
+      "1": "skremmer",
+      "2": "båtforkortelse",
+      "3": "vinbetegnelse",
+      "4": "båtforkortelse",
+      "5": "båtforkortelse",
+      "6": "minket",
+      "7": "volumenhet",
+      "8": "tilføre",
+      "9": "arbeidsredskap",
+      "10": "forsvart"
+    }
+  }
+}
