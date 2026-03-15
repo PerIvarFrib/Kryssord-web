@@ -30,6 +30,10 @@ export function buildWordPositions(puzzle: CrosswordPuzzle): WordPositions {
         length++;
       }
 
+      if (length < 2) {
+        continue;
+      }
+
       const numberStr = String(acrossIndex);
       // Only create a word if we have a corresponding clue/answer
       if (
@@ -66,6 +70,10 @@ export function buildWordPositions(puzzle: CrosswordPuzzle): WordPositions {
       let length = 0;
       while (row + length < rows && puzzle.layout[row + length][col] !== "#") {
         length++;
+      }
+
+      if (length < 2) {
+        continue;
       }
 
       const numberStr = String(downIndex);

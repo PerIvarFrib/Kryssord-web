@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:38:20",
+    "seed": 1903202601,
+    "layout_seed": 1903202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#.#",
+    "#.....",
+    "#.....",
+    "#....."
+  ],
+  "solved_layout": [
+    "#GB#H#",
+    "#ARGES",
+    "#SURRE",
+    "#SMUKK"
+  ],
+  "answers": {
+    "across": {
+      "1": "GB",
+      "2": "ARGES",
+      "3": "SURRE",
+      "4": "SMUKK"
+    },
+    "down": {
+      "1": "GASS",
+      "2": "BRUM",
+      "3": "GRU",
+      "4": "HERK",
+      "5": "SEK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "harmes",
+      "3": "rotere",
+      "4": "praktfull"
+    },
+    "down": {
+      "1": "brennstoff",
+      "2": "brøling",
+      "3": "forferdelse",
+      "4": "svinerier",
+      "5": "tidsenhet"
+    }
+  }
+}

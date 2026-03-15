@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:39:37",
+    "seed": 2003202601,
+    "layout_seed": 2003202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.",
+    "#.....",
+    "......",
+    "#....."
+  ],
+  "solved_layout": [
+    "###T#D",
+    "#BØYDE",
+    "DEMPES",
+    "#STERK"
+  ],
+  "answers": {
+    "across": {
+      "1": "BØYDE",
+      "2": "DEMPES",
+      "3": "STERK"
+    },
+    "down": {
+      "1": "BES",
+      "2": "ØMT",
+      "3": "TYPE",
+      "4": "DER",
+      "5": "DESK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "krummet",
+      "2": "svekkes",
+      "3": "barsk"
+    },
+    "down": {
+      "1": "bønnfalles",
+      "2": "mottakelig",
+      "3": "kategori",
+      "4": "pronomen",
+      "5": "skrivebord"
+    }
+  }
+}

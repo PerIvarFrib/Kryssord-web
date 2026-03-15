@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-03-12 08:05:53",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy",
+    "language": "norwegian"
+  },
+  "layout": [
+    "#..##..#",
+    ".......#",
+    "........",
+    "#.......",
+    "........",
+    "#...#.#."
+  ],
+  "solved_layout": [
+    "#VG##BY#",
+    "PENSLET#",
+    "AGITERES",
+    "#LEIDERE",
+    "DYRLEGER",
+    "#SEK#N#K"
+  ],
+  "answers": {
+    "across": {
+      "1": "VG",
+      "2": "BY",
+      "3": "PENSLET",
+      "4": "AGITERES",
+      "5": "LEIDERE",
+      "6": "DYRLEGER",
+      "7": "SEK"
+    },
+    "down": {
+      "1": "PA",
+      "2": "VEGLYS",
+      "3": "GNIERE",
+      "4": "STILK",
+      "5": "LEDE",
+      "6": "BEREGN",
+      "7": "YTERE",
+      "8": "SERK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "storbyavis",
+      "2": "damiata",
+      "3": "overstrøket",
+      "4": "oppildnes",
+      "5": "trapper",
+      "6": "veterinærer",
+      "7": "tidsenhet"
+    },
+    "down": {
+      "1": "vanlig forkortelse",
+      "2": "gatebelysning",
+      "3": "gjerrigknarker",
+      "4": "fruktknute",
+      "5": "befale",
+      "6": "bedøm",
+      "7": "donatorer",
+      "8": "kjole"
+    }
+  }
+}
