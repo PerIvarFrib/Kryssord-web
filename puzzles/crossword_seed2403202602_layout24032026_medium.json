@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:57:01",
+    "seed": 2403202602,
+    "layout_seed": 2403202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.#.",
+    ".......",
+    "#......",
+    "......."
+  ],
+  "solved_layout": [
+    "####B#Ø",
+    "FOTGIKK",
+    "#VARSLE",
+    "ANROPES"
+  ],
+  "answers": {
+    "across": {
+      "1": "FOTGIKK",
+      "2": "VARSLE",
+      "3": "ANROPES"
+    },
+    "down": {
+      "1": "OVN",
+      "2": "TAR",
+      "3": "GRO",
+      "4": "BISP",
+      "5": "KLE",
+      "6": "ØKES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "overvåket",
+      "2": "opplyse",
+      "3": "bønnfalles"
+    },
+    "down": {
+      "1": "oppvarmingskilde",
+      "2": "repeterer",
+      "3": "vokse",
+      "4": "geistlig overhode",
+      "5": "dekke til",
+      "6": "understøttes"
+    }
+  }
+}

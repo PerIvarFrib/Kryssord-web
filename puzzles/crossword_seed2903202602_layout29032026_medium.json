@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 23:04:42",
+    "seed": 2903202602,
+    "layout_seed": 2903202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.#.",
+    "#......",
+    ".......",
+    "#......"
+  ],
+  "solved_layout": [
+    "####P#V",
+    "#UTVISE",
+    "UFARLIG",
+    "#SKITNE"
+  ],
+  "answers": {
+    "across": {
+      "1": "UTVISE",
+      "2": "UFARLIG",
+      "3": "SKITNE"
+    },
+    "down": {
+      "1": "UFS",
+      "2": "TAK",
+      "3": "VRI",
+      "4": "PILT",
+      "5": "SIN",
+      "6": "VEGE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "utelukke",
+      "2": "harmløs",
+      "3": "grisete"
+    },
+    "down": {
+      "1": "fjellknaus",
+      "2": "deksel",
+      "3": "vrenge",
+      "4": "trivlet",
+      "5": "matematisk mål",
+      "6": "veie"
+    }
+  }
+}

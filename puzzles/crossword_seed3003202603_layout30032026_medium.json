@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 23:06:26",
+    "seed": 3003202603,
+    "layout_seed": 3003202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#..#.",
+    "#......",
+    ".......",
+    "#.....#"
+  ],
+  "solved_layout": [
+    "#E#VA#S",
+    "#RØYNDA",
+    "HODEKÅL",
+    "#STRAM#"
+  ],
+  "answers": {
+    "across": {
+      "1": "VA",
+      "2": "RØYNDA",
+      "3": "HODEKÅL",
+      "4": "STRAM"
+    },
+    "down": {
+      "1": "EROS",
+      "2": "ØDT",
+      "3": "VYER",
+      "4": "ANKA",
+      "5": "DÅM",
+      "6": "SAL"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "stat i usa",
+      "2": "virkeligheta",
+      "3": "grønnsakplante",
+      "4": "steil"
+    },
+    "down": {
+      "1": "kjærlighetsgud",
+      "2": "forlatt",
+      "3": "drømmer",
+      "4": "klaget over",
+      "5": "lukt",
+      "6": "instrumentdel"
+    }
+  }
+}

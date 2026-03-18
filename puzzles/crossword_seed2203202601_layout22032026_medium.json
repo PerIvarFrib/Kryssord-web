@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:54:13",
+    "seed": 2203202601,
+    "layout_seed": 2203202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#.#.",
+    "#......",
+    "#......",
+    "......#"
+  ],
+  "solved_layout": [
+    "##S#P#L",
+    "#HÅNEDE",
+    "#EPOKER",
+    "BRAKET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "HÅNEDE",
+      "2": "EPOKER",
+      "3": "BRAKET"
+    },
+    "down": {
+      "1": "HER",
+      "2": "SÅPA",
+      "3": "NOK",
+      "4": "PEKE",
+      "5": "DET",
+      "6": "LER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "foraktete",
+      "2": "tidsalderer",
+      "3": "brusingen"
+    },
+    "down": {
+      "1": "engelsk pronomen",
+      "2": "vaskemidlet",
+      "3": "alltid",
+      "4": "markere",
+      "5": "svensk pronomen",
+      "6": "hånflirer"
+    }
+  }
+}

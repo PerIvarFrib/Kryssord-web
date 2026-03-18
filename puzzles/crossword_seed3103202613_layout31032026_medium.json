@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 23:09:36",
+    "seed": 3103202613,
+    "layout_seed": 3103202613,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.##.",
+    "#......",
+    "#......",
+    "......."
+  ],
+  "solved_layout": [
+    "###L##F",
+    "#KRASJA",
+    "#RUSTEN",
+    "PUSSIGE"
+  ],
+  "answers": {
+    "across": {
+      "1": "KRASJA",
+      "2": "RUSTEN",
+      "3": "PUSSIGE"
+    },
+    "down": {
+      "1": "KRU",
+      "2": "RUS",
+      "3": "LASS",
+      "4": "STI",
+      "5": "JEG",
+      "6": "FANE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kollidert",
+      "2": "slitt",
+      "3": "kuriøse"
+    },
+    "down": {
+      "1": "afrikansk folkegruppe",
+      "2": "dop",
+      "3": "stabel",
+      "4": "bilvei",
+      "5": "min person",
+      "6": "vimpel"
+    }
+  }
+}

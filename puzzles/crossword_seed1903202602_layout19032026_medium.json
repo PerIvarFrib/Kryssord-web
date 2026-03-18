@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:47:33",
+    "seed": 1903202602,
+    "layout_seed": 1903202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#.##",
+    "#......",
+    ".......",
+    "#......"
+  ],
+  "solved_layout": [
+    "#HE#D##",
+    "#UTSYNA",
+    "KLUMPER",
+    "#LISTIG"
+  ],
+  "answers": {
+    "across": {
+      "1": "HE",
+      "2": "UTSYNA",
+      "3": "KLUMPER",
+      "4": "LISTIG"
+    },
+    "down": {
+      "1": "HULL",
+      "2": "ETUI",
+      "3": "SMS",
+      "4": "DYPT",
+      "5": "NEI",
+      "6": "ARG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkortelse for grunnstoff",
+      "2": "perspektivene",
+      "3": "klatter",
+      "4": "finurlig"
+    },
+    "down": {
+      "1": "sprekk",
+      "2": "plasteske",
+      "3": "mobilmelding",
+      "4": "bunnløst",
+      "5": "nekteord",
+      "6": "harmdirrende"
+    }
+  }
+}

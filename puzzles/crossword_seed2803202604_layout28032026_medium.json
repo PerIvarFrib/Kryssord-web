@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 23:03:12",
+    "seed": 2803202604,
+    "layout_seed": 2803202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..###.",
+    "#......",
+    ".......",
+    "#......"
+  ],
+  "solved_layout": [
+    "#KB###Ø",
+    "#ROMMÅL",
+    "BUKTETE",
+    "#SABLER"
+  ],
+  "answers": {
+    "across": {
+      "1": "KB",
+      "2": "ROMMÅL",
+      "3": "BUKTETE",
+      "4": "SABLER"
+    },
+    "down": {
+      "1": "KRUS",
+      "2": "BOKA",
+      "3": "MTB",
+      "4": "MEL",
+      "5": "ÅTE",
+      "6": "ØLER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "volum",
+      "3": "slyngede",
+      "4": "geværer"
+    },
+    "down": {
+      "1": "drikkebeger",
+      "2": "leseboken",
+      "3": "militærfartøy",
+      "4": "kalkmjøl",
+      "5": "makktugge",
+      "6": "brenneviner"
+    }
+  }
+}

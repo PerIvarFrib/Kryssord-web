@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:58:30",
+    "seed": 2503202602,
+    "layout_seed": 2503202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#..#",
+    "#......",
+    "#......",
+    "..#...."
+  ],
+  "solved_layout": [
+    "#IN#SB#",
+    "#BUSKER",
+    "#ITALIA",
+    "MS#KINN"
+  ],
+  "answers": {
+    "across": {
+      "1": "IN",
+      "2": "SB",
+      "3": "BUSKER",
+      "4": "ITALIA",
+      "5": "MS",
+      "6": "KINN"
+    },
+    "down": {
+      "1": "IBIS",
+      "2": "NUT",
+      "3": "SAK",
+      "4": "SKLI",
+      "5": "BEIN",
+      "6": "RAN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tysk preposisjon",
+      "2": "skipsforkortelse",
+      "3": "kulturplanter",
+      "4": "stat i europa",
+      "5": "båtforkortelse",
+      "6": "del av ansikt"
+    },
+    "down": {
+      "1": "storkefugl",
+      "2": "fjelltopp",
+      "3": "tvist",
+      "4": "gleppe",
+      "5": "skjelett",
+      "6": "voldstyveri"
+    }
+  }
+}

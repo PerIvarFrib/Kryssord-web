@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:49:53",
+    "seed": 2003202603,
+    "layout_seed": 2003202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.#.",
+    ".......",
+    "#......",
+    "......."
+  ],
+  "solved_layout": [
+    "####V#S",
+    "GAULEDE",
+    "#REIRET",
+    "SKRAKLE"
+  ],
+  "answers": {
+    "across": {
+      "1": "GAULEDE",
+      "2": "REIRET",
+      "3": "SKRAKLE"
+    },
+    "down": {
+      "1": "ARK",
+      "2": "UER",
+      "3": "LIA",
+      "4": "VERK",
+      "5": "DEL",
+      "6": "SETE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "brølte",
+      "2": "tilfluktsstedet",
+      "3": "klapre"
+    },
+    "down": {
+      "1": "motorbåt",
+      "2": "saltvannsfisk",
+      "3": "kjent sted i telemark",
+      "4": "produksjoner",
+      "5": "fase",
+      "6": "del av stol"
+    }
+  }
+}

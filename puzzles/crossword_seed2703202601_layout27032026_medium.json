@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 23:00:40",
+    "seed": 2703202601,
+    "layout_seed": 2703202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#.##",
+    "#......",
+    "#......",
+    "......."
+  ],
+  "solved_layout": [
+    "#NB#M##",
+    "#ARKIVA",
+    "#BOWLER",
+    "KOKHEIT"
+  ],
+  "answers": {
+    "across": {
+      "1": "NB",
+      "2": "ARKIVA",
+      "3": "BOWLER",
+      "4": "KOKHEIT"
+    },
+    "down": {
+      "1": "NABO",
+      "2": "BROK",
+      "3": "KWH",
+      "4": "MILE",
+      "5": "VEI",
+      "6": "ART"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fartøy forkortelse",
+      "2": "brevsamlingene",
+      "3": "driver idrett",
+      "4": "skåldvarm"
+    },
+    "down": {
+      "1": "sidekamerat",
+      "2": "bunadsbukse",
+      "3": "energienhet",
+      "4": "lengdeenhet",
+      "5": "bilveg",
+      "6": "undergruppe"
+    }
+  }
+}

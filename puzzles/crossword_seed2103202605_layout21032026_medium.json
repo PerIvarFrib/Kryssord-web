@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:53:21",
+    "seed": 2103202605,
+    "layout_seed": 2103202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##..#",
+    "#......",
+    ".......",
+    "#......"
+  ],
+  "solved_layout": [
+    "#E##NS#",
+    "#SOLOEN",
+    "SKRYTET",
+    "#ADVERB"
+  ],
+  "answers": {
+    "across": {
+      "1": "NS",
+      "2": "SOLOEN",
+      "3": "SKRYTET",
+      "4": "ADVERB"
+    },
+    "down": {
+      "1": "ESKA",
+      "2": "ORD",
+      "3": "LYV",
+      "4": "NOTE",
+      "5": "SEER",
+      "6": "NTB"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "båtforkortelse",
+      "2": "musikkstykket",
+      "3": "lovtalen",
+      "4": "forut"
+    },
+    "down": {
+      "1": "krukken",
+      "2": "språktegn",
+      "3": "ljug",
+      "4": "merknad",
+      "5": "iakttager",
+      "6": "serviceinstitusjon"
+    }
+  }
+}

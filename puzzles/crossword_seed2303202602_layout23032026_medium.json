@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-18 22:55:50",
+    "seed": 2303202602,
+    "layout_seed": 2303202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#.##",
+    ".......",
+    ".......",
+    "#......"
+  ],
+  "solved_layout": [
+    "##S#F##",
+    "NATTELY",
+    "IDEALET",
+    "#AVLESE"
+  ],
+  "answers": {
+    "across": {
+      "1": "NATTELY",
+      "2": "IDEALET",
+      "3": "AVLESE"
+    },
+    "down": {
+      "1": "NI",
+      "2": "ADA",
+      "3": "STEV",
+      "4": "TAL",
+      "5": "FELE",
+      "6": "LES",
+      "7": "YTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "losjier",
+      "2": "forbildet",
+      "3": "observere"
+    },
+    "down": {
+      "1": "kjemisk tegn",
+      "2": "bibelsk kvinnenavn",
+      "3": "verselinje",
+      "4": "desimalrekke",
+      "5": "strengeinstrument",
+      "6": "oppdag",
+      "7": "frambringe"
+    }
+  }
+}

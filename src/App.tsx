@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Header from "./components/Header";
 import PuzzleSelector, { type PuzzleOption } from "./components/PuzzleSelector";
 import PuzzleInfoBar from "./components/PuzzleInfoBar";
@@ -39,8 +39,14 @@ const getPuzzleForDate = (date: Date): CrosswordPuzzle | null => {
   );
 
   if (!entry) {
+    console.info("[PuzzleLoader] No puzzle matched date key", { dateKey });
     return null;
   }
+
+  console.info("[PuzzleLoader] Matched puzzle file", {
+    dateKey,
+    path: entry[0],
+  });
 
   const mod = entry[1] as any;
   const puzzle = (mod && mod.default) || mod;
@@ -85,16 +91,21 @@ function App() {
     Record<string, CrosswordProgressSnapshot | undefined>
   >({});
 
-  const { state, actions } = useCrosswordController(
-    puzzle,
-    activePuzzleKey ? (progressByKey[activePuzzleKey] ?? null) : null,
-    (snapshot) => {
+  const handleProgressChange = useCallback(
+    (snapshot: CrosswordProgressSnapshot) => {
       if (!activePuzzleKey) return;
       setProgressByKey((prev) => ({
         ...prev,
         [activePuzzleKey]: snapshot,
       }));
     },
+    [activePuzzleKey],
+  );
+
+  const { state, actions } = useCrosswordController(
+    puzzle,
+    activePuzzleKey ? (progressByKey[activePuzzleKey] ?? null) : null,
+    handleProgressChange,
   );
 
   // Tilgjengelige puslespillvalg i menyen.
@@ -134,6 +145,10 @@ function App() {
 
     if (!nextPuzzle) {
       nextPuzzle = samplePuzzleJson as CrosswordPuzzle;
+      console.info("[PuzzleLoader] Using fallback puzzle file", {
+        path: "../puzzles/crossword_seed0402202601_medium.json",
+        selectedPuzzleId,
+      });
     }
 
     setCurrentPuzzleKey(puzzleKey);
