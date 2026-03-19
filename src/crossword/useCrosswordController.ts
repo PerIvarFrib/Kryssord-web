@@ -234,7 +234,16 @@ export function useCrosswordController(
     if (!puzzle) return;
     if (puzzle.layout[row][col] === "#") return;
 
-    const dir = newDirection ?? direction;
+    let dir = newDirection ?? direction;
+
+    // If the desired direction has no word for this cell, force the other direction
+    if (!getWordKeyForCell(row, col, dir)) {
+      const otherDir: Direction = dir === "across" ? "down" : "across";
+      if (getWordKeyForCell(row, col, otherDir)) {
+        dir = otherDir;
+      }
+    }
+
     setSelectedCell({ row, col });
     setDirection(dir);
     const key = getWordKeyForCell(row, col, dir);

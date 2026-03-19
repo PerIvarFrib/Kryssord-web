@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-23 10:42:20",
+    "seed": 104202615,
+    "layout_seed": 1103202615,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    "#....#...",
+    "..#...#..",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##R#SM##D",
+    "#FORKLARE",
+    "#REIR#PIP",
+    "NE#SEK#MO",
+    "#LITIUMET",
+    "ØSTE#ANSA"
+  ],
+  "answers": {
+    "across": {
+      "1": "SM",
+      "2": "FORKLARE",
+      "3": "REIR",
+      "4": "PIP",
+      "5": "NE",
+      "6": "SEK",
+      "7": "MO",
+      "8": "LITIUMET",
+      "9": "ØSTE",
+      "10": "ANSA"
+    },
+    "down": {
+      "1": "FRELS",
+      "2": "ROE",
+      "3": "IT",
+      "4": "RISTE",
+      "5": "SKREI",
+      "6": "ML",
+      "7": "KUA",
+      "8": "AP",
+      "9": "MN",
+      "10": "RIMES",
+      "11": "DEPOTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "bekrefte",
+      "3": "rovfuglbolig",
+      "4": "klynk",
+      "5": "kjemisk tegn",
+      "6": "tidsenhet",
+      "7": "stat i usa",
+      "8": "metallet",
+      "9": "pumpet ut",
+      "10": "kritisert"
+    },
+    "down": {
+      "1": "forløs",
+      "2": "dempe",
+      "3": "engelsk pronomen",
+      "4": "skjelve",
+      "5": "torsk",
+      "6": "volumenhet",
+      "7": "husdyret",
+      "8": "politisk parti",
+      "9": "kjemisk tegn",
+      "10": "diktes",
+      "11": "utgangspunktene"
+    }
+  }
+}

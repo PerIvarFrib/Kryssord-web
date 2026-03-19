@@ -420,6 +420,20 @@ button.warning {
     color: var(--primary-color);
 }
 
+.completion-next-puzzle {
+    margin: -8px 0 18px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.completion-next-puzzle-time {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-variant-numeric: tabular-nums;
+}
+
 .completion-form {
     margin-bottom: 18px;
 }

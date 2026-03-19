@@ -1,5 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { HighscoreEntry } from "../storage/highscore";
+
+const getMillisecondsUntilNextPuzzle = () => {
+  const now = new Date();
+  const nextPublishTime = new Date(now);
+  nextPublishTime.setHours(24, 0, 0, 0);
+  return Math.max(0, nextPublishTime.getTime() - now.getTime());
+};
+
+const formatTimeUntilNextPuzzle = (remainingMs: number) => {
+  const totalSeconds = Math.max(0, Math.floor(remainingMs / 1000));
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${hours.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+};
 
 export interface CompletionPopupProps {
   isOpen: boolean;
@@ -65,6 +83,23 @@ export function CompletionPopup({
   canSubmitHighscore,
 }: CompletionPopupProps) {
   const [name, setName] = useState("");
+  const [timeUntilNextPuzzle, setTimeUntilNextPuzzle] = useState(
+    getMillisecondsUntilNextPuzzle(),
+  );
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    setTimeUntilNextPuzzle(getMillisecondsUntilNextPuzzle());
+
+    const intervalId = window.setInterval(() => {
+      setTimeUntilNextPuzzle(getMillisecondsUntilNextPuzzle());
+    }, 1000);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -93,6 +128,13 @@ export function CompletionPopup({
           <span className="completion-score-label">Din poengsum</span>
           <span className="completion-score-value">{score}</span>
         </div>
+
+        <p className="completion-next-puzzle" aria-live="polite">
+          Nytt kryssord publiseres om
+          <span className="completion-next-puzzle-time">
+            {formatTimeUntilNextPuzzle(timeUntilNextPuzzle)}
+          </span>
+        </p>
 
         {canSubmitHighscore ? (
           !hasSubmittedName ? (
