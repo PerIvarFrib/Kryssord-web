@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 20:27:24",
+    "seed": 1704202631,
+    "layout_seed": 1704202631,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##M#SM##O",
+    "#BEFESTER",
+    "LETES#UNG",
+    "#SEI#ORDA",
+    "#KOLONNEN",
+    "#URTIDER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SM",
+      "2": "BEFESTER",
+      "3": "LETES",
+      "4": "UNG",
+      "5": "SEI",
+      "6": "ORDA",
+      "7": "KOLONNEN",
+      "8": "URTIDER"
+    },
+    "down": {
+      "1": "BESKU",
+      "2": "METEOR",
+      "3": "FEILT",
+      "4": "SES",
+      "5": "OI",
+      "6": "MS",
+      "7": "OND",
+      "8": "TURNE",
+      "9": "ENDER",
+      "10": "ORGAN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "barrikaderer",
+      "3": "utforskes",
+      "4": "daggammel",
+      "5": "fisk i havet",
+      "6": "antonymene",
+      "7": "raden",
+      "8": "epoker"
+    },
+    "down": {
+      "1": "betrakt",
+      "2": "himmelfenomen",
+      "3": "bomma",
+      "4": "speides",
+      "5": "engelsk pronomen",
+      "6": "skipsforkortelse",
+      "7": "hjerteløs",
+      "8": "europaturné",
+      "9": "tar slutt",
+      "10": "reseptor"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 17:26:07",
+    "seed": 804202603,
+    "layout_seed": 804202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "######..#",
+    "#........",
+    ".........",
+    "#....#...",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "######SB#",
+    "#KLIENTER",
+    "PLASTPOSE",
+    "#EGEN#KAV",
+    "UBETENKTE",
+    "#TRE#SATT"
+  ],
+  "answers": {
+    "across": {
+      "1": "SB",
+      "2": "KLIENTER",
+      "3": "PLASTPOSE",
+      "4": "EGEN",
+      "5": "KAV",
+      "6": "UBETENKTE",
+      "7": "TRE",
+      "8": "SATT"
+    },
+    "down": {
+      "1": "KLEBT",
+      "2": "LAGER",
+      "3": "ISETE",
+      "4": "ETNE",
+      "5": "NP",
+      "6": "NS",
+      "7": "STOKKA",
+      "8": "BESATT",
+      "9": "REVET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skipsforkortelse",
+      "2": "kjøperer",
+      "3": "oppbevaringsplass",
+      "4": "spesiell",
+      "5": "ståk",
+      "6": "uforsiktige",
+      "7": "alder",
+      "8": "benket"
+    },
+    "down": {
+      "1": "klistret",
+      "2": "magasinforråd",
+      "3": "tilfrosset",
+      "4": "sted i vestland",
+      "5": "politisk organisasjon",
+      "6": "båtforkortelse",
+      "7": "blandet opp",
+      "8": "proppet",
+      "9": "sanert"
+    }
+  }
+}

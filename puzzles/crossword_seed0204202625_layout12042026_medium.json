@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 18:30:20",
+    "seed": 1204202625,
+    "layout_seed": 1204202625,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##..#.#",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#N##PA#B#",
+    "#AURIKKEL",
+    "YMTE#TOGE",
+    "#SEIM#FÅS",
+    "#OMSTØTTE",
+    "#STABLET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "PA",
+      "2": "AURIKKEL",
+      "3": "YMTE",
+      "4": "TOGE",
+      "5": "SEIM",
+      "6": "FÅS",
+      "7": "OMSTØTTE",
+      "8": "STABLET"
+    },
+    "down": {
+      "1": "NAMSOS",
+      "2": "UTEMT",
+      "3": "REISA",
+      "4": "PI",
+      "5": "MTB",
+      "6": "AKT",
+      "7": "ØL",
+      "8": "KOFTE",
+      "9": "BEGÅTT",
+      "10": "LESE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vanlig forkortelse",
+      "2": "prydblomst",
+      "3": "formulere",
+      "4": "marsjere",
+      "5": "kjent sted i hordaland",
+      "6": "gjøres",
+      "7": "tilbakekalte",
+      "8": "lastet"
+    },
+    "down": {
+      "1": "kommune i nord trøndelag",
+      "2": "usivilisert",
+      "3": "forskningsferden",
+      "4": "bokstavtegn",
+      "5": "marinefartøy",
+      "6": "bolk",
+      "7": "drikkevare",
+      "8": "trøye",
+      "9": "gjennomført",
+      "10": "oppdage"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 16:28:22",
+    "seed": 604202605,
+    "layout_seed": 604202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    "#........",
+    "#....#...",
+    "#.......#",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#T#H#H##D",
+    "#STENGSLA",
+    "#ARIE#KUM",
+    "#RASTLØS#",
+    "LEKETØYER",
+    "#NKR#VARG"
+  ],
+  "answers": {
+    "across": {
+      "1": "STENGSLA",
+      "2": "ARIE",
+      "3": "KUM",
+      "4": "RASTLØS",
+      "5": "LEKETØYER",
+      "6": "NKR",
+      "7": "VARG"
+    },
+    "down": {
+      "1": "TSAREN",
+      "2": "TRAKK",
+      "3": "HEISER",
+      "4": "NETT",
+      "5": "HG",
+      "6": "LØV",
+      "7": "SKØYA",
+      "8": "LUSER",
+      "9": "DAM",
+      "10": "RG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "hindrene",
+      "2": "sangstykke",
+      "3": "silo",
+      "4": "oppkavet",
+      "5": "bamser",
+      "6": "norsk mynt",
+      "7": "hunnulv"
+    },
+    "down": {
+      "1": "regenten",
+      "2": "smatt",
+      "3": "elevatorer",
+      "4": "kommunikasjonssystem",
+      "5": "vektenhet",
+      "6": "bladverk",
+      "7": "spøkt",
+      "8": "somler",
+      "9": "vannhull",
+      "10": "forkortelse for grunnstoff"
+    }
+  }
+}

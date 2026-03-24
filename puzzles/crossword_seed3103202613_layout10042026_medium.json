@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 17:49:25",
+    "seed": 1004202613,
+    "layout_seed": 1004202613,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.###",
+    ".........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#G#Y#R###",
+    "GJETTVERK",
+    "#APER#LÅR",
+    "ALL#UNIKE",
+    "#DEBATTEN",
+    "#TRÆ#BENK"
+  ],
+  "answers": {
+    "across": {
+      "1": "GJETTVERK",
+      "2": "APER",
+      "3": "LÅR",
+      "4": "ALL",
+      "5": "UNIKE",
+      "6": "DEBATTEN",
+      "7": "TRÆ",
+      "8": "BENK"
+    },
+    "down": {
+      "1": "GJALDT",
+      "2": "EPLER",
+      "3": "YTE",
+      "4": "BÆ",
+      "5": "TRUA",
+      "6": "RV",
+      "7": "NTB",
+      "8": "ELITE",
+      "9": "RÅKEN",
+      "10": "KRENK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "formodninger",
+      "2": "gorillaer",
+      "3": "dump",
+      "4": "engelsk pronomen",
+      "5": "usedvanlige",
+      "6": "diskusjonen",
+      "7": "putte",
+      "8": "stol"
+    },
+    "down": {
+      "1": "vedrørte",
+      "2": "steinfrukter",
+      "3": "forsyne",
+      "4": "dyrelyd",
+      "5": "håpet",
+      "6": "bilvei",
+      "7": "serviceinstitusjon",
+      "8": "toppklasse",
+      "9": "revnen",
+      "10": "fornærm"
+    }
+  }
+}

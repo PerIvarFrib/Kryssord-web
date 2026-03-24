@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 17:35:31",
+    "seed": 904202608,
+    "layout_seed": 904202608,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.##..#",
+    "#........",
+    "...#.....",
+    ".........",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "###A##MB#",
+    "#TEKSTILA",
+    "DUK#VONER",
+    "BRODERING",
+    "#TRIKSEDE",
+    "#ENN#KNE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MB",
+      "2": "TEKSTILA",
+      "3": "DUK",
+      "4": "VONER",
+      "5": "BRODERING",
+      "6": "TRIKSEDE",
+      "7": "ENN",
+      "8": "KNE"
+    },
+    "down": {
+      "1": "DB",
+      "2": "TURTE",
+      "3": "EKORN",
+      "4": "AK",
+      "5": "DIN",
+      "6": "SVEK",
+      "7": "TORSK",
+      "8": "MINIEN",
+      "9": "BLENDE",
+      "10": "ARGE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "teppene",
+      "3": "pledd",
+      "4": "forhåpninger",
+      "5": "håndarbeidsteknikk",
+      "6": "bløffete",
+      "7": "bindeord",
+      "8": "kroppsledd"
+    },
+    "down": {
+      "1": "vanlig forkortelse",
+      "2": "våget",
+      "3": "murmeldyr",
+      "4": "norsk fylke",
+      "5": "svensk pronomen",
+      "6": "bedro",
+      "7": "makrell",
+      "8": "bilmerket",
+      "9": "lyse sterkt",
+      "10": "harme"
+    }
+  }
+}

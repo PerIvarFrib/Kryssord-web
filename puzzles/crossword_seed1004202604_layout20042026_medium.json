@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 20:40:38",
+    "seed": 2004202604,
+    "layout_seed": 2004202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    "#....#...",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####KS##G",
+    "#ØLFLASKA",
+    "#LEIE#MOT",
+    "UFIN#GYSE",
+    "#ADGANGEN",
+    "#TERRIER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "KS",
+      "2": "ØLFLASKA",
+      "3": "LEIE",
+      "4": "MOT",
+      "5": "UFIN",
+      "6": "GYSE",
+      "7": "ADGANGEN",
+      "8": "TERRIER"
+    },
+    "down": {
+      "1": "ØLFAT",
+      "2": "LEIDE",
+      "3": "FINGR",
+      "4": "KLE",
+      "5": "AR",
+      "6": "SA",
+      "7": "GNI",
+      "8": "SMYGE",
+      "9": "KOSER",
+      "10": "GATEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "selskapsforkortelse",
+      "2": "flasken",
+      "3": "booke",
+      "4": "anti",
+      "5": "ondsinnet",
+      "6": "skjelve av kulde",
+      "7": "rettigheten",
+      "8": "hihund"
+    },
+    "down": {
+      "1": "øltank",
+      "2": "leaset",
+      "3": "beføl",
+      "4": "skjule",
+      "5": "stat i usa",
+      "6": "militæravdeling",
+      "7": "skrape",
+      "8": "krype",
+      "9": "hygger",
+      "10": "trafikkåren"
+    }
+  }
+}

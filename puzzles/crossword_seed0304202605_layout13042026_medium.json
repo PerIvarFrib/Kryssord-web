@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 18:36:53",
+    "seed": 1304202605,
+    "layout_seed": 1304202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####GB#O#",
+    "#ABSTRAKT",
+    "#VEK#ANKE",
+    "ASLAK#KUK",
+    "#TØRRMELK",
+    "#OPPFYLTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "GB",
+      "2": "ABSTRAKT",
+      "3": "VEK",
+      "4": "ANKE",
+      "5": "ASLAK",
+      "6": "KUK",
+      "7": "TØRRMELK",
+      "8": "OPPFYLTE"
+    },
+    "down": {
+      "1": "AVSTO",
+      "2": "BELØP",
+      "3": "SKARP",
+      "4": "GT",
+      "5": "KRF",
+      "6": "BRA",
+      "7": "MY",
+      "8": "ANKEL",
+      "9": "OKKULT",
+      "10": "TEKKE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "nonfigurativ",
+      "3": "veik",
+      "4": "innklage",
+      "5": "en gundersen",
+      "6": "kjønnslem",
+      "7": "melkeprodukt",
+      "8": "effektuerte"
+    },
+    "down": {
+      "1": "avviste",
+      "2": "sluttsum",
+      "3": "krass",
+      "4": "hovedgate",
+      "5": "politisk parti",
+      "6": "storartet",
+      "7": "engelsk pronomen",
+      "8": "kroppsledd",
+      "9": "mystisk",
+      "10": "passe til"
+    }
+  }
+}

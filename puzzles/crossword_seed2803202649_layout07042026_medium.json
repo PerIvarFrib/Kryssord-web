@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 17:21:40",
+    "seed": 704202649,
+    "layout_seed": 704202649,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###S#L#U#",
+    "#VINHUSET",
+    "YEN#VEKNA",
+    "#KNUE#RIP",
+    "STORMBYGA",
+    "#AMT#YTES"
+  ],
+  "answers": {
+    "across": {
+      "1": "VINHUSET",
+      "2": "YEN",
+      "3": "VEKNA",
+      "4": "KNUE",
+      "5": "RIP",
+      "6": "STORMBYGA",
+      "7": "AMT",
+      "8": "YTES"
+    },
+    "down": {
+      "1": "VEKTA",
+      "2": "INNOM",
+      "3": "SN",
+      "4": "URT",
+      "5": "HVEM",
+      "6": "LUE",
+      "7": "BY",
+      "8": "SKRYT",
+      "9": "UENIGE",
+      "10": "TAPAS"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skjenkestedet",
+      "2": "pengeenhet",
+      "3": "veiknet",
+      "4": "knoke",
+      "5": "riv",
+      "6": "vindbygen",
+      "7": "distrikter",
+      "8": "presteres"
+    },
+    "down": {
+      "1": "fatninga",
+      "2": "på besøk",
+      "3": "kjemisk tegn",
+      "4": "rosenrot",
+      "5": "pron",
+      "6": "hodeklede",
+      "7": "murwara",
+      "8": "heder",
+      "9": "usams",
+      "10": "nyttårsmat"
+    }
+  }
+}

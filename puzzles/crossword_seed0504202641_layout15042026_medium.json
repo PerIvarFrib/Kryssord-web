@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 19:36:22",
+    "seed": 1504202641,
+    "layout_seed": 1504202641,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.##.",
+    "#........",
+    "..#......",
+    "#........",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "##E##F##F",
+    "#AVSPERRA",
+    "TV#POLOER",
+    "#SMITTEDE",
+    "#KELTEREN",
+    "LYG#ETER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVSPERRA",
+      "2": "TV",
+      "3": "POLOER",
+      "4": "SMITTEDE",
+      "5": "KELTEREN",
+      "6": "LYG",
+      "7": "ETER"
+    },
+    "down": {
+      "1": "AVSKY",
+      "2": "EV",
+      "3": "MEG",
+      "4": "SPIL",
+      "5": "POTTE",
+      "6": "FELTET",
+      "7": "ROERE",
+      "8": "REDER",
+      "9": "FAREN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "sperret",
+      "2": "elektronikk",
+      "3": "bilmerker",
+      "4": "forgiftete",
+      "5": "skotten",
+      "6": "lyv",
+      "7": "knasker"
+    },
+    "down": {
+      "1": "aversjon",
+      "2": "vei forkortelse",
+      "3": "personlighet",
+      "4": "spark",
+      "5": "trekasse",
+      "6": "verdenen",
+      "7": "idrettsfolk",
+      "8": "skipseier",
+      "9": "onkelen"
+    }
+  }
+}

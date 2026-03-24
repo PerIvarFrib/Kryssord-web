@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 20:32:18",
+    "seed": 1804202605,
+    "layout_seed": 1804202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#..##.",
+    "#........",
+    "#...#....",
+    "#....#...",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "#FE#CR##F",
+    "#UTSLETTE",
+    "#NOE#VEVD",
+    "#KLEB#LIM",
+    "#LOSLITTE",
+    "FAG#IRER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "FE",
+      "2": "CR",
+      "3": "UTSLETTE",
+      "4": "NOE",
+      "5": "VEVD",
+      "6": "KLEB",
+      "7": "LIM",
+      "8": "LOSLITTE",
+      "9": "FAG",
+      "10": "IRER"
+    },
+    "down": {
+      "1": "FUNKLA",
+      "2": "ETOLOG",
+      "3": "SEES",
+      "4": "CL",
+      "5": "BLI",
+      "6": "REV",
+      "7": "IR",
+      "8": "TELTE",
+      "9": "TVITR",
+      "10": "FEDME"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kronidiot",
+      "2": "forkortelse for grunnstoff",
+      "3": "utviske",
+      "4": "bare litt",
+      "5": "spunnet",
+      "6": "klabb",
+      "7": "bindemiddel",
+      "8": "slittet",
+      "9": "studium",
+      "10": "keisere"
+    },
+    "down": {
+      "1": "gnistret",
+      "2": "vitskapsmann",
+      "3": "overvåkes",
+      "4": "målenhet for volum",
+      "5": "vokse",
+      "6": "musejeger",
+      "7": "kjemisk tegn",
+      "8": "omfatta",
+      "9": "publiser",
+      "10": "fettsjuke"
+    }
+  }
+}

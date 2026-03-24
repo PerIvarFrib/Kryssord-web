@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 20:48:43",
+    "seed": 2104202610,
+    "layout_seed": 2104202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.###",
+    "#........",
+    ".........",
+    "..#......",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "##M##P###",
+    "#TOPPLOKK",
+    "FRIAREALA",
+    "RÅ#RANSAK",
+    "#ENAKTERE",
+    "#RYTT#RAN"
+  ],
+  "answers": {
+    "across": {
+      "1": "TOPPLOKK",
+      "2": "FRIAREALA",
+      "3": "RÅ",
+      "4": "RANSAK",
+      "5": "ENAKTERE",
+      "6": "RYTT",
+      "7": "RAN"
+    },
+    "down": {
+      "1": "FR",
+      "2": "TRÅER",
+      "3": "MOI",
+      "4": "NY",
+      "5": "PARAT",
+      "6": "PRAKT",
+      "7": "PLENT",
+      "8": "OASER",
+      "9": "KLARA",
+      "10": "KAKEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "hodeskalle",
+      "2": "arealene",
+      "3": "fenomenal",
+      "4": "undersøk",
+      "5": "teaterstykker",
+      "6": "tutet",
+      "7": "voldstyveri"
+    },
+    "down": {
+      "1": "vanlig forkortelse",
+      "2": "girer",
+      "3": "tettsted i rogaland",
+      "4": "daggammel",
+      "5": "ready",
+      "6": "sjarm",
+      "7": "ganske",
+      "8": "hager",
+      "9": "vunnet",
+      "10": "kjeksen"
+    }
+  }
+}

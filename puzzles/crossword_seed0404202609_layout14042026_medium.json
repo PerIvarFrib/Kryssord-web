@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 18:47:08",
+    "seed": 1404202609,
+    "layout_seed": 1404202609,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "##S#HE###",
+    "#STEINBED",
+    "SKEI#SOVE",
+    "#YRES#BIL",
+    "#FOREVIGE",
+    "ILLEGALE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "HE",
+      "2": "STEINBED",
+      "3": "SKEI",
+      "4": "SOVE",
+      "5": "YRES",
+      "6": "BIL",
+      "7": "FOREVIGE",
+      "8": "ILLEGALE"
+    },
+    "down": {
+      "1": "SKYFL",
+      "2": "STEROL",
+      "3": "EIERE",
+      "4": "HI",
+      "5": "SEG",
+      "6": "ENS",
+      "7": "VA",
+      "8": "BOBIL",
+      "9": "EVIGE",
+      "10": "DELE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkortelse for grunnstoff",
+      "2": "beplantning",
+      "3": "tettsted i møre og romsdal",
+      "4": "døse",
+      "5": "viftes",
+      "6": "minibuss",
+      "7": "illustrere",
+      "8": "ulovlige"
+    },
+    "down": {
+      "1": "slyng",
+      "2": "kjemisk uttrykk",
+      "3": "proprietærer",
+      "4": "bamsebolig",
+      "5": "falt",
+      "6": "ans",
+      "7": "amerikansk stat og by",
+      "8": "husvogn",
+      "9": "endeløse",
+      "10": "utstykke"
+    }
+  }
+}

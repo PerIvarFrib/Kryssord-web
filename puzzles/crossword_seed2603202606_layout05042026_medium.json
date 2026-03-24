@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 16:22:00",
+    "seed": 504202606,
+    "layout_seed": 504202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#####.",
+    "#........",
+    "..#......",
+    "#........",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "##C#####V",
+    "#LEKKASJE",
+    "EU#ONKLER",
+    "#MONOTONT",
+    "#SLAKESTE",
+    "ØKA#ESSEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "LEKKASJE",
+      "2": "EU",
+      "3": "ONKLER",
+      "4": "MONOTONT",
+      "5": "SLAKESTE",
+      "6": "ØKA",
+      "7": "ESSEN"
+    },
+    "down": {
+      "1": "LUMSK",
+      "2": "CE",
+      "3": "OLA",
+      "4": "KONA",
+      "5": "KNOKE",
+      "6": "AKTES",
+      "7": "SLOSS",
+      "8": "JENTE",
+      "9": "VERTEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "utstrømning",
+      "2": "statsforbund",
+      "3": "fetterer",
+      "4": "enstonig",
+      "5": "skrådd",
+      "6": "auka",
+      "7": "universitetsby i tyskland"
+    },
+    "down": {
+      "1": "underfundig",
+      "2": "kjemisk tegn",
+      "3": "folkevisefigur",
+      "4": "partneren",
+      "5": "kinnben",
+      "6": "varskues",
+      "7": "kjempes",
+      "8": "ungkarspike",
+      "9": "hotelleieren"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 20:35:23",
+    "seed": 1904202602,
+    "layout_seed": 1904202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#####..##",
+    "#........",
+    "#........",
+    "#.....#..",
+    "#........",
+    ".....#..."
+  ],
+  "solved_layout": [
+    "#####PB##",
+    "#SJØKREPS",
+    "#TAKRASET",
+    "#OMTAL#NI",
+    "#PRESTENE",
+    "SPART#MYR"
+  ],
+  "answers": {
+    "across": {
+      "1": "PB",
+      "2": "SJØKREPS",
+      "3": "TAKRASET",
+      "4": "OMTAL",
+      "5": "NI",
+      "6": "PRESTENE",
+      "7": "SPART",
+      "8": "MYR"
+    },
+    "down": {
+      "1": "STOPP",
+      "2": "JAMRA",
+      "3": "ØKTER",
+      "4": "KRAST",
+      "5": "PRALT",
+      "6": "BES",
+      "7": "EM",
+      "8": "PENNY",
+      "9": "STIER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "krepsdyr",
+      "3": "skredet",
+      "4": "beskriv",
+      "5": "kjemisk tegn",
+      "6": "kirkegjengerne",
+      "7": "utsatt",
+      "8": "sump"
+    },
+    "down": {
+      "1": "stansing",
+      "2": "ynket",
+      "3": "arbeidsperioder",
+      "4": "spydig",
+      "5": "skrytt",
+      "6": "bønnfalles",
+      "7": "vanlig forkortelse",
+      "8": "engelsk mynt",
+      "9": "ferdselsårer"
+    }
+  }
+}

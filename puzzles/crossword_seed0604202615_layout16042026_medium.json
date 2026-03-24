@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-03-24 19:53:32",
+    "seed": 1604202615,
+    "layout_seed": 1604202615,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##RN#M###",
+    "#UJORDISK",
+    "#RUTE#KYR",
+    "SEK#IRONI",
+    "#NATRONET",
+    "SENA#MATT"
+  ],
+  "answers": {
+    "across": {
+      "1": "RN",
+      "2": "UJORDISK",
+      "3": "RUTE",
+      "4": "KYR",
+      "5": "SEK",
+      "6": "IRONI",
+      "7": "NATRONET",
+      "8": "SENA",
+      "9": "MATT"
+    },
+    "down": {
+      "1": "URENE",
+      "2": "RJUKAN",
+      "3": "NOT",
+      "4": "TA",
+      "5": "REIR",
+      "6": "MD",
+      "7": "ROM",
+      "8": "IKONA",
+      "9": "SYNET",
+      "10": "KRITT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkortelse for grunnstoff",
+      "2": "overnaturlig",
+      "3": "reiseplan",
+      "4": "melkedyr",
+      "5": "tidsenhet",
+      "6": "latterliggjørelse",
+      "7": "konserveringsmiddelet",
+      "8": "økonomien",
+      "9": "kraftløs"
+    },
+    "down": {
+      "1": "ustelte",
+      "2": "industristed i norge",
+      "3": "fangstnett",
+      "4": "måle",
+      "5": "rugeplass",
+      "6": "kjemisk symbol",
+      "7": "kleskott",
+      "8": "tegningene",
+      "9": "holdningen",
+      "10": "geologisk periode"
+    }
+  }
+}
