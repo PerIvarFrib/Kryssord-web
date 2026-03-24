@@ -8,7 +8,7 @@ import ControlsPanel from "./components/ControlsPanel";
 import ClueSidebar from "./components/ClueSidebar";
 import Footer from "./components/Footer";
 import { type CrosswordPuzzle } from "./crossword/types";
-import samplePuzzleJson from "../puzzles/crossword_seed0402202601_medium.json";
+import samplePuzzleJson from "../puzzles/history/crossword_seed0402202601_medium.json";
 import CrosswordGrid from "./components/CrosswordGrid";
 import {
   useCrosswordController,
