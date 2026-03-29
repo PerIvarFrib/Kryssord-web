@@ -7,6 +7,14 @@ export interface CrosswordCellProps {
   isSelected?: boolean;
   isHighlighted?: boolean;
   isLocked?: boolean;
+  /** Increment to re-trigger the reveal pop animation on the same cell. */
+  revealAnimKey?: number;
+  /** Increment to re-trigger the check confirmation flash on the same cell. */
+  checkAnimKey?: number;
+  /** Increment to re-trigger the wrong-check (wiped letter) flash on the same cell. */
+  wrongAnimKey?: number;
+  /** Shows the robot in this cell: 'thinking' (pulsing) or 'revealing' (scale-out). */
+  robotIndicator?: "thinking" | "revealing";
   clueNumber?: number;
   focusTrigger?: number;
   onChange?: (value: string) => void;
@@ -19,6 +27,10 @@ export function CrosswordCell({
   value = "",
   isSelected = false,
   isHighlighted = false,
+  revealAnimKey = 0,
+  checkAnimKey = 0,
+  wrongAnimKey = 0,
+  robotIndicator,
   clueNumber,
   focusTrigger = 0,
   onChange,
@@ -58,6 +70,45 @@ export function CrosswordCell({
     <div className={className} onClick={onClick}>
       {clueNumber !== undefined && (
         <span className="cell-number">{clueNumber}</span>
+      )}
+      {/* revealAnimKey change forces this span to remount, replaying the animation */}
+      {revealAnimKey > 0 && (
+        <span
+          key={revealAnimKey}
+          className="cell-reveal-flash"
+          aria-hidden="true"
+        />
+      )}
+      {/* checkAnimKey change forces this span to remount, replaying the gray flash */}
+      {checkAnimKey > 0 && (
+        <span
+          key={`c${checkAnimKey}`}
+          className="cell-check-flash"
+          aria-hidden="true"
+        />
+      )}
+      {/* wrongAnimKey change forces this span to remount, replaying the wrong flash */}
+      {wrongAnimKey > 0 && (
+        <span
+          key={`w${wrongAnimKey}`}
+          className="cell-wrong-flash"
+          aria-hidden="true"
+        />
+      )}
+      {robotIndicator && (
+        <span
+          className={`cell-robot cell-robot--${robotIndicator}`}
+          aria-hidden="true"
+        >
+          {robotIndicator === "thinking" && (
+            <span className="cell-robot__dots">
+              <span />
+              <span />
+              <span />
+            </span>
+          )}
+          <span className="cell-robot__emoji">🤖</span>
+        </span>
       )}
       <input
         ref={inputRef}

@@ -1,10 +1,11 @@
 import "./App.css";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header";
 import PuzzleSelector, { type PuzzleOption } from "./components/PuzzleSelector";
 import PuzzleInfoBar from "./components/PuzzleInfoBar";
 import CurrentClueBar from "./components/CurrentClueBar";
 import ControlsPanel from "./components/ControlsPanel";
+import type { RobotState } from "./components/AutoRevealRobot";
 import ClueSidebar from "./components/ClueSidebar";
 import Footer from "./components/Footer";
 import { type CrosswordPuzzle } from "./crossword/types";
@@ -21,8 +22,10 @@ import {
   calculateScore,
   getHighscoresForTodayAndYesterday,
   updateHighscoreName,
+  getRevealTiming,
   type HighscoreEntry,
 } from "./storage/highscore";
+import { generateRevealSequence } from "./utils/revealSequence";
 
 const puzzleModules = import.meta.glob("../puzzles/crossword_seed*.json", {
   eager: true,
@@ -76,7 +79,16 @@ function App() {
   const [hasSubmittedName, setHasSubmittedName] = useState(false);
   const [loadMessage, setLoadMessage] = useState<string | null>(null);
   const [canSubmitHighscore, setCanSubmitHighscore] = useState(false);
+  const [autoRevealEnabled, setAutoRevealEnabled] = useState(true);
+  const [isRevealingNow, setIsRevealingNow] = useState(false);
+  const [revealTargetCell, setRevealTargetCell] = useState<{
+    row: number;
+    col: number;
+  } | null>(null);
   const lastPuzzleRef = useRef<CrosswordPuzzle | null>(null);
+  const lastRevealTickRef = useRef(0);
+  const revealSequenceRef = useRef<Array<[number, number]>>([]);
+  const revealSeqIndexRef = useRef(0);
 
   const todayKey = getTodayKey();
   const yesterdayKey = getYesterdayKey();
@@ -151,6 +163,13 @@ function App() {
       });
     }
 
+    // Når vi bytter mellom ulike kryssord (for eksempel dagens/ gårsdagens),
+    // skal auto-avslør alltid starte av. Brukeren må selv aktivere det igjen
+    // per kryssord for å unngå overraskelser ved gjenopptak.
+    if (currentPuzzleKey && puzzleKey && currentPuzzleKey !== puzzleKey) {
+      setAutoRevealEnabled(false);
+    }
+
     setCurrentPuzzleKey(puzzleKey);
     setPuzzle(nextPuzzle);
 
@@ -172,6 +191,9 @@ function App() {
     if (nextPuzzle) {
       setStartTimeMs(Date.now());
       setElapsedSeconds(0);
+      lastRevealTickRef.current = 0;
+      revealSeqIndexRef.current = 0;
+      revealSequenceRef.current = generateRevealSequence(nextPuzzle);
     }
   };
 
@@ -186,7 +208,11 @@ function App() {
 
   const { totalLetters, confirmedLetters, revealedLetters, wordPositions } =
     state;
-  const { wrongCheckedLettersCount } = state;
+
+  // Per-puzzle timing derived from letter count
+  const { targetSec: revealTargetSec, intervalSec: revealIntervalSec } =
+    useMemo(() => getRevealTiming(totalLetters), [totalLetters]);
+  const { wrongCheckedLettersCount, wrongCheckCounts } = state;
 
   const isTodayCurrentPuzzle = currentPuzzleKey === todayKey;
   const canReopenResult = !!completionStats && !!puzzle;
@@ -230,6 +256,59 @@ function App() {
       window.clearInterval(id);
     };
   }, [puzzle, startTimeMs, completionStats]);
+
+  // Auto-avslør: avslør maks én bokstav per tick i henhold til en deterministisk sekvens.
+  // Når auto-avslør er pausert, fortsetter tidsstraffen å løpe, men vi hopper over
+  // avsløringer i pausen og tar ikke igjen "tapte" ticks når brukeren slår på igjen.
+  useEffect(() => {
+    if (!puzzle || completionStats) {
+      setRevealTargetCell(null);
+      return;
+    }
+
+    const currentTick =
+      elapsedSeconds < revealTargetSec
+        ? 0
+        : Math.floor((elapsedSeconds - revealTargetSec) / revealIntervalSec) +
+          1;
+
+    const seq = revealSequenceRef.current;
+
+    // Always skip past already-handled cells so the target highlight stays in sync
+    while (revealSeqIndexRef.current < seq.length) {
+      const [pr, pc] = seq[revealSeqIndexRef.current];
+      const s = state.cellStatus[pr]?.[pc];
+      if (s !== "revealed" && s !== "correctConfirmed") break;
+      revealSeqIndexRef.current += 1;
+    }
+
+    const idx = revealSeqIndexRef.current;
+    setRevealTargetCell(
+      idx < seq.length ? { row: seq[idx][0], col: seq[idx][1] } : null,
+    );
+
+    if (currentTick <= lastRevealTickRef.current) return;
+
+    // Hold alltid tritt med tiden slik at pauser ikke bygger opp et backlogg
+    // av avsløringer som fyrer av når auto-avslør slås på igjen.
+    if (!autoRevealEnabled) {
+      lastRevealTickRef.current = currentTick;
+      return;
+    }
+
+    if (idx >= seq.length) {
+      lastRevealTickRef.current = currentTick;
+      return;
+    }
+
+    const [r, c] = seq[idx];
+    revealSeqIndexRef.current += 1;
+    lastRevealTickRef.current = currentTick;
+    actions.revealCellAt(r, c);
+    setIsRevealingNow(true);
+    window.setTimeout(() => setIsRevealingNow(false), 600);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [elapsedSeconds, autoRevealEnabled, puzzle, completionStats]);
 
   // Registrer fullføring for både dagens og andre kryssord,
   // men lagre highscore kun for dagens.
@@ -344,6 +423,29 @@ function App() {
       }))
     : [];
 
+  // Derive the robot animation state from current reveal status
+  const robotState: RobotState = (() => {
+    if (!puzzle || completionStats) return "done";
+    if (!autoRevealEnabled) return "sleeping";
+    if (isRevealingNow) return "revealing";
+    // "thinking": up to 3 seconds before the next reveal tick fires
+    const nextRevealAtSec =
+      revealTargetSec + lastRevealTickRef.current * revealIntervalSec;
+    if (
+      nextRevealAtSec > elapsedSeconds &&
+      nextRevealAtSec - elapsedSeconds <= 3 &&
+      revealSeqIndexRef.current < revealSequenceRef.current.length
+    ) {
+      return "thinking";
+    }
+    return "idle";
+  })();
+
+  const inCellRobot: "thinking" | "revealing" | undefined =
+    robotState === "thinking" || robotState === "revealing"
+      ? robotState
+      : undefined;
+
   return (
     <div className="container">
       <Header title="Daglig kryssord" subtitle="Gratis norsk kryssord hver dag">
@@ -397,6 +499,9 @@ function App() {
                 highlightedCells={highlightedCells}
                 wordPositions={wordPositions}
                 focusTrigger={focusTrigger}
+                revealTarget={revealTargetCell}
+                inCellRobot={inCellRobot}
+                wrongCheckCounts={wrongCheckCounts}
                 onChangeCell={actions.handleChangeCell}
                 onCellClick={actions.handleCellClick}
                 onKeyDown={actions.handleKeyDown}
@@ -414,6 +519,9 @@ function App() {
                 onCheckAll={actions.checkAll}
                 onRevealLetter={actions.revealLetter}
                 onRevealWord={actions.revealWord}
+                autoRevealEnabled={autoRevealEnabled}
+                onToggleAutoReveal={() => setAutoRevealEnabled((v) => !v)}
+                robotState={robotState}
               />
 
               <ClueSidebar

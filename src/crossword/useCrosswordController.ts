@@ -31,6 +31,7 @@ export interface CrosswordControllerState {
   confirmedLetters: number;
   revealedLetters: number;
     wrongCheckedLettersCount: number;
+  wrongCheckCounts: Record<string, number>;
   focusTrigger: number;
   currentClueLabel?: string;
   currentClueText?: string;
@@ -50,6 +51,7 @@ export interface CrosswordControllerActions {
   checkAll: () => void;
   revealLetter: () => void;
   revealWord: () => void;
+  revealCellAt: (row: number, col: number) => void;
 }
 
 export interface CrosswordControllerResult {
@@ -77,6 +79,7 @@ export function useCrosswordController(
   const [confirmedLetters, setConfirmedLetters] = useState(0);
   const [revealedLetters, setRevealedLetters] = useState(0);
   const [wrongCheckedLettersCount, setWrongCheckedLettersCount] = useState(0);
+  const [wrongCheckCounts, setWrongCheckCounts] = useState<Record<string, number>>({});
   const [focusTrigger, setFocusTrigger] = useState(0);
 
   // Reset or restore state when puzzle changes
@@ -93,6 +96,7 @@ export function useCrosswordController(
       setConfirmedLetters(0);
       setRevealedLetters(0);
       setWrongCheckedLettersCount(0);
+      setWrongCheckCounts({});
       setFocusTrigger(0);
       return;
     }
@@ -164,6 +168,7 @@ export function useCrosswordController(
       setConfirmedLetters(0);
       setRevealedLetters(0);
       setWrongCheckedLettersCount(0);
+      setWrongCheckCounts({});
     }
   }, [puzzle]);
 
@@ -517,6 +522,10 @@ export function useCrosswordController(
     setCompletedWordKeys(updatedCompleted);
     if (wrongIncrement > 0) {
       setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+      setWrongCheckCounts((prev) => ({
+        ...prev,
+        [`${row}-${col}`]: (prev[`${row}-${col}`] ?? 0) + 1,
+      }));
     }
     setFocusTrigger(prev => prev + 1);
   };
@@ -532,6 +541,7 @@ export function useCrosswordController(
   const nextValues = values.map((r) => [...r]);
   const nextStatus = cellStatus.map((r) => [...r]);
   let wrongIncrement = 0;
+  const wrongCells: Array<[number, number]> = [];
     
     for (let i = 0; i < pos.length; i++) {
       const r = pos.direction === "across" ? pos.row : pos.row + i;
@@ -543,6 +553,7 @@ export function useCrosswordController(
       const status = nextStatus[r]?.[c];
       if (before && !current) {
         wrongIncrement += 1;
+        wrongCells.push([r, c]);
       }
       if (status !== "revealed") {
         if (current && current.toUpperCase() === expected.toUpperCase()) {
@@ -568,6 +579,14 @@ export function useCrosswordController(
     setCompletedWordKeys(updatedCompleted);
     if (wrongIncrement > 0) {
       setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+      setWrongCheckCounts((prev) => {
+        const next = { ...prev };
+        for (const [wr, wc] of wrongCells) {
+          const k = `${wr}-${wc}`;
+          next[k] = (prev[k] ?? 0) + 1;
+        }
+        return next;
+      });
     }
     setFocusTrigger(prev => prev + 1);
   };
@@ -587,6 +606,7 @@ export function useCrosswordController(
     const nextValues = values.map((r) => [...r]);
     const nextStatus = cellStatus.map((r) => [...r]);
     let wrongIncrement = 0;
+    const wrongCells: Array<[number, number]> = [];
     
     for (let r = 0; r < puzzle.layout.length; r++) {
       for (let c = 0; c < puzzle.layout[r].length; c++) {
@@ -600,6 +620,7 @@ export function useCrosswordController(
         } else {
           if (current && current.toUpperCase() !== expected.toUpperCase()) {
             wrongIncrement += 1;
+            wrongCells.push([r, c]);
           }
           nextValues[r][c] = "";
           nextStatus[r][c] = "empty";
@@ -620,6 +641,14 @@ export function useCrosswordController(
     setCompletedWordKeys(updatedCompleted);
     if (wrongIncrement > 0) {
       setWrongCheckedLettersCount((prev) => prev + wrongIncrement);
+      setWrongCheckCounts((prev) => {
+        const next = { ...prev };
+        for (const [wr, wc] of wrongCells) {
+          const k = `${wr}-${wc}`;
+          next[k] = (prev[k] ?? 0) + 1;
+        }
+        return next;
+      });
     }
     setFocusTrigger(prev => prev + 1);
   };
@@ -696,6 +725,45 @@ export function useCrosswordController(
     setFocusTrigger(prev => prev + 1);
   };
 
+  const revealCellAt = (row: number, col: number) => {
+    if (!puzzle) return;
+    // Guard: state arrays may not yet be initialized for the current puzzle
+    if (!values[row] || !cellStatus[row]) return;
+    const rowStr = puzzle.layout[row];
+    if (!rowStr || rowStr[col] === "#" || rowStr[col] === undefined) return;
+    // Skip cells that are already handled to avoid altering penalties
+    if (
+      cellStatus[row]?.[col] === "revealed" ||
+      cellStatus[row]?.[col] === "correctConfirmed"
+    )
+      return;
+
+    const expected = puzzle.solved_layout[row][col];
+    const nextValues = values.map((r) => [...r]);
+    const nextStatus = cellStatus.map((r) => [...r]);
+    const current = nextValues[row]?.[col] ?? "";
+
+    if (current && current.toUpperCase() === expected.toUpperCase()) {
+      nextValues[row][col] = current.toUpperCase();
+      nextStatus[row][col] = "correctConfirmed";
+    } else {
+      nextValues[row][col] = expected.toUpperCase();
+      nextStatus[row][col] = "revealed";
+    }
+
+    const updatedCompleted = updateCompletedWordsFromValues(
+      nextValues,
+      completedWordKeys,
+    );
+    const flat = nextStatus.flat();
+
+    setValues(nextValues);
+    setCellStatus(nextStatus);
+    setConfirmedLetters(flat.filter((s) => s === "correctConfirmed").length);
+    setRevealedLetters(flat.filter((s) => s === "revealed").length);
+    setCompletedWordKeys(updatedCompleted);
+  };
+
   const currentClue = useMemo(() => {
     if (!puzzle || !selectedWordKey) return { label: undefined, text: undefined };
     const [numberStr, dir] = selectedWordKey.split("-") as [
@@ -730,6 +798,7 @@ export function useCrosswordController(
     confirmedLetters,
     revealedLetters,
     wrongCheckedLettersCount,
+    wrongCheckCounts,
     focusTrigger,
     currentClueLabel: currentClue.label,
     currentClueText: currentClue.text,
@@ -772,6 +841,7 @@ export function useCrosswordController(
     checkAll,
     revealLetter,
     revealWord,
+    revealCellAt,
   };
 
   return { state, actions };

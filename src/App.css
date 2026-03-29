@@ -342,6 +342,72 @@ button.warning {
     color: var(--text-primary);
 }
 
+/* Orange flash overlay — fades out after reveal, leaving cell visually identical to user-typed */
+@keyframes revealFlash {
+    0%   { opacity: 1; background: #fb923c; }
+    60%  { opacity: 0.4; background: #fb923c; }
+    100% { opacity: 0; background: transparent; }
+}
+
+.cell-reveal-flash {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    animation: revealFlash 0.55s ease-out forwards;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cell-reveal-flash {
+        animation: none;
+    }
+}
+
+/* Green flash overlay for confirmed-correct cells (Sjekk svar) */
+@keyframes checkFlash {
+    0%   { opacity: 1; background: #4ade80; }
+    60%  { opacity: 0.4; background: #4ade80; }
+    100% { opacity: 0; background: transparent; }
+}
+
+.cell-check-flash {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    animation: checkFlash 0.55s ease-out forwards;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cell-check-flash {
+        animation: none;
+    }
+}
+
+/* Gray flash overlay for wrong (wiped) cells (Sjekk svar) */
+@keyframes wrongFlash {
+    0%   { opacity: 1; background: #9ca3af; }
+    60%  { opacity: 0.4; background: #9ca3af; }
+    100% { opacity: 0; background: transparent; }
+}
+
+.cell-wrong-flash {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    animation: wrongFlash 0.55s ease-out forwards;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cell-wrong-flash {
+        animation: none;
+    }
+}
+
 .cell input {
     border: none;
     background: none;
@@ -784,4 +850,242 @@ button.warning {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* ─── Auto-reveal toggle row ─────────────────────────────────── */
+
+.auto-reveal-row {
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: visible;
+}
+
+.auto-reveal-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 0;
+    width: fit-content;
+}
+
+/* Hide native checkbox */
+.auto-reveal-toggle input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Track */
+.auto-reveal-track {
+    position: relative;
+    width: 34px;
+    height: 19px;
+    background: #d1d5db;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+
+.auto-reveal-toggle input:checked ~ .auto-reveal-track {
+    background: var(--success-color);
+}
+
+/* Knob */
+.auto-reveal-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.auto-reveal-toggle input:checked ~ .auto-reveal-track .auto-reveal-knob {
+    transform: translateX(15px);
+}
+
+.auto-reveal-label-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.auto-reveal-description {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin: 0 0 0 42px;
+    font-style: italic;
+}
+
+/* ─── Robot component ─────────────────────────────────────────── */
+
+.robot {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-end;
+    line-height: 1;
+    align-self: flex-start;
+    width: fit-content;
+}
+
+.robot__emoji {
+    font-size: 1.4rem;
+    display: block;
+    transition: transform 0.15s ease;
+}
+
+/* ── idle: gentle float ── */
+@keyframes robotFloat {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-3px); }
+}
+
+.robot--idle .robot__emoji {
+    animation: robotFloat 2.4s ease-in-out infinite;
+}
+
+/* ── sleeping: dim + Zzz ── */
+.robot--sleeping .robot__emoji {
+    filter: grayscale(0.55) opacity(0.75);
+    animation: none;
+}
+
+.robot__zzz {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1px;
+    pointer-events: none;
+}
+
+@keyframes zFloat {
+    0%   { opacity: 0; transform: translate(0, 0)   scale(0.7); }
+    30%  { opacity: 1; }
+    100% { opacity: 0; transform: translate(4px, -8px) scale(1.0); }
+}
+
+.robot__zzz span:nth-child(1) { font-size: 0.5rem;  animation: zFloat 1.8s ease-in-out infinite 0s; }
+.robot__zzz span:nth-child(2) { font-size: 0.62rem; animation: zFloat 1.8s ease-in-out infinite 0.6s; }
+.robot__zzz span:nth-child(3) { font-size: 0.75rem; animation: zFloat 1.8s ease-in-out infinite 1.2s; }
+
+/* ── thinking: dots above robot ── */
+.robot__thinking {
+    position: absolute;
+    bottom: 108%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    pointer-events: none;
+}
+
+.robot__thinking span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+}
+
+@keyframes thinkingBounce {
+    0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+    40%            { transform: translateY(-5px); opacity: 1; }
+}
+
+.robot__thinking span:nth-child(1) { animation: thinkingBounce 3s ease-in-out infinite 0s; }
+.robot__thinking span:nth-child(2) { animation: thinkingBounce 3s ease-in-out infinite 0.5s; }
+.robot__thinking span:nth-child(3) { animation: thinkingBounce 3s ease-in-out infinite 1.0s; }
+
+/* ── revealing: quick scale punch ── */
+@keyframes robotReveal {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(1.35); }
+    70%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.robot--revealing .robot__emoji {
+    animation: robotReveal 0.5s ease-out forwards;
+}
+
+/* ── done: small + faded, no animation ── */
+.robot--done .robot__emoji {
+    font-size: 1rem;
+    filter: grayscale(0.7) opacity(0.5);
+    animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .robot__emoji,
+    .robot__zzz span,
+    .robot__thinking span {
+        animation: none !important;
+    }
+}
+
+/* ─── In-cell robot indicator ─────────────────────────────────── */
+.cell-robot {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 1.1rem;
+    line-height: 1;
+    z-index: 3;
+    pointer-events: none;
+    user-select: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell-robot__emoji {
+    display: block;
+}
+
+/* ── thinking: same bouncing-dots pattern as the sidebar robot ── */
+.cell-robot__dots {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.cell-robot__dots span {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--text-secondary, #555);
+}
+
+.cell-robot--thinking .cell-robot__dots span:nth-child(1) { animation: thinkingBounce 3s ease-in-out infinite 0s; }
+.cell-robot--thinking .cell-robot__dots span:nth-child(2) { animation: thinkingBounce 3s ease-in-out infinite 0.5s; }
+.cell-robot--thinking .cell-robot__dots span:nth-child(3) { animation: thinkingBounce 3s ease-in-out infinite 1.0s; }
+
+@keyframes cellRobotReveal {
+    0%   { transform: scale(1);   opacity: 1; }
+    45%  { transform: scale(1.6); opacity: 0.9; }
+    100% { transform: scale(0);   opacity: 0; }
+}
+
+.cell-robot--revealing {
+    animation: cellRobotReveal 0.55s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cell-robot__dots span,
+    .cell-robot { animation: none !important; }
 }

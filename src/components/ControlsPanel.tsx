@@ -1,3 +1,5 @@
+import AutoRevealRobot, { type RobotState } from "./AutoRevealRobot";
+
 export interface ControlsPanelProps {
   canCheckLetter: boolean;
   canCheckWord: boolean;
@@ -8,6 +10,9 @@ export interface ControlsPanelProps {
   onCheckAll: () => void;
   onRevealLetter: () => void;
   onRevealWord: () => void;
+  autoRevealEnabled: boolean;
+  onToggleAutoReveal: () => void;
+  robotState: RobotState;
 }
 
 export function ControlsPanel({
@@ -20,6 +25,9 @@ export function ControlsPanel({
   onCheckAll,
   onRevealLetter,
   onRevealWord,
+  autoRevealEnabled,
+  onToggleAutoReveal,
+  robotState,
 }: ControlsPanelProps) {
   return (
     <div className="controls">
@@ -57,6 +65,23 @@ export function ControlsPanel({
         >
           Vis ord
         </button>
+
+        <div className="auto-reveal-row">
+          <label className="auto-reveal-toggle">
+            <input
+              type="checkbox"
+              checked={autoRevealEnabled}
+              onChange={onToggleAutoReveal}
+            />
+            <AutoRevealRobot robotState={robotState} />
+            <span className="auto-reveal-track">
+              <span className="auto-reveal-knob" />
+            </span>
+            <span className="auto-reveal-label-text">
+              {autoRevealEnabled ? "Skru av roboten" : "Skru på roboten"}
+            </span>
+          </label>
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,22 @@
+/**
+ * Compute per-puzzle reveal timing so the robot is guaranteed to finish
+ * within L*40 seconds in the worst case (user types nothing).
+ *
+ *   targetSec   = 10 * L              — delay before first reveal
+ *   intervalSec = 30 * L / (L − 1)   — seconds between subsequent reveals
+ *
+ * Edge cases: L ≤ 1 → fixed 10 s / 30 s fallback.
+ */
+export function getRevealTiming(totalLetters: number): {
+  targetSec: number;
+  intervalSec: number;
+} {
+  if (totalLetters <= 1) return { targetSec: 10, intervalSec: 30 };
+  const targetSec = 10 * totalLetters;
+  const intervalSec = Math.max(1, (30 * totalLetters) / (totalLetters - 1));
+  return { targetSec, intervalSec };
+}
+
 export interface HighscoreEntry {
   name: string;
   score: number;
@@ -106,13 +125,13 @@ export function calculateScore(params: {
 
   if (L <= 0) return 0;
 
+  const { targetSec: T_target, intervalSec: T_interval } = getRevealTiming(L);
   const S_max = 10 * L;
-  const T_target = 5 * L;
 
   // Tidsstraff
   let P_time_raw = 0;
   if (T > T_target) {
-    P_time_raw = Math.floor((T - T_target) / 10);
+    P_time_raw = Math.floor((T - T_target) / T_interval);
   }
   const P_time_max = 0.2 * S_max;
   const P_time = Math.min(P_time_raw, P_time_max);
