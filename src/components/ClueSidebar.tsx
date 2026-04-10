@@ -1,4 +1,4 @@
-import type { Direction } from "../crossword/types";
+import type { Direction, WordKey } from "../crossword/types";
 
 export interface ClueItemData {
   number: number;
@@ -11,6 +11,12 @@ export interface ClueSidebarProps {
   selectedWordKey?: string | null;
   onClueClick?: (direction: Direction, number: number) => void;
   completedWordKeys?: Set<string>;
+  /**
+   * When provided, only clues whose WordKey is in this set are rendered.
+   * Use this to show only the sidebar-fallback clues (i.e. clues that could
+   * not be placed into an adjacent # cell in the grid).
+   */
+  sidebarFallbackWordKeys?: Set<WordKey>;
 }
 
 export function ClueSidebar({
@@ -19,6 +25,7 @@ export function ClueSidebar({
   selectedWordKey,
   onClueClick,
   completedWordKeys,
+  sidebarFallbackWordKeys,
 }: ClueSidebarProps) {
   const isCompleted = (direction: Direction, number: number) => {
     if (!completedWordKeys) return false;
@@ -26,12 +33,22 @@ export function ClueSidebar({
     return completedWordKeys.has(key);
   };
 
+  // Filter to only fallback clues when the set is provided
+  const visibleAcross = sidebarFallbackWordKeys
+    ? acrossClues.filter((c) =>
+        sidebarFallbackWordKeys.has(`${c.number}-across`),
+      )
+    : acrossClues;
+  const visibleDown = sidebarFallbackWordKeys
+    ? downClues.filter((c) => sidebarFallbackWordKeys.has(`${c.number}-down`))
+    : downClues;
+
   return (
     <div className="clues">
       <div className="clues-section">
         <h3>Vannrett</h3>
         <div id="across-clues" className="clues-list">
-          {acrossClues.map((clue) => (
+          {visibleAcross.map((clue) => (
             <div
               key={`across-${clue.number}`}
               className={
@@ -51,7 +68,7 @@ export function ClueSidebar({
       <div className="clues-section">
         <h3>Loddrett</h3>
         <div id="down-clues" className="clues-list">
-          {downClues.map((clue) => (
+          {visibleDown.map((clue) => (
             <div
               key={`down-${clue.number}`}
               className={

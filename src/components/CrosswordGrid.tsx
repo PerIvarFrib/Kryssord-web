@@ -1,6 +1,11 @@
 import CrosswordCell from "./CrosswordCell";
 import { useRef } from "react";
-import type { WordPositions } from "../crossword/types";
+import type {
+  ClueCellData,
+  ClueCellMap,
+  WordKey,
+  WordPositions,
+} from "../crossword/types";
 
 export interface CrosswordGridProps {
   layout: string[];
@@ -16,6 +21,12 @@ export interface CrosswordGridProps {
   revealTarget?: { row: number; col: number } | null;
   inCellRobot?: "thinking" | "revealing";
   wrongCheckCounts?: Record<string, number>;
+  /** Clue data for # cells that carry in-grid clues. */
+  clueCellMap?: ClueCellMap;
+  /** Words that could not be placed in-grid and remain in the sidebar. */
+  sidebarFallbackWordKeys?: Set<WordKey>;
+  /** Called when the user clicks a clue slot inside a # cell. */
+  onClueCellClick?: (wordKey: WordKey) => void;
 }
 
 export function CrosswordGrid({
@@ -32,12 +43,26 @@ export function CrosswordGrid({
   revealTarget,
   inCellRobot,
   wrongCheckCounts,
+  clueCellMap,
+  sidebarFallbackWordKeys,
+  onClueCellClick,
 }: CrosswordGridProps) {
   if (!layout.length) {
     return null;
   }
 
   const columnCount = layout[0].length;
+
+  // Collect overflow clue cells (row === -1) rendered above the main grid.
+  const topOverflowByCol = new Map<number, ClueCellData>();
+  if (clueCellMap) {
+    for (const data of clueCellMap.values()) {
+      if (data.row === -1) {
+        topOverflowByCol.set(data.col, data);
+      }
+    }
+  }
+  const hasTopOverflow = topOverflowByCol.size > 0;
 
   // Track how many times each cell has been revealed so the pop animation re-fires
   const revealCountsRef = useRef<Record<string, number>>({});
@@ -57,80 +82,120 @@ export function CrosswordGrid({
   });
 
   return (
-    <div
-      id="crossword-grid"
-      className="crossword-grid"
-      style={{
-        gridTemplateColumns: `repeat(${columnCount}, var(--cell-size))`,
-      }}
-    >
-      {layout.map((row, rowIndex) =>
-        row.split("").map((cellChar, colIndex) => {
-          const isSelected =
-            selectedCell?.row === rowIndex && selectedCell?.col === colIndex;
-          const isHighlighted = highlightedCells.some(
-            (c) => c.row === rowIndex && c.col === colIndex,
-          );
-          const statusRow = cellStatus[rowIndex] ?? [];
-          const status = statusRow[colIndex];
-          const isLocked =
-            status === "correctConfirmed" || status === "revealed";
-          const cellKey = `${rowIndex}-${colIndex}`;
-
-          // Increment reveal counter when status becomes "revealed" so the
-          // pop animation re-fires on the same cell if it ever needs to.
-          const revealCount = revealCountsRef.current[cellKey] ?? 0;
-          if (status === "revealed" && revealCount === 0) {
-            revealCountsRef.current[cellKey] = 1;
-          }
-          const revealAnimKey = revealCountsRef.current[cellKey] ?? 0;
-
-          const wrongAnimKey = wrongCheckCounts?.[cellKey] ?? 0;
-
-          // Increment check counter when status transitions to "correctConfirmed"
-          // (only possible via checkLetter / checkWord / checkAll, never via typing).
-          const prevStatus = prevStatusRef.current[cellKey];
-          if (
-            status === "correctConfirmed" &&
-            prevStatus !== "correctConfirmed"
-          ) {
-            checkCountsRef.current[cellKey] =
-              (checkCountsRef.current[cellKey] ?? 0) + 1;
-          }
-          prevStatusRef.current[cellKey] = status;
-          const checkAnimKey = checkCountsRef.current[cellKey] ?? 0;
-
-          const robotIndicator =
-            inCellRobot &&
-            revealTarget?.row === rowIndex &&
-            revealTarget?.col === colIndex
-              ? inCellRobot
-              : undefined;
-
-          const numbers = cellNumbers.get(cellKey) || [];
-          const clueNumber =
-            numbers.length > 0 ? Math.min(...numbers) : undefined;
-          return (
-            <CrosswordCell
-              key={cellKey}
-              isBlock={cellChar === "#"}
-              value={values[rowIndex]?.[colIndex] ?? ""}
-              isSelected={isSelected}
-              isHighlighted={isHighlighted}
-              isLocked={isLocked}
-              revealAnimKey={revealAnimKey}
-              checkAnimKey={checkAnimKey}
-              wrongAnimKey={wrongAnimKey}
-              robotIndicator={robotIndicator}
-              clueNumber={clueNumber}
-              focusTrigger={focusTrigger}
-              onChange={(value) => onChangeCell(rowIndex, colIndex, value)}
-              onClick={() => onCellClick(rowIndex, colIndex)}
-              onKeyDown={(event) => onKeyDown(rowIndex, colIndex, event)}
-            />
-          );
-        }),
+    <div className="crossword-grid-wrapper">
+      {/* Overflow row — appears above the main grid for down-words that start at row 0 */}
+      {hasTopOverflow && (
+        <div
+          className="crossword-overflow-row"
+          style={{
+            gridTemplateColumns: `repeat(${columnCount}, var(--cell-size))`,
+          }}
+        >
+          {Array.from({ length: columnCount }, (_, c) => {
+            const overflowData = topOverflowByCol.get(c);
+            return overflowData ? (
+              <CrosswordCell
+                key={`ov-c${c}`}
+                isBlock={true}
+                clueCellData={overflowData}
+                onClueCellClick={onClueCellClick}
+              />
+            ) : (
+              <div key={`ov-empty-c${c}`} className="overflow-placeholder" />
+            );
+          })}
+        </div>
       )}
+      <div
+        id="crossword-grid"
+        className="crossword-grid"
+        style={{
+          gridTemplateColumns: `repeat(${columnCount}, var(--cell-size))`,
+        }}
+      >
+        {layout.map((row, rowIndex) =>
+          row.split("").map((cellChar, colIndex) => {
+            const isSelected =
+              selectedCell?.row === rowIndex && selectedCell?.col === colIndex;
+            const isHighlighted = highlightedCells.some(
+              (c) => c.row === rowIndex && c.col === colIndex,
+            );
+            const statusRow = cellStatus[rowIndex] ?? [];
+            const status = statusRow[colIndex];
+            const isLocked =
+              status === "correctConfirmed" || status === "revealed";
+            const cellKey = `${rowIndex}-${colIndex}`;
+
+            // Increment reveal counter when status becomes "revealed" so the
+            // pop animation re-fires on the same cell if it ever needs to.
+            const revealCount = revealCountsRef.current[cellKey] ?? 0;
+            if (status === "revealed" && revealCount === 0) {
+              revealCountsRef.current[cellKey] = 1;
+            }
+            const revealAnimKey = revealCountsRef.current[cellKey] ?? 0;
+
+            const wrongAnimKey = wrongCheckCounts?.[cellKey] ?? 0;
+
+            // Increment check counter when status transitions to "correctConfirmed"
+            // (only possible via checkLetter / checkWord / checkAll, never via typing).
+            const prevStatus = prevStatusRef.current[cellKey];
+            if (
+              status === "correctConfirmed" &&
+              prevStatus !== "correctConfirmed"
+            ) {
+              checkCountsRef.current[cellKey] =
+                (checkCountsRef.current[cellKey] ?? 0) + 1;
+            }
+            prevStatusRef.current[cellKey] = status;
+            const checkAnimKey = checkCountsRef.current[cellKey] ?? 0;
+
+            const robotIndicator =
+              inCellRobot &&
+              revealTarget?.row === rowIndex &&
+              revealTarget?.col === colIndex
+                ? inCellRobot
+                : undefined;
+
+            const numbers = cellNumbers.get(cellKey) || [];
+            // Only show the corner clue number when the word is a sidebar fallback
+            // (i.e. it could not be placed in an adjacent # clue cell).
+            const fallbackNumbers = numbers.filter((n) => {
+              if (!sidebarFallbackWordKeys) return true;
+              // Check both across and down variants of this number
+              return (
+                sidebarFallbackWordKeys.has(`${n}-across`) ||
+                sidebarFallbackWordKeys.has(`${n}-down`)
+              );
+            });
+            const clueNumber =
+              fallbackNumbers.length > 0
+                ? Math.min(...fallbackNumbers)
+                : undefined;
+            const clueCellData = clueCellMap?.get(cellKey);
+            return (
+              <CrosswordCell
+                key={cellKey}
+                isBlock={cellChar === "#"}
+                clueCellData={clueCellData}
+                onClueCellClick={onClueCellClick}
+                value={values[rowIndex]?.[colIndex] ?? ""}
+                isSelected={isSelected}
+                isHighlighted={isHighlighted}
+                isLocked={isLocked}
+                revealAnimKey={revealAnimKey}
+                checkAnimKey={checkAnimKey}
+                wrongAnimKey={wrongAnimKey}
+                robotIndicator={robotIndicator}
+                clueNumber={clueNumber}
+                focusTrigger={focusTrigger}
+                onChange={(value) => onChangeCell(rowIndex, colIndex, value)}
+                onClick={() => onCellClick(rowIndex, colIndex)}
+                onKeyDown={(event) => onKeyDown(rowIndex, colIndex, event)}
+              />
+            );
+          }),
+        )}
+      </div>{" "}
     </div>
   );
 }
