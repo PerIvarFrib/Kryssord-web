@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 15:01:00",
+    "seed": 1504202638,
+    "layout_seed": 1504202638,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#..#.",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###P#AP#P",
+    "#SNØFTETE",
+    "#KYSA#RIK",
+    "KÅL#LALLE",
+    "#NORDVEST",
+    "#ANFALTE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AP",
+      "2": "SNØFTETE",
+      "3": "KYSA",
+      "4": "RIK",
+      "5": "KÅL",
+      "6": "LALLE",
+      "7": "NORDVEST",
+      "8": "ANFALTE"
+    },
+    "down": {
+      "1": "SKÅNA",
+      "2": "NYLON",
+      "3": "PØS",
+      "4": "RF",
+      "5": "FALDA",
+      "6": "AT",
+      "7": "AVL",
+      "8": "PERLET",
+      "9": "TILSE",
+      "10": "PEKET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "politisk parti",
+      "2": "fnyste",
+      "3": "hodepryden",
+      "4": "storslått",
+      "5": "grønnsakplante",
+      "6": "bable",
+      "7": "kompassretning",
+      "8": "invaderte"
+    },
+    "down": {
+      "1": "benådet",
+      "2": "tekstilfiber",
+      "3": "væskebeholder",
+      "4": "kjennetegn på motorkjøretøy",
+      "5": "sydd",
+      "6": "engelsk preposisjon",
+      "7": "produksjon",
+      "8": "unikuma",
+      "9": "overvåke",
+      "10": "narrestreken"
+    }
+  }
+}

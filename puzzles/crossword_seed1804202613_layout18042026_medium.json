@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 15:38:45",
+    "seed": 1804202613,
+    "layout_seed": 1804202613,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    "#...#....",
+    "#....#...",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "##M#CF##F",
+    "#MORALSKE",
+    "#ØDA#ÅKRE",
+    "#REGN#YEN",
+    "#KNESETTE",
+    "NATTBUSS#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CF",
+      "2": "MORALSKE",
+      "3": "ØDA",
+      "4": "ÅKRE",
+      "5": "REGN",
+      "6": "YEN",
+      "7": "KNESETTE",
+      "8": "NATTBUSS"
+    },
+    "down": {
+      "1": "MØRKA",
+      "2": "MODENT",
+      "3": "RAGET",
+      "4": "CA",
+      "5": "NSB",
+      "6": "FLÅ",
+      "7": "EU",
+      "8": "SKYTS",
+      "9": "KRETS",
+      "10": "FEENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "sømmelige",
+      "3": "livløst",
+      "4": "jorder",
+      "5": "gråvær",
+      "6": "pengeenhet",
+      "7": "introdusere",
+      "8": "reisemåte"
+    },
+    "down": {
+      "1": "skumringene",
+      "2": "ferdig utviklet",
+      "3": "kneiset",
+      "4": "kjemisk teikn",
+      "5": "transportør",
+      "6": "grend i sør-trøndelag",
+      "7": "statsforbund",
+      "8": "artilleri",
+      "9": "sone",
+      "10": "fabelvesena"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 16:12:46",
+    "seed": 1904202626,
+    "layout_seed": 1904202626,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#.###.",
+    ".........",
+    "#...#....",
+    "#........",
+    "#........",
+    "#.....#.."
+  ],
+  "solved_layout": [
+    "##A#C###I",
+    "ISDANNING",
+    "#ELV#UVEL",
+    "#NYLAGEDE",
+    "#EDELGRAN",
+    "#NESTE#DE"
+  ],
+  "answers": {
+    "across": {
+      "1": "ISDANNING",
+      "2": "ELV",
+      "3": "UVEL",
+      "4": "NYLAGEDE",
+      "5": "EDELGRAN",
+      "6": "NESTE",
+      "7": "DE"
+    },
+    "down": {
+      "1": "SENEN",
+      "2": "ADLYDE",
+      "3": "AVLES",
+      "4": "CN",
+      "5": "ALT",
+      "6": "NUGGE",
+      "7": "IVER",
+      "8": "NEDAD",
+      "9": "IGLENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "issvull",
+      "2": "missouri",
+      "3": "utilpass",
+      "4": "ferske",
+      "5": "furu",
+      "6": "etterfølgende",
+      "7": "amerikansk stat og by"
+    },
+    "down": {
+      "1": "økonomien",
+      "2": "etterkomme",
+      "3": "fostres",
+      "4": "forkortelse for grunnstoff",
+      "5": "all",
+      "6": "skubbe",
+      "7": "pasjon",
+      "8": "adverb og preposisjon",
+      "9": "blodsugerne"
+    }
+  }
+}

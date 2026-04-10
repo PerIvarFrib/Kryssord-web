@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-11 09:34:10",
+    "seed": 3004202664,
+    "layout_seed": 3004202664,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    "#....#...",
+    "#...#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##S#RO##S",
+    "#UKRAINSK",
+    "#TJEN#UKA",
+    "#VEI#SLIT",
+    "BILSKILTA",
+    "#SNERPET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "RO",
+      "2": "UKRAINSK",
+      "3": "TJEN",
+      "4": "UKA",
+      "5": "VEI",
+      "6": "SLIT",
+      "7": "BILSKILTA",
+      "8": "SNERPET"
+    },
+    "down": {
+      "1": "UTVIS",
+      "2": "SKJELN",
+      "3": "REISE",
+      "4": "RAN",
+      "5": "KR",
+      "6": "OI",
+      "7": "SIP",
+      "8": "NULLE",
+      "9": "SKITT",
+      "10": "SKATA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "holdning",
+      "2": "slavisk språk",
+      "3": "forøv",
+      "4": "epoken",
+      "5": "byveg",
+      "6": "strev",
+      "7": "skiltene",
+      "8": "knipsk"
+    },
+    "down": {
+      "1": "utfold",
+      "2": "oppfatt",
+      "3": "campingtur",
+      "4": "voldshandling",
+      "5": "hovedmynt",
+      "6": "engelsk pronomen",
+      "7": "hulk",
+      "8": "forkaste",
+      "9": "smuss",
+      "10": "rokket"
+    }
+  }
+}

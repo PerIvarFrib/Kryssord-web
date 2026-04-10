@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 18:04:20",
+    "seed": 2204202601,
+    "layout_seed": 2204202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.###.",
+    "#........",
+    "....#...#",
+    "#........",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "####I###M",
+    "#STADFEST",
+    "KLAR#ENN#",
+    "#ALDERDOM",
+    "#STANSERE",
+    "ØKE#SKRAL"
+  ],
+  "answers": {
+    "across": {
+      "1": "STADFEST",
+      "2": "KLAR",
+      "3": "ENN",
+      "4": "ALDERDOM",
+      "5": "STANSERE",
+      "6": "ØKE",
+      "7": "SKRAL"
+    },
+    "down": {
+      "1": "SLASK",
+      "2": "TALTE",
+      "3": "ARDA",
+      "4": "ID",
+      "5": "ENS",
+      "6": "FERSK",
+      "7": "ENDER",
+      "8": "SNORA",
+      "9": "MT",
+      "10": "MEL"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "verifiser",
+      "2": "synlig",
+      "3": "bindeord",
+      "4": "livsfase",
+      "5": "holderer",
+      "6": "vokse",
+      "7": "avmektig"
+    },
+    "down": {
+      "1": "drittsekk",
+      "2": "samtalene",
+      "3": "elv i italia",
+      "4": "stat i usa",
+      "5": "ans",
+      "6": "uutviklet",
+      "7": "tar slutt",
+      "8": "vaieren",
+      "9": "båtforkortelse",
+      "10": "pulvermjøl"
+    }
+  }
+}

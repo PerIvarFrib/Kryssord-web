@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 15:11:01",
+    "seed": 1604202607,
+    "layout_seed": 1604202607,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#...#....",
+    "#....#...",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####AK#D#",
+    "#ASSURERE",
+    "#ROT#ÅKER",
+    "#KREV#KVM",
+    "PERIODENE",
+    "#TYNGSLER"
+  ],
+  "answers": {
+    "across": {
+      "1": "AK",
+      "2": "ASSURERE",
+      "3": "ROT",
+      "4": "ÅKER",
+      "5": "KREV",
+      "6": "KVM",
+      "7": "PERIODENE",
+      "8": "TYNGSLER"
+    },
+    "down": {
+      "1": "ARKET",
+      "2": "SORRY",
+      "3": "STEIN",
+      "4": "AU",
+      "5": "VOG",
+      "6": "KRÅ",
+      "7": "DS",
+      "8": "EKKEL",
+      "9": "DREVNE",
+      "10": "ERMER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "norsk fylke",
+      "2": "beskytte",
+      "3": "planteorgan",
+      "4": "innmark",
+      "5": "nødvendiggjør",
+      "6": "målenhet for areal",
+      "7": "tidsalderne",
+      "8": "bedrøvelser"
+    },
+    "down": {
+      "1": "papirbiten",
+      "2": "bedrøvet",
+      "3": "granitt",
+      "4": "union forkortelse",
+      "5": "målenhet for masse",
+      "6": "krik",
+      "7": "båtforkortelse",
+      "8": "gyselig",
+      "9": "kompetente",
+      "10": "plaggdeler"
+    }
+  }
+}

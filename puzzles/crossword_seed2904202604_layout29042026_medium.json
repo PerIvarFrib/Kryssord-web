@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 19:22:35",
+    "seed": 2904202604,
+    "layout_seed": 2904202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.###.#.",
+    "#........",
+    ".........",
+    "#.....#..",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "##A###E#T",
+    "#KNEBUKSE",
+    "SOMMERSKO",
+    "#SENDE#ÅR",
+    "#TRETTINI",
+    "MAKT#TRE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "KNEBUKSE",
+      "2": "SOMMERSKO",
+      "3": "SENDE",
+      "4": "ÅR",
+      "5": "TRETTINI",
+      "6": "MAKT",
+      "7": "TRE"
+    },
+    "down": {
+      "1": "KOSTA",
+      "2": "ANMERK",
+      "3": "EMNET",
+      "4": "BEDT",
+      "5": "URETT",
+      "6": "EKS",
+      "7": "IR",
+      "8": "SKÅNE",
+      "9": "TEORI"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "benklær",
+      "2": "sandaler",
+      "3": "remittere",
+      "4": "epoke",
+      "5": "oddetall",
+      "6": "autoritet",
+      "7": "alder"
+    },
+    "down": {
+      "1": "krevete",
+      "2": "ank",
+      "3": "temaet",
+      "4": "anmodet",
+      "5": "falskneri",
+      "6": "vanlig forkortelse",
+      "7": "kjemisk tegn",
+      "8": "skjerme",
+      "9": "ideologi"
+    }
+  }
+}

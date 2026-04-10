@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 19:17:23",
+    "seed": 2804202601,
+    "layout_seed": 2804202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..#..##",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##MC#KB##",
+    "#VARSLETE",
+    "BIT#LEGAT",
+    "#TRUA#LUE",
+    "#NORDBOER",
+    "#AMORØST#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MC",
+      "2": "KB",
+      "3": "VARSLETE",
+      "4": "BIT",
+      "5": "LEGAT",
+      "6": "TRUA",
+      "7": "LUE",
+      "8": "NORDBOER",
+      "9": "AMORØST"
+    },
+    "down": {
+      "1": "VITNA",
+      "2": "MATROM",
+      "3": "CR",
+      "4": "URO",
+      "5": "SLADR",
+      "6": "KLE",
+      "7": "BØ",
+      "8": "BEGLOS",
+      "9": "TAUET",
+      "10": "ETER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjennetegn på motorkjøretøy",
+      "2": "dataenhet",
+      "3": "advarte",
+      "4": "småstykke",
+      "5": "støtteordning",
+      "6": "håpet",
+      "7": "hodeklede",
+      "8": "hedmarking",
+      "9": "erotisk"
+    },
+    "down": {
+      "1": "avsløra",
+      "2": "kjøkken",
+      "3": "forkortelse for grunnstoff",
+      "4": "bekymring",
+      "5": "skravl",
+      "6": "skjule",
+      "7": "poststed i nordland",
+      "8": "besees",
+      "9": "snoren",
+      "10": "knasker"
+    }
+  }
+}

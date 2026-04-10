@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 15:22:52",
+    "seed": 1704202610,
+    "layout_seed": 1704202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#####.###",
+    ".........",
+    "#........",
+    "....#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "#####K###",
+    "DERIVATIV",
+    "#TILGRISA",
+    "MIKS#ANES",
+    "#SKOFTETE",
+    "#KAMFERET"
+  ],
+  "answers": {
+    "across": {
+      "1": "DERIVATIV",
+      "2": "TILGRISA",
+      "3": "MIKS",
+      "4": "ANES",
+      "5": "SKOFTETE",
+      "6": "KAMFERET"
+    },
+    "down": {
+      "1": "ETISK",
+      "2": "RIKKA",
+      "3": "ILSOM",
+      "4": "VG",
+      "5": "FF",
+      "6": "KARATE",
+      "7": "TINER",
+      "8": "ISETE",
+      "9": "VASET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "avledende",
+      "2": "forurensete",
+      "3": "sammenblanding",
+      "4": "varsles",
+      "5": "forsømte",
+      "6": "konserveringsmiddelet"
+    },
+    "down": {
+      "1": "moralsk",
+      "2": "rokket",
+      "3": "hastig",
+      "4": "nettavis",
+      "5": "skipsforkortelse",
+      "6": "kampidrett",
+      "7": "smelter",
+      "8": "tilfrosset",
+      "9": "vrøvlet"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 19:02:49",
+    "seed": 2604202604,
+    "layout_seed": 2604202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "###H#L#M#",
+    "#REISEMÅL",
+    "BAK#TRÅLE",
+    "#BOTA#NED",
+    "#BRØNNENE",
+    "MINSKEDE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "REISEMÅL",
+      "2": "BAK",
+      "3": "TRÅLE",
+      "4": "BOTA",
+      "5": "NED",
+      "6": "BRØNNENE",
+      "7": "MINSKEDE"
+    },
+    "down": {
+      "1": "RABBI",
+      "2": "EKORN",
+      "3": "HI",
+      "4": "TØS",
+      "5": "STANK",
+      "6": "LER",
+      "7": "NE",
+      "8": "MÅNED",
+      "9": "MÅLENE",
+      "10": "LEDE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "ferieparadis",
+      "2": "stump",
+      "3": "leite",
+      "4": "frihetstapet",
+      "5": "synkende",
+      "6": "vannbeholderne",
+      "7": "bleknete"
+    },
+    "down": {
+      "1": "jødisk prest",
+      "2": "murmeldyr",
+      "3": "bamsebolig",
+      "4": "jentebarn",
+      "5": "dunst",
+      "6": "hånflirer",
+      "7": "kjemisk tegn",
+      "8": "alder",
+      "9": "formåla",
+      "10": "dirigere"
+    }
+  }
+}

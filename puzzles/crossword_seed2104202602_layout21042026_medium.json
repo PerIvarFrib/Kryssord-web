@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 18:02:56",
+    "seed": 2104202602,
+    "layout_seed": 2104202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###..##.#",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "###DB##K#",
+    "#SMØRSKJE",
+    "ØKA#YENEN",
+    "#ARK#SUKK",
+    "#RENTABLE",
+    "#PREAMBEL"
+  ],
+  "answers": {
+    "across": {
+      "1": "DB",
+      "2": "SMØRSKJE",
+      "3": "ØKA",
+      "4": "YENEN",
+      "5": "ARK",
+      "6": "SUKK",
+      "7": "RENTABLE",
+      "8": "PREAMBEL"
+    },
+    "down": {
+      "1": "SKARP",
+      "2": "MARER",
+      "3": "DØ",
+      "4": "KNE",
+      "5": "BRY",
+      "6": "TA",
+      "7": "SESAM",
+      "8": "KNUBB",
+      "9": "KJEKLE",
+      "10": "ENKEL"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vanlig forkortelse",
+      "2": "bestikk",
+      "3": "auka",
+      "4": "myntenheten",
+      "5": "motorbåt",
+      "6": "hulking",
+      "7": "regningssvarende",
+      "8": "innledninger"
+    },
+    "down": {
+      "1": "krass",
+      "2": "fabelvesener",
+      "3": "forsvinne",
+      "4": "kroppsledd",
+      "5": "bråke",
+      "6": "måle",
+      "7": "motto",
+      "8": "klaps",
+      "9": "diskutere",
+      "10": "lettvint"
+    }
+  }
+}

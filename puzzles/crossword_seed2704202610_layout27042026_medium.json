@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 19:16:00",
+    "seed": 2704202610,
+    "layout_seed": 2704202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "########.",
+    ".........",
+    "#........",
+    "....#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "########V",
+    "SULFIDERE",
+    "#KULTIVER",
+    "MYRA#ONDT",
+    "#STUNDEDE",
+    "#KEEPEREN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SULFIDERE",
+      "2": "KULTIVER",
+      "3": "MYRA",
+      "4": "ONDT",
+      "5": "STUNDEDE",
+      "6": "KEEPEREN"
+    },
+    "down": {
+      "1": "UKYSK",
+      "2": "LURTE",
+      "3": "FLAUE",
+      "4": "IT",
+      "5": "NP",
+      "6": "DIODE",
+      "7": "EVNER",
+      "8": "REDDE",
+      "9": "VERTEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "behandle",
+      "2": "undervis",
+      "3": "våtområdet",
+      "4": "avskyelig",
+      "5": "higete",
+      "6": "målvakten"
+    },
+    "down": {
+      "1": "frivol",
+      "2": "overlistet",
+      "3": "slukørede",
+      "4": "engelsk pronomen",
+      "5": "politisk organisasjon",
+      "6": "elektronrør",
+      "7": "kunnskaper",
+      "8": "befris",
+      "9": "hotelleieren"
+    }
+  }
+}

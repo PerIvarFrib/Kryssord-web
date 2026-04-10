@@ -502,6 +502,9 @@ function App() {
                 revealTarget={revealTargetCell}
                 inCellRobot={inCellRobot}
                 wrongCheckCounts={wrongCheckCounts}
+                clueCellMap={state.clueCellMap}
+                sidebarFallbackWordKeys={state.sidebarFallbackWordKeys}
+                onClueCellClick={actions.selectWordByKey}
                 onChangeCell={actions.handleChangeCell}
                 onCellClick={actions.handleCellClick}
                 onKeyDown={actions.handleKeyDown}
@@ -529,6 +532,7 @@ function App() {
                 downClues={downClues}
                 selectedWordKey={selectedWordKey}
                 completedWordKeys={completedWordKeys}
+                sidebarFallbackWordKeys={state.sidebarFallbackWordKeys}
                 onClueClick={(dir, number) => {
                   actions.selectWord(dir, number);
                 }}

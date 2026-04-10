@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 18:22:37",
+    "seed": 2304202616,
+    "layout_seed": 2304202616,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "#I#C#G###",
+    "#SLUTTAKT",
+    "#GAPE#KRY",
+    "HUG#MOTIV",
+    "#FREMVISE",
+    "#SAVANNEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SLUTTAKT",
+      "2": "GAPE",
+      "3": "KRY",
+      "4": "HUG",
+      "5": "MOTIV",
+      "6": "FREMVISE",
+      "7": "SAVANNEN"
+    },
+    "down": {
+      "1": "ISGUFS",
+      "2": "LAGRA",
+      "3": "CUP",
+      "4": "EV",
+      "5": "TEMMA",
+      "6": "GT",
+      "7": "OVN",
+      "8": "AKTIN",
+      "9": "KRISE",
+      "10": "TYVEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "avslutning",
+      "2": "måpe",
+      "3": "selvtilfreds",
+      "4": "lengsel",
+      "5": "beveggrunner",
+      "6": "presentere",
+      "7": "landskapet"
+    },
+    "down": {
+      "1": "vindstøyt",
+      "2": "depotene",
+      "3": "fotballturnering",
+      "4": "vei forkortelse",
+      "5": "dressert",
+      "6": "hovedgate",
+      "7": "gasskomfyr",
+      "8": "protein",
+      "9": "nødssituasjon",
+      "10": "lovbryteren"
+    }
+  }
+}

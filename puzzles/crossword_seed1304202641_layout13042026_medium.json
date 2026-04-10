@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 13:53:16",
+    "seed": 1304202641,
+    "layout_seed": 1304202641,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#..##",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "###K#NB##",
+    "#KJØKKENA",
+    "KRU#ARVEN",
+    "#AVSI#ESK",
+    "#BELEGGER",
+    "#BLUNDERE"
+  ],
+  "answers": {
+    "across": {
+      "1": "NB",
+      "2": "KJØKKENA",
+      "3": "KRU",
+      "4": "ARVEN",
+      "5": "AVSI",
+      "6": "ESK",
+      "7": "BELEGGER",
+      "8": "BLUNDERE"
+    },
+    "down": {
+      "1": "KRABB",
+      "2": "JUVEL",
+      "3": "KØ",
+      "4": "SLU",
+      "5": "KAIEN",
+      "6": "NKR",
+      "7": "GD",
+      "8": "BEVEGE",
+      "9": "NESER",
+      "10": "ANKRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fartøy forkortelse",
+      "2": "soverommene",
+      "3": "afrikansk folkegruppe",
+      "4": "etterlatenskapen",
+      "5": "tilkjennegi",
+      "6": "by i australia",
+      "7": "blokkerer",
+      "8": "feiltagelser"
+    },
+    "down": {
+      "1": "krek",
+      "2": "hodesmykke",
+      "3": "trafikkstans",
+      "4": "grådig",
+      "5": "moloen",
+      "6": "norsk mynt",
+      "7": "dagsavis",
+      "8": "påvirke",
+      "9": "tinninger",
+      "10": "fortøye"
+    }
+  }
+}

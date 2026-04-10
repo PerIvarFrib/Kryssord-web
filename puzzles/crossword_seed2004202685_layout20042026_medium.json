@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 18:00:27",
+    "seed": 2004202685,
+    "layout_seed": 2004202685,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "........."
+  ],
+  "solved_layout": [
+    "###G#K###",
+    "#SKIBUKSA",
+    "#NARR#VOR",
+    "SUM#EGENT",
+    "#TINDREDE",
+    "LANDTUREN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKIBUKSA",
+      "2": "NARR",
+      "3": "VOR",
+      "4": "SUM",
+      "5": "EGENT",
+      "6": "TINDREDE",
+      "7": "LANDTUREN"
+    },
+    "down": {
+      "1": "SNUTA",
+      "2": "KAMIN",
+      "3": "GIR",
+      "4": "ND",
+      "5": "BREDT",
+      "6": "KU",
+      "7": "GRU",
+      "8": "KVEER",
+      "9": "SONDE",
+      "10": "ARTEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "buksen",
+      "2": "harselist",
+      "3": "tysk preposisjon",
+      "4": "tallverdi",
+      "5": "ualminnelig",
+      "6": "funkla",
+      "7": "utflukta"
+    },
+    "down": {
+      "1": "munnen",
+      "2": "oppvarmingskilde",
+      "3": "serverer",
+      "4": "kjemisk tegn",
+      "5": "tjukt",
+      "6": "melkedyr",
+      "7": "uhygge",
+      "8": "voller",
+      "9": "måleinstrument",
+      "10": "sjangeren"
+    }
+  }
+}

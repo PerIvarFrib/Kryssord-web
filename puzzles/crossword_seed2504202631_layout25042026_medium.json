@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 19:00:19",
+    "seed": 2504202631,
+    "layout_seed": 2504202631,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.####.#",
+    "#........",
+    "#........",
+    "..#......",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "##M####H#",
+    "#VEHIKKEL",
+    "#IDEOLOGI",
+    "MS#KNIPNE",
+    "#TALENTER",
+    "BERETTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "VEHIKKEL",
+      "2": "IDEOLOGI",
+      "3": "MS",
+      "4": "KNIPNE",
+      "5": "TALENTER",
+      "6": "BERETTER"
+    },
+    "down": {
+      "1": "VISTE",
+      "2": "MED",
+      "3": "AR",
+      "4": "HEKLE",
+      "5": "IONET",
+      "6": "KLINT",
+      "7": "KOPTE",
+      "8": "HEGNER",
+      "9": "LIER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "trekkvogn",
+      "2": "idélære",
+      "3": "båtforkortelse",
+      "4": "griske",
+      "5": "begavelser",
+      "6": "forklarer"
+    },
+    "down": {
+      "1": "rettledet",
+      "2": "inkludert",
+      "3": "stat i usa",
+      "4": "lage masker",
+      "5": "atomet",
+      "6": "klebt",
+      "7": "tittete",
+      "8": "sikrer",
+      "9": "kjent sted i buskerud"
+    }
+  }
+}

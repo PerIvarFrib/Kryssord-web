@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-10 18:25:16",
+    "seed": 2404202602,
+    "layout_seed": 2404202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "####CM##E",
+    "#UTSETTES",
+    "STEK#BØRS",
+    "#TSAR#YTE",
+    "#UTFOLDET",
+    "PREFERER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CM",
+      "2": "UTSETTES",
+      "3": "STEK",
+      "4": "BØRS",
+      "5": "TSAR",
+      "6": "YTE",
+      "7": "UTFOLDET",
+      "8": "PREFERER"
+    },
+    "down": {
+      "1": "UTTUR",
+      "2": "TESTE",
+      "3": "SKAFF",
+      "4": "CE",
+      "5": "ROE",
+      "6": "MTB",
+      "7": "LR",
+      "8": "TØYDE",
+      "9": "ERTER",
+      "10": "ESSET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "lengdeenhet",
+      "2": "hemmes",
+      "3": "varmrett",
+      "4": "salgssted",
+      "5": "statssjef",
+      "6": "tilføre",
+      "7": "utøvet",
+      "8": "avgjør"
+    },
+    "down": {
+      "1": "avreise",
+      "2": "undersøke",
+      "3": "påfør",
+      "4": "kjemisk tegn",
+      "5": "dempe",
+      "6": "militærfartøy",
+      "7": "kjemisk tegn",
+      "8": "fortsatte",
+      "9": "spøker",
+      "10": "toppkortet"
+    }
+  }
+}

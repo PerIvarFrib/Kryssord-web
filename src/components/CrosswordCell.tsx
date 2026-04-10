@@ -1,5 +1,7 @@
 import type { ChangeEvent } from "react";
 import { useRef, useEffect } from "react";
+import ClueCellContent from "./ClueCellContent";
+import type { ClueCellData, WordKey } from "../crossword/types";
 
 export interface CrosswordCellProps {
   isBlock: boolean;
@@ -19,7 +21,12 @@ export interface CrosswordCellProps {
   focusTrigger?: number;
   onChange?: (value: string) => void;
   onClick?: () => void;
-  onKeyDown?: (event: React.KeyboardEvent) => void;
+  onKeyDown?: (
+    event: React.KeyboardEvent,
+  ) => void; /** When set, this block cell renders clue text instead of a solid black square. */
+  clueCellData?: ClueCellData;
+  /** Called when a clue slot inside the cell is clicked. */
+  onClueCellClick?: (wordKey: WordKey) => void;
 }
 
 export function CrosswordCell({
@@ -36,6 +43,8 @@ export function CrosswordCell({
   onChange,
   onClick,
   onKeyDown,
+  clueCellData,
+  onClueCellClick,
 }: CrosswordCellProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -54,6 +63,16 @@ export function CrosswordCell({
   }
 
   if (isBlock) {
+    if (clueCellData) {
+      return (
+        <div className={`${className} clue-cell`}>
+          <ClueCellContent
+            data={clueCellData}
+            onClueCellClick={onClueCellClick}
+          />
+        </div>
+      );
+    }
     return <div className={className} />;
   }
 

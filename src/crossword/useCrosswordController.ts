@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type {
   CellProgressStatus,
+  ClueCellMap,
   CrosswordPuzzle,
   Direction,
   WordKey,
@@ -8,6 +9,7 @@ import type {
   WordPosition,
 } from "./types";
 import { buildWordPositions } from "./wordPositions";
+import { buildCluePlacements } from "./cluePlacements";
 
 export interface CrosswordProgressSnapshot {
   values: string[][];
@@ -39,6 +41,10 @@ export interface CrosswordControllerState {
   canCheckWord: boolean;
   canRevealLetter: boolean;
   canRevealWord: boolean;
+  /** Clue data for each # cell that carries an in-grid clue. */
+  clueCellMap: ClueCellMap;
+  /** Word keys that could not be placed in-grid and remain in the sidebar. */
+  sidebarFallbackWordKeys: Set<WordKey>;
 }
 
 export interface CrosswordControllerActions {
@@ -46,6 +52,8 @@ export interface CrosswordControllerActions {
   handleCellClick: (row: number, col: number) => void;
   handleKeyDown: (row: number, col: number, event: React.KeyboardEvent) => void;
   selectWord: (direction: Direction, number: number) => void;
+  /** Select a word directly by its WordKey (used by clue cell click handlers). */
+  selectWordByKey: (wordKey: WordKey) => void;
   checkLetter: () => void;
   checkWord: () => void;
   checkAll: () => void;
@@ -67,6 +75,10 @@ export function useCrosswordController(
   const [values, setValues] = useState<string[][]>([]);
   const [cellStatus, setCellStatus] = useState<CellProgressStatus[][]>([]);
   const [wordPositions, setWordPositions] = useState<WordPositions>({});
+  const [clueCellMap, setClueCellMap] = useState<ClueCellMap>(() => new Map());
+  const [sidebarFallbackWordKeys, setSidebarFallbackWordKeys] = useState<Set<WordKey>>(
+    () => new Set(),
+  );
   const [selectedCell, setSelectedCell] = useState<{ row: number; col: number } | null>(
     null,
   );
@@ -97,6 +109,8 @@ export function useCrosswordController(
       setRevealedLetters(0);
       setWrongCheckedLettersCount(0);
       setWrongCheckCounts({});
+      setClueCellMap(new Map());
+      setSidebarFallbackWordKeys(new Set());
       setFocusTrigger(0);
       return;
     }
@@ -122,7 +136,11 @@ export function useCrosswordController(
     }
 
     const positions = buildWordPositions(puzzle);
-    setWordPositions(positions);
+    const { wordPositions: enrichedPositions, clueCellMap: newClueCellMap, sidebarFallbackKeys } =
+      buildCluePlacements(puzzle, positions);
+    setWordPositions(enrichedPositions);
+    setClueCellMap(newClueCellMap);
+    setSidebarFallbackWordKeys(sidebarFallbackKeys);
     setTotalLetters(letters);
 
     if (initialProgress && initialProgress.values.length) {
@@ -806,6 +824,8 @@ export function useCrosswordController(
     canCheckWord,
     canRevealLetter,
     canRevealWord,
+    clueCellMap,
+    sidebarFallbackWordKeys,
   };
 
   // Eksporter nåværende fremdrift til eventuell lytter (for lagring i App)
@@ -836,6 +856,10 @@ export function useCrosswordController(
     handleCellClick,
     handleKeyDown,
     selectWord,
+    selectWordByKey: (wordKey: WordKey) => {
+      const pos = wordPositions[wordKey];
+      if (pos) selectWord(pos.direction, pos.number);
+    },
     checkLetter,
     checkWord,
     checkAll,
