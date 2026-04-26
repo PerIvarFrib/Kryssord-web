@@ -22,7 +22,7 @@ const formatTimeUntilNextPuzzle = (remainingMs: number) => {
 export interface CompletionPopupProps {
   isOpen: boolean;
   onClose: () => void;
-  score: number;
+  score?: number;
   todayEntries: HighscoreEntry[];
   yesterdayEntries: HighscoreEntry[];
   onSubmitName: (name: string) => void;
@@ -120,51 +120,62 @@ export function CompletionPopup({
     <div className="completion-overlay" role="dialog" aria-modal="true">
       <div className="completion-dialog">
         <header className="completion-header">
-          <h2>Gratulerer!</h2>
-          <p>Du har fullført kryssordet.</p>
+          {score !== undefined ? (
+            <>
+              <h2>Gratulerer!</h2>
+              <p>Du har fullført kryssordet.</p>
+            </>
+          ) : (
+            <h2>Highscore</h2>
+          )}
         </header>
 
-        <div className="completion-score">
-          <span className="completion-score-label">Din poengsum</span>
-          <span className="completion-score-value">{score}</span>
-        </div>
+        {score !== undefined && (
+          <div className="completion-score">
+            <span className="completion-score-label">Din poengsum</span>
+            <span className="completion-score-value">{score}</span>
+          </div>
+        )}
 
-        <p className="completion-next-puzzle" aria-live="polite">
-          Nytt kryssord publiseres om
-          <span className="completion-next-puzzle-time">
-            {formatTimeUntilNextPuzzle(timeUntilNextPuzzle)}
-          </span>
-        </p>
-
-        {canSubmitHighscore ? (
-          !hasSubmittedName ? (
-            <form className="completion-form" onSubmit={handleSubmit}>
-              <label htmlFor="player-name" className="completion-label">
-                Skriv inn navnet ditt for highscore-listen (valgfritt):
-              </label>
-              <div className="completion-input-row">
-                <input
-                  id="player-name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Navn eller kallenavn"
-                  className="completion-input"
-                />
-                <button type="submit">Lagre resultat</button>
-              </div>
-            </form>
-          ) : (
-            <p className="highscore-empty">
-              Resultatet ditt er lagret. Takk for at du spilte!
-            </p>
-          )
-        ) : (
-          <p className="highscore-empty">
-            Highscore-listen gjelder bare dagens kryssord. Resultatet for dette
-            kryssordet lagres ikke i highscore.
+        {score !== undefined && (
+          <p className="completion-next-puzzle" aria-live="polite">
+            Nytt kryssord publiseres om
+            <span className="completion-next-puzzle-time">
+              {formatTimeUntilNextPuzzle(timeUntilNextPuzzle)}
+            </span>
           </p>
         )}
+
+        {score !== undefined &&
+          (canSubmitHighscore ? (
+            !hasSubmittedName ? (
+              <form className="completion-form" onSubmit={handleSubmit}>
+                <label htmlFor="player-name" className="completion-label">
+                  Skriv inn navnet ditt for highscore-listen (valgfritt):
+                </label>
+                <div className="completion-input-row">
+                  <input
+                    id="player-name"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Navn eller kallenavn"
+                    className="completion-input"
+                  />
+                  <button type="submit">Lagre resultat</button>
+                </div>
+              </form>
+            ) : (
+              <p className="highscore-empty">
+                Resultatet ditt er lagret. Takk for at du spilte!
+              </p>
+            )
+          ) : (
+            <p className="highscore-empty">
+              Highscore-listen gjelder bare dagens kryssord. Resultatet for
+              dette kryssordet lagres ikke i highscore.
+            </p>
+          ))}
 
         <div className="highscore-sections">
           <HighscoreSection

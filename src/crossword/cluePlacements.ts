@@ -90,24 +90,25 @@ export function buildCluePlacements(
       existing.placements.length === 1 &&
       existing.placements[0].arrow !== placement.arrow
     ) {
-      // Enforce: across arrows (→ / ↳) always in position 0 (top slot),
-      // down arrows (↓ / ↴) in position 1 (bottom slot).
-      // Within the same arrow class, keep insertion order (first = top).
-      const isAcrossArrow = (a: ClueArrow) => a === "→" || a === "↳";
-      const newIsAcross = isAcrossArrow(placement.arrow);
-      const existingIsAcross = isAcrossArrow(existing.placements[0].arrow);
+      // Slot ordering priority (lower = top slot):
+      //   0: →   (across, points right)
+      //   1: ↳   (across, turns down-right)
+      //   2: ↴   (down, enters from left then turns down — visually "above" a pure ↓)
+      //   3: ↓   (down, points straight down)
+      const slotPriority = (a: ClueArrow): number => {
+        if (a === "→") return 0;
+        if (a === "↳") return 1;
+        if (a === "↴") return 2;
+        return 3; // ↓
+      };
 
       let top: CluePlacement;
       let bottom: CluePlacement;
 
-      if (!newIsAcross && existingIsAcross) {
-        top = existing.placements[0];
-        bottom = placement;
-      } else if (newIsAcross && !existingIsAcross) {
+      if (slotPriority(placement.arrow) < slotPriority(existing.placements[0].arrow)) {
         top = placement;
         bottom = existing.placements[0];
       } else {
-        // Both same class — keep insertion order.
         top = existing.placements[0];
         bottom = placement;
       }

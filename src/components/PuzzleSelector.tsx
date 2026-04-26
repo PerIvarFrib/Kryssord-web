@@ -8,6 +8,7 @@ export interface PuzzleSelectorProps {
   selectedPuzzleId: string;
   onChangeSelected: (id: string) => void;
   onLoadPuzzle: () => void;
+  onOpenHighscore: () => void;
 }
 
 export function PuzzleSelector({
@@ -15,6 +16,7 @@ export function PuzzleSelector({
   selectedPuzzleId,
   onChangeSelected,
   onLoadPuzzle,
+  onOpenHighscore,
 }: PuzzleSelectorProps) {
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     onChangeSelected(event.target.value);
@@ -46,6 +48,9 @@ export function PuzzleSelector({
         disabled={isLoadDisabled}
       >
         Last inn
+      </button>
+      <button type="button" onClick={onOpenHighscore}>
+        Vis resultat og highscore
       </button>
     </div>
   );

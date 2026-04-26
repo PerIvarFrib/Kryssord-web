@@ -89,6 +89,9 @@ function App() {
   const lastRevealTickRef = useRef(0);
   const revealSequenceRef = useRef<Array<[number, number]>>([]);
   const revealSeqIndexRef = useRef(0);
+  const completionPopupTimerRef = useRef<ReturnType<typeof setTimeout> | null>(
+    null,
+  );
 
   const todayKey = getTodayKey();
   const yesterdayKey = getYesterdayKey();
@@ -174,6 +177,10 @@ function App() {
     setPuzzle(nextPuzzle);
 
     // Nullstill fullførings-/navnestatus når et nytt kryssord lastes
+    if (completionPopupTimerRef.current !== null) {
+      clearTimeout(completionPopupTimerRef.current);
+      completionPopupTimerRef.current = null;
+    }
     setCompletionStats(null);
     setIsCompletionPopupOpen(false);
     setHasSubmittedName(false);
@@ -213,9 +220,6 @@ function App() {
   const { targetSec: revealTargetSec, intervalSec: revealIntervalSec } =
     useMemo(() => getRevealTiming(totalLetters), [totalLetters]);
   const { wrongCheckedLettersCount, wrongCheckCounts } = state;
-
-  const isTodayCurrentPuzzle = currentPuzzleKey === todayKey;
-  const canReopenResult = !!completionStats && !!puzzle;
 
   const refreshHighscores = async () => {
     const { today, yesterday } = await getHighscoresForTodayAndYesterday(
@@ -352,7 +356,10 @@ function App() {
       wrongCheckedLetters: wrongCheckedLettersCount,
       completedAt,
     });
-    setIsCompletionPopupOpen(true);
+    completionPopupTimerRef.current = window.setTimeout(() => {
+      setIsCompletionPopupOpen(true);
+      completionPopupTimerRef.current = null;
+    }, 1000);
     setCanSubmitHighscore(isTodayPuzzle);
 
     if (isTodayPuzzle && !hasCompletedTodayPuzzle) {
@@ -454,6 +461,7 @@ function App() {
           selectedPuzzleId={selectedPuzzleId}
           onChangeSelected={handleChangeSelectedPuzzle}
           onLoadPuzzle={handleLoadPuzzle}
+          onOpenHighscore={() => setIsCompletionPopupOpen(true)}
         />
       </Header>
 
@@ -470,19 +478,6 @@ function App() {
             confirmedLetters={confirmedLetters}
             revealedLetters={revealedLetters}
           />
-
-          {canReopenResult && (
-            <div className="completion-reopen">
-              <button
-                type="button"
-                onClick={() => setIsCompletionPopupOpen(true)}
-              >
-                {isTodayCurrentPuzzle
-                  ? "Vis resultat og highscore"
-                  : "Vis resultat"}
-              </button>
-            </div>
-          )}
 
           <div className="game-container">
             <div className="crossword-container">
@@ -542,18 +537,16 @@ function App() {
         </main>
       )}
 
-      {completionStats && (
-        <CompletionPopup
-          isOpen={isCompletionPopupOpen}
-          onClose={() => setIsCompletionPopupOpen(false)}
-          score={completionStats.score}
-          todayEntries={todayHighscores}
-          yesterdayEntries={yesterdayHighscores}
-          onSubmitName={handleSubmitName}
-          hasSubmittedName={hasSubmittedName}
-          canSubmitHighscore={canSubmitHighscore}
-        />
-      )}
+      <CompletionPopup
+        isOpen={isCompletionPopupOpen}
+        onClose={() => setIsCompletionPopupOpen(false)}
+        score={completionStats?.score}
+        todayEntries={todayHighscores}
+        yesterdayEntries={yesterdayHighscores}
+        onSubmitName={handleSubmitName}
+        hasSubmittedName={hasSubmittedName}
+        canSubmitHighscore={canSubmitHighscore}
+      />
 
       <Footer />
     </div>

@@ -674,6 +674,12 @@ export function useCrosswordController(
   const revealLetter = () => {
     if (!puzzle || !selectedCell) return;
     const { row, col } = selectedCell;
+    // Skip cells that are already locked to avoid double-counting
+    if (
+      cellStatus[row]?.[col] === "revealed" ||
+      cellStatus[row]?.[col] === "correctConfirmed"
+    )
+      return;
     const expected = puzzle.solved_layout[row][col];
     
     const nextValues = values.map((r) => [...r]);
@@ -716,6 +722,12 @@ export function useCrosswordController(
     for (let i = 0; i < pos.length; i++) {
       const r = pos.direction === "across" ? pos.row : pos.row + i;
       const c = pos.direction === "across" ? pos.col + i : pos.col;
+      // Skip cells that are already locked to avoid double-counting
+      if (
+        nextStatus[r]?.[c] === "revealed" ||
+        nextStatus[r]?.[c] === "correctConfirmed"
+      )
+        continue;
       const expected = puzzle.solved_layout[r][c];
       const current = nextValues[r]?.[c] ?? "";
 
