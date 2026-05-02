@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 14:37:22",
+    "seed": 305202602,
+    "layout_seed": 305202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..#.###",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##DS#M###",
+    "#DUNDYNER",
+    "HØG#ÅKERE",
+    "#SNØR#STI",
+    "#TAVERNEN",
+    "LEDD#HATT"
+  ],
+  "answers": {
+    "across": {
+      "1": "DS",
+      "2": "DUNDYNER",
+      "3": "HØG",
+      "4": "ÅKERE",
+      "5": "SNØR",
+      "6": "STI",
+      "7": "TAVERNEN",
+      "8": "LEDD",
+      "9": "HATT"
+    },
+    "down": {
+      "1": "DØSTE",
+      "2": "DUGNAD",
+      "3": "SN",
+      "4": "ØVD",
+      "5": "DÅRE",
+      "6": "MYK",
+      "7": "RH",
+      "8": "NESNA",
+      "9": "ERTET",
+      "10": "REINT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "båtforkortelse",
+      "2": "sengetøyer",
+      "3": "voluminøs",
+      "4": "jorder",
+      "5": "faller nedbør",
+      "6": "ferdselsvei",
+      "7": "serveringsstedet",
+      "8": "bolk",
+      "9": "vært nødt til"
+    },
+    "down": {
+      "1": "sovne",
+      "2": "samarbeid",
+      "3": "kjemisk tegn",
+      "4": "trent",
+      "5": "narr",
+      "6": "tøyelig",
+      "7": "kjemisk symbol",
+      "8": "poststed i nordland",
+      "9": "hånet",
+      "10": "purt"
+    }
+  }
+}

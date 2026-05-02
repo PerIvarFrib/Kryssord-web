@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 22:05:26",
+    "seed": 2505202608,
+    "layout_seed": 2505202608,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##..###",
+    "#........",
+    ".....#...",
+    "#...#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#K##VM###",
+    "#RESOLUTT",
+    "DAMER#TRE",
+    "#NOK#ØVES",
+    "SKJENDIGE",
+    "#TILBEDT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "VM",
+      "2": "RESOLUTT",
+      "3": "DAMER",
+      "4": "TRE",
+      "5": "NOK",
+      "6": "ØVES",
+      "7": "SKJENDIGE",
+      "8": "TILBEDT"
+    },
+    "down": {
+      "1": "KRANKT",
+      "2": "EMOJI",
+      "3": "SEKEL",
+      "4": "VOR",
+      "5": "NB",
+      "6": "ML",
+      "7": "ØDE",
+      "8": "UTVID",
+      "9": "TREGT",
+      "10": "TESE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "sportsstevne",
+      "2": "besluttsomt",
+      "3": "kvinnebekjentskaper",
+      "4": "alder",
+      "5": "alltid",
+      "6": "opplæres",
+      "7": "ondskapsfulle",
+      "8": "beundret"
+    },
+    "down": {
+      "1": "forkomment",
+      "2": "uttrykkssymbol",
+      "3": "vektenhet",
+      "4": "tysk preposisjon",
+      "5": "fartøy forkortelse",
+      "6": "volumenhet",
+      "7": "livløst",
+      "8": "videreutvikl",
+      "9": "saktegående",
+      "10": "læresetning"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 21:16:57",
+    "seed": 2305202629,
+    "layout_seed": 2305202629,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##..###",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "#E##HG###",
+    "#PÅVIRKER",
+    "LISE#UNGE",
+    "#TARV#ULV",
+    "#ANDERSEN",
+    "#FEIGHETA"
+  ],
+  "answers": {
+    "across": {
+      "1": "HG",
+      "2": "PÅVIRKER",
+      "3": "LISE",
+      "4": "UNGE",
+      "5": "TARV",
+      "6": "ULV",
+      "7": "ANDERSEN",
+      "8": "FEIGHETA"
+    },
+    "down": {
+      "1": "EPITAF",
+      "2": "ÅSANE",
+      "3": "VERDI",
+      "4": "HI",
+      "5": "VEG",
+      "6": "GRU",
+      "7": "RH",
+      "8": "KNUSE",
+      "9": "EGLET",
+      "10": "REVNA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vektenhet",
+      "2": "overbeviser",
+      "3": "dukkenavn",
+      "4": "pjokk",
+      "5": "fornødenhet",
+      "6": "villdyr",
+      "7": "sv-politiker",
+      "8": "usselheten"
+    },
+    "down": {
+      "1": "minnesmerke",
+      "2": "vei i vestfold",
+      "3": "beløp",
+      "4": "bamsebolig",
+      "5": "veistump",
+      "6": "uhygge",
+      "7": "kjemisk symbol",
+      "8": "bryte ned",
+      "9": "hudflettet",
+      "10": "brast"
+    }
+  }
+}

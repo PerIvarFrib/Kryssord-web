@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 17:25:20",
+    "seed": 1105202610,
+    "layout_seed": 1105202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#..#####.",
+    "#........",
+    "#........",
+    "..#......",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "#GD#####I",
+    "#LEKEPARK",
+    "#ORIGINAL",
+    "PD#LENGDE",
+    "#DRENERES",
+    "HEVN#SER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "GD",
+      "2": "LEKEPARK",
+      "3": "ORIGINAL",
+      "4": "PD",
+      "5": "LENGDE",
+      "6": "DRENERES",
+      "7": "HEVN",
+      "8": "SER"
+    },
+    "down": {
+      "1": "GLODDE",
+      "2": "DER",
+      "3": "RV",
+      "4": "KILEN",
+      "5": "EGEN",
+      "6": "PINES",
+      "7": "ANGRE",
+      "8": "RADER",
+      "9": "IKLES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dagsavis",
+      "2": "friareal",
+      "3": "arketyp",
+      "4": "forkortelse for grunnstoff",
+      "5": "høyde",
+      "6": "tømmes",
+      "7": "gjengjeldelse",
+      "8": "glaner"
+    },
+    "down": {
+      "1": "glante",
+      "2": "pronomen",
+      "3": "bilvei",
+      "4": "bygd i hedmark",
+      "5": "usedvanlig",
+      "6": "tortureres",
+      "7": "beklage",
+      "8": "linjer",
+      "9": "dekoreres"
+    }
+  }
+}

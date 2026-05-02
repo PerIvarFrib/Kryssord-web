@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 19:37:01",
+    "seed": 1905202601,
+    "layout_seed": 1905202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..#.#.#",
+    "#........",
+    "...#.....",
+    ".....#...",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##SA#Ø#V#",
+    "#SKREKKER",
+    "KNY#NARRE",
+    "BESØK#OBS",
+    "#ISDEKKET",
+    "#DAA#MAT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SA",
+      "2": "SKREKKER",
+      "3": "KNY",
+      "4": "NARRE",
+      "5": "BESØK",
+      "6": "OBS",
+      "7": "ISDEKKET",
+      "8": "DAA",
+      "9": "MAT"
+    },
+    "down": {
+      "1": "KB",
+      "2": "SNEID",
+      "3": "SKYSSA",
+      "4": "AR",
+      "5": "ØDA",
+      "6": "ENKE",
+      "7": "ØKA",
+      "8": "KM",
+      "9": "KROKA",
+      "10": "VERBET",
+      "11": "REST"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "militæravdeling",
+      "2": "frykter",
+      "3": "klynk",
+      "4": "forlokke",
+      "5": "visitt",
+      "6": "på vakt",
+      "7": "skorpen",
+      "8": "målenhet for areal",
+      "9": "syltelabb"
+    },
+    "down": {
+      "1": "dataenhet",
+      "2": "spikket",
+      "3": "busset",
+      "4": "stat i usa",
+      "5": "livløst",
+      "6": "enslig kvinne",
+      "7": "auket",
+      "8": "lengdeenhet",
+      "9": "krummet",
+      "10": "prisen",
+      "11": "dyreskrott"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 18:10:26",
+    "seed": 1205202638,
+    "layout_seed": 1205202638,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#...#....",
+    ".....#...",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####TB#B#",
+    "#SLOVENER",
+    "#JUV#NEDE",
+    "KORAL#VRI",
+    "UKELØNNER",
+    "#KREDITT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "TB",
+      "2": "SLOVENER",
+      "3": "JUV",
+      "4": "NEDE",
+      "5": "KORAL",
+      "6": "VRI",
+      "7": "UKELØNNER",
+      "8": "KREDITT"
+    },
+    "down": {
+      "1": "KU",
+      "2": "SJOKK",
+      "3": "LURER",
+      "4": "OVALE",
+      "5": "TV",
+      "6": "LØD",
+      "7": "BEN",
+      "8": "NI",
+      "9": "NEVNT",
+      "10": "BEDRET",
+      "11": "REIR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "søreuropeer",
+      "3": "kløft",
+      "4": "prep.",
+      "5": "kirkemusikk",
+      "6": "slynge",
+      "7": "godtgjørelser",
+      "8": "bankgjeld"
+    },
+    "down": {
+      "1": "melkedyr",
+      "2": "støkk",
+      "3": "trikser",
+      "4": "rundinger",
+      "5": "elektronikk",
+      "6": "ljoma",
+      "7": "setebein",
+      "8": "kjemisk tegn",
+      "9": "tilkjennegitt",
+      "10": "styrkt",
+      "11": "fuglehjem"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 16:55:53",
+    "seed": 905202601,
+    "layout_seed": 905202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.##.##",
+    ".........",
+    "...#.....",
+    "#........",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###Z##L##",
+    "GLANSLØST",
+    "BOM#PAPUA",
+    "#SPREKEST",
+    "#ERODERTE",
+    "#SES#SEER"
+  ],
+  "answers": {
+    "across": {
+      "1": "GLANSLØST",
+      "2": "BOM",
+      "3": "PAPUA",
+      "4": "SPREKEST",
+      "5": "ERODERTE",
+      "6": "SES",
+      "7": "SEER"
+    },
+    "down": {
+      "1": "GB",
+      "2": "LOSES",
+      "3": "AMPRE",
+      "4": "ZN",
+      "5": "ROS",
+      "6": "SPED",
+      "7": "LAKES",
+      "8": "LØPERE",
+      "9": "SUSTE",
+      "10": "TATER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bleikene",
+      "2": "startmiss",
+      "3": "provins i asia",
+      "4": "spenstigst",
+      "5": "etset bort",
+      "6": "speides",
+      "7": "iakttager"
+    },
+    "down": {
+      "1": "dataenhet",
+      "2": "navigeres",
+      "3": "forbitrete",
+      "4": "kjemisk symbol",
+      "5": "utmerkelse",
+      "6": "uanselig",
+      "7": "innsjøer",
+      "8": "mosjonister",
+      "9": "fosset",
+      "10": "kjeltring"
+    }
+  }
+}

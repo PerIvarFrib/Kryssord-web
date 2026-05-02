@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 20:44:07",
+    "seed": 2205202618,
+    "layout_seed": 2205202618,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.##.##",
+    "#........",
+    "#.....#..",
+    ".........",
+    "#........",
+    ".....#..."
+  ],
+  "solved_layout": [
+    "###L##H##",
+    "#KVERKETE",
+    "#LÅNEN#IT",
+    "SØKKFULLT",
+    "#ENESTYRE",
+    "PRATE#SÅR"
+  ],
+  "answers": {
+    "across": {
+      "1": "KVERKETE",
+      "2": "LÅNEN",
+      "3": "IT",
+      "4": "SØKKFULLT",
+      "5": "ENESTYRE",
+      "6": "PRATE",
+      "7": "SÅR"
+    },
+    "down": {
+      "1": "KLØER",
+      "2": "VÅKNA",
+      "3": "LENKET",
+      "4": "REFSE",
+      "5": "KNUT",
+      "6": "HE",
+      "7": "LYS",
+      "8": "TILRÅ",
+      "9": "ETTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "massakrerte",
+      "2": "kreditten",
+      "3": "engelsk pronomen",
+      "4": "velfylt",
+      "5": "diktatur",
+      "6": "snakke",
+      "7": "sprekk"
+    },
+    "down": {
+      "1": "eksemer",
+      "2": "livnet",
+      "3": "koblet",
+      "4": "skjenne på",
+      "5": "en olsen",
+      "6": "forkortelse for grunnstoff",
+      "7": "glanser",
+      "8": "anbefale",
+      "9": "konjunksjon"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 14:48:58",
+    "seed": 505202604,
+    "layout_seed": 505202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.###.#.",
+    "#........",
+    "......#..",
+    "#........",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "##T###D#R",
+    "#BERUSEDE",
+    "GALANT#VG",
+    "#LEKTOREN",
+    "#EKTEFØLT",
+    "ANSE#FAT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "BERUSEDE",
+      "2": "GALANT",
+      "3": "VG",
+      "4": "LEKTOREN",
+      "5": "EKTEFØLT",
+      "6": "ANSE",
+      "7": "FAT"
+    },
+    "down": {
+      "1": "BALEN",
+      "2": "TELEKS",
+      "3": "RAKTE",
+      "4": "UNTE",
+      "5": "STOFF",
+      "6": "DE",
+      "7": "RØA",
+      "8": "DVELT",
+      "9": "REGNT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "sanselause",
+      "2": "urban",
+      "3": "nettavis",
+      "4": "pedagogen",
+      "5": "genuint",
+      "6": "kritisere",
+      "7": "metallbeholder"
+    },
+    "down": {
+      "1": "dikteren",
+      "2": "fjernkommunikasjon",
+      "3": "overleverte",
+      "4": "ytet",
+      "5": "reagens",
+      "6": "amerikansk stat og by",
+      "7": "boligområde i oslo",
+      "8": "holdt seg",
+      "9": "pøst"
+    }
+  }
+}

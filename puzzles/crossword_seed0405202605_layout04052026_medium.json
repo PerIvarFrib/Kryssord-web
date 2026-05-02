@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 14:43:56",
+    "seed": 405202605,
+    "layout_seed": 405202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..####.",
+    "#........",
+    "#........",
+    "..#......",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "##SB####K",
+    "#SMALSIDA",
+    "#PÅMINNER",
+    "SR#SMATRE",
+    "#AKETUREN",
+    "GYM#ETOS#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SB",
+      "2": "SMALSIDA",
+      "3": "PÅMINNER",
+      "4": "SR",
+      "5": "SMATRE",
+      "6": "AKETUREN",
+      "7": "GYM",
+      "8": "ETOS"
+    },
+    "down": {
+      "1": "SPRAY",
+      "2": "SMÅ",
+      "3": "KM",
+      "4": "BAMSE",
+      "5": "LIMTE",
+      "6": "SNAUT",
+      "7": "INTRO",
+      "8": "DERES",
+      "9": "KAREN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skipsforkortelse",
+      "2": "bredden",
+      "3": "advarer",
+      "4": "kjemisk tegn",
+      "5": "klapre",
+      "6": "utflukten",
+      "7": "treningssted",
+      "8": "moralsyn"
+    },
+    "down": {
+      "1": "hårpleiemiddel",
+      "2": "minimale",
+      "3": "lengdeenhet",
+      "4": "teddybjørn",
+      "5": "klebte fast",
+      "6": "knapt",
+      "7": "grunnleggelse",
+      "8": "pron.",
+      "9": "gutten"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 18:14:43",
+    "seed": 1305202603,
+    "layout_seed": 1305202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "##S#HL###",
+    "#UTFORSKA",
+    "AREAL#TYV",
+    "#OND#VOLT",
+    "#EGENARTA",
+    "#STRENDER"
+  ],
+  "answers": {
+    "across": {
+      "1": "HL",
+      "2": "UTFORSKA",
+      "3": "AREAL",
+      "4": "TYV",
+      "5": "OND",
+      "6": "VOLT",
+      "7": "EGENARTA",
+      "8": "STRENDER"
+    },
+    "down": {
+      "1": "UROES",
+      "2": "STENGT",
+      "3": "FADER",
+      "4": "HOL",
+      "5": "NE",
+      "6": "LR",
+      "7": "VAN",
+      "8": "STORD",
+      "9": "KYLTE",
+      "10": "AVTAR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "volumenhet",
+      "2": "gjennomsøkte",
+      "3": "distrikter",
+      "4": "boktjuv",
+      "5": "hjerteløs",
+      "6": "elektrisk måleenhet",
+      "7": "spesielt",
+      "8": "badeplasser"
+    },
+    "down": {
+      "1": "skremmes",
+      "2": "barrikadert",
+      "3": "familiemedlem",
+      "4": "oljebrønn",
+      "5": "kjemisk tegn",
+      "6": "kjemisk tegn",
+      "7": "motorfartøy",
+      "8": "by i hordaland",
+      "9": "kastet",
+      "10": "svinner hen"
+    }
+  }
+}

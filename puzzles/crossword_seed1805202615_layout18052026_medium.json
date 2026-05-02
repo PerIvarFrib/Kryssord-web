@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 19:35:30",
+    "seed": 1805202615,
+    "layout_seed": 1805202615,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..###",
+    ".........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "####SC###",
+    "FOTTURIST",
+    "RAVER#MAI",
+    "#SEI#GALE",
+    "#ERTINGER",
+    "ARTERIER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SC",
+      "2": "FOTTURIST",
+      "3": "RAVER",
+      "4": "MAI",
+      "5": "SEI",
+      "6": "GALE",
+      "7": "ERTINGER",
+      "8": "ARTERIER"
+    },
+    "down": {
+      "1": "FR",
+      "2": "OASER",
+      "3": "TVERT",
+      "4": "TEITE",
+      "5": "SUR",
+      "6": "IR",
+      "7": "CR",
+      "8": "GNI",
+      "9": "IMAGE",
+      "10": "SALER",
+      "11": "TIER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkortelse for grunnstoff",
+      "2": "feriereisende",
+      "3": "tumler",
+      "4": "vårmåned",
+      "5": "fisk i havet",
+      "6": "vanvittige",
+      "7": "harselaser",
+      "8": "blodårer"
+    },
+    "down": {
+      "1": "vanlig forkortelse",
+      "2": "hager",
+      "3": "uselskapelig",
+      "4": "dumme",
+      "5": "asiatisk havneby",
+      "6": "kjemisk tegn",
+      "7": "forkortelse for grunnstoff",
+      "8": "skrape",
+      "9": "fremtoning",
+      "10": "aulaer",
+      "11": "stilner"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 16:37:03",
+    "seed": 605202612,
+    "layout_seed": 605202612,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#..###.",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#B#CF###S",
+    "#EKSILERT",
+    "BRO#NATUR",
+    "#ULE#DIVA",
+    "#SOLLYSET",
+    "#ANGÅ#KRA"
+  ],
+  "answers": {
+    "across": {
+      "1": "CF",
+      "2": "EKSILERT",
+      "3": "BRO",
+      "4": "NATUR",
+      "5": "ULE",
+      "6": "DIVA",
+      "7": "SOLLYSET",
+      "8": "ANGÅ",
+      "9": "KRA"
+    },
+    "down": {
+      "1": "BERUSA",
+      "2": "KOLON",
+      "3": "CS",
+      "4": "ELG",
+      "5": "FIN",
+      "6": "LÅ",
+      "7": "LADY",
+      "8": "ETISK",
+      "9": "RUVER",
+      "10": "STRATA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "forvist",
+      "3": "båtbru",
+      "4": "flora",
+      "5": "skrike",
+      "6": "popstjerne",
+      "7": "belysningen",
+      "8": "berøre",
+      "9": "dyrelyd"
+    },
+    "down": {
+      "1": "døddrukkent",
+      "2": "skråstreker",
+      "3": "forkortelse for grunnstoff",
+      "4": "kløvdyr",
+      "5": "storslagen",
+      "6": "døste",
+      "7": "adelskvinne",
+      "8": "moralsk",
+      "9": "troner",
+      "10": "nivåer"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 21:56:32",
+    "seed": 2405202633,
+    "layout_seed": 2405202633,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#..####",
+    "#........",
+    "...#.....",
+    "#...#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#K#MT####",
+    "#OPPASSER",
+    "SNO#STØVE",
+    "#SLU#IRAN",
+    "FISKINGEN",
+    "#SKANNER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MT",
+      "2": "OPPASSER",
+      "3": "SNO",
+      "4": "STØVE",
+      "5": "SLU",
+      "6": "IRAN",
+      "7": "FISKINGEN",
+      "8": "SKANNER"
+    },
+    "down": {
+      "1": "KONSIS",
+      "2": "POLSK",
+      "3": "MP",
+      "4": "UKA",
+      "5": "TAS",
+      "6": "IN",
+      "7": "STINN",
+      "8": "SØRGE",
+      "9": "EVAER",
+      "10": "RENN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skipsforkortelse",
+      "2": "lakei",
+      "3": "slyng",
+      "4": "fyke",
+      "5": "grådig",
+      "6": "stat i asia",
+      "7": "hobbyen",
+      "8": "gjennomsøker"
+    },
+    "down": {
+      "1": "fyndig",
+      "2": "europeisk språk",
+      "3": "militæravdeling",
+      "4": "epoken",
+      "5": "røves",
+      "6": "tysk preposisjon",
+      "7": "fyldig",
+      "8": "beklage",
+      "9": "publikasjoner",
+      "10": "trafikk"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 18:52:26",
+    "seed": 1605202607,
+    "layout_seed": 1605202607,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###..####",
+    "#........",
+    "....#....",
+    "...#.....",
+    "#........",
+    ".....#..."
+  ],
+  "solved_layout": [
+    "###EM####",
+    "#ILLSKREK",
+    "ELEV#VISL",
+    "VAD#DISKO",
+    "#GEMYTTER",
+    "UTROP#ART"
+  ],
+  "answers": {
+    "across": {
+      "1": "EM",
+      "2": "ILLSKREK",
+      "3": "ELEV",
+      "4": "VISL",
+      "5": "VAD",
+      "6": "DISKO",
+      "7": "GEMYTTER",
+      "8": "UTROP",
+      "9": "ART"
+    },
+    "down": {
+      "1": "EV",
+      "2": "ILAGT",
+      "3": "LEDER",
+      "4": "ELV",
+      "5": "MO",
+      "6": "MS",
+      "7": "DYP",
+      "8": "KVIT",
+      "9": "RISTA",
+      "10": "ESKER",
+      "11": "KLORT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vanlig forkortelse",
+      "2": "brølte",
+      "3": "journalistlærling",
+      "4": "blås",
+      "5": "kjent sted i hordaland",
+      "6": "musikksjanger",
+      "7": "naturer",
+      "8": "brøl",
+      "9": "undergruppe"
+    },
+    "down": {
+      "1": "vei forkortelse",
+      "2": "idømt",
+      "3": "distriktsfører",
+      "4": "missouri",
+      "5": "stat i usa",
+      "6": "skipsforkortelse",
+      "7": "avgrunn",
+      "8": "oskegrå",
+      "9": "rystede",
+      "10": "kartonger",
+      "11": "skrapt"
+    }
+  }
+}

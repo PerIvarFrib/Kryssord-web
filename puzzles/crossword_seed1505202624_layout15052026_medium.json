@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 18:44:17",
+    "seed": 1505202624,
+    "layout_seed": 1505202624,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..###",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "........."
+  ],
+  "solved_layout": [
+    "####AP###",
+    "#KVOTERES",
+    "KRIK#PÅLE",
+    "#IRSK#DIN",
+    "#SVIRRETE",
+    "VELDUFTEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "AP",
+      "2": "KVOTERES",
+      "3": "KRIK",
+      "4": "PÅLE",
+      "5": "IRSK",
+      "6": "DIN",
+      "7": "SVIRRETE",
+      "8": "VELDUFTEN"
+    },
+    "down": {
+      "1": "KRISE",
+      "2": "VIRVL",
+      "3": "OKSID",
+      "4": "AT",
+      "5": "KRU",
+      "6": "PEP",
+      "7": "RF",
+      "8": "RÅDET",
+      "9": "ELITE",
+      "10": "SENEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "politisk parti",
+      "2": "begrenses",
+      "3": "fiskekrok",
+      "4": "stake",
+      "5": "europeisk språk",
+      "6": "svensk pronomen",
+      "7": "snurra",
+      "8": "aromaen"
+    },
+    "down": {
+      "1": "usikker situasjon",
+      "2": "flagr",
+      "3": "kjemisk uttrykk",
+      "4": "engelsk preposisjon",
+      "5": "afrikansk folkegruppe",
+      "6": "klynket",
+      "7": "kjemisk tegn",
+      "8": "forvaltet",
+      "9": "toppklasse",
+      "10": "økonomien"
+    }
+  }
+}

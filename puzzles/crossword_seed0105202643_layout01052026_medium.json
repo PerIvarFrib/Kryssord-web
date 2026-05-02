@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 14:27:19",
+    "seed": 105202643,
+    "layout_seed": 105202643,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.##.#.",
+    "#........",
+    ".........",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###B##T#A",
+    "#SKITURER",
+    "SKJEMTING",
+    "#RØL#AVSE",
+    "#UTVIKLES",
+    "#STANKER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKITURER",
+      "2": "SKJEMTING",
+      "3": "RØL",
+      "4": "AVSE",
+      "5": "UTVIKLES",
+      "6": "STANKER"
+    },
+    "down": {
+      "1": "SKRUS",
+      "2": "KJØTT",
+      "3": "BIELVA",
+      "4": "TM",
+      "5": "IN",
+      "6": "UTAKK",
+      "7": "TRIVLE",
+      "8": "ENSER",
+      "9": "ARGES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "utflukter",
+      "2": "munterhet",
+      "3": "tullprat",
+      "4": "gi avkall på",
+      "5": "forbedres",
+      "6": "godlukter"
+    },
+    "down": {
+      "1": "vristes",
+      "2": "kalvesteik",
+      "3": "vassdraget",
+      "4": "merkeprodukt",
+      "5": "tysk preposisjon",
+      "6": "mishag",
+      "7": "fomle",
+      "8": "oppdager",
+      "9": "harmes"
+    }
+  }
+}

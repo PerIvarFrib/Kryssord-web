@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 16:40:59",
+    "seed": 705202602,
+    "layout_seed": 705202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.####.##",
+    "#........",
+    "#........",
+    "...#.....",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#B####F##",
+    "#UNYTTEDE",
+    "#DYREEIER",
+    "KOS#SVELG",
+    "SANITETER",
+    "#RØD#SENA"
+  ],
+  "answers": {
+    "across": {
+      "1": "UNYTTEDE",
+      "2": "DYREEIER",
+      "3": "KOS",
+      "4": "SVELG",
+      "5": "SANITETER",
+      "6": "RØD",
+      "7": "SENA"
+    },
+    "down": {
+      "1": "KS",
+      "2": "BUDOAR",
+      "3": "NYSNØ",
+      "4": "YR",
+      "5": "ID",
+      "6": "TEST",
+      "7": "TEVES",
+      "8": "FEIETE",
+      "9": "DELEN",
+      "10": "ERGRA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "ubrukte",
+      "2": "geitebonde",
+      "3": "juleglede",
+      "4": "munn",
+      "5": "militæravdelinger",
+      "6": "blodfarget",
+      "7": "økonomien"
+    },
+    "down": {
+      "1": "selskapsforkortelse",
+      "2": "kjøkkener",
+      "3": "snølag",
+      "4": "ruskvær",
+      "5": "stat i usa",
+      "6": "matteprøve",
+      "7": "snuses",
+      "8": "vaskede",
+      "9": "episoden",
+      "10": "forarget"
+    }
+  }
+}

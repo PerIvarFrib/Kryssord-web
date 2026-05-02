@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 14:34:32",
+    "seed": 205202606,
+    "layout_seed": 205202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    ".........",
+    "#....#...",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##O#SA##L",
+    "OPPSLUKTE",
+    "#OPPÅ#LÅG",
+    "#EVA#SØKE",
+    "#SEDVANER",
+    "#IDEALET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SA",
+      "2": "OPPSLUKTE",
+      "3": "OPPÅ",
+      "4": "LÅG",
+      "5": "EVA",
+      "6": "SØKE",
+      "7": "SEDVANER",
+      "8": "IDEALET"
+    },
+    "down": {
+      "1": "POESI",
+      "2": "OPPVED",
+      "3": "SPADE",
+      "4": "SLÅ",
+      "5": "VA",
+      "6": "AU",
+      "7": "SAL",
+      "8": "KLØNE",
+      "9": "TÅKET",
+      "10": "LEGER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "militæravdeling",
+      "2": "besatte",
+      "3": "prep.",
+      "4": "ynkverdig",
+      "5": "bibelkvinne",
+      "6": "leite etter",
+      "7": "ritualer",
+      "8": "forbildet"
+    },
+    "down": {
+      "1": "lyrikk",
+      "2": "preposisjon og adverb",
+      "3": "landbruksredskap",
+      "4": "pisk",
+      "5": "amerikansk stat og by",
+      "6": "union forkortelse",
+      "7": "instrumentdel",
+      "8": "tulling",
+      "9": "dunkelt",
+      "10": "geriatere"
+    }
+  }
+}

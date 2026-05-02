@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 19:39:52",
+    "seed": 2005202602,
+    "layout_seed": 2005202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.###",
+    "#........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "###R#S###",
+    "#SMÅUNGER",
+    "KLE#TØRNA",
+    "#UTØV#EKS",
+    "FRYSERIET",
+    "#PLAGGENE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SMÅUNGER",
+      "2": "KLE",
+      "3": "TØRNA",
+      "4": "UTØV",
+      "5": "EKS",
+      "6": "FRYSERIET",
+      "7": "PLAGGENE"
+    },
+    "down": {
+      "1": "SLURP",
+      "2": "METYL",
+      "3": "RÅ",
+      "4": "ØSA",
+      "5": "UTVEG",
+      "6": "SNØ",
+      "7": "RG",
+      "8": "GREIE",
+      "9": "ENKEN",
+      "10": "RASTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "spebarn",
+      "2": "dekke til",
+      "3": "kretset",
+      "4": "utfør",
+      "5": "vanlig forkortelse",
+      "6": "fabrikkanlegget",
+      "7": "sportsklærne"
+    },
+    "down": {
+      "1": "munnfull",
+      "2": "atomgruppe",
+      "3": "fenomenal",
+      "4": "pumpen",
+      "5": "vegvalg",
+      "6": "komme nedbør",
+      "7": "forkortelse for grunnstoff",
+      "8": "beherske",
+      "9": "alenemoren",
+      "10": "knarke"
+    }
+  }
+}

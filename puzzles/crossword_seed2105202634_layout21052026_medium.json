@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 20:23:31",
+    "seed": 2105202634,
+    "layout_seed": 2105202634,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#..##",
+    "#........",
+    "#....#...",
+    "...#.....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###O#PB##",
+    "#BUDBILER",
+    "#ARDA#URO",
+    "SJØ#HOSTE",
+    "BARKASSER",
+    "#STRIPER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "PB",
+      "2": "BUDBILER",
+      "3": "ARDA",
+      "4": "URO",
+      "5": "SJØ",
+      "6": "HOSTE",
+      "7": "BARKASSER",
+      "8": "STRIPER"
+    },
+    "down": {
+      "1": "SB",
+      "2": "BAJAS",
+      "3": "URØRT",
+      "4": "ODD",
+      "5": "KR",
+      "6": "BAHAI",
+      "7": "PI",
+      "8": "OSP",
+      "9": "BLUSSE",
+      "10": "ERTER",
+      "11": "ROER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dataenhet",
+      "2": "drosjer",
+      "3": "elv i italia",
+      "4": "bekymring",
+      "5": "vannmasse",
+      "6": "luftveisplage",
+      "7": "robåter",
+      "8": "lysstrimer"
+    },
+    "down": {
+      "1": "skipsforkortelse",
+      "2": "spilloppmaker",
+      "3": "intakt",
+      "4": "norsk fotballklubb",
+      "5": "hovedmynt",
+      "6": "by i tsjad",
+      "7": "bokstavtegn",
+      "8": "trevirke",
+      "9": "gløde",
+      "10": "spøker",
+      "11": "trøster"
+    }
+  }
+}

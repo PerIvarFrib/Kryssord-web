@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 17:13:53",
+    "seed": 1005202616,
+    "layout_seed": 1005202616,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###..##.#",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###FE##M#",
+    "#AVLUKKER",
+    "#BRÅ#AVSA",
+    "MOI#SKAKK",
+    "#RECESSEN",
+    "#TREGEST#"
+  ],
+  "answers": {
+    "across": {
+      "1": "FE",
+      "2": "AVLUKKER",
+      "3": "BRÅ",
+      "4": "AVSA",
+      "5": "MOI",
+      "6": "SKAKK",
+      "7": "RECESSEN",
+      "8": "TREGEST"
+    },
+    "down": {
+      "1": "ABORT",
+      "2": "VRIER",
+      "3": "FLÅ",
+      "4": "CE",
+      "5": "EU",
+      "6": "SEG",
+      "7": "KAKSE",
+      "8": "KVASS",
+      "9": "MESKET",
+      "10": "RAKN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kronidiot",
+      "2": "alkover",
+      "3": "panisk",
+      "4": "forkynte dom",
+      "5": "tettsted i rogaland",
+      "6": "skjev",
+      "7": "forordningen",
+      "8": "langsomst"
+    },
+    "down": {
+      "1": "spontanavstøting",
+      "2": "vinklinger",
+      "3": "grend i sør-trøndelag",
+      "4": "kjemisk tegn",
+      "5": "statsforbund",
+      "6": "falt",
+      "7": "rikmann",
+      "8": "skarpslepen",
+      "9": "fôret opp",
+      "10": "oppløs"
+    }
+  }
+}

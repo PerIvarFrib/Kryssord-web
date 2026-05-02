@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 16:54:35",
+    "seed": 805202610,
+    "layout_seed": 805202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#..####",
+    "#........",
+    "....#....",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#O#SM####",
+    "#VOLDTEKT",
+    "PERU#UNNI",
+    "ARG#ARKET",
+    "#TEMPELET",
+    "#ALTERET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SM",
+      "2": "VOLDTEKT",
+      "3": "PERU",
+      "4": "UNNI",
+      "5": "ARG",
+      "6": "ARKET",
+      "7": "TEMPELET",
+      "8": "ALTERET"
+    },
+    "down": {
+      "1": "PA",
+      "2": "OVERTA",
+      "3": "ORGEL",
+      "4": "SLU",
+      "5": "MT",
+      "6": "MD",
+      "7": "APE",
+      "8": "TURER",
+      "9": "ENKLE",
+      "10": "KNEET",
+      "11": "TITT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "mishandling",
+      "3": "søramerikansk land",
+      "4": "mann i bibelen",
+      "5": "harmdirrende",
+      "6": "papirbiten",
+      "7": "stavkirken",
+      "8": "kirkemøbelet"
+    },
+    "down": {
+      "1": "vanlig forkortelse",
+      "2": "beseire",
+      "3": "tangentinstrument",
+      "4": "grådig",
+      "5": "båtforkortelse",
+      "6": "kjemisk symbol",
+      "7": "savannebavian",
+      "8": "gruppereiser",
+      "9": "banale",
+      "10": "albuen",
+      "11": "raskt blikk"
+    }
+  }
+}

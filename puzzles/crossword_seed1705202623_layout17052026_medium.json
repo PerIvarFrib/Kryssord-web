@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 19:17:14",
+    "seed": 1705202623,
+    "layout_seed": 1705202623,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#..##.",
+    ".........",
+    "#....#...",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##G#MN##S",
+    "FOLKEDRAP",
+    "#VING#OLA",
+    "#ADA#SEGN",
+    "#LEKTYREN",
+    "#TRETTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MN",
+      "2": "FOLKEDRAP",
+      "3": "VING",
+      "4": "OLA",
+      "5": "ADA",
+      "6": "SEGN",
+      "7": "LEKTYREN",
+      "8": "TRETTER"
+    },
+    "down": {
+      "1": "OVALT",
+      "2": "GLIDER",
+      "3": "KNAKE",
+      "4": "MEG",
+      "5": "TT",
+      "6": "ND",
+      "7": "SYT",
+      "8": "ROERE",
+      "9": "ALGER",
+      "10": "SPANN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "massakre",
+      "3": "flyenhet",
+      "4": "folkevisefigur",
+      "5": "bibelsk kvinne",
+      "6": "sagn",
+      "7": "essayet",
+      "8": "krangles"
+    },
+    "down": {
+      "1": "ellipseformet",
+      "2": "lusker",
+      "3": "knirke",
+      "4": "personlighet",
+      "5": "båtforkortelse",
+      "6": "kjemisk tegn",
+      "7": "klynking",
+      "8": "atleter",
+      "9": "sjøplanter",
+      "10": "dunker"
+    }
+  }
+}

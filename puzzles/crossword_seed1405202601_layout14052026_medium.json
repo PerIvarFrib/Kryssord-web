@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-04-16 18:15:46",
+    "seed": 1405202601,
+    "layout_seed": 1405202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##..##.",
+    "#........",
+    "#....#...",
+    "....#....",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "#U##AC##D",
+    "#FRILAGRE",
+    "#RISL#LØV",
+    "TIME#SILO",
+    "#STROPPEN",
+    "ØKE#KAPR#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AC",
+      "2": "FRILAGRE",
+      "3": "RISL",
+      "4": "LØV",
+      "5": "TIME",
+      "6": "SILO",
+      "7": "STROPPEN",
+      "8": "ØKE",
+      "9": "KAPR"
+    },
+    "down": {
+      "1": "UFRISK",
+      "2": "RIMTE",
+      "3": "ISER",
+      "4": "ALL",
+      "5": "OK",
+      "6": "CA",
+      "7": "SPA",
+      "8": "GLIPP",
+      "9": "RØLER",
+      "10": "DEVON"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "engelsk bilmerke",
+      "2": "depot",
+      "3": "kling",
+      "4": "bladverk",
+      "5": "undervisningsperiode",
+      "6": "oppbevaringsrom",
+      "7": "hyssingen",
+      "8": "forsterke",
+      "9": "erobr"
+    },
+    "down": {
+      "1": "kraftløs",
+      "2": "klaket",
+      "3": "gudinner",
+      "4": "pronomen",
+      "5": "bensinmerke",
+      "6": "kjemisk teikn",
+      "7": "massasjebad",
+      "8": "mistak",
+      "9": "slarver",
+      "10": "epoke"
+    }
+  }
+}
