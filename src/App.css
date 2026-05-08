@@ -245,6 +245,13 @@ button.warning {
     align-items: flex-start;
 }
 
+/* Inner row that places the optional left-overflow column beside the main grid. */
+.crossword-grid-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 /* Invisible grid row that aligns with the main grid columns. */
 .crossword-overflow-row {
     display: grid;
@@ -252,7 +259,14 @@ button.warning {
     grid-auto-rows: var(--cell-size);
 }
 
-/* Transparent filler cells in the overflow row where there is no clue cell. */
+/* Invisible single-column grid that aligns with the main grid rows. */
+.crossword-overflow-col {
+    display: grid;
+    gap: 0;
+    grid-auto-columns: var(--cell-size);
+}
+
+/* Transparent filler cells in the overflow row/column where there is no clue cell. */
 .overflow-placeholder {
     width: var(--cell-size);
     height: var(--cell-size);
@@ -264,6 +278,12 @@ button.warning {
 .crossword-overflow-row .cell.block.clue-cell {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+}
+
+/* Left-overflow clue cells get a right border so they visually connect to the grid. */
+.crossword-overflow-col .cell.block.clue-cell {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 .cell {

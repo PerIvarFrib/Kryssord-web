@@ -84,6 +84,9 @@ export function buildCluePlacements(
       return true;
     }
 
+    // Overflow (out-of-bounds) cells are exclusive: never accept a second placement.
+    if (isOutOfBounds) return false;
+
     // Accept a second placement only when the cell has exactly 1 placement
     // and the new arrow differs from the existing one (no duplicate arrows).
     if (
@@ -133,6 +136,13 @@ export function buildCluePlacements(
     .filter((p) => p.direction === "down")
     .sort((a, b) => a.col - b.col || a.row - b.row);
 
+  // Set of "row-col" keys where BOTH an across and a down word start.
+  // Used to give down words priority for the shared ↳/↓ candidate cell
+  // when the across word has an OOB fallback available.
+  const downStartSet = new Set<string>(
+    downPositions.map((p) => `${p.row}-${p.col}`),
+  );
+
   const clueText = (pos: (typeof allPositions)[0]): string => {
     const dir = pos.direction;
     const num = String(pos.number);
@@ -155,14 +165,41 @@ export function buildCluePlacements(
           ];
 
     // In-bounds candidates first, then overflow (new cells only — never shared).
+    // Overflow direction is restricted by word direction:
+    //   Across words → left overflow only (col < 0); never top overflow (row < 0).
+    //   Down words   → top overflow only  (row < 0); never left overflow (col < 0).
     const inBounds = rawCandidates.filter(([cr, cc]) => cr >= 0 && cc >= 0);
-    const outOfBounds = rawCandidates.filter(([cr, cc]) => cr < 0 || cc < 0);
+    const outOfBounds = rawCandidates.filter(([cr, cc]) => {
+      if (cr >= 0 && cc >= 0) return false; // in-bounds handled above
+      if (direction === "down" && cc < 0) return false;   // down words never use left overflow
+      if (direction === "across" && cr < 0) return false; // across words never use top overflow
+      return true;
+    });
     const orderedCandidates = [...inBounds, ...outOfBounds];
 
     const text = clueText(pos);
     let placed = false;
 
     for (const [cr, cc, arrow] of orderedCandidates) {
+      // Yield the ↳ in-bounds slot to the competing down word when:
+      //   1. This is an across word using the ↳ candidate (cell above start column).
+      //   2. A down word starts at the same (row, col) — it will also want this cell (↓).
+      //   3. The cell is already at 1 placement, so only one more clue can fit.
+      //   4. An OOB fallback exists for this across word.
+      // Without this, the across word fills the cell's last slot and the down word
+      // is forced to sidebar even though the across word could use OOB instead.
+      if (
+        direction === "across" &&
+        arrow === "↳" &&
+        downStartSet.has(`${r}-${c}`) &&
+        outOfBounds.length > 0
+      ) {
+        const existing = clueCellMap.get(`${cr}-${cc}`);
+        if (existing && existing.placements.length === 1) {
+          continue;
+        }
+      }
+
       const placement: CluePlacement = { text, arrow, wordKey: pos.key };
       if (tryAssign(cr, cc, placement)) {
         wp[pos.key].clueCellRow = cr;
