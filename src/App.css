@@ -257,6 +257,7 @@ button.warning {
     display: grid;
     gap: 0;
     grid-auto-rows: var(--cell-size);
+    margin-left: 0.62px;
 }
 
 /* Invisible single-column grid that aligns with the main grid rows. */
@@ -264,6 +265,7 @@ button.warning {
     display: grid;
     gap: 0;
     grid-auto-columns: var(--cell-size);
+    margin-top: 0.6px;
 }
 
 /* Transparent filler cells in the overflow row/column where there is no clue cell. */
@@ -273,17 +275,23 @@ button.warning {
     background: transparent;
 }
 
-/* Overflow clue cells share the .cell.block.clue-cell style but also get a
-   bottom border so they visually connect to the grid sitting below. */
+/* Overflow row: replace border-left with a box-shadow that
+   overlaps the previous cell's border-right instead of stacking on it. */
 .crossword-overflow-row .cell.block.clue-cell {
     border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 0px solid #000;
+    border-left: none;                   /* ← removed */
+    box-shadow: -0.6px 0 0 0 #000;        /* ← simulates left border */
 }
 
-/* Left-overflow clue cells get a right border so they visually connect to the grid. */
+/* Overflow col: replace border-top with a box-shadow similarly.
+   Note: border-bottom comes from the base .cell rule. */
 .crossword-overflow-col .cell.block.clue-cell {
     border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    border-right: 0px solid #000;
+    border-top: none;                    /* ← removed */
+    box-shadow: 0 -0.6px 0 0 #000;        /* ← simulates top border */
 }
 
 .cell {
@@ -338,7 +346,8 @@ button.warning {
     justify-content: stretch;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #000;
+    /* border-top: 1px solid #000;
+    border-left: 1px solid #000; */
 }
 
 .cell.block.clue-cell:hover {
@@ -353,7 +362,7 @@ button.warning {
     align-items: center;
     justify-content: flex-start;
     flex: 1;
-    padding: 1px 2px 1px 2px;
+    padding: 1px 1px 1px 1px;
     overflow: hidden;
     cursor: pointer;
     min-height: 0;
