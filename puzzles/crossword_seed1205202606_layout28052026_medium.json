@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-10 22:37:31",
+    "seed": 2805202606,
+    "layout_seed": 2805202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.###.#.",
+    "#........",
+    "..#......",
+    "#........",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##C###B#V",
+    "#BLANDETE",
+    "CE#EIEREN",
+    "#SIRLIGST",
+    "#KLOSSETE",
+    "#EDB#ETE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "BLANDETE",
+      "2": "CE",
+      "3": "EIEREN",
+      "4": "SIRLIGST",
+      "5": "KLOSSETE",
+      "6": "EDB",
+      "7": "ETE"
+    },
+    "down": {
+      "1": "BESKE",
+      "2": "CL",
+      "3": "ILD",
+      "4": "AEROB",
+      "5": "NILS",
+      "6": "DEISE",
+      "7": "BERGET",
+      "8": "TESTE",
+      "9": "VENTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "miksede",
+      "2": "kjemisk tegn",
+      "3": "husbonden",
+      "4": "elegantest",
+      "5": "uformelig",
+      "6": "informasjonsteknologi",
+      "7": "jafse"
+    },
+    "down": {
+      "1": "bitre",
+      "2": "målenhet for volum",
+      "3": "flammehav",
+      "4": "krever oksygen",
+      "5": "holbergnavn",
+      "6": "ramle",
+      "7": "freden",
+      "8": "utprøve",
+      "9": "forutsette"
+    }
+  }
+}

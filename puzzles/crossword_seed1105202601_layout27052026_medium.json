@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-10 22:24:10",
+    "seed": 2705202601,
+    "layout_seed": 2705202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#S#L#S##F",
+    "#ENGSTETE",
+    "KNE#KIKER",
+    "#STØR#TID",
+    "#UTLÅVENE",
+    "#ROA#GREN"
+  ],
+  "answers": {
+    "across": {
+      "1": "ENGSTETE",
+      "2": "KNE",
+      "3": "KIKER",
+      "4": "STØR",
+      "5": "TID",
+      "6": "UTLÅVENE",
+      "7": "ROA",
+      "8": "GREN"
+    },
+    "down": {
+      "1": "SENSUR",
+      "2": "NETTO",
+      "3": "LG",
+      "4": "ØLA",
+      "5": "SKRÅ",
+      "6": "STI",
+      "7": "VG",
+      "8": "EKTER",
+      "9": "TEINE",
+      "10": "FERDEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skremte",
+      "2": "kroppsledd",
+      "3": "stirrer",
+      "4": "stabile",
+      "5": "valgdag",
+      "6": "uthusa",
+      "7": "harmonien",
+      "8": "kvist"
+    },
+    "down": {
+      "1": "avvisning",
+      "2": "bonus",
+      "3": "mobilmerke",
+      "4": "pilsnerne",
+      "5": "skeiv",
+      "6": "småvei",
+      "7": "storbyavis",
+      "8": "forener",
+      "9": "fangstmiddel",
+      "10": "turen"
+    }
+  }
+}
