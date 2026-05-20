@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-10 23:06:54",
+    "seed": 3005202617,
+    "layout_seed": 3005202617,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..###",
+    ".........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "####GÅ###",
+    "SEILINGER",
+    "#SNU#DUNA",
+    "ULNES#FØK",
+    "#ETTERSYN",
+    "ÆRA#KVEDE"
+  ],
+  "answers": {
+    "across": {
+      "1": "GÅ",
+      "2": "SEILINGER",
+      "3": "SNU",
+      "4": "DUNA",
+      "5": "ULNES",
+      "6": "FØK",
+      "7": "ETTERSYN",
+      "8": "ÆRA",
+      "9": "KVEDE"
+    },
+    "down": {
+      "1": "ESLER",
+      "2": "INNTA",
+      "3": "LUET",
+      "4": "GI",
+      "5": "SEK",
+      "6": "ÅND",
+      "7": "RV",
+      "8": "GUFSE",
+      "9": "ENØYD",
+      "10": "RAKNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "passere",
+      "2": "overfarter",
+      "3": "svive rundt",
+      "4": "bygda",
+      "5": "kjent sted i oppland",
+      "6": "rauk",
+      "7": "revisjoner",
+      "8": "tidsalder",
+      "9": "dikte"
+    },
+    "down": {
+      "1": "arbeidsdyr",
+      "2": "ta i besittelse",
+      "3": "glimtet",
+      "4": "levere",
+      "5": "tidsenhet",
+      "6": "mentalitet",
+      "7": "bilvei",
+      "8": "lukte",
+      "9": "ensynt",
+      "10": "falle sammen"
+    }
+  }
+}

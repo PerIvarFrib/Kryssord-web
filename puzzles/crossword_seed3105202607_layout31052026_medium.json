@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-11 07:41:44",
+    "seed": 3105202607,
+    "layout_seed": 3105202607,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.##.#",
+    "#........",
+    "....#....",
+    "#........",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "####S##S#",
+    "#FALSUMET",
+    "PILA#REIV",
+    "#FORENKLA",
+    "#FEMDELEN",
+    "DERE#RANG"
+  ],
+  "answers": {
+    "across": {
+      "1": "FALSUMET",
+      "2": "PILA",
+      "3": "REIV",
+      "4": "FORENKLA",
+      "5": "FEMDELEN",
+      "6": "DERE",
+      "7": "RANG"
+    },
+    "down": {
+      "1": "FIFFE",
+      "2": "ALOER",
+      "3": "LARME",
+      "4": "SS",
+      "5": "ED",
+      "6": "URNER",
+      "7": "MEKLA",
+      "8": "SEILEN",
+      "9": "TVANG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bedraget",
+      "2": "veiviseren",
+      "3": "raspet",
+      "4": "avkorta",
+      "5": "biten",
+      "6": "pronomen",
+      "7": "status"
+    },
+    "down": {
+      "1": "pynte",
+      "2": "prydplanter",
+      "3": "bråke",
+      "4": "fartøy forkortelse",
+      "5": "fyord",
+      "6": "kasser",
+      "7": "formidlet",
+      "8": "båtutstyret",
+      "9": "undertrykket"
+    }
+  }
+}

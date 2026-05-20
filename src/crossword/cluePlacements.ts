@@ -146,7 +146,8 @@ export function buildCluePlacements(
   const clueText = (pos: (typeof allPositions)[0]): string => {
     const dir = pos.direction;
     const num = String(pos.number);
-    return puzzle.clues[dir][num] ?? puzzle.answers[dir][num] ?? "";
+    const raw = puzzle.clues[dir][num] ?? puzzle.answers[dir][num] ?? "";
+    return raw ? raw.charAt(0).toUpperCase() + raw.slice(1) : raw;
   };
 
   for (const pos of [...acrossPositions, ...downPositions]) {

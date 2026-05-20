@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-10 22:41:03",
+    "seed": 2905202602,
+    "layout_seed": 2905202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###..#.##",
+    ".........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###CD#H##",
+    "DISSOSIER",
+    "LSK#PUGGE",
+    "#BOD#PENT",
+    "#LEVNETET",
+    "#ÅNDEREN#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CD",
+      "2": "DISSOSIER",
+      "3": "LSK",
+      "4": "PUGGE",
+      "5": "BOD",
+      "6": "PENT",
+      "7": "LEVNETET",
+      "8": "ÅNDEREN"
+    },
+    "down": {
+      "1": "DL",
+      "2": "ISBLÅ",
+      "3": "SKOEN",
+      "4": "CS",
+      "5": "DVD",
+      "6": "DOP",
+      "7": "NE",
+      "8": "SUPER",
+      "9": "HIGETE",
+      "10": "EGNEN",
+      "11": "RETT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "multimedium",
+      "2": "oppløs",
+      "3": "sportsklubb",
+      "4": "følge forelesning",
+      "5": "lagerplass",
+      "6": "fjongt",
+      "7": "livsløpet",
+      "8": "fantomet"
+    },
+    "down": {
+      "1": "volumenhet",
+      "2": "blåfarge",
+      "3": "fottøyet",
+      "4": "skipsforkortelse",
+      "5": "videoplate",
+      "6": "narkotika",
+      "7": "kjemisk tegn",
+      "8": "storslått",
+      "9": "lengta",
+      "10": "området",
+      "11": "regel"
+    }
+  }
+}
