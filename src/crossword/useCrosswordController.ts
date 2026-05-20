@@ -802,7 +802,10 @@ export function useCrosswordController(
     ];
     const clueNumber = Number(numberStr);
     const directionKey = dir === "across" ? "across" : "down";
-    const clueText = puzzle.clues[directionKey][numberStr];
+    const rawClueText = puzzle.clues[directionKey][numberStr];
+    const clueText = rawClueText
+      ? rawClueText.charAt(0).toUpperCase() + rawClueText.slice(1)
+      : rawClueText;
     const directionLabel = dir === "across" ? "Vannrett" : "Loddrett";
     return {
       label: `${clueNumber} ${directionLabel}:`,
