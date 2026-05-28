@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 11:56:09",
+    "seed": 1206202623,
+    "layout_seed": 1206202623,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.#.##",
+    "#........",
+    "#........",
+    "....#....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "####L#Y##",
+    "#SKRATTES",
+    "#ELIGERTE",
+    "KNUS#NESE",
+    "#ANSIKTER",
+    "UTKANTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKRATTES",
+      "2": "ELIGERTE",
+      "3": "KNUS",
+      "4": "NESE",
+      "5": "ANSIKTER",
+      "6": "UTKANTER"
+    },
+    "down": {
+      "1": "SENAT",
+      "2": "KLUNK",
+      "3": "RISSA",
+      "4": "LAG",
+      "5": "IN",
+      "6": "TENKT",
+      "7": "YTRETE",
+      "8": "ETSER",
+      "9": "SEER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "klukklees",
+      "2": "utpekte",
+      "3": "klyp",
+      "4": "munnparti",
+      "5": "fjes",
+      "6": "periferier"
+    },
+    "down": {
+      "1": "representasjon",
+      "2": "klemting",
+      "3": "graverte",
+      "4": "forsamling",
+      "5": "tysk preposisjon",
+      "6": "bedømt",
+      "7": "erklærte",
+      "8": "angriper",
+      "9": "iakttager"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-28 08:26:05",
+    "seed": 3006202624,
+    "layout_seed": 3006202624,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#####.#.#",
+    ".........",
+    "#....#...",
+    "#........",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "#####B#S#",
+    "BILULYKKE",
+    "#SØLE#ARK",
+    "#BEINFLYS",
+    "#INNSATTE",
+    "STEGET#TM"
+  ],
+  "answers": {
+    "across": {
+      "1": "BILULYKKE",
+      "2": "SØLE",
+      "3": "ARK",
+      "4": "BEINFLYS",
+      "5": "INNSATTE",
+      "6": "STEGET",
+      "7": "TM"
+    },
+    "down": {
+      "1": "ISBIT",
+      "2": "LØENE",
+      "3": "ULING",
+      "4": "LENSE",
+      "5": "BY",
+      "6": "FAT",
+      "7": "KALT",
+      "8": "SKRYTT",
+      "9": "EKSEM"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kollisjon",
+      "2": "skvalpe",
+      "3": "noteblad",
+      "4": "fykes",
+      "5": "arrestanter",
+      "6": "gått opp",
+      "7": "kjemisk tegn"
+    },
+    "down": {
+      "1": "isstykke",
+      "2": "bryggerhusa",
+      "3": "illskrik",
+      "4": "tappe",
+      "5": "hatton",
+      "6": "metallbeholder",
+      "7": "utnevnt",
+      "8": "skamrost",
+      "9": "hudplage"
+    }
+  }
+}

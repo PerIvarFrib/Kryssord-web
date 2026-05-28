@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 12:08:15",
+    "seed": 1306202606,
+    "layout_seed": 1306202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.##.###.",
+    "#........",
+    "#...#....",
+    ".........",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "#F##K###Y",
+    "#INSPISER",
+    "#KAV#DASK",
+    "UTVIDELSE",
+    "#INNLEDER",
+    "SVAG#NOT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "INSPISER",
+      "2": "KAV",
+      "3": "DASK",
+      "4": "UTVIDELSE",
+      "5": "INNLEDER",
+      "6": "SVAG",
+      "7": "NOT"
+    },
+    "down": {
+      "1": "FIKTIV",
+      "2": "NAVNA",
+      "3": "SVING",
+      "4": "KP",
+      "5": "DL",
+      "6": "IDEEN",
+      "7": "SALDO",
+      "8": "ESSET",
+      "9": "YRKER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "overvåk",
+      "2": "sjau",
+      "3": "knubb",
+      "4": "tilvekst",
+      "5": "introduserer",
+      "6": "krum",
+      "7": "fangstnett"
+    },
+    "down": {
+      "1": "uvirkelig",
+      "2": "nevningene",
+      "3": "slyng",
+      "4": "enhet for kraft",
+      "5": "volumenhet",
+      "6": "tankegangen",
+      "7": "innestående",
+      "8": "unikumet",
+      "9": "pedagoger"
+    }
+  }
+}

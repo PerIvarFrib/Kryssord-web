@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 20:27:07",
+    "seed": 2306202650,
+    "layout_seed": 2306202650,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#.#.#.",
+    "#........",
+    "#.......#",
+    "....#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "##N#F#I#C",
+    "#BEGRENSE",
+    "#AVLØNNE#",
+    "LURA#KARE",
+    "#TONNEVIS",
+    "#ANTA#LEK"
+  ],
+  "answers": {
+    "across": {
+      "1": "BEGRENSE",
+      "2": "AVLØNNE",
+      "3": "LURA",
+      "4": "KARE",
+      "5": "TONNEVIS",
+      "6": "ANTA",
+      "7": "LEK"
+    },
+    "down": {
+      "1": "BAUTA",
+      "2": "NEVRON",
+      "3": "GLANT",
+      "4": "FRØ",
+      "5": "NA",
+      "6": "ENKE",
+      "7": "INNAVL",
+      "8": "SERIE",
+      "9": "CE",
+      "10": "ESK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "redusere",
+      "2": "godtgjøre",
+      "3": "duperte",
+      "4": "skuffe",
+      "5": "store mengder",
+      "6": "forvente",
+      "7": "leik"
+    },
+    "down": {
+      "1": "minnestøtte",
+      "2": "hjernecelle",
+      "3": "glodd",
+      "4": "fruktdel",
+      "5": "kjemisk tegn",
+      "6": "enslig kvinne",
+      "7": "selvbefruktning",
+      "8": "såpeopera",
+      "9": "kjemisk tegn",
+      "10": "flask"
+    }
+  }
+}

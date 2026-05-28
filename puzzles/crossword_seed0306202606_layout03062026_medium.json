@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 09:18:13",
+    "seed": 306202606,
+    "layout_seed": 306202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "###T#P#B#",
+    "#UKOSELIG",
+    "DER#OPUSA",
+    "#NÆSS#RAN",
+    "LISTEFØRE",
+    "#GJØ#FYR#"
+  ],
+  "answers": {
+    "across": {
+      "1": "UKOSELIG",
+      "2": "DER",
+      "3": "OPUSA",
+      "4": "NÆSS",
+      "5": "RAN",
+      "6": "LISTEFØRE",
+      "7": "GJØ",
+      "8": "FYR"
+    },
+    "down": {
+      "1": "UENIG",
+      "2": "KRÆSJ",
+      "3": "TO",
+      "4": "STØ",
+      "5": "SOSE",
+      "6": "PEP",
+      "7": "FF",
+      "8": "LURØY",
+      "9": "BISARR",
+      "10": "GANE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "nifst",
+      "2": "pronomen",
+      "3": "produksjonene",
+      "4": "norsk lege",
+      "5": "voldshandling",
+      "6": "registrere",
+      "7": "hyle",
+      "8": "lysbringer"
+    },
+    "down": {
+      "1": "anti",
+      "2": "krasj",
+      "3": "matematisk mål",
+      "4": "urokkelig",
+      "5": "tøyse",
+      "6": "klynket",
+      "7": "skipsforkortelse",
+      "8": "poststed i nordland",
+      "9": "usedvanlig",
+      "10": "munndel"
+    }
+  }
+}

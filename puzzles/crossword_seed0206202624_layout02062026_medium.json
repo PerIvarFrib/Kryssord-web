@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 09:10:42",
+    "seed": 206202624,
+    "layout_seed": 206202624,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##..##.##",
+    "#........",
+    "#........",
+    "#..#.....",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##LR##S##",
+    "#HEISATUR",
+    "#ESKALERE",
+    "#KJ#NEKET",
+    "#LORGNETT",
+    "TANN#ERTA"
+  ],
+  "answers": {
+    "across": {
+      "1": "LR",
+      "2": "HEISATUR",
+      "3": "ESKALERE",
+      "4": "KJ",
+      "5": "NEKET",
+      "6": "LORGNETT",
+      "7": "TANN",
+      "8": "ERTA"
+    },
+    "down": {
+      "1": "HEKLA",
+      "2": "LESJON",
+      "3": "RIK",
+      "4": "RN",
+      "5": "SANG",
+      "6": "ALENE",
+      "7": "STEKER",
+      "8": "URETT",
+      "9": "RETTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "ekskursjon",
+      "3": "øke",
+      "4": "målenhet for energi",
+      "5": "tullingen",
+      "6": "linseglass",
+      "7": "munndel",
+      "8": "hundset"
+    },
+    "down": {
+      "1": "kniplet",
+      "2": "kvestelse",
+      "3": "storslått",
+      "4": "skipsforkortelse",
+      "5": "melodont",
+      "6": "venneløs",
+      "7": "friterer",
+      "8": "falskneri",
+      "9": "klandret"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 11:22:42",
+    "seed": 1006202613,
+    "layout_seed": 1006202613,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.###.##.",
+    "#........",
+    ".....#...",
+    "#.......#",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#S###B##M",
+    "#UTTRYKTE",
+    "SPIRE#AVL",
+    "#EGOISME#",
+    "FREDSPRIS",
+    "#BRD#YETI"
+  ],
+  "answers": {
+    "across": {
+      "1": "UTTRYKTE",
+      "2": "SPIRE",
+      "3": "AVL",
+      "4": "EGOISME",
+      "5": "FREDSPRIS",
+      "6": "BRD",
+      "7": "YETI"
+    },
+    "down": {
+      "1": "SUPERB",
+      "2": "TIGER",
+      "3": "TRODD",
+      "4": "REIS",
+      "5": "BY",
+      "6": "SPY",
+      "7": "KAMRE",
+      "8": "TVEIT",
+      "9": "MEL",
+      "10": "SI"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tilkjennegav",
+      "2": "knopp",
+      "3": "framkall",
+      "4": "selviskhet",
+      "5": "utmerkelse",
+      "6": "eks-stat",
+      "7": "fabeluhyre"
+    },
+    "down": {
+      "1": "storslagen",
+      "2": "villdyr",
+      "3": "håpt",
+      "4": "overfart",
+      "5": "fareham",
+      "6": "oppgulp",
+      "7": "kjøkkener",
+      "8": "kjent sted i kristiansand",
+      "9": "fiskemjøl",
+      "10": "metalloid"
+    }
+  }
+}

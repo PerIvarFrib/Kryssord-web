@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 10:57:36",
+    "seed": 706202606,
+    "layout_seed": 706202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#####..##",
+    "#........",
+    ".........",
+    "#...#....",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "#####TS##",
+    "#SKJØREST",
+    "FORULYKKA",
+    "#LYN#NAUT",
+    "#EMINENTE",
+    "FRP#ARTER"
+  ],
+  "answers": {
+    "across": {
+      "1": "TS",
+      "2": "SKJØREST",
+      "3": "FORULYKKA",
+      "4": "LYN",
+      "5": "NAUT",
+      "6": "EMINENTE",
+      "7": "FRP",
+      "8": "ARTER"
+    },
+    "down": {
+      "1": "SOLER",
+      "2": "KRYMP",
+      "3": "JUNI",
+      "4": "ØL",
+      "5": "NA",
+      "6": "TRYNER",
+      "7": "SEKANT",
+      "8": "SKUTE",
+      "9": "TATER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fartøy forkortelse",
+      "2": "skrøpeligst",
+      "3": "krepert",
+      "4": "himmellys",
+      "5": "skrull",
+      "6": "glimrende",
+      "7": "politisk parti",
+      "8": "naturer"
+    },
+    "down": {
+      "1": "stjerner",
+      "2": "minsking",
+      "3": "sommertid",
+      "4": "pubdrikk",
+      "5": "kjemisk tegn",
+      "6": "snuter",
+      "7": "rett linje",
+      "8": "motorbåt",
+      "9": "kjeltring"
+    }
+  }
+}
