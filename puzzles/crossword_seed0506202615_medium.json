@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-03 15:07:14",
+    "seed": 506202615,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#G#E#F##P",
+    "TREKKINGA",
+    "#INSINUER",
+    "ANDESTEIK",
+    "#ERSTATT#",
+    "KRASE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "TREKKINGA",
+      "2": "INSINUER",
+      "3": "ANDESTEIK",
+      "4": "ERSTATT",
+      "5": "KRASE"
+    },
+    "down": {
+      "1": "GRINER",
+      "2": "ENDRA",
+      "3": "EKSESS",
+      "4": "KISTE",
+      "5": "FINTA",
+      "6": "NUET",
+      "7": "GEIT",
+      "8": "PARK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "reduksjonen",
+      "2": "beskyld",
+      "3": "steikemat",
+      "4": "tilbakebetal",
+      "5": "skrape"
+    },
+    "down": {
+      "1": "klynker",
+      "2": "omvelta",
+      "3": "voldsomhet",
+      "4": "krukke",
+      "5": "bløffet",
+      "6": "tilværelsen",
+      "7": "tamdyr",
+      "8": "uteplass"
+    }
+  }
+}

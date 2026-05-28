@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 11:00:33",
+    "seed": 806202602,
+    "layout_seed": 806202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    ".....#...",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####TM##P",
+    "#UTPØNSKE",
+    "KVERV#KIL",
+    "BITE#HUKE",
+    "#SEKTORER",
+    "#SNAVLET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "TM",
+      "2": "UTPØNSKE",
+      "3": "KVERV",
+      "4": "KIL",
+      "5": "BITE",
+      "6": "HUKE",
+      "7": "SEKTORER",
+      "8": "SNAVLET"
+    },
+    "down": {
+      "1": "KB",
+      "2": "UVISS",
+      "3": "TETEN",
+      "4": "PREKA",
+      "5": "TØV",
+      "6": "TV",
+      "7": "MN",
+      "8": "HOL",
+      "9": "SKURE",
+      "10": "KIKET",
+      "11": "PELER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "tenke ut",
+      "3": "forsvinn",
+      "4": "kribl",
+      "5": "nappe",
+      "6": "klenge",
+      "7": "distrikter",
+      "8": "slafset"
+    },
+    "down": {
+      "1": "dataenhet",
+      "2": "ubesluttsom",
+      "3": "føringen",
+      "4": "samtalte",
+      "5": "sludder",
+      "6": "distribusjonskanal",
+      "7": "kjemisk tegn",
+      "8": "avhull",
+      "9": "skrape",
+      "10": "gløttet",
+      "11": "stolper"
+    }
+  }
+}

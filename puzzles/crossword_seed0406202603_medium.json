@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-03 14:47:28",
+    "seed": 406202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#U#D#S##S",
+    "UTRUSTEDE",
+    "#KUMPANEN",
+    "MISHANDLA",
+    "#KLENGET#",
+    "ØKETE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "UTRUSTEDE",
+      "2": "KUMPANEN",
+      "3": "MISHANDLA",
+      "4": "KLENGET",
+      "5": "ØKETE"
+    },
+    "down": {
+      "1": "UTKIKK",
+      "2": "RUSLE",
+      "3": "DUMHET",
+      "4": "SPANE",
+      "5": "STANG",
+      "6": "ENDE",
+      "7": "DELT",
+      "8": "SENA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "utstyrte",
+      "2": "kameraten",
+      "3": "krenket",
+      "4": "huket",
+      "5": "vokste"
+    },
+    "down": {
+      "1": "patrulje",
+      "2": "slentre",
+      "3": "naivitet",
+      "4": "rekognosere",
+      "5": "klubbe",
+      "6": "sluttpunkt",
+      "7": "spaltet",
+      "8": "økonomien"
+    }
+  }
+}

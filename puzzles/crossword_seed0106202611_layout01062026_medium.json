@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 08:44:31",
+    "seed": 106202611,
+    "layout_seed": 106202611,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####.##.#",
+    ".........",
+    ".........",
+    "#...#....",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "####H##S#",
+    "ØDELEGGES",
+    "KAROTENET",
+    "#STE#NÅDE",
+    "#KENNELEN",
+    "FAT#YTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "ØDELEGGES",
+      "2": "KAROTENET",
+      "3": "STE",
+      "4": "NÅDE",
+      "5": "KENNELEN",
+      "6": "FAT",
+      "7": "YTER"
+    },
+    "down": {
+      "1": "ØK",
+      "2": "DASKA",
+      "3": "ERTET",
+      "4": "LOEN",
+      "5": "HET",
+      "6": "NY",
+      "7": "GENET",
+      "8": "GNÅLE",
+      "9": "SEEDER",
+      "10": "STEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "ramponeres",
+      "2": "fargestoffet",
+      "3": "prefikser",
+      "4": "mildhet",
+      "5": "dyreboligen",
+      "6": "metallbeholder",
+      "7": "avleverer"
+    },
+    "down": {
+      "1": "auk",
+      "2": "klaskene",
+      "3": "hånet",
+      "4": "sted i nordfjord",
+      "5": "oppvarmet",
+      "6": "daggammel",
+      "7": "arvestoffet",
+      "8": "vræle",
+      "9": "peker ut",
+      "10": "meteorstein"
+    }
+  }
+}

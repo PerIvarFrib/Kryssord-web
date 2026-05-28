@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 11:24:39",
+    "seed": 1106202601,
+    "layout_seed": 1106202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.#.#..#",
+    "#........",
+    "#........",
+    "#.....#..",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "##U#Y#VG#",
+    "#STORVILT",
+    "#NARKOSER",
+    "#OFRES#DU",
+    "#BRENSLET",
+    "#BANE#ÅTT"
+  ],
+  "answers": {
+    "across": {
+      "1": "VG",
+      "2": "STORVILT",
+      "3": "NARKOSER",
+      "4": "OFRES",
+      "5": "DU",
+      "6": "BRENSLET",
+      "7": "BANE",
+      "8": "ÅTT"
+    },
+    "down": {
+      "1": "SNOBB",
+      "2": "UTAFRA",
+      "3": "ORREN",
+      "4": "YRKENE",
+      "5": "VOSS",
+      "6": "VIS",
+      "7": "LÅ",
+      "8": "GLEDET",
+      "9": "TRUTT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "storbyavis",
+      "2": "hjort",
+      "3": "smertebehandlinger",
+      "4": "avståes",
+      "5": "annen person",
+      "6": "gassen",
+      "7": "trase",
+      "8": "besittet"
+    },
+    "down": {
+      "1": "spirrevipp",
+      "2": "preposisjon og adverb",
+      "3": "hanen",
+      "4": "lærerne",
+      "5": "poststed i hordaland",
+      "6": "metode",
+      "7": "holdt til",
+      "8": "hygget",
+      "9": "ufortrødent"
+    }
+  }
+}

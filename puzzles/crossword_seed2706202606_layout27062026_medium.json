@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 21:44:13",
+    "seed": 2706202606,
+    "layout_seed": 2706202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#...#....",
+    "#....#...",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "####CL#P#",
+    "#BARNEKÅR",
+    "#URO#SOSE",
+    "#EIKA#NEI",
+    "#DESSUTEN",
+    "ÅER#TVIST"
+  ],
+  "answers": {
+    "across": {
+      "1": "CL",
+      "2": "BARNEKÅR",
+      "3": "URO",
+      "4": "SOSE",
+      "5": "EIKA",
+      "6": "NEI",
+      "7": "DESSUTEN",
+      "8": "ÅER",
+      "9": "TVIST"
+    },
+    "down": {
+      "1": "BUEDE",
+      "2": "ARIER",
+      "3": "ROKS",
+      "4": "CN",
+      "5": "AST",
+      "6": "LES",
+      "7": "UV",
+      "8": "KONTI",
+      "9": "PÅSEES",
+      "10": "REINT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "målenhet for volum",
+      "2": "leveforhold",
+      "3": "utrygghet",
+      "4": "tøyse",
+      "5": "kjent sted i aust agder",
+      "6": "nektelse",
+      "7": "ellers",
+      "8": "vannveier",
+      "9": "nabostrid"
+    },
+    "down": {
+      "1": "rundete",
+      "2": "operaer",
+      "3": "skipsforkortelse",
+      "4": "forkortelse for grunnstoff",
+      "5": "støyd",
+      "6": "oppdag",
+      "7": "allmenn forkortelse",
+      "8": "beholdninger",
+      "9": "etterprøves",
+      "10": "uskyldsrent"
+    }
+  }
+}

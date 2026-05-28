@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-05-27 11:03:10",
+    "seed": 906202602,
+    "layout_seed": 906202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####TH##B",
+    "#GROTESKE",
+    "#LIM#SKLI",
+    "MESSE#JUS",
+    "#FLYKTEDE",
+    "#SANSBART"
+  ],
+  "answers": {
+    "across": {
+      "1": "TH",
+      "2": "GROTESKE",
+      "3": "LIM",
+      "4": "SKLI",
+      "5": "MESSE",
+      "6": "JUS",
+      "7": "FLYKTEDE",
+      "8": "SANSBART"
+    },
+    "down": {
+      "1": "GLEFS",
+      "2": "RISLA",
+      "3": "OMSYN",
+      "4": "TT",
+      "5": "EKS",
+      "6": "HES",
+      "7": "TB",
+      "8": "SKJEA",
+      "9": "KLUDR",
+      "10": "BEISET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kjemisk tegn",
+      "2": "uhyrlige",
+      "3": "klistre",
+      "4": "gleppe",
+      "5": "preken",
+      "6": "rettslære",
+      "7": "rømte",
+      "8": "håndgripelig"
+    },
+    "down": {
+      "1": "snerr",
+      "2": "spruter",
+      "3": "omtanker",
+      "4": "båtforkortelse",
+      "5": "vanlig forkortelse",
+      "6": "stemmeløs",
+      "7": "dataenhet",
+      "8": "teskjeen",
+      "9": "surr",
+      "10": "overflatebehandlet"
+    }
+  }
+}
