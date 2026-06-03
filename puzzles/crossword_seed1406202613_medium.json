@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-13 23:06:34",
+    "seed": 1406202613,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#S#K#F##H",
+    "DESAVUERE",
+    "#NÅDESTØT",
+    "STREKKODE",
+    "#RETTEST#",
+    "TESTE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "DESAVUERE",
+      "2": "NÅDESTØT",
+      "3": "STREKKODE",
+      "4": "RETTEST",
+      "5": "TESTE"
+    },
+    "down": {
+      "1": "SENTRE",
+      "2": "SÅRES",
+      "3": "KADETT",
+      "4": "VEKTE",
+      "5": "FUSKE",
+      "6": "ETOS",
+      "7": "RØDT",
+      "8": "HETE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "underkjenne",
+      "2": "barmhjertighetsgjerning",
+      "3": "artikkelnummereringssystem",
+      "4": "troligst",
+      "5": "forsøke"
+    },
+    "down": {
+      "1": "bykjerne",
+      "2": "krenke",
+      "3": "etterfølger",
+      "4": "beregne",
+      "5": "bedra",
+      "6": "moralholdning",
+      "7": "hovedpoeng",
+      "8": "flamme"
+    }
+  }
+}
