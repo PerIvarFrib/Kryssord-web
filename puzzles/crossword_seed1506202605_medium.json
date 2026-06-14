@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-13 22:19:35",
+    "seed": 1306202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#Å#M#S##P",
+    "EPLEJUICE",
+    "#NYTELSEN",
+    "PEDANTENE",
+    "#TILTATT#",
+    "MEGLA####"
+  ],
+  "answers": {
+    "across": {
+      "1": "EPLEJUICE",
+      "2": "NYTELSEN",
+      "3": "PEDANTENE",
+      "4": "TILTATT",
+      "5": "MEGLA"
+    },
+    "down": {
+      "1": "ÅPNETE",
+      "2": "LYDIG",
+      "3": "METALL",
+      "4": "JENTA",
+      "5": "SULTA",
+      "6": "ISET",
+      "7": "CENT",
+      "8": "PENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fruktdrikk",
+      "2": "velbehaget",
+      "3": "hårkløverne",
+      "4": "ekspandere",
+      "5": "formidlet"
+    },
+    "down": {
+      "1": "debuterte",
+      "2": "dressert",
+      "3": "fast stoff",
+      "4": "dama",
+      "5": "sveltet",
+      "6": "frossen",
+      "7": "amerikansk mynt",
+      "8": "smellvakker"
+    }
+  }
+}
