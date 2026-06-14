@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "Unknown",
+    "language": "norwegian",
+    "generated_by": "tools/solver.py",
+    "model_used": "matrix_sampler",
+    "generation_date": "2026-06-03 14:57:31",
+    "seed": 506202606
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#U#R#A##Å",
+    "UNDERSLÅS",
+    "#GENOTYPE",
+    "SKISTAVER",
+    "#ASKETEN#",
+    "TREET####"
+  ],
+  "answers": {
+    "across": {
+      "1": "UNDERSLÅS",
+      "2": "GENOTYPE",
+      "3": "SKISTAVER",
+      "4": "ASKETEN",
+      "5": "TREET"
+    },
+    "down": {
+      "1": "UNGKAR",
+      "2": "DEISE",
+      "3": "RENSKE",
+      "4": "ROTET",
+      "5": "ASTAT",
+      "6": "LYVE",
+      "7": "ÅPEN",
+      "8": "ÅSER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Bedriftssvindel",
+      "2": "Arveanlegg",
+      "3": "Skiutstyr",
+      "4": "Avholdsmennesket",
+      "5": "Eiken"
+    },
+    "down": {
+      "1": "Ugift mann",
+      "2": "Falle",
+      "3": "Sortere",
+      "4": "Gravde",
+      "5": "Atomnummer 85",
+      "6": "Bedra",
+      "7": "Ulåst",
+      "8": "Høydedrag"
+    }
+  }
+}
