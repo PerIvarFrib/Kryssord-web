@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-16 10:04:55",
+    "seed": 1606202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#S#B#D##S",
+    "DIMINUTIV",
+    "#TELEPATI",
+    "IRRITERER",
+    "#EKSTREM#",
+    "ETATS####"
+  ],
+  "answers": {
+    "across": {
+      "1": "DIMINUTIV",
+      "2": "TELEPATI",
+      "3": "IRRITERER",
+      "4": "EKSTREM",
+      "5": "ETATS"
+    },
+    "down": {
+      "1": "SITRET",
+      "2": "MERKA",
+      "3": "BILIST",
+      "4": "NETTS",
+      "5": "DUPER",
+      "6": "TARE",
+      "7": "ITEM",
+      "8": "SVIR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "minimal",
+      "2": "tankeoverføring",
+      "3": "forulemper",
+      "4": "umåtelig",
+      "5": "verks"
+    },
+    "down": {
+      "1": "pulserte",
+      "2": "indikerte",
+      "3": "personbilfører",
+      "4": "strukturs",
+      "5": "bløff",
+      "6": "sjøplante",
+      "7": "også",
+      "8": "forbrenner"
+    }
+  }
+}
