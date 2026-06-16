@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-16 23:22:55",
+    "seed": 1806202616,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##P##V#D#",
+    "#KAUKASUS",
+    "MUSTASJEN",
+    "#STAKKATO",
+    "#KOKSALT#",
+    "VERKE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "KAUKASUS",
+      "2": "MUSTASJEN",
+      "3": "STAKKATO",
+      "4": "KOKSALT",
+      "5": "VERKE"
+    },
+    "down": {
+      "1": "KUSKE",
+      "2": "PASTOR",
+      "3": "UTAKK",
+      "4": "KAKSE",
+      "5": "VASKA",
+      "6": "SJAL",
+      "7": "DUETT",
+      "8": "SNO"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "geografisk område",
+      "2": "fippskjegget",
+      "3": "diskontinuerlig",
+      "4": "natriumklorid",
+      "5": "kategori"
+    },
+    "down": {
+      "1": "temme",
+      "2": "kapellan",
+      "3": "mishag",
+      "4": "gårdsmann",
+      "5": "reingjort",
+      "6": "mantilje",
+      "7": "serenade",
+      "8": "vikle"
+    }
+  }
+}

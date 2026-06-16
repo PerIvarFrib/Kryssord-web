@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "medium",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-17 01:49:56",
+    "seed": 2006202644,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##C##V#F#",
+    "#NEBBIOLO",
+    "BILLEDVEV",
+    "#FLANDERN",
+    "#SENDERE#",
+    "TENKT####"
+  ],
+  "answers": {
+    "across": {
+      "1": "NEBBIOLO",
+      "2": "BILLEDVEV",
+      "3": "FLANDERN",
+      "4": "SENDERE",
+      "5": "TENKT"
+    },
+    "down": {
+      "1": "NIFSE",
+      "2": "CELLEN",
+      "3": "BLANK",
+      "4": "BENDT",
+      "5": "VIDDE",
+      "6": "OVER",
+      "7": "FLERE",
+      "8": "OVN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "druetype",
+      "2": "vevning",
+      "3": "område i europa",
+      "4": "radiostasjoner",
+      "5": "kontemplert"
+    },
+    "down": {
+      "1": "skrekkelige",
+      "2": "akkumulatoren",
+      "3": "glimte",
+      "4": "krøke",
+      "5": "omkrets",
+      "6": "fini",
+      "7": "flust",
+      "8": "varmeapparat"
+    }
+  }
+}
