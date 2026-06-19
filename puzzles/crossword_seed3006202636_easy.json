@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-21 05:57:13",
+    "seed": 3006202636,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#F#F#H##D",
+    "GAVEPAPIR",
+    "#SILIKOSE",
+    "PARTNEREN",
+    "#DIETTEN#",
+    "TELTE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "GAVEPAPIR",
+      "2": "SILIKOSE",
+      "3": "PARTNEREN",
+      "4": "DIETTEN",
+      "5": "TELTE"
+    },
+    "down": {
+      "1": "FASADE",
+      "2": "VIRIL",
+      "3": "FELTET",
+      "4": "PINTE",
+      "5": "HAKET",
+      "6": "PORE",
+      "7": "ISEN",
+      "8": "DREN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "innpakningsmateriale",
+      "2": "yrkessykdom",
+      "3": "forloveden",
+      "4": "ernæringa",
+      "5": "summerte"
+    },
+    "down": {
+      "1": "ytterside",
+      "2": "mannhaftig",
+      "3": "dataet",
+      "4": "martret",
+      "5": "krøkt",
+      "6": "kroppsåpning",
+      "7": "frysevaren",
+      "8": "kloakken"
+    }
+  }
+}

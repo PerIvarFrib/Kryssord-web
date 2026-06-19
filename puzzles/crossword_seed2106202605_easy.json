@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-20 23:09:09",
+    "seed": 2106202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#R#A#U##I",
+    "FORELESES",
+    "#KINOFILM",
+    "BETEGNEDE",
+    "#REAGERE#",
+    "HERSE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "FORELESES",
+      "2": "KINOFILM",
+      "3": "BETEGNEDE",
+      "4": "REAGERE",
+      "5": "HERSE"
+    },
+    "down": {
+      "1": "ROKERE",
+      "2": "RITER",
+      "3": "AENEAS",
+      "4": "LOGGE",
+      "5": "UEFNE",
+      "6": "SIER",
+      "7": "ELDE",
+      "8": "ISME"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "instrueres",
+      "2": "filmpremiere",
+      "3": "anskueliggjorte",
+      "4": "gjøre motstand",
+      "5": "anstrenge"
+    },
+    "down": {
+      "1": "omflytte",
+      "2": "foreviger",
+      "3": "gresk sagnhelt",
+      "4": "journalføre",
+      "5": "uhøvelige",
+      "6": "erklærer",
+      "7": "livsaften",
+      "8": "trosretning"
+    }
+  }
+}
