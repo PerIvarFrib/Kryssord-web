@@ -5,8 +5,8 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-06-20 23:09:09",
-    "seed": 2106202605,
+    "generation_date": "2026-06-21 12:15:25",
+    "seed": 2106201621,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "#R#A#U##I",
-    "FORELESES",
-    "#KINOFILM",
-    "BETEGNEDE",
-    "#REAGERE#",
-    "HERSE####"
+    "#C#G#N##R",
+    "PRINSIPPA",
+    "#URIMELIG",
+    "KIRKESANG",
+    "#SEKLENE#",
+    "BETEL####"
   ],
   "answers": {
     "across": {
-      "1": "FORELESES",
-      "2": "KINOFILM",
-      "3": "BETEGNEDE",
-      "4": "REAGERE",
-      "5": "HERSE"
+      "1": "PRINSIPPA",
+      "2": "URIMELIG",
+      "3": "KIRKESANG",
+      "4": "SEKLENE",
+      "5": "BETEL"
     },
     "down": {
-      "1": "ROKERE",
-      "2": "RITER",
-      "3": "AENEAS",
-      "4": "LOGGE",
-      "5": "UEFNE",
-      "6": "SIER",
-      "7": "ELDE",
-      "8": "ISME"
+      "1": "CRUISE",
+      "2": "IRRET",
+      "3": "GNIKKE",
+      "4": "SMELL",
+      "5": "NIESE",
+      "6": "PLAN",
+      "7": "PINE",
+      "8": "RAGG"
     }
   },
   "clues": {
     "across": {
-      "1": "instrueres",
-      "2": "filmpremiere",
-      "3": "anskueliggjorte",
-      "4": "gjøre motstand",
-      "5": "anstrenge"
+      "1": "strategiene",
+      "2": "ulogisk",
+      "3": "tidebønn",
+      "4": "hundreåra",
+      "5": "bibelsted"
     },
     "down": {
-      "1": "omflytte",
-      "2": "foreviger",
-      "3": "gresk sagnhelt",
-      "4": "journalføre",
-      "5": "uhøvelige",
-      "6": "erklærer",
-      "7": "livsaften",
-      "8": "trosretning"
+      "1": "seiltur",
+      "2": "oppspist",
+      "3": "gnure",
+      "4": "plaff",
+      "5": "brorbarn",
+      "6": "retningslinje",
+      "7": "sjelekval",
+      "8": "hårmanke"
     }
   }
 }
