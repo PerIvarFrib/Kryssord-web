@@ -5,7 +5,7 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-06-21 12:15:25",
+    "generation_date": "2026-06-21 12:55:38",
     "seed": 2106201621,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "#C#G#N##R",
-    "PRINSIPPA",
-    "#URIMELIG",
-    "KIRKESANG",
-    "#SEKLENE#",
-    "BETEL####"
+    "#E#A#L##V",
+    "KNEGGENDE",
+    "#ENERGIER",
+    "PSORIASIS",
+    "#TRESTEG#",
+    "DEMRE####"
   ],
   "answers": {
     "across": {
-      "1": "PRINSIPPA",
-      "2": "URIMELIG",
-      "3": "KIRKESANG",
-      "4": "SEKLENE",
-      "5": "BETEL"
+      "1": "KNEGGENDE",
+      "2": "ENERGIER",
+      "3": "PSORIASIS",
+      "4": "TRESTEG",
+      "5": "DEMRE"
     },
     "down": {
-      "1": "CRUISE",
-      "2": "IRRET",
-      "3": "GNIKKE",
-      "4": "SMELL",
-      "5": "NIESE",
-      "6": "PLAN",
-      "7": "PINE",
-      "8": "RAGG"
+      "1": "ENESTE",
+      "2": "ENORM",
+      "3": "AGERER",
+      "4": "GRISE",
+      "5": "LEGAT",
+      "6": "NISE",
+      "7": "DEIG",
+      "8": "VERS"
     }
   },
   "clues": {
     "across": {
-      "1": "strategiene",
-      "2": "ulogisk",
-      "3": "tidebønn",
-      "4": "hundreåra",
-      "5": "bibelsted"
+      "1": "knisende",
+      "2": "livskrefter",
+      "3": "hudsjukdom",
+      "4": "idrettsøvelse",
+      "5": "lysne"
     },
     "down": {
-      "1": "seiltur",
-      "2": "oppspist",
-      "3": "gnure",
-      "4": "plaff",
-      "5": "brorbarn",
-      "6": "retningslinje",
-      "7": "sjelekval",
-      "8": "hårmanke"
+      "1": "kun",
+      "2": "veldig stor",
+      "3": "opptrer som",
+      "4": "skvalpe",
+      "5": "donasjon",
+      "6": "liten hval",
+      "7": "kakemasse",
+      "8": "diktdel"
     }
   }
 }
