@@ -5,62 +5,60 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-06-21 12:15:25",
-    "seed": 2106201621,
+    "generation_date": "2026-06-21 14:35:15",
+    "seed": 2106201635,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
-    "#.#.#.##.",
-    ".........",
-    "#........",
-    ".........",
-    "#.......#",
-    ".....####"
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
   ],
   "solved_layout": [
-    "#C#G#N##R",
-    "PRINSIPPA",
-    "#URIMELIG",
-    "KIRKESANG",
-    "#SEKLENE#",
-    "BETEL####"
+    "#T#S#W#P",
+    "BESKRIVE",
+    "#STEARIN",
+    "STEINENE",
+    "#ELVERK#",
+    "ESLER###"
   ],
   "answers": {
     "across": {
-      "1": "PRINSIPPA",
-      "2": "URIMELIG",
-      "3": "KIRKESANG",
-      "4": "SEKLENE",
-      "5": "BETEL"
+      "1": "BESKRIVE",
+      "2": "STEARIN",
+      "3": "STEINENE",
+      "4": "ELVERK",
+      "5": "ESLER"
     },
     "down": {
-      "1": "CRUISE",
-      "2": "IRRET",
-      "3": "GNIKKE",
-      "4": "SMELL",
-      "5": "NIESE",
-      "6": "PLAN",
-      "7": "PINE",
-      "8": "RAGG"
+      "1": "TESTES",
+      "2": "STELL",
+      "3": "SKEIVE",
+      "4": "RANER",
+      "5": "WIRER",
+      "6": "VINK",
+      "7": "PENE"
     }
   },
   "clues": {
     "across": {
-      "1": "strategiene",
-      "2": "ulogisk",
-      "3": "tidebønn",
-      "4": "hundreåra",
-      "5": "bibelsted"
+      "1": "ordlegge",
+      "2": "lysmateriell",
+      "3": "bautaene",
+      "4": "kraftleverandør",
+      "5": "tamdyr"
     },
     "down": {
-      "1": "seiltur",
-      "2": "oppspist",
-      "3": "gnure",
-      "4": "plaff",
-      "5": "brorbarn",
-      "6": "retningslinje",
-      "7": "sjelekval",
-      "8": "hårmanke"
+      "1": "utprøves",
+      "2": "forpleining",
+      "3": "skrånende",
+      "4": "knabber",
+      "5": "vaiere",
+      "6": "oppfordring",
+      "7": "fager"
     }
   }
 }
