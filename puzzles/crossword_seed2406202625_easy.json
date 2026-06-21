@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-21 15:30:09",
+    "seed": 2406202625,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##U##L#G#",
+    "#STATUERE",
+    "RISLINGEN",
+    "#KLEDELIG",
+    "#RANEREN#",
+    "LEGER####"
+  ],
+  "answers": {
+    "across": {
+      "1": "STATUERE",
+      "2": "RISLINGEN",
+      "3": "KLEDELIG",
+      "4": "RANEREN",
+      "5": "LEGER"
+    },
+    "down": {
+      "1": "SIKRE",
+      "2": "UTSLAG",
+      "3": "ALENE",
+      "4": "TIDER",
+      "5": "LUNER",
+      "6": "EGLE",
+      "7": "GREIN",
+      "8": "ENG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "oppstille",
+      "2": "skjelvinga",
+      "3": "passelig",
+      "4": "bandemedlemmet",
+      "5": "geriatere"
+    },
+    "down": {
+      "1": "visse",
+      "2": "amplitude",
+      "3": "venneløs",
+      "4": "somre",
+      "5": "avskjermer",
+      "6": "overhøvle",
+      "7": "forgrening",
+      "8": "habitat"
+    }
+  }
+}

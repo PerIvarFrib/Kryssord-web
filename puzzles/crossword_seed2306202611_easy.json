@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-21 15:01:03",
+    "seed": 2306202611,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##K##D#R#",
+    "#LAUDABEL",
+    "REPTILENE",
+    "#PRAKTISK",
+    "#JEKTENE#",
+    "MERKA####"
+  ],
+  "answers": {
+    "across": {
+      "1": "LAUDABEL",
+      "2": "REPTILENE",
+      "3": "PRAKTISK",
+      "4": "JEKTENE",
+      "5": "MERKA"
+    },
+    "down": {
+      "1": "LEPJE",
+      "2": "KAPRER",
+      "3": "UTAKK",
+      "4": "DIKTA",
+      "5": "DALTE",
+      "6": "BEIN",
+      "7": "RENSE",
+      "8": "LEK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "rosverdig",
+      "2": "buormene",
+      "3": "funksjonell",
+      "4": "barkassene",
+      "5": "oppfanget"
+    },
+    "down": {
+      "1": "slurpe",
+      "2": "biltjuv",
+      "3": "mishag",
+      "4": "poesiene",
+      "5": "lunke",
+      "6": "skjelett",
+      "7": "spyle",
+      "8": "kampleik"
+    }
+  }
+}
