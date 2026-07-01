@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 16:30:41",
+    "seed": 707202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##M##S#E#",
+    "#ROMSTERT",
+    "FORELIGGE",
+    "#TIDEVERV",
+    "#ELEVENE#",
+    "ENDTE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "ROMSTERT",
+      "2": "FORELIGGE",
+      "3": "TIDEVERV",
+      "4": "ELEVENE",
+      "5": "ENDTE"
+    },
+    "down": {
+      "1": "ROTEN",
+      "2": "MORILD",
+      "3": "MEDET",
+      "4": "SLEVE",
+      "5": "STIVE",
+      "6": "EGEN",
+      "7": "ERGRE",
+      "8": "TEV"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "regjert",
+      "2": "være til",
+      "3": "tidsskifte",
+      "4": "praktikantene",
+      "5": "tok slutt"
+    },
+    "down": {
+      "1": "blomsterbunnen",
+      "2": "havlys",
+      "3": "auet",
+      "4": "sikle",
+      "5": "uelastisk",
+      "6": "spesial-",
+      "7": "forarge",
+      "8": "vellukt"
+    }
+  }
+}

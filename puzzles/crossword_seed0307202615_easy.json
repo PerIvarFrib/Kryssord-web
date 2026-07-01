@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 14:35:32",
+    "seed": 307202615,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##F##N#H#",
+    "#BESTYRER",
+    "GURKEMEIE",
+    "#STORFILM",
+    "#TIGGERE#",
+    "FALNE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "BESTYRER",
+      "2": "GURKEMEIE",
+      "3": "STORFILM",
+      "4": "TIGGERE",
+      "5": "FALNE"
+    },
+    "down": {
+      "1": "BUSTA",
+      "2": "FERTIL",
+      "3": "SKOGN",
+      "4": "TERGE",
+      "5": "NYMFE",
+      "6": "REIR",
+      "7": "HEILE",
+      "8": "REM"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "godsforvalter",
+      "2": "gult krydder",
+      "3": "langfilm",
+      "4": "lasaroner",
+      "5": "omkomne"
+    },
+    "down": {
+      "1": "mustasjen",
+      "2": "produktiv",
+      "3": "poststed i nord-trøndelag",
+      "4": "drille",
+      "5": "småpike",
+      "6": "spurvebolig",
+      "7": "totale",
+      "8": "reimforbindelse"
+    }
+  }
+}

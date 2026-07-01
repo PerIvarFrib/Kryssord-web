@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 16:46:45",
+    "seed": 907202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##H##F#F#",
+    "#FORSEGLA",
+    "SIMULERER",
+    "#NOMINERT",
+    "#TEPPENE#",
+    "VARES####"
+  ],
+  "answers": {
+    "across": {
+      "1": "FORSEGLA",
+      "2": "SIMULERER",
+      "3": "NOMINERT",
+      "4": "TEPPENE",
+      "5": "VARES"
+    },
+    "down": {
+      "1": "FINTA",
+      "2": "HOMOER",
+      "3": "RUMPE",
+      "4": "SLIPS",
+      "5": "FEENE",
+      "6": "GREN",
+      "7": "FLERE",
+      "8": "ART"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "plombert",
+      "2": "gjenskaper",
+      "3": "utropt",
+      "4": "draperiene",
+      "5": "fortsetter"
+    },
+    "down": {
+      "1": "hippet",
+      "2": "homser",
+      "3": "gump",
+      "4": "halspynt",
+      "5": "hulderne",
+      "6": "sveigen",
+      "7": "og andre",
+      "8": "egenhet"
+    }
+  }
+}

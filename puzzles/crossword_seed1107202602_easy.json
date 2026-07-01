@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 16:59:37",
+    "seed": 1107202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##R##I#X#",
+    "#SAVANNER",
+    "HABITTENE",
+    "#LISTEPOP",
+    "#MANETEN#",
+    "JETER####"
+  ],
+  "answers": {
+    "across": {
+      "1": "SAVANNER",
+      "2": "HABITTENE",
+      "3": "LISTEPOP",
+      "4": "MANETEN",
+      "5": "JETER"
+    },
+    "down": {
+      "1": "SALME",
+      "2": "RABIAT",
+      "3": "VISNE",
+      "4": "ATTER",
+      "5": "INTET",
+      "6": "NEPE",
+      "7": "XENON",
+      "8": "REP"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tundraer",
+      "2": "påkledningene",
+      "3": "populærmusikk",
+      "4": "bløtdyret",
+      "5": "flytyper"
+    },
+    "down": {
+      "1": "høysang",
+      "2": "manisk",
+      "3": "sjukne",
+      "4": "enda en gang",
+      "5": "ubestemt pronomen",
+      "6": "kålplante",
+      "7": "tung edelgass",
+      "8": "wire"
+    }
+  }
+}

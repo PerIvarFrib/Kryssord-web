@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 16:41:58",
+    "seed": 807202610,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##S##M#L#",
+    "#BISKOPER",
+    "HOTELLENE",
+    "#MELODIEN",
+    "#BREDEST#",
+    "LETTE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "BISKOPER",
+      "2": "HOTELLENE",
+      "3": "MELODIEN",
+      "4": "BREDEST",
+      "5": "LETTE"
+    },
+    "down": {
+      "1": "BOMBE",
+      "2": "SITERT",
+      "3": "SELET",
+      "4": "KLODE",
+      "5": "MOLDE",
+      "6": "PEIS",
+      "7": "LENET",
+      "8": "REN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "abbeder",
+      "2": "losjihusene",
+      "3": "danselåten",
+      "4": "autonomest",
+      "5": "transparente"
+    },
+    "down": {
+      "1": "antitanksmine",
+      "2": "referert",
+      "3": "seterhuset",
+      "4": "verdenslegeme",
+      "5": "vestlandsby",
+      "6": "kakkelovn",
+      "7": "bohavet",
+      "8": "aseptisk"
+    }
+  }
+}

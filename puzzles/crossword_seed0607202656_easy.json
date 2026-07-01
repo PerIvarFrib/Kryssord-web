@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 16:22:43",
+    "seed": 607202656,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##V##O#B#",
+    "#HASTVERK",
+    "MISTANKEN",
+    "#SKAPELSE",
+    "#SENTRET#",
+    "BANDE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "HASTVERK",
+      "2": "MISTANKEN",
+      "3": "SKAPELSE",
+      "4": "SENTRET",
+      "5": "BANDE"
+    },
+    "down": {
+      "1": "HISSA",
+      "2": "VASKEN",
+      "3": "STAND",
+      "4": "TAPTE",
+      "5": "OVNER",
+      "6": "EKLE",
+      "7": "BREST",
+      "8": "KNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "tidsnød",
+      "2": "skepsisen",
+      "3": "tilblivelse",
+      "4": "knutepunktet",
+      "5": "liga"
+    },
+    "down": {
+      "1": "drille",
+      "2": "dusjingen",
+      "3": "kategori",
+      "4": "misset",
+      "5": "gasskomfyrer",
+      "6": "gyselige",
+      "7": "detonasjon",
+      "8": "kroppsledd"
+    }
+  }
+}
