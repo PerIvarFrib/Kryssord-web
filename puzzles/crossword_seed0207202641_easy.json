@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-06-30 16:26:44",
+    "seed": 207202641,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##T##U#E#",
+    "#HALSBAND",
+    "MOTYTELSE",
+    "#BESUDLET",
+    "#BRETTER#",
+    "NYEST####"
+  ],
+  "answers": {
+    "across": {
+      "1": "HALSBAND",
+      "2": "MOTYTELSE",
+      "3": "BESUDLET",
+      "4": "BRETTER",
+      "5": "NYEST"
+    },
+    "down": {
+      "1": "HOBBY",
+      "2": "TATERE",
+      "3": "LYSES",
+      "4": "STUTT",
+      "5": "UBEDT",
+      "6": "ALLE",
+      "7": "ENSER",
+      "8": "DET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "gullkjede",
+      "2": "godtgjøring",
+      "3": "besmittet",
+      "4": "vikler",
+      "5": "yngst"
+    },
+    "down": {
+      "1": "fritidssyssel",
+      "2": "sigøynere",
+      "3": "funkler",
+      "4": "bitteliten",
+      "5": "uønsket",
+      "6": "tutti",
+      "7": "noterer seg",
+      "8": "svensk pronomen"
+    }
+  }
+}
