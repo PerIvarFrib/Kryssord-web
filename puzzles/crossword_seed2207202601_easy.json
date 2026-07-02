@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-03 08:34:48",
+    "seed": 2207202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##B##B#M#",
+    "#VEILEDES",
+    "SITRONENE",
+    "#MARKERER",
+    "#SLEKTER#",
+    "HETTA####"
+  ],
+  "answers": {
+    "across": {
+      "1": "VEILEDES",
+      "2": "SITRONENE",
+      "3": "MARKERER",
+      "4": "SLEKTER",
+      "5": "HETTA"
+    },
+    "down": {
+      "1": "VIMSE",
+      "2": "BETALT",
+      "3": "IRRET",
+      "4": "LOKKA",
+      "5": "BENET",
+      "6": "DERE",
+      "7": "MENER",
+      "8": "SER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "instrueres",
+      "2": "grapefruktene",
+      "3": "klarlegger",
+      "4": "dynastier",
+      "5": "damehatten"
+    },
+    "down": {
+      "1": "svime rundt",
+      "2": "erlagt",
+      "3": "oppspist",
+      "4": "forlokket",
+      "5": "foten",
+      "6": "personlig pronomen",
+      "7": "postulerer",
+      "8": "beskuer"
+    }
+  }
+}

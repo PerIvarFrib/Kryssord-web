@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-03 09:23:28",
+    "seed": 2707202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##B##K#S#",
+    "#PIKENAVN",
+    "VOKABULAR",
+    "#LIKBLEIK",
+    "#ENKELTE#",
+    "VRIER####"
+  ],
+  "answers": {
+    "across": {
+      "1": "PIKENAVN",
+      "2": "VOKABULAR",
+      "3": "LIKBLEIK",
+      "4": "ENKELTE",
+      "5": "VRIER"
+    },
+    "down": {
+      "1": "POLER",
+      "2": "BIKINI",
+      "3": "KAKKE",
+      "4": "EBBER",
+      "5": "KNULL",
+      "6": "ALET",
+      "7": "SVAIE",
+      "8": "NRK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "soldis",
+      "2": "ordliste",
+      "3": "kritthvitt",
+      "4": "somme",
+      "5": "vinklinger"
+    },
+    "down": {
+      "1": "motpunkter",
+      "2": "kvinnelig plagg",
+      "3": "dunke",
+      "4": "svinner",
+      "5": "homosex",
+      "6": "avfødte",
+      "7": "sjangle",
+      "8": "kringkasting"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-03 11:33:01",
+    "seed": 3007202605,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##L##U#A#",
+    "#BEHERSKA",
+    "ARTISTISK",
+    "#INNLEDET",
+    "#SETEREN#",
+    "YTRER####"
+  ],
+  "answers": {
+    "across": {
+      "1": "BEHERSKA",
+      "2": "ARTISTISK",
+      "3": "INNLEDET",
+      "4": "SETEREN",
+      "5": "YTRER"
+    },
+    "down": {
+      "1": "BRIST",
+      "2": "LETNER",
+      "3": "HINTE",
+      "4": "ESLER",
+      "5": "URTER",
+      "6": "SIDE",
+      "7": "AKSEN",
+      "8": "AKT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "håndtere",
+      "2": "kunstnerisk",
+      "3": "debutert",
+      "4": "stølen",
+      "5": "fremsier"
+    },
+    "down": {
+      "1": "skavank",
+      "2": "svinner",
+      "3": "antyde",
+      "4": "tamdyr",
+      "5": "stauder",
+      "6": "bokdel",
+      "7": "grunnlinja",
+      "8": "bolk"
+    }
+  }
+}

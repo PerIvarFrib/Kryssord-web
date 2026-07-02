@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-03 08:33:34",
+    "seed": 2107202632,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##M##D#D#",
+    "#REISELIV",
+    "MIKROBENE",
+    "#SKOLEDAG",
+    "#LENGTER#",
+    "PETIT####"
+  ],
+  "answers": {
+    "across": {
+      "1": "REISELIV",
+      "2": "MIKROBENE",
+      "3": "SKOLEDAG",
+      "4": "LENGTER",
+      "5": "PETIT"
+    },
+    "down": {
+      "1": "RISLE",
+      "2": "MEKKET",
+      "3": "IRONI",
+      "4": "SOLGT",
+      "5": "DEBET",
+      "6": "LEDE",
+      "7": "DINAR",
+      "8": "VEG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "turisme",
+      "2": "bakteriene",
+      "3": "undervisningsperiode",
+      "4": "higer",
+      "5": "feature"
+    },
+    "down": {
+      "1": "sikle",
+      "2": "gjenoppretta",
+      "3": "latterliggjørelse",
+      "4": "realisert",
+      "5": "gjeldspost",
+      "6": "adressere",
+      "7": "mynt i iran",
+      "8": "skogsvei"
+    }
+  }
+}
