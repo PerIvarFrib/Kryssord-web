@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-02 18:44:32",
+    "seed": 1307202618,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##S##S#S#",
+    "#RESEPTAR",
+    "MONOGRAFI",
+    "#MINNERIK",
+    "#MODERER#",
+    "PARET####"
+  ],
+  "answers": {
+    "across": {
+      "1": "RESEPTAR",
+      "2": "MONOGRAFI",
+      "3": "MINNERIK",
+      "4": "MODERER",
+      "5": "PARET"
+    },
+    "down": {
+      "1": "ROMMA",
+      "2": "SENIOR",
+      "3": "SONDE",
+      "4": "EGNET",
+      "5": "SPRER",
+      "6": "TARE",
+      "7": "SAFIR",
+      "8": "RIK"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "apotekfunksjonær",
+      "2": "drøftelse",
+      "3": "uforglemmelig",
+      "4": "demp",
+      "5": "maken"
+    },
+    "down": {
+      "1": "hemsene",
+      "2": "eldstemann",
+      "3": "probe",
+      "4": "velfungerende",
+      "5": "adskiller",
+      "6": "sjøplante",
+      "7": "stjernestein",
+      "8": "kapitalsterk"
+    }
+  }
+}
