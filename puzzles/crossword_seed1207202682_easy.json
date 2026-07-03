@@ -5,8 +5,8 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-02 18:23:28",
-    "seed": 1207202682,
+    "generation_date": "2026-07-12 15:13:14",
+    "seed": 1207202615,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "##S##T#P#",
-    "#TANKELIV",
-    "REFORMERE",
-    "#SABOTERT",
-    "#TRENETE#",
-    "SEILE####"
+    "##H##E#E#",
+    "#RESIDENS",
+    "KARTLEGGE",
+    "#MORELLER",
+    "#SLANTEN#",
+    "FEDME####"
   ],
   "answers": {
     "across": {
-      "1": "TANKELIV",
-      "2": "REFORMERE",
-      "3": "SABOTERT",
-      "4": "TRENETE",
-      "5": "SEILE"
+      "1": "RESIDENS",
+      "2": "KARTLEGGE",
+      "3": "MORELLER",
+      "4": "SLANTEN",
+      "5": "FEDME"
     },
     "down": {
-      "1": "TESTE",
-      "2": "SAFARI",
-      "3": "NOBEL",
-      "4": "KRONE",
-      "5": "TEMTE",
-      "6": "LEET",
-      "7": "PIRRE",
-      "8": "VET"
+      "1": "RAMSE",
+      "2": "HEROLD",
+      "3": "STRAM",
+      "4": "ILENE",
+      "5": "EDELT",
+      "6": "EGLE",
+      "7": "ENGEN",
+      "8": "SER"
     }
   },
   "clues": {
     "across": {
-      "1": "sjeleliv",
-      "2": "omvelte",
-      "3": "preventiv",
-      "4": "klebrig",
-      "5": "sykle"
+      "1": "husrommet",
+      "2": "utforske",
+      "3": "steinfrukter",
+      "4": "fossilen",
+      "5": "overvekt"
     },
     "down": {
-      "1": "gjennomprøve",
-      "2": "seiltur",
-      "3": "heroisk",
-      "4": "sølvmynt",
-      "5": "pasifiserte",
-      "6": "skjulestedet",
-      "7": "oppvigle",
-      "8": "formår"
+      "1": "plapre",
+      "2": "speaker",
+      "3": "tettsittende",
+      "4": "vaierne",
+      "5": "høysinnet",
+      "6": "skjelle ut",
+      "7": "vollen",
+      "8": "beskuer"
     }
   }
 }
