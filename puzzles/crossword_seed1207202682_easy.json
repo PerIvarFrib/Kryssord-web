@@ -5,8 +5,8 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-12 15:18:40",
-    "seed": 1307202603,
+    "generation_date": "2026-07-12 15:20:59",
+    "seed": 1407202601,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "##V##U#B#",
-    "#LEKESTUE",
-    "BOLIGSALG",
-    "#VERNESKO",
-    "#ENKELTE#",
-    "KNEET####"
+    "##B##M#S#",
+    "#BESTIKKE",
+    "MISTILLIT",
+    "#KLADDENE",
+    "#KALDEST#",
+    "NAGLE####"
   ],
   "answers": {
     "across": {
-      "1": "LEKESTUE",
-      "2": "BOLIGSALG",
-      "3": "VERNESKO",
-      "4": "ENKELTE",
-      "5": "KNEET"
+      "1": "BESTIKKE",
+      "2": "MISTILLIT",
+      "3": "KLADDENE",
+      "4": "KALDEST",
+      "5": "NAGLE"
     },
     "down": {
-      "1": "LOVEN",
-      "2": "VELENE",
-      "3": "KIRKE",
-      "4": "EGNET",
-      "5": "USSEL",
-      "6": "TAST",
-      "7": "BULKE",
-      "8": "EGO"
+      "1": "BIKKA",
+      "2": "BESLAG",
+      "3": "STALL",
+      "4": "TIDDE",
+      "5": "MILDE",
+      "6": "KLES",
+      "7": "SKINT",
+      "8": "ETE"
     }
   },
   "clues": {
     "across": {
-      "1": "lekehus",
-      "2": "eiendomsoverdragelse",
-      "3": "arbeidsklær",
-      "4": "somme",
-      "5": "under låret"
+      "1": "fortrylle",
+      "2": "mistro",
+      "3": "layoutene",
+      "4": "ukoseligst",
+      "5": "spikre"
     },
     "down": {
-      "1": "ordinansen",
-      "2": "lettelsene",
-      "3": "forsamlingshus",
-      "4": "velfungerende",
-      "5": "ynkverdig",
-      "6": "tangentrekke",
-      "7": "grunnstøte",
-      "8": "vesenskjerne"
+      "1": "omstyrta",
+      "2": "linning",
+      "3": "brukshus",
+      "4": "forstummet",
+      "5": "forsonlige",
+      "6": "draperes",
+      "7": "flambert",
+      "8": "jafse"
     }
   }
 }
