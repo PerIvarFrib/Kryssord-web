@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-14 00:39:13",
+    "seed": 2107202616,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##V##U#B#",
+    "#LEKESTUE",
+    "BOLIGSALG",
+    "#VERNESKO",
+    "#ENKELTE#",
+    "BREEN####"
+  ],
+  "answers": {
+    "across": {
+      "1": "LEKESTUE",
+      "2": "BOLIGSALG",
+      "3": "VERNESKO",
+      "4": "ENKELTE",
+      "5": "BREEN"
+    },
+    "down": {
+      "1": "LOVER",
+      "2": "VELENE",
+      "3": "KIRKE",
+      "4": "EGNEN",
+      "5": "USSEL",
+      "6": "TAST",
+      "7": "BULKE",
+      "8": "EGO"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "lekehus",
+      "2": "eiendomsoverdragelse",
+      "3": "arbeidsklær",
+      "4": "somme",
+      "5": "isen"
+    },
+    "down": {
+      "1": "forjetter",
+      "2": "lettelsene",
+      "3": "forsamlingshus",
+      "4": "lokaliteten",
+      "5": "ynkverdig",
+      "6": "tangentrekke",
+      "7": "grunnstøte",
+      "8": "vesenskjerne"
+    }
+  }
+}

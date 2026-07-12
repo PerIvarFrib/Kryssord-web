@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-13 23:11:15",
+    "seed": 1607202626,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.##.",
+    ".........",
+    "#........",
+    ".........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "#A#G#I##L",
+    "INKLUDERE",
+    "#ELITELAG",
+    "GLATTESTE",
+    "#STRUNKE#",
+    "SETER####"
+  ],
+  "answers": {
+    "across": {
+      "1": "INKLUDERE",
+      "2": "ELITELAG",
+      "3": "GLATTESTE",
+      "4": "STRUNKE",
+      "5": "SETER"
+    },
+    "down": {
+      "1": "ANELSE",
+      "2": "KLATT",
+      "3": "GLITRE",
+      "4": "UTTUR",
+      "5": "IDEEN",
+      "6": "ELSK",
+      "7": "RATE",
+      "8": "LEGE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "omfatte",
+      "2": "lederteam",
+      "3": "slepneste",
+      "4": "rakryggede",
+      "5": "sommersted"
+    },
+    "down": {
+      "1": "formening",
+      "2": "jordklump",
+      "3": "gnistre",
+      "4": "avreise",
+      "5": "baktanken",
+      "6": "ha kjær",
+      "7": "avdrag",
+      "8": "gynekolog"
+    }
+  }
+}

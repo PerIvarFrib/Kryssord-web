@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-14 01:30:53",
+    "seed": 2707202602,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+  ],
+  "solved_layout": [
+    "GROVE",
+    "LAKEI",
+    "INTIM",
+    "SKADE",
+    "TEVEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "GROVE",
+      "2": "LAKEI",
+      "3": "INTIM",
+      "4": "SKADE",
+      "5": "TEVEN"
+    },
+    "down": {
+      "1": "GLIST",
+      "2": "RANKE",
+      "3": "OKTAV",
+      "4": "VEIDE",
+      "5": "EIMEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "håse",
+      "2": "oppasser",
+      "3": "minutiøs",
+      "4": "brekkasje",
+      "5": "ludderet"
+    },
+    "down": {
+      "1": "flirt hånlig",
+      "2": "staute",
+      "3": "tonerekke",
+      "4": "målte opp",
+      "5": "duften"
+    }
+  }
+}

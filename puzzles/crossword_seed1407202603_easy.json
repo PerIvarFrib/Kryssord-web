@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-13 22:30:47",
+    "seed": 1407202603,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
+  ],
+  "solved_layout": [
+    "#T#A#F#I",
+    "TRENERES",
+    "#INNLEDE",
+    "EKSESSER",
+    "#SEKKER#",
+    "HETSE###"
+  ],
+  "answers": {
+    "across": {
+      "1": "TRENERES",
+      "2": "INNLEDE",
+      "3": "EKSESSER",
+      "4": "SEKKER",
+      "5": "HETSE"
+    },
+    "down": {
+      "1": "TRIKSE",
+      "2": "ENSET",
+      "3": "ANNEKS",
+      "4": "ELSKE",
+      "5": "FRESE",
+      "6": "EDER",
+      "7": "ISER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "saboteres",
+      "2": "initiere",
+      "3": "utskeielser",
+      "4": "bæreposer",
+      "5": "sjikanere"
+    },
+    "down": {
+      "1": "trylle",
+      "2": "skjelte",
+      "3": "tilbygning",
+      "4": "beundre",
+      "5": "brase",
+      "6": "forbannelser",
+      "7": "klaker"
+    }
+  }
+}

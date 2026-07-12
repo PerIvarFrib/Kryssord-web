@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-13 23:24:45",
+    "seed": 1707202606,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.#.#",
+    "#........",
+    ".........",
+    "#........",
+    "#.......#",
+    ".....####"
+  ],
+  "solved_layout": [
+    "##F##O#V#",
+    "#LAGSPORT",
+    "KOLLAPSER",
+    "#SMELTEDE",
+    "#SEDVANE#",
+    "HARDE####"
+  ],
+  "answers": {
+    "across": {
+      "1": "LAGSPORT",
+      "2": "KOLLAPSER",
+      "3": "SMELTEDE",
+      "4": "SEDVANE",
+      "5": "HARDE"
+    },
+    "down": {
+      "1": "LOSSA",
+      "2": "FALMER",
+      "3": "GLEDD",
+      "4": "SALVE",
+      "5": "OPPTA",
+      "6": "OSEN",
+      "7": "VREDE",
+      "8": "TRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "lagidrett",
+      "2": "havarerer",
+      "3": "smuldrede",
+      "4": "skikk og bruk",
+      "5": "brutale"
+    },
+    "down": {
+      "1": "øst",
+      "2": "tørker inn",
+      "3": "frydet",
+      "4": "kosmetisk middel",
+      "5": "besitte",
+      "6": "dampen",
+      "7": "forbitrelse",
+      "8": "erteplante"
+    }
+  }
+}

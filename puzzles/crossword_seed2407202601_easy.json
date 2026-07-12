@@ -5,62 +5,62 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-03 09:08:26",
+    "generation_date": "2026-07-14 01:01:51",
     "seed": 2407202601,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
-    "##.##.#.#",
-    "#........",
+    "#.#.#.##.",
     ".........",
     "#........",
+    ".........",
     "#.......#",
     ".....####"
   ],
   "solved_layout": [
-    "##F##S#O#",
-    "#PRESTERT",
-    "KLARLEGGE",
-    "#ETTERGAV",
-    "#TREKKEN#",
-    "UTETT####"
+    "#A#K#I##M",
+    "ANSLAGENE",
+    "#SKALLDYR",
+    "KVARTERER",
+    "#AKTERUT#",
+    "BREER####"
   ],
   "answers": {
     "across": {
-      "1": "PRESTERT",
-      "2": "KLARLEGGE",
-      "3": "ETTERGAV",
-      "4": "TREKKEN",
-      "5": "UTETT"
+      "1": "ANSLAGENE",
+      "2": "SKALLDYR",
+      "3": "KVARTERER",
+      "4": "AKTERUT",
+      "5": "BREER"
     },
     "down": {
-      "1": "PLETT",
-      "2": "FRATRE",
-      "3": "ERTET",
-      "4": "SLEKT",
-      "5": "STERK",
-      "6": "EGGE",
-      "7": "ORGAN",
-      "8": "TEV"
+      "1": "ANSVAR",
+      "2": "SKAKE",
+      "3": "KLARTE",
+      "4": "ALTER",
+      "5": "IGLER",
+      "6": "EDRU",
+      "7": "NYET",
+      "8": "MERR"
     }
   },
   "clues": {
     "across": {
-      "1": "avgitt",
-      "2": "tydeliggjøre",
-      "3": "tilgav",
-      "4": "slepa",
-      "5": "sprukken"
+      "1": "estimatene",
+      "2": "muslingkreps",
+      "3": "aulaer",
+      "4": "bak på skip",
+      "5": "ismasser"
     },
     "down": {
-      "1": "tumleplass",
-      "2": "frafalle",
-      "3": "hetset",
-      "4": "tremenning",
-      "5": "kraftfull",
-      "6": "incitere",
-      "7": "embetsverk",
-      "8": "vellukt"
+      "1": "kausjon",
+      "2": "sjokkere",
+      "3": "overskred",
+      "4": "landemerker",
+      "5": "leddormer",
+      "6": "avholds",
+      "7": "hippet",
+      "8": "tispe"
     }
   }
 }

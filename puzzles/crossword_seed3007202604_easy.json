@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-14 01:58:45",
+    "seed": 3007202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
+  ],
+  "solved_layout": [
+    "#K#D#K#I",
+    "DAMEBLAD",
+    "#MIKROBE",
+    "MEMOARER",
+    "#REDSEL#",
+    "KARET###"
+  ],
+  "answers": {
+    "across": {
+      "1": "DAMEBLAD",
+      "2": "MIKROBE",
+      "3": "MEMOARER",
+      "4": "REDSEL",
+      "5": "KARET"
+    },
+    "down": {
+      "1": "KAMERA",
+      "2": "MIMER",
+      "3": "DEKODE",
+      "4": "BRAST",
+      "5": "KLORE",
+      "6": "ABEL",
+      "7": "IDER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "damelektyre",
+      "2": "smittestoff",
+      "3": "erindringer",
+      "4": "beklemthet",
+      "5": "stampen"
+    },
+    "down": {
+      "1": "fotoapparat",
+      "2": "fremfører",
+      "3": "dechiffrere",
+      "4": "brotna",
+      "5": "klenge",
+      "6": "bibelsk bror",
+      "7": "arketyper"
+    }
+  }
+}

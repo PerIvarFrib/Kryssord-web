@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-14 00:56:27",
+    "seed": 2207202609,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
+  ],
+  "solved_layout": [
+    "#V#Y#M#D",
+    "PENDLERE",
+    "#DOMINER",
+    "STRYKENE",
+    "#ANKERE#",
+    "SKATT###"
+  ],
+  "answers": {
+    "across": {
+      "1": "PENDLERE",
+      "2": "DOMINER",
+      "3": "STRYKENE",
+      "4": "ANKERE",
+      "5": "SKATT"
+    },
+    "down": {
+      "1": "VEDTAK",
+      "2": "NORNA",
+      "3": "YDMYKT",
+      "4": "LIKET",
+      "5": "MENER",
+      "6": "RENE",
+      "7": "DERE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "passasjerer",
+      "2": "tyranniser",
+      "3": "åene",
+      "4": "dregger",
+      "5": "moms"
+    },
+    "down": {
+      "1": "fastsettelse",
+      "2": "museet",
+      "3": "ærbødig",
+      "4": "kadaveret",
+      "5": "postulerer",
+      "6": "legitim",
+      "7": "personlig pronomen"
+    }
+  }
+}
