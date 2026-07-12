@@ -5,8 +5,8 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-12 15:13:14",
-    "seed": 1207202615,
+    "generation_date": "2026-07-12 15:18:40",
+    "seed": 1307202603,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "##H##E#E#",
-    "#RESIDENS",
-    "KARTLEGGE",
-    "#MORELLER",
-    "#SLANTEN#",
-    "FEDME####"
+    "##V##U#B#",
+    "#LEKESTUE",
+    "BOLIGSALG",
+    "#VERNESKO",
+    "#ENKELTE#",
+    "KNEET####"
   ],
   "answers": {
     "across": {
-      "1": "RESIDENS",
-      "2": "KARTLEGGE",
-      "3": "MORELLER",
-      "4": "SLANTEN",
-      "5": "FEDME"
+      "1": "LEKESTUE",
+      "2": "BOLIGSALG",
+      "3": "VERNESKO",
+      "4": "ENKELTE",
+      "5": "KNEET"
     },
     "down": {
-      "1": "RAMSE",
-      "2": "HEROLD",
-      "3": "STRAM",
-      "4": "ILENE",
-      "5": "EDELT",
-      "6": "EGLE",
-      "7": "ENGEN",
-      "8": "SER"
+      "1": "LOVEN",
+      "2": "VELENE",
+      "3": "KIRKE",
+      "4": "EGNET",
+      "5": "USSEL",
+      "6": "TAST",
+      "7": "BULKE",
+      "8": "EGO"
     }
   },
   "clues": {
     "across": {
-      "1": "husrommet",
-      "2": "utforske",
-      "3": "steinfrukter",
-      "4": "fossilen",
-      "5": "overvekt"
+      "1": "lekehus",
+      "2": "eiendomsoverdragelse",
+      "3": "arbeidsklær",
+      "4": "somme",
+      "5": "under låret"
     },
     "down": {
-      "1": "plapre",
-      "2": "speaker",
-      "3": "tettsittende",
-      "4": "vaierne",
-      "5": "høysinnet",
-      "6": "skjelle ut",
-      "7": "vollen",
-      "8": "beskuer"
+      "1": "ordinansen",
+      "2": "lettelsene",
+      "3": "forsamlingshus",
+      "4": "velfungerende",
+      "5": "ynkverdig",
+      "6": "tangentrekke",
+      "7": "grunnstøte",
+      "8": "vesenskjerne"
     }
   }
 }
