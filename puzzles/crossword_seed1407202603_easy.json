@@ -5,60 +5,94 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-13 22:30:47",
-    "seed": 1407202603,
+    "generation_date": "2026-07-14 09:50:57",
+    "seed": 120126,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
-    "#.#.#.#.",
-    "........",
-    "#.......",
-    "........",
-    "#......#",
-    ".....###"
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
   ],
   "solved_layout": [
-    "#T#A#F#I",
-    "TRENERES",
-    "#INNLEDE",
-    "EKSESSER",
-    "#SEKKER#",
-    "HETSE###"
+    "##K##F##R",
+    "IDIOTI#RU",
+    "#ALMISSEN",
+    "LG#SLEKT#",
+    "#SMYG#JUS",
+    "IRONISERT",
+    "#ET##KLER",
+    "#VINSJENE",
+    "TYVENE#EV"
   ],
   "answers": {
     "across": {
-      "1": "TRENERES",
-      "2": "INNLEDE",
-      "3": "EKSESSER",
-      "4": "SEKKER",
-      "5": "HETSE"
+      "1": "IDIOTI",
+      "2": "RU",
+      "3": "ALMISSEN",
+      "4": "LG",
+      "5": "SLEKT",
+      "6": "SMYG",
+      "7": "JUS",
+      "8": "IRONISERT",
+      "9": "ET",
+      "10": "KLER",
+      "11": "VINSJENE",
+      "12": "TYVENE",
+      "13": "EV"
     },
     "down": {
-      "1": "TRIKSE",
-      "2": "ENSET",
-      "3": "ANNEKS",
-      "4": "ELSKE",
-      "5": "FRESE",
-      "6": "EDER",
-      "7": "ISER"
+      "1": "DAGSREVY",
+      "2": "KIL",
+      "3": "MOTIV",
+      "4": "OMSYN",
+      "5": "NE",
+      "6": "TILGI",
+      "7": "SN",
+      "8": "FISE",
+      "9": "SKJE",
+      "10": "SKJELE",
+      "11": "RETURENE",
+      "12": "RUN",
+      "13": "STREV"
     }
   },
   "clues": {
     "across": {
-      "1": "saboteres",
-      "2": "initiere",
-      "3": "utskeielser",
-      "4": "bæreposer",
-      "5": "sjikanere"
+      "1": "forrykthet",
+      "2": "Russland",
+      "3": "offergaven",
+      "4": "mobilmerke",
+      "5": "tremenning",
+      "6": "smett",
+      "7": "rettsvitenskap",
+      "8": "misforstått",
+      "9": "uno",
+      "10": "danderer",
+      "11": "heisekranene",
+      "12": "bankrøverne",
+      "13": "vei forkortelse"
     },
     "down": {
-      "1": "trylle",
-      "2": "skjelte",
-      "3": "tilbygning",
-      "4": "beundre",
-      "5": "brase",
-      "6": "forbannelser",
-      "7": "klaker"
+      "1": "nyhetsprogram",
+      "2": "kribl",
+      "3": "intensjon",
+      "4": "varsomhet",
+      "5": "Neon",
+      "6": "avløse",
+      "7": "Tinn",
+      "8": "forpeste",
+      "9": "forløpe",
+      "10": "skimte",
+      "11": "tilbakeveiene",
+      "12": "tilstrømning",
+      "13": "bestrebelse"
     }
   }
 }
