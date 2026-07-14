@@ -5,54 +5,94 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-13 22:32:46",
-    "seed": 1507202601,
+    "generation_date": "2026-07-14 09:50:57",
+    "seed": 120126,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
   "layout": [
-    ".....",
-    ".....",
-    ".....",
-    ".....",
-    "....."
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
   ],
   "solved_layout": [
-    "TUKLE",
-    "YTRES",
-    "GRISK",
-    "DOLKE",
-    "EPLER"
+    "##K##F##R",
+    "IDIOTI#RU",
+    "#ALMISSEN",
+    "LG#SLEKT#",
+    "#SMYG#JUS",
+    "IRONISERT",
+    "#ET##KLER",
+    "#VINSJENE",
+    "TYVENE#EV"
   ],
   "answers": {
     "across": {
-      "1": "TUKLE",
-      "2": "YTRES",
-      "3": "GRISK",
-      "4": "DOLKE",
-      "5": "EPLER"
+      "1": "IDIOTI",
+      "2": "RU",
+      "3": "ALMISSEN",
+      "4": "LG",
+      "5": "SLEKT",
+      "6": "SMYG",
+      "7": "JUS",
+      "8": "IRONISERT",
+      "9": "ET",
+      "10": "KLER",
+      "11": "VINSJENE",
+      "12": "TYVENE",
+      "13": "EV"
     },
     "down": {
-      "1": "TYGDE",
-      "2": "UTROP",
-      "3": "KRILL",
-      "4": "LESKE",
-      "5": "ESKER"
+      "1": "DAGSREVY",
+      "2": "KIL",
+      "3": "MOTIV",
+      "4": "OMSYN",
+      "5": "NE",
+      "6": "TILGI",
+      "7": "SN",
+      "8": "FISE",
+      "9": "SKJE",
+      "10": "SKJELE",
+      "11": "RETURENE",
+      "12": "RUN",
+      "13": "STREV"
     }
   },
   "clues": {
     "across": {
-      "1": "klusse",
-      "2": "uttales",
-      "3": "gnieraktig",
-      "4": "knivstikke",
-      "5": "steinfrukter"
+      "1": "forrykthet",
+      "2": "Russland",
+      "3": "offergaven",
+      "4": "mobilmerke",
+      "5": "tremenning",
+      "6": "smett",
+      "7": "rettsvitenskap",
+      "8": "misforstått",
+      "9": "uno",
+      "10": "danderer",
+      "11": "heisekranene",
+      "12": "bankrøverne",
+      "13": "vei forkortelse"
     },
     "down": {
-      "1": "snappete",
-      "2": "brøl",
-      "3": "lite sjødyr",
-      "4": "kveike",
-      "5": "kartonger"
+      "1": "nyhetsprogram",
+      "2": "kribl",
+      "3": "intensjon",
+      "4": "varsomhet",
+      "5": "Neon",
+      "6": "avløse",
+      "7": "Tinn",
+      "8": "forpeste",
+      "9": "forløpe",
+      "10": "skimte",
+      "11": "tilbakeveiene",
+      "12": "tilstrømning",
+      "13": "bestrebelse"
     }
   }
 }
