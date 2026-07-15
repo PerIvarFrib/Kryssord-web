@@ -5,7 +5,7 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-14 00:58:59",
+    "generation_date": "2026-07-19 02:29:33",
     "seed": 2307202601,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
@@ -17,42 +17,42 @@
     "....."
   ],
   "solved_layout": [
-    "ROLLE",
-    "UNION",
-    "SANSE",
-    "ENKER",
-    "RISSE"
+    "LYSTA",
+    "OMTAL",
+    "STANG",
+    "JENTE",
+    "ISSEN"
   ],
   "answers": {
     "across": {
-      "1": "ROLLE",
-      "2": "UNION",
-      "3": "SANSE",
-      "4": "ENKER",
-      "5": "RISSE"
+      "1": "LYSTA",
+      "2": "OMTAL",
+      "3": "STANG",
+      "4": "JENTE",
+      "5": "ISSEN"
     },
     "down": {
-      "1": "RUSER",
-      "2": "ONANI",
-      "3": "LINKS",
-      "4": "LOSES",
-      "5": "ENERE"
+      "1": "LOSJI",
+      "2": "YMTES",
+      "3": "STANS",
+      "4": "TANTE",
+      "5": "ALGEN"
     }
   },
   "clues": {
     "across": {
-      "1": "karakterisering",
-      "2": "liga",
-      "3": "persipere",
-      "4": "alenemødre",
-      "5": "skissere"
+      "1": "begjærligheta",
+      "2": "anmeld",
+      "3": "batong",
+      "4": "småpike",
+      "5": "kjaken"
     },
     "down": {
-      "1": "drømmer",
-      "2": "masturbasjon",
-      "3": "babord",
-      "4": "navigeres",
-      "5": "toppfigurer"
+      "1": "husrom",
+      "2": "formidles",
+      "3": "avsteng",
+      "4": "morsøster",
+      "5": "sporeplanten"
     }
   }
 }

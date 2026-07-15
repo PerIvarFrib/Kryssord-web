@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-19 01:51:09",
+    "seed": 2007202650,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##K##J##B",
+    "DUNKLE#AU",
+    "#NYNORSKE",
+    "CN#EMNET#",
+    "#DREV#NON",
+    "KRITISERE",
+    "#AP##VREI",
+    "#TEMPIENE",
+    "ETNISK#ET"
+  ],
+  "answers": {
+    "across": {
+      "1": "DUNKLE",
+      "2": "AU",
+      "3": "NYNORSKE",
+      "4": "CN",
+      "5": "EMNET",
+      "6": "DREV",
+      "7": "NON",
+      "8": "KRITISERE",
+      "9": "AP",
+      "10": "VREI",
+      "11": "TEMPIENE",
+      "12": "ETNISK",
+      "13": "ET"
+    },
+    "down": {
+      "1": "UNNDRATT",
+      "2": "KNY",
+      "3": "RIPEN",
+      "4": "KNEET",
+      "5": "MI",
+      "6": "LOMVI",
+      "7": "PS",
+      "8": "JERN",
+      "9": "SVIK",
+      "10": "SENERE",
+      "11": "AKTORENE",
+      "12": "BUE",
+      "13": "NEIET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "uutgrunnelige",
+      "2": "Gull",
+      "3": "riksmål",
+      "4": "Kina",
+      "5": "materien",
+      "6": "anga",
+      "7": "mellommåltid",
+      "8": "anmelde",
+      "9": "barneprat",
+      "10": "snudde rundt på",
+      "11": "hurtighetene",
+      "12": "rasemessig",
+      "13": "uno"
+    },
+    "down": {
+      "1": "bestjålet",
+      "2": "klynking",
+      "3": "bredda",
+      "4": "torsoen",
+      "5": "Solfège-tone",
+      "6": "alkefugl",
+      "7": "supplement",
+      "8": "stål",
+      "9": "falskhet",
+      "10": "deretter",
+      "11": "anklagerne",
+      "12": "kuppel",
+      "13": "kniksa"
+    }
+  }
+}

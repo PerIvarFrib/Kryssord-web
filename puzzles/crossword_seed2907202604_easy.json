@@ -5,7 +5,7 @@
     "language": "norwegian",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-14 01:50:55",
+    "generation_date": "2026-07-19 03:12:46",
     "seed": 2907202604,
     "pairs_db_path": "data\\word2clue_pairs_db.pkl"
   },
@@ -18,49 +18,49 @@
     ".....####"
   ],
   "solved_layout": [
-    "##S##F#N#",
-    "#MASKULIN",
-    "FAKTURAER",
-    "#SLOVENSK",
-    "#SIVENDE#",
-    "VEGEN####"
+    "##A##S#E#",
+    "#KNARKENE",
+    "ENSFARGET",
+    "#EVAKUERE",
+    "#LASTENE#",
+    "FERIE####"
   ],
   "answers": {
     "across": {
-      "1": "MASKULIN",
-      "2": "FAKTURAER",
-      "3": "SLOVENSK",
-      "4": "SIVENDE",
-      "5": "VEGEN"
+      "1": "KNARKENE",
+      "2": "ENSFARGET",
+      "3": "EVAKUERE",
+      "4": "LASTENE",
+      "5": "FERIE"
     },
     "down": {
-      "1": "MASSE",
-      "2": "SAKLIG",
-      "3": "STOVE",
-      "4": "KUVEN",
-      "5": "FUREN",
-      "6": "LAND",
-      "7": "NIESE",
-      "8": "NRK"
+      "1": "KNELE",
+      "2": "ANSVAR",
+      "3": "AFASI",
+      "4": "RAKTE",
+      "5": "SKRUE",
+      "6": "EGEN",
+      "7": "ENERE",
+      "8": "ETE"
     }
   },
   "clues": {
     "across": {
-      "1": "ukvinnelig",
-      "2": "regninger",
-      "3": "slavisk språk",
-      "4": "surkla",
-      "5": "spaserveien"
+      "1": "marihuanaene",
+      "2": "monokromen",
+      "3": "fraflytte",
+      "4": "cargoene",
+      "5": "sommertur"
     },
     "down": {
-      "1": "gel",
-      "2": "allmengyldig",
-      "3": "kjellerstue",
-      "4": "sted i os i hordaland",
-      "5": "bulken",
-      "6": "kyst",
-      "7": "brordatter",
-      "8": "kringkasting"
+      "1": "synke sammen",
+      "2": "kausjon",
+      "3": "hjernesykdom",
+      "4": "akkumulerte",
+      "5": "vannskruve",
+      "6": "spesial-",
+      "7": "toppfigurer",
+      "8": "jafse"
     }
   }
 }

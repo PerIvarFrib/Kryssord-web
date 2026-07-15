@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-19 02:27:51",
+    "seed": 2207202604,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
+  ],
+  "solved_layout": [
+    "#P#A#S#I",
+    "HALVVEIS",
+    "#NYTELSE",
+    "BATALJEN",
+    "#METTER#",
+    "MATTE###"
+  ],
+  "answers": {
+    "across": {
+      "1": "HALVVEIS",
+      "2": "NYTELSE",
+      "3": "BATALJEN",
+      "4": "METTER",
+      "5": "MATTE"
+    },
+    "down": {
+      "1": "PANAMA",
+      "2": "LYTET",
+      "3": "AVTATT",
+      "4": "VELTE",
+      "5": "SELJE",
+      "6": "ISER",
+      "7": "ISEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "delvis",
+      "2": "velbehag",
+      "3": "håndgemenget",
+      "4": "bespiser",
+      "5": "tallteori"
+    },
+    "down": {
+      "1": "søramerikansk land",
+      "2": "skavanken",
+      "3": "gått ned",
+      "4": "snuble",
+      "5": "sted i nordfjord",
+      "6": "klaker",
+      "7": "frysevaren"
+    }
+  }
+}

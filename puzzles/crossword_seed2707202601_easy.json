@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-19 03:02:21",
+    "seed": 2707202601,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "#.#.#.#.",
+    "........",
+    "#.......",
+    "........",
+    "#......#",
+    ".....###"
+  ],
+  "solved_layout": [
+    "#U#B#H#U",
+    "UTLEVERT",
+    "#DATAFAG",
+    "LEKESTUA",
+    "#LENSET#",
+    "VENTE###"
+  ],
+  "answers": {
+    "across": {
+      "1": "UTLEVERT",
+      "2": "DATAFAG",
+      "3": "LEKESTUA",
+      "4": "LENSET",
+      "5": "VENTE"
+    },
+    "down": {
+      "1": "UTDELE",
+      "2": "LAKEN",
+      "3": "BETENT",
+      "4": "VASSE",
+      "5": "HEFTE",
+      "6": "RAUT",
+      "7": "UTGA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forrådt",
+      "2": "informatikk",
+      "3": "lekehuset",
+      "4": "øst",
+      "5": "holde an"
+    },
+    "down": {
+      "1": "fraksjonere",
+      "2": "sengetøyet",
+      "3": "ødematisk",
+      "4": "vade",
+      "5": "småskrift",
+      "6": "brøl",
+      "7": "publiserte"
+    }
+  }
+}

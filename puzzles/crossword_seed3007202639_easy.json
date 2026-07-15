@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "title": "Solver Crossword",
+    "difficulty": "easy",
+    "language": "norwegian",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "model_used": "norbert-multipos-word2clue",
+    "generation_date": "2026-07-19 04:17:06",
+    "seed": 3007202639,
+    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##K##D##F",
+    "STUKNE#FA",
+    "#INNENFOR",
+    "PD#UTTUR#",
+    "#SORT#REP",
+    "OPPROPENE",
+    "#LP##UNIK",
+    "#AGENTENE",
+    "GNISSE#GR"
+  ],
+  "answers": {
+    "across": {
+      "1": "STUKNE",
+      "2": "FA",
+      "3": "INNENFOR",
+      "4": "PD",
+      "5": "UTTUR",
+      "6": "SORT",
+      "7": "REP",
+      "8": "OPPROPENE",
+      "9": "LP",
+      "10": "UNIK",
+      "11": "AGENTENE",
+      "12": "GNISSE",
+      "13": "GR"
+    },
+    "down": {
+      "1": "TIDSPLAN",
+      "2": "KUN",
+      "3": "OPPGI",
+      "4": "KNURR",
+      "5": "ES",
+      "6": "NETTO",
+      "7": "NS",
+      "8": "DENT",
+      "9": "PUTE",
+      "10": "FURENE",
+      "11": "FORENING",
+      "12": "FAR",
+      "13": "PEKER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "pinkede",
+      "2": "Solfège-tone",
+      "3": "mellom",
+      "4": "Palladium",
+      "5": "avreise",
+      "6": "beksvart",
+      "7": "wire",
+      "8": "oppfordringene",
+      "9": "grammofonplate",
+      "10": "uforlignelig",
+      "11": "telefonselgerne",
+      "12": "gnure",
+      "13": "Hellas"
+    },
+    "down": {
+      "1": "tidsskjema",
+      "2": "allerede",
+      "3": "henlegge",
+      "4": "snerr",
+      "5": "Spania",
+      "6": "intrade",
+      "7": "båtforkortelse",
+      "8": "pastillnavn",
+      "9": "hodestøtte",
+      "10": "skrukkene",
+      "11": "brorskap",
+      "12": "fader",
+      "13": "orienterer"
+    }
+  }
+}
