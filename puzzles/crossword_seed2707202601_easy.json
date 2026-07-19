@@ -1,64 +1,71 @@
 {
   "metadata": {
-    "title": "Solver Crossword",
-    "difficulty": "easy",
-    "language": "norwegian",
+    "title": "Crossword Grid",
+    "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-07-27 00:05:59",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-19 03:02:21",
-    "seed": 2707202601,
-    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
   },
   "layout": [
-    "#.#.#.#.",
-    "........",
-    "#.......",
-    "........",
-    "#......#",
-    ".....###"
+    "##.#.##.#",
+    "#........",
+    ".........",
+    "#...#....",
+    ".........",
+    "#..#....#"
   ],
   "solved_layout": [
-    "#U#B#H#U",
-    "UTLEVERT",
-    "#DATAFAG",
-    "LEKESTUA",
-    "#LENSET#",
-    "VENTE###"
+    "##V#G##M#",
+    "#SILINGEN",
+    "SKRIVENDE",
+    "#ØVD#VIES",
+    "GYLDENENE",
+    "#TE#MENE#"
   ],
   "answers": {
     "across": {
-      "1": "UTLEVERT",
-      "2": "DATAFAG",
-      "3": "LEKESTUA",
-      "4": "LENSET",
-      "5": "VENTE"
+      "1": "SILINGEN",
+      "2": "SKRIVENDE",
+      "3": "ØVD",
+      "4": "VIES",
+      "5": "GYLDENENE",
+      "6": "TE",
+      "7": "MENE"
     },
     "down": {
-      "1": "UTDELE",
-      "2": "LAKEN",
-      "3": "BETENT",
-      "4": "VASSE",
-      "5": "HEFTE",
-      "6": "RAUT",
-      "7": "UTGA"
+      "1": "SKØYT",
+      "2": "VIRVLE",
+      "3": "LIDD",
+      "4": "GIV",
+      "5": "EM",
+      "6": "NEVNE",
+      "7": "GNIEN",
+      "8": "MEDENE",
+      "9": "NESE"
     }
   },
   "clues": {
     "across": {
-      "1": "forrådt",
-      "2": "informatikk",
-      "3": "lekehuset",
-      "4": "øst",
-      "5": "holde an"
+      "1": "rensinga",
+      "2": "konsipert",
+      "3": "trenet opp",
+      "4": "gifte seg",
+      "5": "gullmyntene",
+      "6": "utstille",
+      "7": "forfekte"
     },
     "down": {
-      "1": "fraksjonere",
-      "2": "sengetøyet",
-      "3": "ødematisk",
-      "4": "vade",
-      "5": "småskrift",
-      "6": "brøl",
-      "7": "publiserte"
+      "1": "avfyrte",
+      "2": "svirre",
+      "3": "undergått",
+      "4": "fornyelse",
+      "5": "Europamesterskap",
+      "6": "formulere",
+      "7": "grisk",
+      "8": "aua",
+      "9": "kjake"
     }
   }
 }
