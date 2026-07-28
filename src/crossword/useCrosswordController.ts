@@ -51,6 +51,8 @@ export interface CrosswordControllerActions {
   handleChangeCell: (row: number, col: number, value: string) => void;
   handleCellClick: (row: number, col: number) => void;
   handleKeyDown: (row: number, col: number, event: React.KeyboardEvent) => void;
+  /** Handle a virtual keyboard key press (character, 'DELETE', or 'ENTER'). */
+  handleVirtualKey: (key: string) => void;
   selectWord: (direction: Direction, number: number) => void;
   /** Select a word directly by its WordKey (used by clue cell click handlers). */
   selectWordByKey: (wordKey: WordKey) => void;
@@ -271,6 +273,7 @@ export function useCrosswordController(
     setDirection(dir);
     const key = getWordKeyForCell(row, col, dir);
     setSelectedWordKey(key);
+    setFocusTrigger((prev) => prev + 1);
   };
 
   const handleChangeCell = (row: number, col: number, value: string) => {
@@ -866,10 +869,56 @@ export function useCrosswordController(
     onProgressChange,
   ]);
 
+  const handleVirtualKey = (key: string) => {
+    if (!selectedCell) return;
+    const { row, col } = selectedCell;
+    if (key === "DELETE" || key === "Backspace") {
+      const isLocked =
+        cellStatus[row]?.[col] === "correctConfirmed" ||
+        cellStatus[row]?.[col] === "revealed";
+      if (!isLocked) {
+        setValues((prev) => {
+          const next = prev.map((r) => [...r]);
+          next[row][col] = "";
+          return next;
+        });
+        setCellStatus((prev) => {
+          const next = prev.map((r) => [...r]);
+          next[row][col] = "empty";
+          return next;
+        });
+      }
+      const wordCells = getWordCells(row, col, direction);
+      const currentIndex = wordCells.findIndex(
+        (c) => c.row === row && c.col === col,
+      );
+      if (currentIndex > 0) {
+        const prevCell = wordCells[currentIndex - 1];
+        selectCell(prevCell.row, prevCell.col, direction);
+      }
+    } else if (key === "ENTER") {
+      // Move to the next word
+      if (!selectedWordKey) return;
+      const [numberStr, dir] = selectedWordKey.split("-") as [string, Direction];
+      const currentNumber = Number(numberStr);
+      const wordsInDir = Object.values(wordPositions)
+        .filter((pos) => pos.direction === dir)
+        .sort((a, b) => a.number - b.number);
+      if (wordsInDir.length === 0) return;
+      const target =
+        wordsInDir.find((pos) => pos.number > currentNumber) ?? wordsInDir[0];
+      if (target) selectWord(target.direction, target.number);
+    } else {
+      // Regular character
+      handleChangeCell(row, col, key);
+    }
+  };
+
   const actions: CrosswordControllerActions = {
     handleChangeCell,
     handleCellClick,
     handleKeyDown,
+    handleVirtualKey,
     selectWord,
     selectWordByKey: (wordKey: WordKey) => {
       const pos = wordPositions[wordKey];
