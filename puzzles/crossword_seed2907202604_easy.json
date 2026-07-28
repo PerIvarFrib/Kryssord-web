@@ -1,66 +1,71 @@
 {
   "metadata": {
-    "title": "Solver Crossword",
-    "difficulty": "easy",
-    "language": "norwegian",
+    "title": "Crossword Grid",
+    "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-07-28 21:47:04",
     "model_used": "norbert-multipos-word2clue",
-    "generation_date": "2026-07-19 03:12:46",
-    "seed": 2907202604,
-    "pairs_db_path": "data\\word2clue_pairs_db.pkl"
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
   },
   "layout": [
-    "##.##.#.#",
+    "###.##.##",
     "#........",
     ".........",
+    "#.....#..",
     "#........",
-    "#.......#",
-    ".....####"
+    "...#....#"
   ],
   "solved_layout": [
-    "##A##S#E#",
-    "#KNARKENE",
-    "ENSFARGET",
-    "#EVAKUERE",
-    "#LASTENE#",
-    "FERIE####"
+    "###U##P##",
+    "#FORSIRER",
+    "FORBUDENE",
+    "#SKAPE#SI",
+    "#SENTEREN",
+    "LET#ENER#"
   ],
   "answers": {
     "across": {
-      "1": "KNARKENE",
-      "2": "ENSFARGET",
-      "3": "EVAKUERE",
-      "4": "LASTENE",
-      "5": "FERIE"
+      "1": "FORSIRER",
+      "2": "FORBUDENE",
+      "3": "SKAPE",
+      "4": "SI",
+      "5": "SENTEREN",
+      "6": "LET",
+      "7": "ENER"
     },
     "down": {
-      "1": "KNELE",
-      "2": "ANSVAR",
-      "3": "AFASI",
-      "4": "RAKTE",
-      "5": "SKRUE",
-      "6": "EGEN",
-      "7": "ENERE",
-      "8": "ETE"
+      "1": "FOSSE",
+      "2": "ORKET",
+      "3": "URBAN",
+      "4": "SUPTE",
+      "5": "IDEEN",
+      "6": "PRE",
+      "7": "RE",
+      "8": "ENSER",
+      "9": "REIN"
     }
   },
   "clues": {
     "across": {
-      "1": "marihuanaene",
-      "2": "monokromen",
-      "3": "fraflytte",
-      "4": "cargoene",
-      "5": "sommertur"
+      "1": "pryder",
+      "2": "lovbestemmelsene",
+      "3": "framkalle",
+      "4": "Solfège-tone",
+      "5": "knutepunktet",
+      "6": "utforsk",
+      "7": "bestemenn"
     },
     "down": {
-      "1": "synke sammen",
-      "2": "kausjon",
-      "3": "hjernesykdom",
-      "4": "akkumulerte",
-      "5": "vannskruve",
-      "6": "spesial-",
-      "7": "toppfigurer",
-      "8": "jafse"
+      "1": "sprudle",
+      "2": "jobbinga",
+      "3": "monden",
+      "4": "slurpet",
+      "5": "tankegangen",
+      "6": "favør",
+      "7": "Solfège-tone",
+      "8": "besiktiger",
+      "9": "genuin"
     }
   }
 }

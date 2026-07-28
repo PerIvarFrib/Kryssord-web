@@ -143,9 +143,8 @@ button.warning {
 .puzzle-info {
     margin-bottom: 20px;
     padding: 12px 16px;
-    background: var(--surface);
+    background: var(--background);
     border-radius: 4px;
-    border: 1px solid var(--border);
 }
 
 .puzzle-info-bar {
@@ -203,17 +202,9 @@ button.warning {
 
 /* Game container */
 .game-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
-    gap: 24px;
-    align-items: flex-start;
-}
-
-@media (max-width: 1024px) {
-    .game-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 /* Crossword grid */
@@ -222,10 +213,8 @@ button.warning {
     flex-direction: column;
     align-items: center;
     padding: 16px;
-    background: var(--surface);
+    background: var(--background);
     border-radius: 6px;
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-lg);
 }
 
 .crossword-grid {
@@ -243,6 +232,7 @@ button.warning {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 /* Inner row that places the optional left-overflow column beside the main grid. */
@@ -734,105 +724,48 @@ button.warning {
 }
 
 .controls {
-    background: var(--background-cyan); /* svak cyan bakgrunn som står i fin kontrast til rød */
+    background: var(--background);
     border-radius: 4px;
-    border: 1px solid #e5e7eb;
-    padding: 12px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 12px;
-    row-gap: 8px;
-}
-
-.controls h3 {
-    margin-bottom: 8px;
-    color: var(--text-primary);
-    font-size: 1rem;
-    font-weight: 600;
-    grid-column: 1 / -1; /* overskriften går over begge kolonner */
-}
-
-.control-group {
-    margin-bottom: 0;
-}
-
-.control-group:last-child {
-    margin-bottom: 0;
-}
-
-.control-group h4 {
-    margin-bottom: 6px;
-    color: var(--text-secondary);
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.control-group button {
-    display: block;
-    width: 100%;
-    margin-bottom: 4px;
-    text-align: left;
-    font-size: 0.9rem;
-}
-
-.control-group button:last-child {
-    margin-bottom: 0;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
 }
 
 /* Tonet bakgrunn + outline-knapper i kontrollpanelet */
 .controls button {
-    background: transparent;
+    background: var(--background-cyan);
     color: var(--text-primary);
-    border-color: transparent;
-    padding: 4px 0; /* tekst-lenke-følelse */
+    border: 1px solid var(--border);
+    padding: 9px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    /* border-radius: 4px; */
     display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    box-shadow: none;
+    gap: 8px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); */
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 .controls button:hover:not(:disabled) {
-    background: transparent;
+    background: var(--background-cyan);
+    /* border-color: var(--primary-color); */
     color: var(--primary-color);
-    border-color: transparent; /* ingen ramme ved hover */
+    border: 1px solid var(--border);
 }
 
 .controls button:disabled {
     background: transparent;
     color: var(--text-muted);
-    border-color: transparent;
+    border-color: #e5e7eb;
+    box-shadow: none;
+    cursor: not-allowed;
 }
 
-/* Ikoner for en mer app-aktig følelse på kontrollknappene */
-#check-letter::before,
-#check-word::before,
-#check-all::before,
-#reveal-letter::before,
-#reveal-word::before {
-    display: inline-block;
-    font-size: 0.9rem;
-}
 
-#check-letter::before,
-#check-word::before,
-#check-all::before {
-    content: "🔍";
-}
-
-#reveal-letter::before,
-#reveal-word::before {
-    content: "👁";
-}
-
-/* På veldig små skjermer stabler vi kontrollgruppene under hverandre */
-@media (max-width: 400px) {
-    .controls {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Clues */
 .clues {
@@ -917,6 +850,86 @@ button.warning {
 
 .current-clue span {
 	color: var(--text-primary);
+}
+
+/* Current clue display (between grid and keyboard) */
+.current-clue-display {
+    padding: 8px 12px;
+    background: var(--background);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.current-clue-display__text {
+    color: var(--text-primary);
+    font-size: 1.33rem;
+}
+
+/* ─── Mobile keyboard ─────────────────────────────────────────── */
+.mobile-keyboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mobile-keyboard__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 4px;
+    width: 100%;
+}
+
+.mobile-keyboard__row .keyboard-key {
+    flex: 1;
+    width: auto !important;
+    min-width: 0;
+    height: 44px;
+    background: #e8e8e8;
+    color: #111111;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.mobile-keyboard__row .keyboard-key:hover {
+    background: #d0d0d0;
+}
+
+.mobile-keyboard__row .keyboard-key:active {
+    background: #b8b8b8;
+}
+
+.mobile-keyboard__row .keyboard-key--action {
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.mobile-keyboard__row .keyboard-key--action:hover {
+    background: var(--primary-hover);
+    color: #ffffff;
+}
+
+.mobile-keyboard__row .keyboard-key--action:active {
+    background: #8b0a1f;
+    color: #ffffff;
 }
 
 /* Footer */

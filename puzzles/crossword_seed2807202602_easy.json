@@ -3,67 +3,69 @@
     "title": "Crossword Grid",
     "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
-    "generation_date": "2026-07-27 23:49:29",
+    "generation_date": "2026-07-28 21:47:04",
     "model_used": "norbert-multipos-word2clue",
     "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
     "difficulty": "easy"
   },
   "layout": [
-    "#.#.#..##",
+    "###.##.##",
     "#........",
-    "#........",
+    ".........",
     "#.....#..",
     "#........",
-    "#....#..."
+    "...#....#"
   ],
   "solved_layout": [
-    "#E#S#DØ##",
-    "#LAPSUSER",
-    "#SKIARENA",
-    "#KUSKE#KU",
-    "#ETTERSES",
-    "#STEN#ELT"
+    "###U##P##",
+    "#FORSIRER",
+    "FORBUDENE",
+    "#SKAPE#SI",
+    "#SENTEREN",
+    "LET#ENER#"
   ],
   "answers": {
     "across": {
-      "1": "DØ",
-      "2": "LAPSUSER",
-      "3": "SKIARENA",
-      "4": "KUSKE",
-      "6": "ETTERSES",
-      "7": "STEN",
-      "8": "ELT"
+      "1": "FORSIRER",
+      "2": "FORBUDENE",
+      "3": "SKAPE",
+      "4": "SI",
+      "5": "SENTEREN",
+      "6": "LET",
+      "7": "ENER"
     },
     "down": {
-      "1": "ELSKES",
-      "2": "AKUTT",
-      "3": "SPISTE",
-      "4": "SAKEN",
-      "5": "DURER",
-      "6": "ØSE",
-      "8": "ENKEL",
-      "9": "RAUST"
+      "1": "FOSSE",
+      "2": "ORKET",
+      "3": "URBAN",
+      "4": "SUPTE",
+      "5": "IDEEN",
+      "6": "PRE",
+      "7": "RE",
+      "8": "ENSER",
+      "9": "REIN"
     }
   },
   "clues": {
     "across": {
-      "1": "omkomme",
-      "2": "fadeser",
-      "3": "sportsanlegg",
-      "4": "forkue",
-      "6": "overvåkes",
-      "7": "stjernestein",
-      "8": "preparer"
+      "1": "pryder",
+      "2": "lovbestemmelsene",
+      "3": "framkalle",
+      "4": "Solfège-tone",
+      "5": "knutepunktet",
+      "6": "utforsk",
+      "7": "bestemenn"
     },
     "down": {
-      "1": "beundres",
-      "2": "kortvarig",
-      "3": "superte",
-      "4": "straffesaka",
-      "5": "lurveleven",
-      "6": "teskje",
-      "8": "elementær",
-      "9": "dettet"
+      "1": "sprudle",
+      "2": "jobbinga",
+      "3": "monden",
+      "4": "slurpet",
+      "5": "tankegangen",
+      "6": "favør",
+      "7": "Solfège-tone",
+      "8": "besiktiger",
+      "9": "genuin"
     }
   }
 }

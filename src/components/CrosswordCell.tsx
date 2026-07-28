@@ -51,7 +51,7 @@ export function CrosswordCell({
   // Focus input when cell becomes selected or when focus is triggered
   useEffect(() => {
     if (isSelected && inputRef.current) {
-      inputRef.current.focus();
+      inputRef.current.focus({ preventScroll: true });
     }
   }, [isSelected, focusTrigger]);
 
