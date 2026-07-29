@@ -73,29 +73,6 @@ export function CrosswordGrid({
   // Track how many times each cell has been revealed so the pop animation re-fires
   const revealCountsRef = useRef<Record<string, number>>({});
 
-  // Dynamically compute --cell-size so the grid fills the wrapper width
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const [cellSize, setCellSize] = useState<number>(57);
-
-  useEffect(() => {
-    const el = wrapperRef.current;
-    if (!el) return;
-    const totalCols = columnCount + (hasLeftOverflow ? 1 : 0);
-    const compute = (width: number) => {
-      const size = Math.min(Math.floor(width / totalCols), 60);
-      setCellSize(Math.max(size, 20));
-    };
-    // Measure immediately
-    compute(el.getBoundingClientRect().width);
-    const observer = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        compute(entry.contentRect.width);
-      }
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [columnCount, hasLeftOverflow]);
-
   // Track transitions to "correctConfirmed" to fire the gray check flash.
   // We store the last-seen status per cell to detect the moment of transition.
   const checkCountsRef = useRef<Record<string, number>>({});
