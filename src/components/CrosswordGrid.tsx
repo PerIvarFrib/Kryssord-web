@@ -47,12 +47,40 @@ export function CrosswordGrid({
   sidebarFallbackWordKeys,
   onClueCellClick,
 }: CrosswordGridProps) {
+  // ── All hooks must come before any early return ──────────────────────────
+  const revealCountsRef = useRef<Record<string, number>>({});
+  const checkCountsRef = useRef<Record<string, number>>({});
+  const prevStatusRef = useRef<Record<string, string>>({});
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [cellSize, setCellSize] = useState<number>(57);
+
+  const columnCount = layout.length ? layout[0].length : 0;
+  const hasLeftOverflow = !!clueCellMap && Array.from(clueCellMap.values()).some((d) => d.col < 0);
+
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+    const totalCols = columnCount + (hasLeftOverflow ? 1 : 0);
+    if (totalCols === 0) return;
+    const compute = (width: number) => {
+      const size = Math.min(Math.floor(width / totalCols), 60);
+      setCellSize(Math.max(size, 20));
+    };
+    compute(el.getBoundingClientRect().width);
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        compute(entry.contentRect.width);
+      }
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [columnCount, hasLeftOverflow]);
+
   if (!layout.length) {
     return null;
   }
 
-  const columnCount = layout[0].length;
-
+  // ── Derived values (after early return guard) ─────────────────────────────
   // Collect overflow clue cells (row === -1) rendered above the main grid.
   const topOverflowByCol = new Map<number, ClueCellData>();
   // Collect overflow clue cells (col < 0) rendered to the left of the main grid.
@@ -67,39 +95,7 @@ export function CrosswordGrid({
     }
   }
   const hasTopOverflow = topOverflowByCol.size > 0;
-  const hasLeftOverflow = leftOverflowByRow.size > 0;
   const rowCount = layout.length;
-
-  // Track how many times each cell has been revealed so the pop animation re-fires
-  const revealCountsRef = useRef<Record<string, number>>({});
-
-  // Dynamically compute --cell-size so the grid fills the wrapper width
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const [cellSize, setCellSize] = useState<number>(57);
-
-  useEffect(() => {
-    const el = wrapperRef.current;
-    if (!el) return;
-    const totalCols = columnCount + (hasLeftOverflow ? 1 : 0);
-    const compute = (width: number) => {
-      const size = Math.min(Math.floor(width / totalCols), 60);
-      setCellSize(Math.max(size, 20));
-    };
-    // Measure immediately
-    compute(el.getBoundingClientRect().width);
-    const observer = new ResizeObserver((entries) => {
-      for (const entry of entries) {
-        compute(entry.contentRect.width);
-      }
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [columnCount, hasLeftOverflow]);
-
-  // Track transitions to "correctConfirmed" to fire the gray check flash.
-  // We store the last-seen status per cell to detect the moment of transition.
-  const checkCountsRef = useRef<Record<string, number>>({});
-  const prevStatusRef = useRef<Record<string, string>>({});
 
   // Build a map of cell coordinates to clue numbers
   const cellNumbers: Map<string, number[]> = new Map();
