@@ -97,6 +97,14 @@ export function CrosswordGrid({
   const hasTopOverflow = topOverflowByCol.size > 0;
   const rowCount = layout.length;
 
+  // Track how many times each cell has been revealed so the pop animation re-fires
+  const revealCountsRef = useRef<Record<string, number>>({});
+
+  // Track transitions to "correctConfirmed" to fire the gray check flash.
+  // We store the last-seen status per cell to detect the moment of transition.
+  const checkCountsRef = useRef<Record<string, number>>({});
+  const prevStatusRef = useRef<Record<string, string>>({});
+
   // Build a map of cell coordinates to clue numbers
   const cellNumbers: Map<string, number[]> = new Map();
   Object.values(wordPositions).forEach((pos) => {
