@@ -3,62 +3,73 @@
     "title": "Crossword Grid",
     "type": "grid_only",
     "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-07-28 23:12:08",
     "model_used": "norbert-multipos-word2clue",
     "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
     "difficulty": "easy"
   },
   "layout": [
-    "##.##.#.#",
+    "###..#.##",
     "#........",
-    ".........",
+    "...#.....",
+    "#...#....",
     "#........",
-    "#.......#",
-    ".....####"
+    "#........"
   ],
   "solved_layout": [
-    "##A##S#E#",
-    "#KNARKENE",
-    "ENSFARGET",
-    "#EVAKUERE",
-    "#LASTENE#",
-    "FERIE####"
+    "###TH#S##",
+    "#SKVULPES",
+    "TJA#KURVE",
+    "#ANK#MUNN",
+    "#LANDSTED",
+    "#ULEKKERT"
   ],
   "answers": {
     "across": {
-      "1": "KNARKENE",
-      "2": "ENSFARGET",
-      "3": "EVAKUERE",
-      "4": "LASTENE",
-      "5": "FERIE"
+      "1": "TH",
+      "2": "SKVULPES",
+      "3": "TJA",
+      "4": "KURVE",
+      "5": "ANK",
+      "6": "MUNN",
+      "7": "LANDSTED",
+      "8": "ULEKKERT"
     },
     "down": {
-      "1": "KNELE",
-      "2": "ANSVAR",
-      "3": "AFASI",
-      "4": "RAKTE",
-      "5": "SKRUE",
-      "6": "EGEN",
-      "7": "ENERE",
-      "8": "ETE"
+      "1": "SJALU",
+      "2": "KANAL",
+      "3": "TV",
+      "4": "KNE",
+      "5": "HUK",
+      "6": "DK",
+      "7": "LUMSK",
+      "8": "SPRUTE",
+      "9": "EVNER",
+      "10": "SENDT"
     }
   },
   "clues": {
     "across": {
-      "1": "marihuanaene",
-      "2": "monokromen",
-      "3": "fraflytte",
-      "4": "cargoene",
-      "5": "sommertur"
+      "1": "Thailand",
+      "2": "skvalpes",
+      "3": "replikker",
+      "4": "krumning",
+      "5": "klandr",
+      "6": "snute",
+      "7": "feriebolig",
+      "8": "lite stilig"
     },
     "down": {
-      "1": "synke sammen",
-      "2": "kausjon",
-      "3": "hjernesykdom",
-      "4": "akkumulerte",
-      "5": "vannskruve",
-      "6": "spesial-",
-      "7": "toppfigurer",
-      "8": "jafse"
+      "1": "misunnelig",
+      "2": "sambandslinje",
+      "3": "Fjernsyn",
+      "4": "fotblad",
+      "5": "nokk",
+      "6": "Danmark",
+      "7": "obskur",
+      "8": "skvalpe",
+      "9": "ekspertiser",
+      "10": "donert"
     }
   }
 }
