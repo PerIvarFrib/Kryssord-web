@@ -27,6 +27,10 @@ export interface CrosswordGridProps {
   sidebarFallbackWordKeys?: Set<WordKey>;
   /** Called when the user clicks a clue slot inside a # cell. */
   onClueCellClick?: (wordKey: WordKey) => void;
+  /** Maximum cell size in px (used for zoom). Defaults to 60. */
+  maxCellSize?: number;
+  /** Reports the actual pixel width of the rendered grid whenever it changes. */
+  onCellSizeChange?: (pixelWidth: number) => void;
 }
 
 export function CrosswordGrid({
@@ -46,6 +50,8 @@ export function CrosswordGrid({
   clueCellMap,
   sidebarFallbackWordKeys,
   onClueCellClick,
+  maxCellSize = 60,
+  onCellSizeChange,
 }: CrosswordGridProps) {
   // ── All hooks must come before any early return ──────────────────────────
   const revealCountsRef = useRef<Record<string, number>>({});
@@ -63,8 +69,10 @@ export function CrosswordGrid({
     const totalCols = columnCount + (hasLeftOverflow ? 1 : 0);
     if (totalCols === 0) return;
     const compute = (width: number) => {
-      const size = Math.min(Math.floor(width / totalCols), 60);
-      setCellSize(Math.max(size, 20));
+      const size = Math.min(Math.floor(width / totalCols), maxCellSize);
+      const clamped = Math.max(size, 20);
+      setCellSize(clamped);
+      onCellSizeChange?.(clamped * totalCols);
     };
     compute(el.getBoundingClientRect().width);
     const observer = new ResizeObserver((entries) => {
@@ -74,7 +82,7 @@ export function CrosswordGrid({
     });
     observer.observe(el);
     return () => observer.disconnect();
-  }, [columnCount, hasLeftOverflow]);
+  }, [columnCount, hasLeftOverflow, maxCellSize, onCellSizeChange]);
 
   if (!layout.length) {
     return null;
@@ -113,6 +121,7 @@ export function CrosswordGrid({
       style={{ "--cell-size": `${cellSize}px` } as React.CSSProperties}
     >
       {/* Overflow row — appears above the main grid for down-words that start at row 0 */}
+      <div className="crossword-grid-content">
       {hasTopOverflow && (
         <div
           className="crossword-overflow-row"
@@ -254,7 +263,8 @@ export function CrosswordGrid({
             }),
           )}
         </div>
-      </div>
+      </div>{/* end crossword-grid-inner */}
+      </div>{/* end crossword-grid-content */}
     </div>
   );
 }

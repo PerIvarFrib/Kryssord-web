@@ -75,6 +75,11 @@ function App() {
   const [hasSubmittedName, setHasSubmittedName] = useState(false);
   const [loadMessage, setLoadMessage] = useState<string | null>(null);
   const [canSubmitHighscore, setCanSubmitHighscore] = useState(false);
+  const [zoomMaxCellSize, setZoomMaxCellSize] = useState(60);
+  const [crosswordPixelWidth, setCrosswordPixelWidth] = useState<number | null>(null);
+  const ZOOM_STEP = 8;
+  const ZOOM_MIN = 24;
+  const ZOOM_MAX = 100;
   const lastPuzzleRef = useRef<CrosswordPuzzle | null>(null);
   const completionPopupTimerRef = useRef<ReturnType<typeof setTimeout> | null>(
     null,
@@ -362,6 +367,10 @@ function App() {
             canRevealLetter={canRevealLetter}
             onCheckAll={actions.checkAll}
             onRevealLetter={actions.revealLetter}
+            onZoomIn={() => setZoomMaxCellSize((v) => Math.min(v + ZOOM_STEP, ZOOM_MAX))}
+            onZoomOut={() => setZoomMaxCellSize((v) => Math.max(v - ZOOM_STEP, ZOOM_MIN))}
+            canZoomIn={zoomMaxCellSize < ZOOM_MAX}
+            canZoomOut={zoomMaxCellSize > ZOOM_MIN}
           />
 
           <div className="game-container">
@@ -383,6 +392,8 @@ function App() {
                 onChangeCell={actions.handleChangeCell}
                 onCellClick={actions.handleCellClick}
                 onKeyDown={actions.handleKeyDown}
+                maxCellSize={zoomMaxCellSize}
+                onCellSizeChange={(px) => setCrosswordPixelWidth(px)}
               />
             </div>
 
@@ -392,12 +403,17 @@ function App() {
               </div>
             )}
 
-            <Keyboard
-              onChar={(value) => actions.handleVirtualKey(value)}
-              onDelete={() => actions.handleVirtualKey("DELETE")}
-              onEnter={() => actions.handleVirtualKey("ENTER")}
-              disabled={!selectedCell}
-            />
+            <div
+              className="keyboard-wrapper"
+              style={crosswordPixelWidth ? { width: `${crosswordPixelWidth}px` } : undefined}
+            >
+              <Keyboard
+                onChar={(value) => actions.handleVirtualKey(value)}
+                onDelete={() => actions.handleVirtualKey("DELETE")}
+                onEnter={() => actions.handleVirtualKey("ENTER")}
+                disabled={!selectedCell}
+              />
+            </div>
           </div>
         </main>
       )}
