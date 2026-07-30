@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-03 10:42:40",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.######",
+    ".........",
+    ".........",
+    "#...#....",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "##E######",
+    "HALSHUGGE",
+    "FOLKETALL",
+    "#REI#OVAL",
+    "#TRAPPENE",
+    "TAS#LINER"
+  ],
+  "answers": {
+    "across": {
+      "1": "HALSHUGGE",
+      "2": "FOLKETALL",
+      "3": "REI",
+      "4": "OVAL",
+      "5": "TRAPPENE",
+      "6": "TAS",
+      "7": "LINER"
+    },
+    "down": {
+      "1": "HF",
+      "2": "AORTA",
+      "3": "ELLERS",
+      "4": "SKIA",
+      "5": "HE",
+      "6": "PL",
+      "7": "UTOPI",
+      "8": "GAVEN",
+      "9": "GLANE",
+      "10": "ELLER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "myrde",
+      "2": "befolkning",
+      "3": "prosesjon",
+      "4": "runding",
+      "5": "taustigene",
+      "6": "kverkes",
+      "7": "tauer"
+    },
+    "down": {
+      "1": "Hafnium",
+      "2": "blodvei",
+      "3": "dessuten",
+      "4": "fremkomstmidla",
+      "5": "Helium",
+      "6": "Polen",
+      "7": "ønskedrøm",
+      "8": "kontribusjonen",
+      "9": "gløtte",
+      "10": "alias"
+    }
+  }
+}

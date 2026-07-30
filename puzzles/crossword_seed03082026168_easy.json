@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-03 14:11:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##G##F##B",
+    "BALUBA#TL",
+    "#VISITERE",
+    "PS#ATTRÅ#",
+    "#TONE#KLE",
+    "SENTRALEN",
+    "#NA##VÆRE",
+    "#GNISTRER",
+    "STIRRA#NE"
+  ],
+  "answers": {
+    "across": {
+      "1": "BALUBA",
+      "2": "TL",
+      "3": "VISITERE",
+      "4": "PS",
+      "5": "ATTRÅ",
+      "6": "TONE",
+      "7": "KLE",
+      "8": "SENTRALEN",
+      "9": "NA",
+      "10": "VÆRE",
+      "11": "GNISTRER",
+      "12": "STIRRA",
+      "13": "NE"
+    },
+    "down": {
+      "1": "AVSTENGT",
+      "2": "GLI",
+      "3": "ONANI",
+      "4": "USANT",
+      "5": "IR",
+      "6": "BITER",
+      "7": "SR",
+      "8": "FATT",
+      "9": "AVTA",
+      "10": "ERKLÆR",
+      "11": "TRÅLEREN",
+      "12": "BLE",
+      "13": "ENERE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "lurveleven",
+      "2": "Tallium",
+      "3": "gjennomsøke",
+      "4": "supplement",
+      "5": "henførelse",
+      "6": "distinksjon",
+      "7": "dandere",
+      "8": "knutepunktet",
+      "9": "Natrium",
+      "10": "utgjøre",
+      "11": "glimter",
+      "12": "nistirret",
+      "13": "Neon"
+    },
+    "down": {
+      "1": "blokkert",
+      "2": "snåve",
+      "3": "masturbasjon",
+      "4": "bedragersk",
+      "5": "Iridium",
+      "6": "sårer",
+      "7": "Strontium",
+      "8": "hente",
+      "9": "minke",
+      "10": "bedyr",
+      "11": "fiskefartøyet",
+      "12": "håndplukka",
+      "13": "bestemenn"
+    }
+  }
+}
