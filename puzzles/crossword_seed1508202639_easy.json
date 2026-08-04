@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 16:29:28",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##K##F##Y",
+    "KARATE#UT",
+    "#VIBRERTE",
+    "CS#BARER#",
+    "#LUEN#DOM",
+    "HÅNDGREPA",
+    "#TI##ANES",
+    "#TOMATENE",
+    "PENDLE#ET"
+  ],
+  "answers": {
+    "across": {
+      "1": "KARATE",
+      "2": "UT",
+      "3": "VIBRERTE",
+      "4": "CS",
+      "5": "BARER",
+      "6": "LUEN",
+      "7": "DOM",
+      "8": "HÅNDGREPA",
+      "9": "TI",
+      "10": "ANES",
+      "11": "TOMATENE",
+      "12": "PENDLE",
+      "13": "ET"
+    },
+    "down": {
+      "1": "AVSLÅTTE",
+      "2": "KRI",
+      "3": "UNION",
+      "4": "ABBED",
+      "5": "MD",
+      "6": "TRANG",
+      "7": "AL",
+      "8": "FEER",
+      "9": "RATE",
+      "10": "REDENE",
+      "11": "UTROPENE",
+      "12": "YTE",
+      "13": "MASET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "kampidrett",
+      "2": "fram",
+      "3": "svirra",
+      "4": "Cesium",
+      "5": "tommer",
+      "6": "damehatten",
+      "7": "avstraffelse",
+      "8": "manipuleringene",
+      "9": "Titan",
+      "10": "sanses",
+      "11": "grønnsak",
+      "12": "omforme",
+      "13": "slafs"
+    },
+    "down": {
+      "1": "tilbakeviste",
+      "2": "purre",
+      "3": "liga",
+      "4": "klosterforstander",
+      "5": "1500",
+      "6": "helning",
+      "7": "Aluminium",
+      "8": "huldre",
+      "9": "avdrag",
+      "10": "grottene",
+      "11": "gispene",
+      "12": "tilføre",
+      "13": "jobbinga"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "synonymet",
+      "8": "model+db",
+      "9": "manual",
+      "10": "synonymet",
+      "11": "fallback-pair",
+      "12": "triple-verified",
+      "13": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "manual",
+      "6": "synonymet",
+      "7": "manual",
+      "8": "cross-verified",
+      "9": "synonymordboka",
+      "10": "synonymet",
+      "11": "model+db",
+      "12": "model+db",
+      "13": "triple-verified"
+    }
+  }
+}

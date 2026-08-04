@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 04:28:44",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##B##S##H",
+    "EGOIST#RY",
+    "#ULLVARER",
+    "EL#TEVES#",
+    "#VREI#EID",
+    "OVERVELDA",
+    "#AN##GLEM",
+    "#STEINENE",
+    "SKADDE#SN"
+  ],
+  "answers": {
+    "across": {
+      "1": "EGOIST",
+      "2": "RY",
+      "3": "ULLVARER",
+      "4": "EL",
+      "5": "TEVES",
+      "6": "VREI",
+      "7": "EID",
+      "8": "OVERVELDA",
+      "9": "AN",
+      "10": "GLEM",
+      "11": "STEINENE",
+      "12": "SKADDE",
+      "13": "SN"
+    },
+    "down": {
+      "1": "GULVVASK",
+      "2": "BOL",
+      "3": "RENTA",
+      "4": "ILTER",
+      "5": "ED",
+      "6": "SVEIV",
+      "7": "ID",
+      "8": "STAV",
+      "9": "EGNE",
+      "10": "REELLE",
+      "11": "RESIDENS",
+      "12": "HYR",
+      "13": "DAMEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "egosentriker",
+      "2": "prestisje",
+      "3": "ullgensere",
+      "4": "slaps",
+      "5": "snuses",
+      "6": "snudde rundt på",
+      "7": "innehatt",
+      "8": "forbløffet",
+      "9": "prefiks",
+      "10": "gløm",
+      "11": "grusene",
+      "12": "skrammene",
+      "13": "Tinn"
+    },
+    "down": {
+      "1": "rengjøring",
+      "2": "bopeler",
+      "3": "uttellinga",
+      "4": "veldig sint",
+      "5": "trylleformel",
+      "6": "snurr",
+      "7": "Identifikasjon",
+      "8": "nytelsespinne",
+      "9": "sine",
+      "10": "beviselige",
+      "11": "husrommet",
+      "12": "indikasjon",
+      "13": "fruentimmeret"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "fallback-pair",
+      "10": "model+db",
+      "11": "cross-verified",
+      "12": "model+db",
+      "13": "manual"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "manual",
+      "8": "cross-verified",
+      "9": "cross-verified",
+      "10": "model+db",
+      "11": "synonymordboka",
+      "12": "synonymordboka",
+      "13": "cross-verified"
+    }
+  }
+}

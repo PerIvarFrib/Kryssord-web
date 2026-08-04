@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 15:12:49",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.##.#.",
+    "#........",
+    "#.......#",
+    "...#.....",
+    ".........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "###T##T#F",
+    "#SMERTENE",
+    "#TAVERNA#",
+    "MIG#DOKKA",
+    "LEMLESTER",
+    "#NAUT#ENG"
+  ],
+  "answers": {
+    "across": {
+      "1": "SMERTENE",
+      "2": "TAVERNA",
+      "3": "MIG",
+      "4": "DOKKA",
+      "5": "LEMLESTER",
+      "6": "NAUT",
+      "7": "ENG"
+    },
+    "down": {
+      "1": "ML",
+      "2": "STIEN",
+      "3": "MAGMA",
+      "4": "TEV",
+      "5": "LU",
+      "6": "REDET",
+      "7": "TROS",
+      "8": "TENKTE",
+      "9": "NAKEN",
+      "10": "FE",
+      "11": "ARG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bedrøvelsene",
+      "2": "veikroa",
+      "3": "piss",
+      "4": "marionetten",
+      "5": "maltrakterer",
+      "6": "tullebukk",
+      "7": "grønnsvær"
+    },
+    "down": {
+      "1": "Milliliter",
+      "2": "autostradaen",
+      "3": "vulkanutbruddsmasse",
+      "4": "vellukt",
+      "5": "Lutetium",
+      "6": "fugleboligen",
+      "7": "bekjennelses",
+      "8": "grublet",
+      "9": "avkledd",
+      "10": "Jern",
+      "11": "fortørnet"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "synonymet",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "model+db",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "manual",
+      "11": "triple-verified"
+    }
+  }
+}

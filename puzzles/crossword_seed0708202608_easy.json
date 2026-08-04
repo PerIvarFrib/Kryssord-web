@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-03 22:04:01",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#..#..###",
+    "#........",
+    "#...#....",
+    "#....#...",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#NU#PB###",
+    "#ANGRIPER",
+    "#MEL#TAPE",
+    "#SVIN#SLI",
+    "KONDENSER",
+    "#STEILET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "NU",
+      "2": "PB",
+      "3": "ANGRIPER",
+      "4": "MEL",
+      "5": "TAPE",
+      "6": "SVIN",
+      "7": "SLI",
+      "8": "KONDENSER",
+      "9": "STEILET"
+    },
+    "down": {
+      "1": "NAMSOS",
+      "2": "UNEVNT",
+      "3": "GLIDE",
+      "4": "PR",
+      "5": "NEI",
+      "6": "BIT",
+      "7": "NL",
+      "8": "PASSE",
+      "9": "EPLET",
+      "10": "REIR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Gresk bokstav",
+      "2": "Bly",
+      "3": "overfaller",
+      "4": "levermjøl",
+      "5": "forlegge",
+      "6": "grisunger",
+      "7": "grisk",
+      "8": "komprimer",
+      "9": "reagert"
+    },
+    "down": {
+      "1": "kommune i nord trøndelag",
+      "2": "glemt",
+      "3": "gleppe",
+      "4": "Praseodym",
+      "5": "avvisning",
+      "6": "munnfull",
+      "7": "Nederland",
+      "8": "relativt",
+      "9": "steinfrukten",
+      "10": "spurvebolig"
+    }
+  }
+}

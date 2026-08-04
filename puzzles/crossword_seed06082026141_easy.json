@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-03 21:53:20",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    "....#....",
+    ".....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####OS##S",
+    "#POPKUNST",
+    "MIME#LITA",
+    "OMGIR#SUR",
+    "#PALASSET",
+    "#AVENYEN#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OS",
+      "2": "POPKUNST",
+      "3": "MIME",
+      "4": "LITA",
+      "5": "OMGIR",
+      "6": "SUR",
+      "7": "PALASSET",
+      "8": "AVENYEN"
+    },
+    "down": {
+      "1": "MO",
+      "2": "PIMPA",
+      "3": "OMGAV",
+      "4": "PEILE",
+      "5": "OK",
+      "6": "RAN",
+      "7": "SUL",
+      "8": "SY",
+      "9": "NISSE",
+      "10": "STUEN",
+      "11": "START"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vanndamp",
+      "2": "kunstuttrykk",
+      "3": "etterlikne",
+      "4": "ørliten",
+      "5": "omslutter",
+      "6": "fortørnet",
+      "7": "residensen",
+      "8": "autostradaen"
+    },
+    "down": {
+      "1": "Molybden",
+      "2": "slurpede",
+      "3": "omkransa",
+      "4": "avlese",
+      "5": "jaord",
+      "6": "voldshandling",
+      "7": "kosthold",
+      "8": "brodere",
+      "9": "hulder",
+      "10": "spisestua",
+      "11": "introduksjon"
+    }
+  }
+}

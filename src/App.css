@@ -302,7 +302,7 @@ button.warning {
     border-right: 1px solid #000000;
     border-bottom: 1px solid #000000;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: calc(var(--cell-size) * 0.31);
     cursor: pointer;
     transition: background-color 0.15s ease, color 0.15s ease;
 }
@@ -321,10 +321,6 @@ button.warning {
 @media (max-width: 768px) {
     :root {
         --cell-size: 47px;
-    }
-
-    .cell {
-        font-size: 1rem;
     }
 }
 
@@ -428,7 +424,7 @@ button.warning {
     background: transparent;
     color: inherit;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: calc(var(--cell-size) * 0.34);
     text-align: center;
     text-transform: uppercase;
     border: none;
@@ -550,7 +546,7 @@ button.warning {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: calc(var(--cell-size) * 0.31);
     font-weight: 600;
     color: inherit;
     outline: none;

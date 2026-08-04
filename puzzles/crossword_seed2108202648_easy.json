@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-06 11:04:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.##.##",
+    "#........",
+    "#........",
+    "......#..",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "#K#F##H##",
+    "#AVISSIDE",
+    "#FAKTOTUM",
+    "VERTEN#FN",
+    "#ETIKETTE",
+    "SNEV#ROE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVISSIDE",
+      "2": "FAKTOTUM",
+      "3": "VERTEN",
+      "4": "FN",
+      "5": "ETIKETTE",
+      "6": "SNEV",
+      "7": "ROE"
+    },
+    "down": {
+      "1": "KAFEEN",
+      "2": "VARTE",
+      "3": "FIKTIV",
+      "4": "STEK",
+      "5": "SONER",
+      "6": "HIT",
+      "7": "TO",
+      "8": "DUFTE",
+      "9": "EMNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "førsteside",
+      "2": "støttespiller",
+      "3": "hotelleieren",
+      "4": "Forente nasjoner",
+      "5": "sedvane",
+      "6": "anstrøk",
+      "7": "forgylle"
+    },
+    "down": {
+      "1": "puben",
+      "2": "formanet",
+      "3": "usann",
+      "4": "varmrett",
+      "5": "lokaliteter",
+      "6": "favoritt",
+      "7": "ektepar",
+      "8": "lukte",
+      "9": "studieområde"
+    }
+  }
+}

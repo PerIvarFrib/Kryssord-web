@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 01:51:07",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##X##H##O",
+    "KNIPSE#GR",
+    "#AVRETTET",
+    "CR#OKSEN#",
+    "#KAFE#SEL",
+    "FORFLYTTE",
+    "#SO##TEIG",
+    "#EMINENSE",
+    "GRATIS#KR"
+  ],
+  "answers": {
+    "across": {
+      "1": "KNIPSE",
+      "2": "GR",
+      "3": "AVRETTET",
+      "4": "CR",
+      "5": "OKSEN",
+      "6": "KAFE",
+      "7": "SEL",
+      "8": "FORFLYTTE",
+      "9": "SO",
+      "10": "TEIG",
+      "11": "EMINENSE",
+      "12": "GRATIS",
+      "13": "KR"
+    },
+    "down": {
+      "1": "NARKOSER",
+      "2": "XIV",
+      "3": "AROMA",
+      "4": "PROFF",
+      "5": "IT",
+      "6": "SEKEL",
+      "7": "NI",
+      "8": "HETS",
+      "9": "YTES",
+      "10": "TESTEN",
+      "11": "GENETISK",
+      "12": "ORT",
+      "13": "LEGER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fotografere",
+      "2": "Hellas",
+      "3": "strupt",
+      "4": "Krom",
+      "5": "kalven",
+      "6": "diskotek",
+      "7": "kobbe",
+      "8": "transportere",
+      "9": "Solfège-tone",
+      "10": "parsell",
+      "11": "geistlig tittel",
+      "12": "kreativ",
+      "13": "Norsk valuta"
+    },
+    "down": {
+      "1": "smertebehandlinger",
+      "2": "14",
+      "3": "odør",
+      "4": "talentfull",
+      "5": "Italia",
+      "6": "sølvmynt",
+      "7": "Nikkel",
+      "8": "sjikanering",
+      "9": "tilståes",
+      "10": "eksamenen",
+      "11": "arvelig",
+      "12": "gruvegang",
+      "13": "medikuser"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "manual",
+      "3": "model+db",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "synonymordboka",
+      "9": "manual",
+      "10": "synonymordboka",
+      "11": "model+db",
+      "12": "cross-verified",
+      "13": "manual"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "manual",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "model+db",
+      "7": "manual",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "triple-verified",
+      "11": "synonymordboka",
+      "12": "synonymordboka",
+      "13": "triple-verified"
+    }
+  }
+}

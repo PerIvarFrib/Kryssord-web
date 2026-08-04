@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 15:15:16",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####.##.#",
+    "#........",
+    "#........",
+    "....#....",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "####U##M#",
+    "#GJØREMÅL",
+    "#NØYTRALE",
+    "BADE#GNED",
+    "#GENERERE",
+    "HER#METER"
+  ],
+  "answers": {
+    "across": {
+      "1": "GJØREMÅL",
+      "2": "NØYTRALE",
+      "3": "BADE",
+      "4": "GNED",
+      "5": "GENERERE",
+      "6": "HER",
+      "7": "METER"
+    },
+    "down": {
+      "1": "GNAGE",
+      "2": "JØDER",
+      "3": "ØYEN",
+      "4": "URT",
+      "5": "EM",
+      "6": "ERGRE",
+      "7": "MANET",
+      "8": "MÅLERE",
+      "9": "LEDER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "handleliste",
+      "2": "upersonlige",
+      "3": "dusje",
+      "4": "gnikket",
+      "5": "avstedkomme",
+      "6": "delvis",
+      "7": "gauge"
+    },
+    "down": {
+      "1": "kryste",
+      "2": "buddhister",
+      "3": "halvøya",
+      "4": "erteplante",
+      "5": "Europamesterskap",
+      "6": "forarge",
+      "7": "gopla",
+      "8": "sensorer",
+      "9": "ansvarlig"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "model+db",
+      "5": "synonymordboka",
+      "6": "synonymordboka",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "synonymet",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "synonymet",
+      "8": "model+db",
+      "9": "cross-verified"
+    }
+  }
+}

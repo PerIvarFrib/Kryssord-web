@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 15:40:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.####.#",
+    "#........",
+    "#........",
+    ".....#...",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##H####L#",
+    "#GODHETEN",
+    "#ARVESAKA",
+    "SPREK#LEG",
+    "#TORSKENE",
+    "BERG#URET"
+  ],
+  "answers": {
+    "across": {
+      "1": "GODHETEN",
+      "2": "ARVESAKA",
+      "3": "SPREK",
+      "4": "LEG",
+      "5": "TORSKENE",
+      "6": "BERG",
+      "7": "URET"
+    },
+    "down": {
+      "1": "GAPTE",
+      "2": "HORROR",
+      "3": "DVERG",
+      "4": "HEKS",
+      "5": "ES",
+      "6": "KU",
+      "7": "TALER",
+      "8": "LEKENE",
+      "9": "NAGET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "uegennytten",
+      "2": "rettssaken",
+      "3": "rørig",
+      "4": "jeu",
+      "5": "brislingene",
+      "6": "fjellknatt",
+      "7": "stoppeklokka"
+    },
+    "down": {
+      "1": "kauket",
+      "2": "skrekkserie",
+      "3": "homunculus",
+      "4": "trollkjerring",
+      "5": "Spania",
+      "6": "kvige",
+      "7": "konverserer",
+      "8": "turneringene",
+      "9": "skuffelsen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "triple-verified",
+      "8": "synonymet",
+      "9": "model+db"
+    }
+  }
+}

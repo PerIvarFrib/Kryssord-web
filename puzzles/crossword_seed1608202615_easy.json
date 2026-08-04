@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 16:43:21",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##O##S##R",
+    "UFRISK#BA",
+    "#OMSKAPES",
+    "ZR#BEGAV#",
+    "#TYRI#NOR",
+    "DAMEVESKE",
+    "#PT##NETT",
+    "#TEATERET",
+    "TERPES#SA"
+  ],
+  "answers": {
+    "across": {
+      "1": "UFRISK",
+      "2": "BA",
+      "3": "OMSKAPES",
+      "4": "ZR",
+      "5": "BEGAV",
+      "6": "TYRI",
+      "7": "NOR",
+      "8": "DAMEVESKE",
+      "9": "PT",
+      "10": "NETT",
+      "11": "TEATERET",
+      "12": "TERPES",
+      "13": "SA"
+    },
+    "down": {
+      "1": "FORTAPTE",
+      "2": "ORM",
+      "3": "YMTER",
+      "4": "ISBRE",
+      "5": "AP",
+      "6": "SKEIV",
+      "7": "TE",
+      "8": "SKAG",
+      "9": "ENES",
+      "10": "PANSER",
+      "11": "BEVOKTES",
+      "12": "RAS",
+      "13": "RETTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forkvaklet",
+      "2": "Barium",
+      "3": "omarbeides",
+      "4": "Zirkonium",
+      "5": "rømmet fra",
+      "6": "valbjørk",
+      "7": "spedbarn",
+      "8": "bag",
+      "9": "Portugal",
+      "10": "verdensvev",
+      "11": "enakteren",
+      "12": "pugges",
+      "13": "talte"
+    },
+    "down": {
+      "1": "hjelpeløse",
+      "2": "snok",
+      "3": "tisker",
+      "4": "innlandsis",
+      "5": "barneprat",
+      "6": "fordreid",
+      "7": "utstille",
+      "8": "tange",
+      "9": "forlikes",
+      "10": "brynjer",
+      "11": "overvåkes",
+      "12": "bergfall",
+      "13": "etterprøvd"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "manual",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "model+db",
+      "6": "synonymordboka",
+      "7": "synonymordboka",
+      "8": "model+db",
+      "9": "manual",
+      "10": "cross-verified",
+      "11": "triple-verified",
+      "12": "triple-verified",
+      "13": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "synonymordboka",
+      "8": "cross-verified",
+      "9": "model+db",
+      "10": "synonymordboka",
+      "11": "triple-verified",
+      "12": "synonymordboka",
+      "13": "synonymet"
+    }
+  }
+}

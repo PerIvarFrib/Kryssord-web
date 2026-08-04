@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 15:51:03",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.##.#.##",
+    "#........",
+    "#.....#..",
+    ".........",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "#E##V#P##",
+    "#KOKEBOKA",
+    "#SMAKE#RN",
+    "UTSLETTET",
+    "#RYTTERNE",
+    "FANE#LEK#"
+  ],
+  "answers": {
+    "across": {
+      "1": "KOKEBOKA",
+      "2": "SMAKE",
+      "3": "RN",
+      "4": "UTSLETTET",
+      "5": "RYTTERNE",
+      "6": "FANE",
+      "7": "LEK"
+    },
+    "down": {
+      "1": "EKSTRA",
+      "2": "OMSYN",
+      "3": "KALTE",
+      "4": "VEKET",
+      "5": "BETEL",
+      "6": "PO",
+      "7": "TRE",
+      "8": "KRENK",
+      "9": "ANTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bokverket",
+      "2": "sanse",
+      "3": "Radon",
+      "4": "eksemen",
+      "5": "kavaleristene",
+      "6": "vimpel",
+      "7": "forlystelse"
+    },
+    "down": {
+      "1": "fenomenal",
+      "2": "nestekjærlighet",
+      "3": "titulerte",
+      "4": "dreiet av",
+      "5": "bibelsted",
+      "6": "Polonium",
+      "7": "vedkubbe",
+      "8": "fornærm",
+      "9": "hørte"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymet",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "synonymet"
+    }
+  }
+}

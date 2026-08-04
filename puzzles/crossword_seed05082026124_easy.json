@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-03 13:11:35",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.###.#",
+    ".........",
+    "#........",
+    ".....#...",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###K###V#",
+    "PALLIATIV",
+    "#BAISSENE",
+    "HYMNE#SED",
+    "#SPERRENE",
+    "#SER#UREN"
+  ],
+  "answers": {
+    "across": {
+      "1": "PALLIATIV",
+      "2": "BAISSENE",
+      "3": "HYMNE",
+      "4": "SED",
+      "5": "SPERRENE",
+      "6": "SER",
+      "7": "UREN"
+    },
+    "down": {
+      "1": "ABYSS",
+      "2": "LAMPE",
+      "3": "KLINER",
+      "4": "ISER",
+      "5": "AS",
+      "6": "RU",
+      "7": "TESER",
+      "8": "VINENE",
+      "9": "VEDEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "remedium",
+      "2": "kursfallene",
+      "3": "diktverk",
+      "4": "kutyme",
+      "5": "barrierene",
+      "6": "beskuer",
+      "7": "møkkete"
+    },
+    "down": {
+      "1": "Avgrunnen",
+      "2": "lyskaster",
+      "3": "klusser",
+      "4": "klaker",
+      "5": "Aksjeselskap",
+      "6": "Russland",
+      "7": "doktriner",
+      "8": "pilsene",
+      "9": "flisa"
+    }
+  }
+}

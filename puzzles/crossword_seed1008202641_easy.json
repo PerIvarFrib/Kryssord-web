@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 15:04:51",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.###.#.#",
+    "#........",
+    "#........",
+    "#....#...",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#L###H#B#",
+    "#AVBRYTES",
+    "#GRUELIGE",
+    "#RANG#LIT",
+    "MEKANISKE",
+    "#RAD#VAKT"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVBRYTES",
+      "2": "GRUELIGE",
+      "3": "RANG",
+      "4": "LIT",
+      "5": "MEKANISKE",
+      "6": "RAD",
+      "7": "VAKT"
+    },
+    "down": {
+      "1": "LAGRER",
+      "2": "VRAKA",
+      "3": "BUNAD",
+      "4": "REGN",
+      "5": "HYL",
+      "6": "IV",
+      "7": "TILSA",
+      "8": "BEGIKK",
+      "9": "SETET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "elimineres",
+      "2": "redselsfulle",
+      "3": "prestisje",
+      "4": "forventning",
+      "5": "maskinelle",
+      "6": "sekvens",
+      "7": "patrulje"
+    },
+    "down": {
+      "1": "oppbevarer",
+      "2": "tilbakevist",
+      "3": "kjortel",
+      "4": "hagl",
+      "5": "brøl",
+      "6": "4",
+      "7": "signaliserte",
+      "8": "forøva",
+      "9": "sofaen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "triple-verified",
+      "6": "manual",
+      "7": "model+db",
+      "8": "synonymordboka",
+      "9": "triple-verified"
+    }
+  }
+}
