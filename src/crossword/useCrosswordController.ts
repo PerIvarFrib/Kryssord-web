@@ -32,6 +32,8 @@ export interface CrosswordControllerState {
   totalLetters: number;
   confirmedLetters: number;
   revealedLetters: number;
+  /** Antall bokstavruter som har en verdi (uansett om den er sjekket eller ikke). */
+  filledLetters: number;
     wrongCheckedLettersCount: number;
   wrongCheckCounts: Record<string, number>;
   focusTrigger: number;
@@ -41,6 +43,12 @@ export interface CrosswordControllerState {
   canCheckWord: boolean;
   canRevealLetter: boolean;
   canRevealWord: boolean;
+  /**
+   * True når intern tilstand faktisk hører til `puzzle`. Rett etter at et nytt
+   * kryssord settes, rekker ikke tilstanden å bli nullstilt før første render,
+   * og da må ikke fremdrift eksporteres/lagres.
+   */
+  isInitialized: boolean;
   /** Clue data for each # cell that carries an in-grid clue. */
   clueCellMap: ClueCellMap;
   /** Word keys that could not be placed in-grid and remain in the sidebar. */
@@ -95,10 +103,13 @@ export function useCrosswordController(
   const [wrongCheckedLettersCount, setWrongCheckedLettersCount] = useState(0);
   const [wrongCheckCounts, setWrongCheckCounts] = useState<Record<string, number>>({});
   const [focusTrigger, setFocusTrigger] = useState(0);
+  const [initializedPuzzle, setInitializedPuzzle] =
+    useState<CrosswordPuzzle | null>(null);
 
   // Reset or restore state when puzzle changes
   useEffect(() => {
     if (!puzzle) {
+      setInitializedPuzzle(null);
       setValues([]);
       setCellStatus([]);
       setWordPositions({});
@@ -190,6 +201,8 @@ export function useCrosswordController(
       setWrongCheckedLettersCount(0);
       setWrongCheckCounts({});
     }
+
+    setInitializedPuzzle(puzzle);
   }, [puzzle]);
 
   const getWordCells = (
@@ -816,6 +829,19 @@ export function useCrosswordController(
     };
   }, [puzzle, selectedWordKey]);
 
+  // Antall utfylte bokstavruter, uavhengig av om de er sjekket eller ikke.
+  const filledLetters = useMemo(() => {
+    if (!puzzle) return 0;
+    let count = 0;
+    for (let r = 0; r < puzzle.layout.length; r++) {
+      for (let c = 0; c < puzzle.layout[r].length; c++) {
+        if (puzzle.layout[r][c] === "#") continue;
+        if (values[r]?.[c]) count += 1;
+      }
+    }
+    return count;
+  }, [puzzle, values]);
+
   const canCheckLetter = !!(puzzle && selectedCell);
   const canCheckWord = !!(puzzle && selectedWordKey);
   const canRevealLetter = canCheckLetter;
@@ -833,6 +859,7 @@ export function useCrosswordController(
     totalLetters,
     confirmedLetters,
     revealedLetters,
+    filledLetters,
     wrongCheckedLettersCount,
     wrongCheckCounts,
     focusTrigger,
@@ -842,6 +869,7 @@ export function useCrosswordController(
     canCheckWord,
     canRevealLetter,
     canRevealWord,
+    isInitialized: initializedPuzzle === puzzle,
     clueCellMap,
     sidebarFallbackWordKeys,
   };
@@ -849,6 +877,8 @@ export function useCrosswordController(
   // Eksporter nåværende fremdrift til eventuell lytter (for lagring i App)
   useEffect(() => {
     if (!puzzle || !onProgressChange) return;
+    // Ikke eksporter tilstand som fortsatt hører til forrige kryssord.
+    if (initializedPuzzle !== puzzle) return;
     const snapshot: CrosswordProgressSnapshot = {
       values,
       cellStatus,
@@ -860,6 +890,7 @@ export function useCrosswordController(
     onProgressChange(snapshot);
   }, [
     puzzle,
+    initializedPuzzle,
     values,
     cellStatus,
     selectedCell,

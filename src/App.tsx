@@ -22,6 +22,14 @@ import {
   updateHighscoreName,
   type HighscoreEntry,
 } from "./storage/highscore";
+import {
+  getPuzzleSignature,
+  loadPuzzleSession,
+  prunePuzzleSessions,
+  savePuzzleSession,
+  type CompletionStats,
+  type StoredPuzzleSession,
+} from "./storage/puzzleSession";
 
 const puzzleModules = import.meta.glob("../puzzles/crossword_seed*.json", {
   eager: true,
@@ -52,25 +60,23 @@ const getPuzzleForDate = (date: Date): CrosswordPuzzle | null => {
   return puzzle as CrosswordPuzzle;
 };
 
+const hasAnyFilledLetter = (session: StoredPuzzleSession | null): boolean =>
+  !!session?.progress.values.some((row) => row.some((cell) => cell !== ""));
+
 function App() {
   const [selectedPuzzleId, setSelectedPuzzleId] = useState("today");
   const [puzzle, setPuzzle] = useState<CrosswordPuzzle | null>(null);
   const [hasCompletedTodayPuzzle, setHasCompletedTodayPuzzle] = useState(false);
   const [isCompletionPopupOpen, setIsCompletionPopupOpen] = useState(false);
-  const [completionStats, setCompletionStats] = useState<{
-    score: number;
-    totalLetters: number;
-    confirmedLetters: number;
-    revealedLetters: number;
-    completionTimeSeconds: number;
-    wrongCheckedLetters: number;
-    completedAt: string;
-  } | null>(null);
+  const [completionStats, setCompletionStats] =
+    useState<CompletionStats | null>(null);
   const [todayHighscores, setTodayHighscores] = useState<HighscoreEntry[]>([]);
   const [yesterdayHighscores, setYesterdayHighscores] = useState<
     HighscoreEntry[]
   >([]);
   const [startTimeMs, setStartTimeMs] = useState<number | null>(null);
+  // Tid som allerede var brukt før denne økten (gjenopprettet fra lagret spill).
+  const [baseElapsedSeconds, setBaseElapsedSeconds] = useState<number>(0);
   const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
   const [hasSubmittedName, setHasSubmittedName] = useState(false);
   const [loadMessage, setLoadMessage] = useState<string | null>(null);
@@ -91,6 +97,8 @@ function App() {
   // Nøkkel som identifiserer det KJØRENDE kryssordet (ikke bare valgt i menyen).
   // Denne settes når et kryssord faktisk lastes inn med "Last inn".
   const [currentPuzzleKey, setCurrentPuzzleKey] = useState<string | null>(null);
+  // Signatur for det kjørende brettet, brukt til å validere lagret fremdrift.
+  const [puzzleSignature, setPuzzleSignature] = useState<string | null>(null);
 
   const activePuzzleKey = currentPuzzleKey;
 
@@ -158,32 +166,50 @@ function App() {
       });
     }
 
+    // Hent eventuell lagret økt, slik at en oppdatering av siden ikke
+    // sletter fremdriften brukeren har lagt ned.
+    const signature = getPuzzleSignature(nextPuzzle);
+    const stored = puzzleKey ? loadPuzzleSession(puzzleKey, signature) : null;
+
     setCurrentPuzzleKey(puzzleKey);
+    setPuzzleSignature(signature);
     setPuzzle(nextPuzzle);
 
-    // Nullstill fullførings-/navnestatus når et nytt kryssord lastes
+    if (puzzleKey) {
+      setProgressByKey((prev) => ({
+        ...prev,
+        [puzzleKey]: stored?.progress,
+      }));
+    }
+
+    // Gjenopprett (eller nullstill) fullførings-/navnestatus
     if (completionPopupTimerRef.current !== null) {
       clearTimeout(completionPopupTimerRef.current);
       completionPopupTimerRef.current = null;
     }
-    setCompletionStats(null);
+    setCompletionStats(stored?.completion ?? null);
     setIsCompletionPopupOpen(false);
-    setHasSubmittedName(false);
-    setCanSubmitHighscore(false);
-
-    if (nextPuzzle) {
-      const selectedOption = puzzles.find((p) => p.id === selectedPuzzleId);
-      if (selectedOption) {
-        setLoadMessage(`${selectedOption.label} kryssord er lastet inn.`);
-      } else {
-        setLoadMessage("Kryssordet er lastet inn.");
-      }
+    setHasSubmittedName(stored?.hasSubmittedName ?? false);
+    setCanSubmitHighscore(stored?.canSubmitHighscore ?? false);
+    if (puzzleKey === todayKey) {
+      setHasCompletedTodayPuzzle(stored?.hasSavedHighscore ?? false);
     }
 
-    if (nextPuzzle) {
-      setStartTimeMs(Date.now());
-      setElapsedSeconds(0);
+    const selectedOption = puzzles.find((p) => p.id === selectedPuzzleId);
+    const puzzleLabel = selectedOption
+      ? `${selectedOption.label} kryssord`
+      : "Kryssordet";
+    if (hasAnyFilledLetter(stored)) {
+      setLoadMessage(`${puzzleLabel} er hentet fram igjen der du slapp.`);
+    } else {
+      setLoadMessage(`${puzzleLabel} er lastet inn.`);
     }
+
+    // Tiden fortsetter der den slapp; tid mens fanen var lukket telles ikke.
+    const resumedSeconds = stored?.elapsedSeconds ?? 0;
+    setBaseElapsedSeconds(resumedSeconds);
+    setElapsedSeconds(resumedSeconds);
+    setStartTimeMs(Date.now());
   };
 
   // Skjul bekreftelsesmelding etter en kort stund
@@ -195,8 +221,20 @@ function App() {
     return () => window.clearTimeout(id);
   }, [loadMessage]);
 
-  const { totalLetters, confirmedLetters, revealedLetters, wordPositions } =
-    state;
+  const {
+    totalLetters,
+    confirmedLetters,
+    revealedLetters,
+    filledLetters,
+    wordPositions,
+  } = state;
+
+  // Alt er fylt ut, men ennå ikke bekreftet/avslørt: da bør brukeren
+  // gjøres oppmerksom på "Sjekk alt"-knappen.
+  const shouldHighlightCheckAll =
+    totalLetters > 0 &&
+    filledLetters === totalLetters &&
+    confirmedLetters + revealedLetters < totalLetters;
 
   const { wrongCheckedLettersCount, wrongCheckCounts } = state;
 
@@ -216,6 +254,9 @@ function App() {
 
   // Last inn dagens kryssord automatisk første gang siden lastes
   useEffect(() => {
+    // Rydd bort lagrede spill for datoer som ikke lenger kan spilles.
+    prunePuzzleSessions([todayKey, yesterdayKey]);
+
     if (!puzzle && selectedPuzzleId === "today") {
       handleLoadPuzzle();
     }
@@ -231,14 +272,15 @@ function App() {
 
     const id = window.setInterval(() => {
       setElapsedSeconds(
-        Math.max(0, Math.floor((Date.now() - startTimeMs) / 1000)),
+        baseElapsedSeconds +
+          Math.max(0, Math.floor((Date.now() - startTimeMs) / 1000)),
       );
     }, 1000);
 
     return () => {
       window.clearInterval(id);
     };
-  }, [puzzle, startTimeMs, completionStats]);
+  }, [puzzle, startTimeMs, baseElapsedSeconds, completionStats]);
 
   // Registrer fullføring for både dagens og andre kryssord,
   // men lagre highscore kun for dagens.
@@ -266,9 +308,9 @@ function App() {
     const completionTimeSeconds = elapsedSeconds;
     const completedAt = new Date().toISOString();
 
+    // Tidsbruken påvirker ikke poengsummen, men lagres for statistikk.
     const score = calculateScore({
       totalLetters,
-      completionTimeSeconds,
       wrongCheckedLetters: wrongCheckedLettersCount,
       revealedLetters,
     });
@@ -316,6 +358,85 @@ function App() {
     completionStats,
     hasCompletedTodayPuzzle,
   ]);
+
+  // --- Lagring av økt, slik at fremdriften overlever at siden lastes på nytt ---
+
+  const sessionToSaveRef = useRef<Omit<
+    StoredPuzzleSession,
+    "version" | "savedAt"
+  > | null>(null);
+
+  const activeProgress = activePuzzleKey
+    ? progressByKey[activePuzzleKey]
+    : undefined;
+
+  // Hold alltid en oppdatert kopi av det som skal lagres. Denne effekten
+  // må stå før effektene som faktisk skriver til lagringen.
+  useEffect(() => {
+    if (!puzzle || !activePuzzleKey || !puzzleSignature) {
+      sessionToSaveRef.current = null;
+      return;
+    }
+    // Vent til kryssord-tilstanden faktisk hører til det aktive brettet.
+    if (!state.isInitialized || !activeProgress) return;
+
+    sessionToSaveRef.current = {
+      dateKey: activePuzzleKey,
+      puzzleSignature,
+      elapsedSeconds,
+      progress: activeProgress,
+      completion: completionStats,
+      hasSubmittedName,
+      canSubmitHighscore,
+      hasSavedHighscore:
+        activePuzzleKey === todayKey ? hasCompletedTodayPuzzle : false,
+    };
+  }, [
+    puzzle,
+    activePuzzleKey,
+    puzzleSignature,
+    state.isInitialized,
+    activeProgress,
+    elapsedSeconds,
+    completionStats,
+    hasSubmittedName,
+    canSubmitHighscore,
+    hasCompletedTodayPuzzle,
+    todayKey,
+  ]);
+
+  const flushSession = useCallback(() => {
+    if (sessionToSaveRef.current) {
+      savePuzzleSession(sessionToSaveRef.current);
+    }
+  }, []);
+
+  // Lagre umiddelbart når selve spillet endrer seg.
+  useEffect(() => {
+    flushSession();
+  }, [
+    flushSession,
+    activeProgress,
+    completionStats,
+    hasSubmittedName,
+    canSubmitHighscore,
+    hasCompletedTodayPuzzle,
+  ]);
+
+  // Tidsbruken tikker hvert sekund; den lagres jevnlig i stedet for hvert
+  // sekund, og alltid når brukeren forlater eller skjuler fanen.
+  useEffect(() => {
+    const intervalId = window.setInterval(flushSession, 10000);
+    window.addEventListener("pagehide", flushSession);
+    document.addEventListener("visibilitychange", flushSession);
+
+    return () => {
+      window.clearInterval(intervalId);
+      window.removeEventListener("pagehide", flushSession);
+      document.removeEventListener("visibilitychange", flushSession);
+      flushSession();
+    };
+  }, [flushSession]);
 
   const handleSubmitName = async (name: string) => {
     if (!completionStats) return;
@@ -365,6 +486,7 @@ function App() {
 
           <ControlsPanel
             canRevealLetter={canRevealLetter}
+            highlightCheckAll={shouldHighlightCheckAll}
             onCheckAll={actions.checkAll}
             onRevealLetter={actions.revealLetter}
             onZoomIn={() => setZoomMaxCellSize((v) => Math.min(v + ZOOM_STEP, ZOOM_MAX))}

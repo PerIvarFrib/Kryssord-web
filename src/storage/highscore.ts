@@ -110,31 +110,25 @@ export async function updateHighscoreName(
   }
 }
 
+/**
+ * Poengsummen er bevisst uavhengig av tidsbruk: brukeren skal kunne ta en pause
+ * eller laste siden på nytt uten å bli straffet. Tiden måles fortsatt og lagres
+ * sammen med resultatet, men kun for statistikk/utvikling.
+ */
 export function calculateScore(params: {
   totalLetters: number; // L
-  completionTimeSeconds: number; // T
   wrongCheckedLetters: number; // W
   revealedLetters: number; // R
 }): number {
   const {
     totalLetters: L,
-    completionTimeSeconds: T,
     wrongCheckedLetters: W,
     revealedLetters: R,
   } = params;
 
   if (L <= 0) return 0;
 
-  const { targetSec: T_target, intervalSec: T_interval } = getRevealTiming(L);
   const S_max = 10 * L;
-
-  // Tidsstraff
-  let P_time_raw = 0;
-  if (T > T_target) {
-    P_time_raw = Math.floor((T - T_target) / T_interval);
-  }
-  const P_time_max = 0.2 * S_max;
-  const P_time = Math.min(P_time_raw, P_time_max);
 
   // Straff for feilbokstaver
   const P_wrong_raw = W;
@@ -143,7 +137,7 @@ export function calculateScore(params: {
 
   const P_revealed = R * 10; // Hver avslørt bokstav gir 10 poeng i straff
 
-  let S = S_max - P_time - P_wrong - P_revealed;
+  let S = S_max - P_wrong - P_revealed;
 
   if (S < 0) S = 0;
   if (S > S_max) S = S_max;

@@ -1,5 +1,7 @@
 export interface ControlsPanelProps {
   canRevealLetter: boolean;
+  /** Fremhev "Sjekk alt" når hele kryssordet er fylt ut, men ikke sjekket ennå. */
+  highlightCheckAll?: boolean;
   onCheckAll: () => void;
   onRevealLetter: () => void;
   onZoomIn: () => void;
@@ -10,6 +12,7 @@ export interface ControlsPanelProps {
 
 export function ControlsPanel({
   canRevealLetter,
+  highlightCheckAll = false,
   onCheckAll,
   onRevealLetter,
   onZoomIn,
@@ -19,9 +22,18 @@ export function ControlsPanel({
 }: ControlsPanelProps) {
   return (
     <div className="controls">
-      <button id="check-all" onClick={onCheckAll}>
+      <button
+        id="check-all"
+        className={highlightCheckAll ? "check-all--attention" : undefined}
+        onClick={onCheckAll}
+      >
         Sjekk alt
       </button>
+      {highlightCheckAll && (
+        <span className="sr-only" role="status" aria-live="polite">
+          Kryssordet er fylt ut. Trykk «Sjekk alt» for å sjekke svaret.
+        </span>
+      )}
       <button
         id="reveal-letter"
         disabled={!canRevealLetter}

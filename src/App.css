@@ -770,6 +770,48 @@ button.warning {
     cursor: not-allowed;
 }
 
+/* Fremhev "Sjekk alt" når hele kryssordet er fylt ut, slik at nye
+   brukere skjønner at de skal trykke der for å sjekke svaret. */
+@keyframes checkAllPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgb(31 162 74 / 0.55);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgb(31 162 74 / 0);
+    }
+}
+
+.controls button.check-all--attention,
+.controls button.check-all--attention:hover:not(:disabled) {
+    background: var(--success-color);
+    border-color: var(--success-color);
+    color: #ffffff;
+}
+
+.controls button.check-all--attention {
+    animation: checkAllPulse 1.6s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .controls button.check-all--attention {
+        animation: none;
+        box-shadow: 0 0 0 3px rgb(31 162 74 / 0.35);
+    }
+}
+
+/* Skjult tekst kun for skjermlesere */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .zoom-controls {
     display: flex;
     gap: 4px;
