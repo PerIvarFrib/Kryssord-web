@@ -66,7 +66,10 @@ const hasAnyFilledLetter = (session: StoredPuzzleSession | null): boolean =>
 function App() {
   const [selectedPuzzleId, setSelectedPuzzleId] = useState("today");
   const [puzzle, setPuzzle] = useState<CrosswordPuzzle | null>(null);
-  const [hasCompletedTodayPuzzle, setHasCompletedTodayPuzzle] = useState(false);
+  // Om resultatet for det kjørende kryssordet allerede er lagt inn i
+  // highscore-listen. Gjelder ett kryssord av gangen, og gjenopprettes
+  // sammen med resten av økten.
+  const [hasSavedHighscore, setHasSavedHighscore] = useState(false);
   const [isCompletionPopupOpen, setIsCompletionPopupOpen] = useState(false);
   const [completionStats, setCompletionStats] =
     useState<CompletionStats | null>(null);
@@ -79,6 +82,7 @@ function App() {
   const [baseElapsedSeconds, setBaseElapsedSeconds] = useState<number>(0);
   const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
   const [hasSubmittedName, setHasSubmittedName] = useState(false);
+  const [nameSaveError, setNameSaveError] = useState<string | null>(null);
   const [loadMessage, setLoadMessage] = useState<string | null>(null);
   const [canSubmitHighscore, setCanSubmitHighscore] = useState(false);
   const [zoomMaxCellSize, setZoomMaxCellSize] = useState(60);
@@ -93,6 +97,11 @@ function App() {
 
   const todayKey = getTodayKey();
   const yesterdayKey = getYesterdayKey();
+
+  // Både dagens og gårsdagens kryssord teller på highscore-listen, slik at
+  // den som går glipp av en dag fortsatt kan spille seg inn på gårsdagens liste.
+  const isHighscoreDateKey = (key: string | null): key is string =>
+    key === todayKey || key === yesterdayKey;
 
   // Nøkkel som identifiserer det KJØRENDE kryssordet (ikke bare valgt i menyen).
   // Denne settes når et kryssord faktisk lastes inn med "Last inn".
@@ -134,17 +143,6 @@ function App() {
   };
 
   const handleLoadPuzzle = () => {
-    // Hvis dagens kryssord allerede er fullført, skal ikke "Last inn"
-    // laste det inn på nytt og lagre enda en highscore. Vis bare resultatet.
-    if (
-      selectedPuzzleId === "today" &&
-      hasCompletedTodayPuzzle &&
-      completionStats
-    ) {
-      setIsCompletionPopupOpen(true);
-      return;
-    }
-
     let nextPuzzle: CrosswordPuzzle | null = null;
     let puzzleKey: string | null = null;
 
@@ -164,6 +162,13 @@ function App() {
         path: "../puzzles/crossword_seed0402202601_medium.json",
         selectedPuzzleId,
       });
+    }
+
+    // Hvis det valgte kryssordet allerede kjører og er fullført, skal ikke
+    // "Last inn" starte det på nytt. Vis bare resultatet.
+    if (puzzleKey && puzzleKey === activePuzzleKey && completionStats) {
+      setIsCompletionPopupOpen(true);
+      return;
     }
 
     // Hent eventuell lagret økt, slik at en oppdatering av siden ikke
@@ -190,10 +195,9 @@ function App() {
     setCompletionStats(stored?.completion ?? null);
     setIsCompletionPopupOpen(false);
     setHasSubmittedName(stored?.hasSubmittedName ?? false);
+    setNameSaveError(null);
     setCanSubmitHighscore(stored?.canSubmitHighscore ?? false);
-    if (puzzleKey === todayKey) {
-      setHasCompletedTodayPuzzle(stored?.hasSavedHighscore ?? false);
-    }
+    setHasSavedHighscore(stored?.hasSavedHighscore ?? false);
 
     const selectedOption = puzzles.find((p) => p.id === selectedPuzzleId);
     const puzzleLabel = selectedOption
@@ -282,8 +286,8 @@ function App() {
     };
   }, [puzzle, startTimeMs, baseElapsedSeconds, completionStats]);
 
-  // Registrer fullføring for både dagens og andre kryssord,
-  // men lagre highscore kun for dagens.
+  // Registrer fullføring, og lagre highscore for de kryssordene som har
+  // en highscore-liste (dagens og gårsdagens).
   useEffect(() => {
     if (!puzzle) return;
     // Når vi nettopp har lastet inn et nytt kryssord, skal vi ikke
@@ -303,7 +307,8 @@ function App() {
     // Unngå å registrere samme fullføring flere ganger
     if (completionStats) return;
 
-    const isTodayPuzzle = selectedPuzzleId === "today";
+    // Bruk nøkkelen til kryssordet som faktisk kjører, ikke valget i menyen.
+    const isEligibleForHighscore = isHighscoreDateKey(activePuzzleKey);
 
     const completionTimeSeconds = elapsedSeconds;
     const completedAt = new Date().toISOString();
@@ -328,13 +333,13 @@ function App() {
       setIsCompletionPopupOpen(true);
       completionPopupTimerRef.current = null;
     }, 1000);
-    setCanSubmitHighscore(isTodayPuzzle);
+    setCanSubmitHighscore(isEligibleForHighscore);
 
-    if (isTodayPuzzle && !hasCompletedTodayPuzzle) {
+    if (isEligibleForHighscore && !hasSavedHighscore) {
       const autoEntry: HighscoreEntry = {
         name: "Anonym",
         score,
-        dateKey: todayKey,
+        dateKey: activePuzzleKey,
         completedAt,
         totalLetters,
         confirmedLetters,
@@ -347,16 +352,16 @@ function App() {
         await addHighscoreEntry(autoEntry);
         await refreshHighscores();
       })();
-      setHasCompletedTodayPuzzle(true);
+      setHasSavedHighscore(true);
     }
   }, [
     puzzle,
-    selectedPuzzleId,
+    activePuzzleKey,
     totalLetters,
     confirmedLetters,
     revealedLetters,
     completionStats,
-    hasCompletedTodayPuzzle,
+    hasSavedHighscore,
   ]);
 
   // --- Lagring av økt, slik at fremdriften overlever at siden lastes på nytt ---
@@ -388,8 +393,7 @@ function App() {
       completion: completionStats,
       hasSubmittedName,
       canSubmitHighscore,
-      hasSavedHighscore:
-        activePuzzleKey === todayKey ? hasCompletedTodayPuzzle : false,
+      hasSavedHighscore,
     };
   }, [
     puzzle,
@@ -401,8 +405,7 @@ function App() {
     completionStats,
     hasSubmittedName,
     canSubmitHighscore,
-    hasCompletedTodayPuzzle,
-    todayKey,
+    hasSavedHighscore,
   ]);
 
   const flushSession = useCallback(() => {
@@ -420,7 +423,7 @@ function App() {
     completionStats,
     hasSubmittedName,
     canSubmitHighscore,
-    hasCompletedTodayPuzzle,
+    hasSavedHighscore,
   ]);
 
   // Tidsbruken tikker hvert sekund; den lagres jevnlig i stedet for hvert
@@ -442,11 +445,33 @@ function App() {
     if (!completionStats) return;
     if (!canSubmitHighscore) return;
     if (hasSubmittedName) return;
+    // Navnet skal oppdatere raden for det kryssordet som faktisk ble løst.
+    if (!isHighscoreDateKey(activePuzzleKey)) return;
 
-    await updateHighscoreName(todayKey, completionStats.completedAt, name);
+    setNameSaveError(null);
+    const saved = await updateHighscoreName(
+      activePuzzleKey,
+      completionStats.completedAt,
+      name,
+    );
+
+    if (!saved) {
+      // Ikke påstå at resultatet er lagret når det ikke gikk igjennom.
+      setNameSaveError("Klarte ikke å lagre navnet. Prøv igjen.");
+      return;
+    }
+
     setHasSubmittedName(true);
     await refreshHighscores();
   };
+  // Hvilken av de to highscore-listene resultatet havner på.
+  const highscoreListLabel =
+    activePuzzleKey === todayKey
+      ? "i dag"
+      : activePuzzleKey === yesterdayKey
+        ? "i går"
+        : null;
+
   const {
     values,
     cellStatus,
@@ -549,6 +574,8 @@ function App() {
         onSubmitName={handleSubmitName}
         hasSubmittedName={hasSubmittedName}
         canSubmitHighscore={canSubmitHighscore}
+        highscoreListLabel={highscoreListLabel}
+        saveNameError={nameSaveError}
       />
 
       <Footer />

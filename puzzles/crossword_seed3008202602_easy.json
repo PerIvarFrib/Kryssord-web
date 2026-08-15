@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 06:20:52",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##S##V##S",
+    "SNUSTE#RY",
+    "#ERVERVET",
+    "PD#ISTID#",
+    "#KOKE#RUS",
+    "ROMANTISK",
+    "#MG##ILER",
+    "#SABOTERE",
+    "UTVIST#TV"
+  ],
+  "answers": {
+    "across": {
+      "1": "SNUSTE",
+      "2": "RY",
+      "3": "ERVERVET",
+      "4": "PD",
+      "5": "ISTID",
+      "6": "KOKE",
+      "7": "RUS",
+      "8": "ROMANTISK",
+      "9": "MG",
+      "10": "ILER",
+      "11": "SABOTERE",
+      "12": "UTVIST",
+      "13": "TV"
+    },
+    "down": {
+      "1": "NEDKOMST",
+      "2": "SUR",
+      "3": "OMGAV",
+      "4": "SVIKA",
+      "5": "BI",
+      "6": "TESEN",
+      "7": "OS",
+      "8": "VERT",
+      "9": "TITT",
+      "10": "VIRILE",
+      "11": "REDUSERT",
+      "12": "SYT",
+      "13": "SKREV"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "dunstet",
+      "2": "prestisje",
+      "3": "innkassert",
+      "4": "Palladium",
+      "5": "kald periode",
+      "6": "fritere",
+      "7": "bevisstløshet",
+      "8": "lyrisk",
+      "9": "Magnesium",
+      "10": "småspringer",
+      "11": "forpurre",
+      "12": "utstøtt",
+      "13": "Fjernsyn"
+    },
+    "down": {
+      "1": "forløsning",
+      "2": "fortørnet",
+      "3": "omkransa",
+      "4": "falskhetene",
+      "5": "Bismut",
+      "6": "postulatet",
+      "7": "vanndamp",
+      "8": "hotelleier",
+      "9": "stirr",
+      "10": "mandige",
+      "11": "neglisjert",
+      "12": "klynking",
+      "13": "opptegnet"
+    }
+  }
+}

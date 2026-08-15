@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 00:14:54",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.##.##",
+    "#........",
+    ".........",
+    "....#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "###S##I##",
+    "#REKORDEN",
+    "MAGIKERNE",
+    "UNGT#GEST",
+    "#DENSITET",
+    "#ISER#TRO"
+  ],
+  "answers": {
+    "across": {
+      "1": "REKORDEN",
+      "2": "MAGIKERNE",
+      "3": "UNGT",
+      "4": "GEST",
+      "5": "DENSITET",
+      "6": "ISER",
+      "7": "TRO"
+    },
+    "down": {
+      "1": "MU",
+      "2": "RANDI",
+      "3": "EGGES",
+      "4": "SKITNE",
+      "5": "OK",
+      "6": "SR",
+      "7": "REGI",
+      "8": "IDRETT",
+      "9": "ENSER",
+      "10": "NETTO"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "persen",
+      "2": "trollmennene",
+      "3": "umodent",
+      "4": "kroppsbevegelse",
+      "5": "tetthet",
+      "6": "klaker",
+      "7": "etterkomme"
+    },
+    "down": {
+      "1": "Gresk bokstav",
+      "2": "en kolstad",
+      "3": "anspores",
+      "4": "urenslige",
+      "5": "jaord",
+      "6": "Strontium",
+      "7": "oppsetning",
+      "8": "gymnastikk",
+      "9": "besiktiger",
+      "10": "avanse"
+    }
+  }
+}

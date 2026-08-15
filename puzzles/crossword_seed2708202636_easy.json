@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 01:35:50",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#####..#.",
+    "#........",
+    "#....#...",
+    "........#",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "#####CE#I",
+    "#RASJONAL",
+    "#ALTA#DVD",
+    "INDIKERE#",
+    "#TRETTENE",
+    "BEIN#ASYL"
+  ],
+  "answers": {
+    "across": {
+      "1": "CE",
+      "2": "RASJONAL",
+      "3": "ALTA",
+      "4": "DVD",
+      "5": "INDIKERE",
+      "6": "TRETTENE",
+      "7": "BEIN",
+      "8": "ASYL"
+    },
+    "down": {
+      "1": "RANTE",
+      "2": "ALDRI",
+      "3": "STIEN",
+      "4": "JAKT",
+      "5": "CO",
+      "6": "ETA",
+      "7": "ENDRES",
+      "8": "AVENY",
+      "9": "ILD",
+      "10": "EL"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Cerium",
+      "2": "fornuftsmessig",
+      "3": "by i nord",
+      "4": "Filmplate",
+      "5": "uttrykke",
+      "6": "ordvekslingene",
+      "7": "skjelett",
+      "8": "fristed"
+    },
+    "down": {
+      "1": "knabba",
+      "2": "ingensinne",
+      "3": "autostradaen",
+      "4": "ettersøking",
+      "5": "Kobolt",
+      "6": "Gresk bokstav",
+      "7": "omformes",
+      "8": "bilveg",
+      "9": "flammehav",
+      "10": "slaps"
+    }
+  }
+}

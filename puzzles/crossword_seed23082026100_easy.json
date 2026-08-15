@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-15 23:54:09",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##V##N##J",
+    "FREMBY#RA",
+    "#EDELSTEN",
+    "PI#DUSIN#",
+    "#SOGN#PHI",
+    "MEDIKUSEN",
+    "#NL##LETT",
+    "#DEKRETER",
+    "HERRER#NO"
+  ],
+  "answers": {
+    "across": {
+      "1": "FREMBY",
+      "2": "RA",
+      "3": "EDELSTEN",
+      "4": "PI",
+      "5": "DUSIN",
+      "6": "SOGN",
+      "7": "PHI",
+      "8": "MEDIKUSEN",
+      "9": "NL",
+      "10": "LETT",
+      "11": "DEKRETER",
+      "12": "HERRER",
+      "13": "NO"
+    },
+    "down": {
+      "1": "REISENDE",
+      "2": "VED",
+      "3": "ODLER",
+      "4": "MEDGI",
+      "5": "KR",
+      "6": "BLUNK",
+      "7": "RE",
+      "8": "NYSS",
+      "9": "ULER",
+      "10": "TIPSET",
+      "11": "RENHETEN",
+      "12": "JAN",
+      "13": "INTRO"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vise fram",
+      "2": "Radium",
+      "3": "smaragd",
+      "4": "3,14",
+      "5": "tolv",
+      "6": "nordal",
+      "7": "Gresk bokstav",
+      "8": "tannlegen",
+      "9": "Nederland",
+      "10": "elementær",
+      "11": "bekjentgjørelser",
+      "12": "guder",
+      "13": "Norge"
+    },
+    "down": {
+      "1": "vandrende",
+      "2": "inntil",
+      "3": "driver frem",
+      "4": "vedgå",
+      "5": "Norsk valuta",
+      "6": "glimtvis",
+      "7": "Solfège-tone",
+      "8": "forleden",
+      "9": "hviner",
+      "10": "forkynte",
+      "11": "rensligheta",
+      "12": "matros",
+      "13": "utgangsposisjon"
+    }
+  }
+}
