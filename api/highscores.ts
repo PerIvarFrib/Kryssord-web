@@ -14,15 +14,25 @@ type HighscoreRow = {
   wrongCheckedLetters: number;
 };
 
+/**
+ * Maks lengde på navn i highscore-listen.
+ * Må holdes i synk med MAX_HIGHSCORE_NAME_LENGTH i src/storage/highscore.ts.
+ */
+const MAX_NAME_LENGTH = 40;
+
 function validateName(rawName: unknown): string | null {
   if (typeof rawName !== "string") return null;
   const trimmed = rawName.trim();
 
-  // Enkle regler for gyldig navn: ikke tomt, og ikke urimelig langt.
+  // Eneste kravet er at navnet ikke er tomt. Et for langt navn avvises ikke
+  // — da ville brukeren blitt stående som "Anonym" — det kortes ned i stedet.
   if (trimmed.length === 0) return null;
-  if (trimmed.length > 40) return null;
 
-  return trimmed;
+  // Del opp i tegn (ikke UTF-16-enheter), slik at f.eks. emoji ikke kuttes i to.
+  const characters = Array.from(trimmed);
+  if (characters.length <= MAX_NAME_LENGTH) return trimmed;
+
+  return characters.slice(0, MAX_NAME_LENGTH).join("").trim();
 }
 
 export default async function handler(req: any, res: any) {

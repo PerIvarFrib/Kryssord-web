@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import type { HighscoreEntry } from "../storage/highscore";
+import {
+  MAX_HIGHSCORE_NAME_LENGTH,
+  type HighscoreEntry,
+} from "../storage/highscore";
 
 const getMillisecondsUntilNextPuzzle = () => {
   const now = new Date();
@@ -28,6 +31,10 @@ export interface CompletionPopupProps {
   onSubmitName: (name: string) => void;
   hasSubmittedName: boolean;
   canSubmitHighscore: boolean;
+  /** Hvilken highscore-liste resultatet havner på, f.eks. "i dag" / "i går". */
+  highscoreListLabel?: string | null;
+  /** Feilmelding hvis navnet ikke lot seg lagre. */
+  saveNameError?: string | null;
 }
 
 interface HighscoreSectionProps {
@@ -81,6 +88,8 @@ export function CompletionPopup({
   onSubmitName,
   hasSubmittedName,
   canSubmitHighscore,
+  highscoreListLabel,
+  saveNameError,
 }: CompletionPopupProps) {
   const [name, setName] = useState("");
   const [timeUntilNextPuzzle, setTimeUntilNextPuzzle] = useState(
@@ -113,7 +122,8 @@ export function CompletionPopup({
     } else {
       onSubmitName(trimmed);
     }
-    setName("");
+    // Behold teksten i feltet til lagringen faktisk har gått igjennom,
+    // slik at brukeren slipper å skrive navnet på nytt ved feil.
   };
 
   return (
@@ -151,7 +161,9 @@ export function CompletionPopup({
             !hasSubmittedName ? (
               <form className="completion-form" onSubmit={handleSubmit}>
                 <label htmlFor="player-name" className="completion-label">
-                  Skriv inn navnet ditt for highscore-listen (valgfritt):
+                  Skriv inn navnet ditt for highscore-listen
+                  {highscoreListLabel ? ` for ${highscoreListLabel}` : ""}{" "}
+                  (valgfritt):
                 </label>
                 <div className="completion-input-row">
                   <input
@@ -161,19 +173,27 @@ export function CompletionPopup({
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Navn eller kallenavn"
                     className="completion-input"
+                    maxLength={MAX_HIGHSCORE_NAME_LENGTH}
                   />
                   <button type="submit">Lagre resultat</button>
                 </div>
+                {saveNameError && (
+                  <p className="completion-error" role="alert">
+                    {saveNameError}
+                  </p>
+                )}
               </form>
             ) : (
               <p className="highscore-empty">
-                Resultatet ditt er lagret. Takk for at du spilte!
+                Resultatet ditt er lagret
+                {highscoreListLabel ? ` på listen for ${highscoreListLabel}` : ""}.
+                Takk for at du spilte!
               </p>
             )
           ) : (
             <p className="highscore-empty">
-              Highscore-listen gjelder bare dagens kryssord. Resultatet for
-              dette kryssordet lagres ikke i highscore.
+              Highscore-listene gjelder dagens og gårsdagens kryssord.
+              Resultatet for dette kryssordet lagres ikke i highscore.
             </p>
           ))}
 

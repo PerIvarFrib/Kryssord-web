@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 00:01:32",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "######.#.",
+    ".........",
+    "#........",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "######D#E",
+    "SABOTERES",
+    "#BAGATELL",
+    "SYN#PIPLE",
+    "#SEMESTER",
+    "#SNORKER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SABOTERES",
+      "2": "BAGATELL",
+      "3": "SYN",
+      "4": "PIPLE",
+      "5": "SEMESTER",
+      "6": "SNORKER"
+    },
+    "down": {
+      "1": "ABYSS",
+      "2": "BANEN",
+      "3": "OG",
+      "4": "MO",
+      "5": "TAPER",
+      "6": "ETISK",
+      "7": "DREPTE",
+      "8": "ELLER",
+      "9": "ESLER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "motarbeides",
+      "2": "ubetydelighet",
+      "3": "visjon",
+      "4": "dryppe",
+      "5": "undervisningsperiode",
+      "6": "slumrer"
+    },
+    "down": {
+      "1": "Avgrunnen",
+      "2": "rundinga",
+      "3": "samt",
+      "4": "Molybden",
+      "5": "forlegger",
+      "6": "moralsk",
+      "7": "avretta",
+      "8": "alias",
+      "9": "tamdyr"
+    }
+  }
+}

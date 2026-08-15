@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 01:59:27",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..###",
+    "#........",
+    "#....#...",
+    "#...#....",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####MC###",
+    "#ESSENSEN",
+    "#KLAG#KLE",
+    "#SUL#AIDS",
+    "FORDAMPET",
+    "#SPONTANE"
+  ],
+  "answers": {
+    "across": {
+      "1": "MC",
+      "2": "ESSENSEN",
+      "3": "KLAG",
+      "4": "KLE",
+      "5": "SUL",
+      "6": "AIDS",
+      "7": "FORDAMPET",
+      "8": "SPONTANE"
+    },
+    "down": {
+      "1": "EKSOS",
+      "2": "SLURP",
+      "3": "SALDO",
+      "4": "MEG",
+      "5": "AN",
+      "6": "CN",
+      "7": "AMT",
+      "8": "SKIPA",
+      "9": "ELDEN",
+      "10": "NESTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "1100",
+      "2": "duften",
+      "3": "ank over",
+      "4": "dandere",
+      "5": "kosthold",
+      "6": "smittsom sykdom",
+      "7": "fordunstet",
+      "8": "ufrivillige"
+    },
+    "down": {
+      "1": "avgass",
+      "2": "munnfull",
+      "3": "margin",
+      "4": "tissa",
+      "5": "prefiks",
+      "6": "Kina",
+      "7": "Dansk fylke",
+      "8": "motorbåtene",
+      "9": "livsaftenen",
+      "10": "nærværende"
+    }
+  }
+}

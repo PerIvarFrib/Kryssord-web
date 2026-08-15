@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 01:04:53",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####ID#D#",
+    "#KULTUREN",
+    "ALFA#SOLE",
+    "#ORDA#TEV",
+    "#VIELSENE",
+    "#NESTOREN"
+  ],
+  "answers": {
+    "across": {
+      "1": "ID",
+      "2": "KULTUREN",
+      "3": "ALFA",
+      "4": "SOLE",
+      "5": "ORDA",
+      "6": "TEV",
+      "7": "VIELSENE",
+      "8": "NESTOREN"
+    },
+    "down": {
+      "1": "KLOVN",
+      "2": "UFRIE",
+      "3": "LADES",
+      "4": "IT",
+      "5": "ALT",
+      "6": "DUS",
+      "7": "SO",
+      "8": "ROTER",
+      "9": "DELENE",
+      "10": "NEVEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Identifikasjon",
+      "2": "sivilisasjonen",
+      "3": "leder",
+      "4": "separat",
+      "5": "frasene",
+      "6": "vellukt",
+      "7": "nattverdene",
+      "8": "veteranen"
+    },
+    "down": {
+      "1": "sjonglør",
+      "2": "uselvstendige",
+      "3": "proppes",
+      "4": "Italia",
+      "5": "all",
+      "6": "slummer",
+      "7": "Solfège-tone",
+      "8": "kludrer",
+      "9": "komponentene",
+      "10": "håndflata"
+    }
+  }
+}

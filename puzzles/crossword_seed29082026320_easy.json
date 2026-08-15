@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-16 06:15:55",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##G##M##D",
+    "SMASKA#RU",
+    "#OPPORTUN",
+    "BR#ANSET#",
+    "#ASKE#SIC",
+    "KLIENTENE",
+    "#SB##ANER",
+    "#KIOSKENE",
+    "HERMET#ES"
+  ],
+  "answers": {
+    "across": {
+      "1": "SMASKA",
+      "2": "RU",
+      "3": "OPPORTUN",
+      "4": "BR",
+      "5": "ANSET",
+      "6": "ASKE",
+      "7": "SIC",
+      "8": "KLIENTENE",
+      "9": "SB",
+      "10": "ANER",
+      "11": "KIOSKENE",
+      "12": "HERMET",
+      "13": "ES"
+    },
+    "down": {
+      "1": "MORALSKE",
+      "2": "GAP",
+      "3": "SIBIR",
+      "4": "SPAKE",
+      "5": "OM",
+      "6": "KONEN",
+      "7": "SE",
+      "8": "MARS",
+      "9": "TAKT",
+      "10": "TESENE",
+      "11": "RUTINENE",
+      "12": "DUN",
+      "13": "CERES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "smattet",
+      "2": "Russland",
+      "3": "favorabel",
+      "4": "Brom",
+      "5": "taksert",
+      "6": "sot",
+      "7": "slik",
+      "8": "forbrukerne",
+      "9": "Antimon",
+      "10": "forfedre",
+      "11": "matvarebutikkene",
+      "12": "mangfoldiggjorde",
+      "13": "Spania"
+    },
+    "down": {
+      "1": "sømmelige",
+      "2": "avgrunn",
+      "3": "geografisk område",
+      "4": "pel",
+      "5": "hvis",
+      "6": "forloveden",
+      "7": "Sverige",
+      "8": "progresjon",
+      "9": "pietet",
+      "10": "doktrinene",
+      "11": "fullkommenhetene",
+      "12": "fnugg",
+      "13": "romersk sagnfigur"
+    }
+  }
+}

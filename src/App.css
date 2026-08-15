@@ -649,6 +649,12 @@ button.warning {
     align-items: center;
 }
 
+.completion-error {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--error-color);
+}
+
 .completion-input {
     flex: 1;
     padding: 7px 10px;

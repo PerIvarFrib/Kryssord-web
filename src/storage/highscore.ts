@@ -17,6 +17,12 @@ export function getRevealTiming(totalLetters: number): {
   return { targetSec, intervalSec };
 }
 
+/**
+ * Maks lengde på navn i highscore-listen. Lengre navn blir kortet ned,
+ * ikke avvist. Må holdes i synk med MAX_NAME_LENGTH i api/highscores.ts.
+ */
+export const MAX_HIGHSCORE_NAME_LENGTH = 40;
+
 export interface HighscoreEntry {
   name: string;
   score: number;
@@ -89,13 +95,14 @@ export async function addHighscoreEntry(entry: HighscoreEntry): Promise<void> {
   }
 }
 
+/** Returnerer true når navnet faktisk ble lagret. */
 export async function updateHighscoreName(
   dateKey: string,
   completedAt: string,
   name: string,
-): Promise<void> {
+): Promise<boolean> {
   try {
-    await fetch("/api/highscores", {
+    const res = await fetch("/api/highscores", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -105,8 +112,9 @@ export async function updateHighscoreName(
         name,
       }),
     });
+    return res.ok;
   } catch {
-    // Ignore network errors for now
+    return false;
   }
 }
 
