@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 08:39:57",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    ".........",
+    "..#......",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##H#IL###",
+    "#RUINERTE",
+    "VEKSTTORV",
+    "IN#BRISEN",
+    "#SPIONENE",
+    "#ART#GRE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "IL",
+      "2": "RUINERTE",
+      "3": "VEKSTTORV",
+      "4": "IN",
+      "5": "BRISEN",
+      "6": "SPIONENE",
+      "7": "ART",
+      "8": "GRE"
+    },
+    "down": {
+      "1": "VI",
+      "2": "RENSA",
+      "3": "HUK",
+      "4": "PR",
+      "5": "ISBIT",
+      "6": "INTRO",
+      "7": "LETING",
+      "8": "ROSER",
+      "9": "TRENE",
+      "10": "EVNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "framdrift",
+      "2": "korrumperte",
+      "3": "jordforbedringsmiddel",
+      "4": "India",
+      "5": "solgangsvinden",
+      "6": "tysterne",
+      "7": "egenhet",
+      "8": "kamme"
+    },
+    "down": {
+      "1": "6",
+      "2": "spylt",
+      "3": "nokk",
+      "4": "Praseodym",
+      "5": "isstykke",
+      "6": "utgangsposisjon",
+      "7": "søking",
+      "8": "belønner",
+      "9": "mosjonere",
+      "10": "kyndighet"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "manual",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "triple-verified",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "triple-verified"
+    }
+  }
+}

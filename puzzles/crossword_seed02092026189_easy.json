@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-02 13:31:42",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.##.",
+    ".........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###L#X##M",
+    "UNDERVISE",
+    "AUR#EIKER",
+    "#TALT#LIK",
+    "#EMITTERE",
+    "#RAM#ASER"
+  ],
+  "answers": {
+    "across": {
+      "1": "UNDERVISE",
+      "2": "AUR",
+      "3": "EIKER",
+      "4": "TALT",
+      "5": "LIK",
+      "6": "EMITTERE",
+      "7": "RAM",
+      "8": "ASER"
+    },
+    "down": {
+      "1": "UA",
+      "2": "NUTER",
+      "3": "DRAMA",
+      "4": "LE",
+      "5": "LIM",
+      "6": "RETT",
+      "7": "XVI",
+      "8": "TA",
+      "9": "IKLES",
+      "10": "SEIRE",
+      "11": "MERKER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "skolere",
+      "2": "småstein",
+      "3": "cruiseskip",
+      "4": "babla",
+      "5": "identisk",
+      "6": "utsende",
+      "7": "pikant",
+      "8": "spør"
+    },
+    "down": {
+      "1": "Ukraina",
+      "2": "bergtopper",
+      "3": "regi",
+      "4": "skratte",
+      "5": "klister",
+      "6": "kodeks",
+      "7": "16",
+      "8": "bedrive",
+      "9": "utrustes",
+      "10": "klarer",
+      "11": "enger"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "synonymordboka",
+      "3": "synonymet",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "model+db",
+      "7": "synonymordboka",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "synonymet",
+      "9": "model+db",
+      "10": "cross-verified",
+      "11": "cross-verified"
+    }
+  }
+}

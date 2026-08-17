@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 11:44:17",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#..#..###",
+    "#........",
+    "#....#...",
+    "#...#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#DC#LA###",
+    "#REFUSERT",
+    "#OLJA#KAR",
+    "#SLO#LOVE",
+    "KJELLEREN",
+    "#ANSPENT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "DC",
+      "2": "LA",
+      "3": "REFUSERT",
+      "4": "OLJA",
+      "5": "KAR",
+      "6": "SLO",
+      "7": "LOVE",
+      "8": "KJELLEREN",
+      "9": "ANSPENT"
+    },
+    "down": {
+      "1": "DROSJA",
+      "2": "CELLEN",
+      "3": "FJOLS",
+      "4": "LUA",
+      "5": "LP",
+      "6": "AS",
+      "7": "LEE",
+      "8": "EKORN",
+      "9": "RAVET",
+      "10": "TREN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "600",
+      "2": "Solfège-tone",
+      "3": "avfeid",
+      "4": "dieselen",
+      "5": "gentleman",
+      "6": "innmater",
+      "7": "forherlige",
+      "8": "albuerommet",
+      "9": "oppkavet"
+    },
+    "down": {
+      "1": "motorvognen",
+      "2": "oppholdsrommet",
+      "3": "dummepeter",
+      "4": "damehatten",
+      "5": "grammofonplate",
+      "6": "Aksjeselskap",
+      "7": "formå",
+      "8": "murmeldyr",
+      "9": "virret",
+      "10": "praktiser"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "manual",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "synonymordboka",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "cross-verified"
+    }
+  }
+}

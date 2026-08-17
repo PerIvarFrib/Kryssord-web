@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 12:38:47",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    ".........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####DL#A#",
+    "FORSKERNE",
+    "#PIP#KOKK",
+    "SISIK#DEL",
+    "#UTSIDENE",
+    "#MATVARE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "DL",
+      "2": "FORSKERNE",
+      "3": "PIP",
+      "4": "KOKK",
+      "5": "SISIK",
+      "6": "DEL",
+      "7": "UTSIDENE",
+      "8": "MATVARE"
+    },
+    "down": {
+      "1": "OPIUM",
+      "2": "RISTA",
+      "3": "SPIST",
+      "4": "DK",
+      "5": "KIV",
+      "6": "LEK",
+      "7": "DA",
+      "8": "RODER",
+      "9": "ANKENE",
+      "10": "EKLE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Desiliter",
+      "2": "biologene",
+      "3": "klynk",
+      "4": "matmester",
+      "5": "finkefugl",
+      "6": "bolk",
+      "7": "frontene",
+      "8": "næringsmiddel"
+    },
+    "down": {
+      "1": "marihuana",
+      "2": "spalieret",
+      "3": "dinert",
+      "4": "Danmark",
+      "5": "batalje",
+      "6": "forlystelse",
+      "7": "dog",
+      "8": "uniter",
+      "9": "klagesangene",
+      "10": "obskøne"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "synonymet",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "model+db",
+      "10": "model+db"
+    }
+  }
+}

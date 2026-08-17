@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 22:37:07",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####OL#H#",
+    "#JUKSEREN",
+    "VAKLE#ALE",
+    "#FLO#HULK",
+    "#FORLISET",
+    "#AKTIVERE"
+  ],
+  "answers": {
+    "across": {
+      "1": "OL",
+      "2": "JUKSEREN",
+      "3": "VAKLE",
+      "4": "ALE",
+      "5": "FLO",
+      "6": "HULK",
+      "7": "FORLISET",
+      "8": "AKTIVERE"
+    },
+    "down": {
+      "1": "JAFFA",
+      "2": "UKLOK",
+      "3": "KLORT",
+      "4": "OSE",
+      "5": "LI",
+      "6": "LE",
+      "7": "HIV",
+      "8": "RAUSE",
+      "9": "HELLER",
+      "10": "NEKTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Olympiske leker",
+      "2": "svindleren",
+      "3": "vingle",
+      "4": "amme",
+      "5": "vannpytt",
+      "6": "hiksting",
+      "7": "skipbruddet",
+      "8": "mobiliserte"
+    },
+    "down": {
+      "1": "by i bibelen",
+      "2": "uintelligent",
+      "3": "skrapet",
+      "4": "dufte",
+      "5": "Litium",
+      "6": "skratte",
+      "7": "løft",
+      "8": "dumpe",
+      "9": "helst",
+      "10": "refusere"
+    }
+  }
+}

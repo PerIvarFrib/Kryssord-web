@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 15:31:34",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.##.",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###A#J##S",
+    "#SYMBOLSK",
+    "#ANTE#ECU",
+    "UNG#GYGER",
+    "#SENATENE",
+    "#ELEVENE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SYMBOLSK",
+      "2": "ANTE",
+      "3": "ECU",
+      "4": "UNG",
+      "5": "GYGER",
+      "6": "SENATENE",
+      "7": "ELEVENE"
+    },
+    "down": {
+      "1": "SANSE",
+      "2": "YNGEL",
+      "3": "AMT",
+      "4": "NE",
+      "5": "BEGAV",
+      "6": "JO",
+      "7": "YTE",
+      "8": "LEGEN",
+      "9": "SCENE",
+      "10": "SKURE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "figurlig",
+      "2": "hørte",
+      "3": "fransk mynt",
+      "4": "daggammel",
+      "5": "mytologisk skapning",
+      "6": "forsamling",
+      "7": "skolebarna"
+    },
+    "down": {
+      "1": "persipere",
+      "2": "ungfisk",
+      "3": "Dansk fylke",
+      "4": "Neon",
+      "5": "rømmet fra",
+      "6": "javel",
+      "7": "tilføre",
+      "8": "homeopaten",
+      "9": "evenement",
+      "10": "reingjøre"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "synonymet",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "fallback-pair",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "fallback-pair",
+      "4": "manual",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "model+db"
+    }
+  }
+}

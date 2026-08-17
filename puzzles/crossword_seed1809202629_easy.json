@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 13:18:22",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.##.##",
+    "#........",
+    ".........",
+    "#....#...",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###I##P##",
+    "#BALLTREA",
+    "FORSIRING",
+    "#LEKK#SED",
+    "PENETRERE",
+    "#TAS#YRER"
+  ],
+  "answers": {
+    "across": {
+      "1": "BALLTREA",
+      "2": "FORSIRING",
+      "3": "LEKK",
+      "4": "SED",
+      "5": "PENETRERE",
+      "6": "TAS",
+      "7": "YRER"
+    },
+    "down": {
+      "1": "BOLET",
+      "2": "ARENA",
+      "3": "ILSKES",
+      "4": "LIKT",
+      "5": "TR",
+      "6": "RY",
+      "7": "PRISER",
+      "8": "ENERE",
+      "9": "AGDER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "slagvåpnene",
+      "2": "dekorering",
+      "3": "sprukken",
+      "4": "kutyme",
+      "5": "gjennomtrenge",
+      "6": "kverkes",
+      "7": "vrimler"
+    },
+    "down": {
+      "1": "hybelen",
+      "2": "sportshall",
+      "3": "raserier",
+      "4": "identisk",
+      "5": "Tyrkia",
+      "6": "prestisje",
+      "7": "momser",
+      "8": "bestemenn",
+      "9": "landskap i norge"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "model+db",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "synonymordboka",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "synonymordboka",
+      "9": "model+db"
+    }
+  }
+}

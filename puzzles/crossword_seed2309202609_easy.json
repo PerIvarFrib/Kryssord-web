@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 14:50:15",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#..#.",
+    "#........",
+    "#....#...",
+    "...#.....",
+    ".........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "###A#NB#E",
+    "#LENSMANN",
+    "#EKTE#NOK",
+    "VIS#ISETE",
+    "GEORGINER",
+    "#NSB#PEN#"
+  ],
+  "answers": {
+    "across": {
+      "1": "NB",
+      "2": "LENSMANN",
+      "3": "EKTE",
+      "4": "NOK",
+      "5": "VIS",
+      "6": "ISETE",
+      "7": "GEORGINER",
+      "8": "NSB",
+      "9": "PEN"
+    },
+    "down": {
+      "1": "VG",
+      "2": "LEIEN",
+      "3": "EKSOS",
+      "4": "ANT",
+      "5": "RB",
+      "6": "SEIG",
+      "7": "NM",
+      "8": "SIP",
+      "9": "BANENE",
+      "10": "NOTEN",
+      "11": "ENKER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Nota bene",
+      "2": "polititjenestemann",
+      "3": "legitim",
+      "4": "Norsk krone",
+      "5": "prosedyre",
+      "6": "tilfrosset",
+      "7": "kurvplanter",
+      "8": "transportør",
+      "9": "underbar"
+    },
+    "down": {
+      "1": "dagbladet",
+      "2": "sofaen",
+      "3": "avgass",
+      "4": "travel",
+      "5": "Rubidium",
+      "6": "bøyelig",
+      "7": "Norgesmesterskap",
+      "8": "hulk",
+      "9": "rundingene",
+      "10": "memoet",
+      "11": "alenemødre"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "triple-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "cross-verified",
+      "11": "model+db"
+    }
+  }
+}

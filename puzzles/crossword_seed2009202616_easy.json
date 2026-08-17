@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 14:13:36",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#.###",
+    ".........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##IX#K###",
+    "MANIKYREN",
+    "OND#URENE",
+    "#BIER#POP",
+    "SUGGERERE",
+    "#DOG#ATM#"
+  ],
+  "answers": {
+    "across": {
+      "1": "IX",
+      "2": "MANIKYREN",
+      "3": "OND",
+      "4": "URENE",
+      "5": "BIER",
+      "6": "POP",
+      "7": "SUGGERERE",
+      "8": "DOG",
+      "9": "ATM"
+    },
+    "down": {
+      "1": "MO",
+      "2": "ANBUD",
+      "3": "INDIGO",
+      "4": "XI",
+      "5": "EGG",
+      "6": "KURE",
+      "7": "KYR",
+      "8": "RA",
+      "9": "REPET",
+      "10": "ENORM",
+      "11": "NEPE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "9",
+      "2": "håndpleien",
+      "3": "forrædersk",
+      "4": "tårnura",
+      "5": "somler",
+      "6": "musikktype",
+      "7": "hypnotisere",
+      "8": "enda",
+      "9": "Minibank"
+    },
+    "down": {
+      "1": "Molybden",
+      "2": "offert",
+      "3": "blåfarge",
+      "4": "11",
+      "5": "frise",
+      "6": "helbrede",
+      "7": "kviger",
+      "8": "Radium",
+      "9": "vaieren",
+      "10": "veldig stor",
+      "11": "kålplante"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "cross-verified",
+      "9": "manual"
+    },
+    "down": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "manual",
+      "5": "synonymet",
+      "6": "model+db",
+      "7": "triple-verified",
+      "8": "manual",
+      "9": "triple-verified",
+      "10": "model+db",
+      "11": "model+db"
+    }
+  }
+}

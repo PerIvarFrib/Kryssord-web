@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-02 09:30:37",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "###S#C#K#",
+    "#REAKSJON",
+    "#YNKA#URA",
+    "USD#SKROG",
+    "#TEATRENE",
+    "LANG#ETAT"
+  ],
+  "answers": {
+    "across": {
+      "1": "REAKSJON",
+      "2": "YNKA",
+      "3": "URA",
+      "4": "USD",
+      "5": "SKROG",
+      "6": "TEATRENE",
+      "7": "LANG",
+      "8": "ETAT"
+    },
+    "down": {
+      "1": "RYSTA",
+      "2": "ENDEN",
+      "3": "SAK",
+      "4": "AG",
+      "5": "KAST",
+      "6": "CS",
+      "7": "KRE",
+      "8": "JURET",
+      "9": "KORONA",
+      "10": "NAGET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "innvirkning",
+      "2": "klynkene",
+      "3": "klokkeradioen",
+      "4": "Amerikansk dollar",
+      "5": "korpus",
+      "6": "musikalene",
+      "7": "milevid",
+      "8": "arbeidslokale"
+    },
+    "down": {
+      "1": "forskrekka",
+      "2": "stansen",
+      "3": "rettstvist",
+      "4": "Sølv",
+      "5": "pivotere",
+      "6": "Cesium",
+      "7": "firfoting",
+      "8": "melkekjertelen",
+      "9": "syklus",
+      "10": "skuffelsen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "triple-verified",
+      "7": "model+db",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "synonymet",
+      "4": "manual",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "model+db"
+    }
+  }
+}

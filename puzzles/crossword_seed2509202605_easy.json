@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 15:13:48",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#.###",
+    "#........",
+    "#........",
+    "..#......",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "##UA#E###",
+    "#ARBEIDDE",
+    "#STYREREN",
+    "JP#STREBE",
+    "#ESSENSER",
+    "KRI#TEST#"
+  ],
+  "answers": {
+    "across": {
+      "1": "UA",
+      "2": "ARBEIDDE",
+      "3": "STYREREN",
+      "4": "JP",
+      "5": "STREBE",
+      "6": "ESSENSER",
+      "7": "KRI",
+      "8": "TEST"
+    },
+    "down": {
+      "1": "ASPER",
+      "2": "URT",
+      "3": "SI",
+      "4": "ABYSS",
+      "5": "ERTET",
+      "6": "EIERNE",
+      "7": "DRESS",
+      "8": "DEBET",
+      "9": "ENER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Ukraina",
+      "2": "jobbete",
+      "3": "forvalteren",
+      "4": "Japan",
+      "5": "hige",
+      "6": "parfymer",
+      "7": "purre",
+      "8": "stikkprøve"
+    },
+    "down": {
+      "1": "trær",
+      "2": "erteplante",
+      "3": "Solfège-tone",
+      "4": "Avgrunnen",
+      "5": "hetset",
+      "6": "proprietærene",
+      "7": "militærdrakt",
+      "8": "tilgodehavende",
+      "9": "bestemenn"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "manual",
+      "5": "triple-verified",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "fallback-pair",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "fallback-pair",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "cross-verified",
+      "9": "synonymordboka"
+    }
+  }
+}

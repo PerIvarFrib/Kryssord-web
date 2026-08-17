@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 12:51:25",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#####",
+    "#........",
+    "...#.....",
+    "#........",
+    ".........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "##SN#####",
+    "#SKYSSENE",
+    "STI#KULER",
+    "#USKYLDIG",
+    "OMKRETSER",
+    "#TOER#TRE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SN",
+      "2": "SKYSSENE",
+      "3": "STI",
+      "4": "KULER",
+      "5": "USKYLDIG",
+      "6": "OMKRETSER",
+      "7": "TOER",
+      "8": "TRE"
+    },
+    "down": {
+      "1": "STUMT",
+      "2": "SKISKO",
+      "3": "NY",
+      "4": "KRE",
+      "5": "SKYER",
+      "6": "SULT",
+      "7": "ELDST",
+      "8": "NEIER",
+      "9": "ERGRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Tinn",
+      "2": "spedisjonene",
+      "3": "motorvei",
+      "4": "globuser",
+      "5": "ubesmittet",
+      "6": "utstrekninger",
+      "7": "premievinner",
+      "8": "vedkubbe"
+    },
+    "down": {
+      "1": "ordløst",
+      "2": "sportsskotøy",
+      "3": "moteriktig",
+      "4": "firfoting",
+      "5": "flimmer",
+      "6": "usselhet",
+      "7": "først",
+      "8": "knikser",
+      "9": "forarge"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "synonymet",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "triple-verified"
+    }
+  }
+}

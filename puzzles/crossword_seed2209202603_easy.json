@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 14:31:37",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..##.#",
+    "#........",
+    "#...#....",
+    "...#.....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###OL##R#",
+    "#AFROBEAT",
+    "#REM#LINE",
+    "VEI#TIMES",
+    "MARKEDENE",
+    "#LARVENE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OL",
+      "2": "AFROBEAT",
+      "3": "REM",
+      "4": "LINE",
+      "5": "VEI",
+      "6": "TIMES",
+      "7": "MARKEDENE",
+      "8": "LARVENE"
+    },
+    "down": {
+      "1": "VM",
+      "2": "AREAL",
+      "3": "FEIRA",
+      "4": "ORM",
+      "5": "KR",
+      "6": "LO",
+      "7": "TEV",
+      "8": "BLIDE",
+      "9": "EIMEN",
+      "10": "RANENE",
+      "11": "TESE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Olympiske leker",
+      "2": "Afrikansk musikkssjanger",
+      "3": "wire",
+      "4": "galon",
+      "5": "krøttersti",
+      "6": "tids",
+      "7": "basarene",
+      "8": "makkene"
+    },
+    "down": {
+      "1": "Verdensmesterskap",
+      "2": "lokalitet",
+      "3": "berømmet",
+      "4": "snok",
+      "5": "Norsk valuta",
+      "6": "kniste",
+      "7": "vellukt",
+      "8": "joviale",
+      "9": "stanken",
+      "10": "tyveriene",
+      "11": "læresetning"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "fallback-pair",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "synonymordboka",
+      "8": "model+db",
+      "9": "triple-verified",
+      "10": "model+db",
+      "11": "triple-verified"
+    }
+  }
+}

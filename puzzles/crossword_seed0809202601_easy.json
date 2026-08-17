@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 08:42:29",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.###.#.",
+    "#........",
+    "#.....#..",
+    "#........",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "##J###Z#B",
+    "#RESTANSE",
+    "#AKTIV#IV",
+    "#SKANSENE",
+    "#PENDLING",
+    "BARK#ODE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "RESTANSE",
+      "2": "AKTIV",
+      "3": "IV",
+      "4": "SKANSENE",
+      "5": "PENDLING",
+      "6": "BARK",
+      "7": "ODE"
+    },
+    "down": {
+      "1": "RASPA",
+      "2": "JEKKER",
+      "3": "STANK",
+      "4": "TIND",
+      "5": "AVSLO",
+      "6": "ZN",
+      "7": "EID",
+      "8": "SINNE",
+      "9": "BEVEG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "restbeløp",
+      "2": "artistisk",
+      "3": "4",
+      "4": "befestningene",
+      "5": "reising",
+      "6": "vedkubbe",
+      "7": "serenade"
+    },
+    "down": {
+      "1": "sleiket",
+      "2": "donkrafter",
+      "3": "godlukt",
+      "4": "bergtopp",
+      "5": "tilbakeviste",
+      "6": "Sink",
+      "7": "innehatt",
+      "8": "forbitrelse",
+      "9": "forled"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "cross-verified"
+    }
+  }
+}

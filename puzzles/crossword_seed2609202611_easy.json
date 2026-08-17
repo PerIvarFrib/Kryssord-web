@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 15:24:14",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#..###.##",
+    "#........",
+    "#........",
+    "..#......",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#BR###K##",
+    "#RISIKOER",
+    "#AKTSOMME",
+    "MG#ABSINT",
+    "#DEKRETET",
+    "#ASKE#ETA"
+  ],
+  "answers": {
+    "across": {
+      "1": "BR",
+      "2": "RISIKOER",
+      "3": "AKTSOMME",
+      "4": "MG",
+      "5": "ABSINT",
+      "6": "DEKRETET",
+      "7": "ASKE",
+      "8": "ETA"
+    },
+    "down": {
+      "1": "BRAGDA",
+      "2": "RIK",
+      "3": "ES",
+      "4": "STAKK",
+      "5": "ISBRE",
+      "6": "KOSE",
+      "7": "KOMITE",
+      "8": "EMNET",
+      "9": "RETTA"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Brom",
+      "2": "risker",
+      "3": "tilstede",
+      "4": "Magnesium",
+      "5": "brennevin",
+      "6": "sirkulæret",
+      "7": "sot",
+      "8": "Gresk bokstav"
+    },
+    "down": {
+      "1": "heltegjerninga",
+      "2": "kapitalsterk",
+      "3": "Spania",
+      "4": "ballkjole",
+      "5": "innlandsis",
+      "6": "kjæle",
+      "7": "konklave",
+      "8": "objektet",
+      "9": "etterprøvd"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "synonymet",
+      "4": "manual",
+      "5": "fallback-pair",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "manual"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "cross-verified",
+      "9": "synonymet"
+    }
+  }
+}

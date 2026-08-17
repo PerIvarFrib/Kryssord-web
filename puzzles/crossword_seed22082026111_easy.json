@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-14 00:37:43",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##.##.",
+    "......#..",
+    "#........",
+    "..#.....#",
+    "#....#...",
+    ".........",
+    "#..##....",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "##U##F##F",
+    "OBSKUR#VY",
+    "#RANGERER",
+    "NU#ARMER#",
+    "#KULE#KNA",
+    "OBELISKEN",
+    "#AR##VERD",
+    "#REALISER",
+    "HENSYN#NE"
+  ],
+  "answers": {
+    "across": {
+      "1": "OBSKUR",
+      "2": "VY",
+      "3": "RANGERER",
+      "4": "NU",
+      "5": "ARMER",
+      "6": "KULE",
+      "7": "KNA",
+      "8": "OBELISKEN",
+      "9": "AR",
+      "10": "VERD",
+      "11": "REALISER",
+      "12": "HENSYN",
+      "13": "NE"
+    },
+    "down": {
+      "1": "BRUKBARE",
+      "2": "USA",
+      "3": "UEREN",
+      "4": "KNALL",
+      "5": "AS",
+      "6": "UGREI",
+      "7": "LY",
+      "8": "FREM",
+      "9": "SVIN",
+      "10": "REKKES",
+      "11": "VERNEREN",
+      "12": "FYR",
+      "13": "ANDRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "esoterisk",
+      "2": "kjangs",
+      "3": "klassifiserer",
+      "4": "Gresk bokstav",
+      "5": "stabiliser",
+      "6": "sprettball",
+      "7": "knuge",
+      "8": "monumentet",
+      "9": "Argon",
+      "10": "notering",
+      "11": "gjennomfør",
+      "12": "nestekjærlighet",
+      "13": "Neon"
+    },
+    "down": {
+      "1": "gangbare",
+      "2": "Amerikas forente stater",
+      "3": "matfisken",
+      "4": "eksplosjon",
+      "5": "Aksjeselskap",
+      "6": "intrikat",
+      "7": "fristed",
+      "8": "fram",
+      "9": "grisunger",
+      "10": "doneres",
+      "11": "beskytteren",
+      "12": "lysbringer",
+      "13": "øvrige"
+    }
+  }
+}

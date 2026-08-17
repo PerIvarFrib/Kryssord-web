@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 16:59:41",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#.##.#",
+    "#........",
+    "#...#....",
+    "#........",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##S#U##P#",
+    "#KATTEPUS",
+    "#ALE#DELT",
+    "#FORLISTE",
+    "#FORAKTEN",
+    "BENA#TORG"
+  ],
+  "answers": {
+    "across": {
+      "1": "KATTEPUS",
+      "2": "ALE",
+      "3": "DELT",
+      "4": "FORLISTE",
+      "5": "FORAKTEN",
+      "6": "BENA",
+      "7": "TORG"
+    },
+    "down": {
+      "1": "KAFFE",
+      "2": "SALOON",
+      "3": "TERRA",
+      "4": "UT",
+      "5": "LA",
+      "6": "EDIKT",
+      "7": "PESTO",
+      "8": "PULTER",
+      "9": "STENG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "hunnkatt",
+      "2": "amme",
+      "3": "atskilt",
+      "4": "kullseilte",
+      "5": "forhånelsen",
+      "6": "knoklene",
+      "7": "marknad"
+    },
+    "down": {
+      "1": "frokostdrikk",
+      "2": "Vill-vest-bar",
+      "3": "jordklode",
+      "4": "fram",
+      "5": "Solfège-tone",
+      "6": "bekjentgjørelse",
+      "7": "grønn saus",
+      "8": "skolebenker",
+      "9": "stopp igjen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "fallback-pair",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "fallback-pair",
+      "8": "cross-verified",
+      "9": "model+db"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 16:46:20",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.###.#",
+    "#........",
+    ".........",
+    "....#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "###R###T#",
+    "#SKADEBOT",
+    "STASELIGE",
+    "MOPP#SLET",
+    "#FRESKENE",
+    "#FETE#REN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKADEBOT",
+      "2": "STASELIGE",
+      "3": "MOPP",
+      "4": "SLET",
+      "5": "FRESKENE",
+      "6": "FETE",
+      "7": "REN"
+    },
+    "down": {
+      "1": "SM",
+      "2": "STOFF",
+      "3": "KAPRE",
+      "4": "RASPET",
+      "5": "DE",
+      "6": "SE",
+      "7": "ELSK",
+      "8": "BILER",
+      "9": "TOGENE",
+      "10": "TETEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "erstatningssum",
+      "2": "elegante",
+      "3": "vaskeutstyr",
+      "4": "raknet",
+      "5": "raderingene",
+      "6": "bjeffe",
+      "7": "aseptisk"
+    },
+    "down": {
+      "1": "Samarium",
+      "2": "khat",
+      "3": "oppbringe",
+      "4": "sleiket",
+      "5": "Tyskland",
+      "6": "Sverige",
+      "7": "ha kjær",
+      "8": "jeeper",
+      "9": "kortesjene",
+      "10": "føringen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "triple-verified",
+      "6": "synonymordboka",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "manual",
+      "6": "manual",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "model+db"
+    }
+  }
+}

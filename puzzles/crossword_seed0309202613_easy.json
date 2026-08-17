@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-02 13:55:16",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    "#...#....",
+    ".....#...",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####NB##S",
+    "#AKSIOMET",
+    "#TJA#KOIE",
+    "PLAGE#PEL",
+    "TAPETSERT",
+    "#STREVDE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "NB",
+      "2": "AKSIOMET",
+      "3": "TJA",
+      "4": "KOIE",
+      "5": "PLAGE",
+      "6": "PEL",
+      "7": "TAPETSERT",
+      "8": "STREVDE"
+    },
+    "down": {
+      "1": "PT",
+      "2": "ATLAS",
+      "3": "KJAPT",
+      "4": "SAGER",
+      "5": "NI",
+      "6": "ETE",
+      "7": "BOK",
+      "8": "SV",
+      "9": "MOPED",
+      "10": "EIERE",
+      "11": "STELT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Nota bene",
+      "2": "postulatet",
+      "3": "replikker",
+      "4": "brukshus",
+      "5": "svøpe",
+      "6": "sveig",
+      "7": "bekledd",
+      "8": "jobba"
+    },
+    "down": {
+      "1": "Portugal",
+      "2": "kartbok",
+      "3": "lynraskt",
+      "4": "klipper",
+      "5": "Nikkel",
+      "6": "jafse",
+      "7": "diktsamling",
+      "8": "Sørvest",
+      "9": "sparkesykkel",
+      "10": "proprietærer",
+      "11": "dandert"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "synonymet",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "synonymet",
+      "7": "synonymordboka",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "manual",
+      "9": "triple-verified",
+      "10": "triple-verified",
+      "11": "cross-verified"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 08:32:58",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.##..##.",
+    "#........",
+    "#....#...",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#S##AH##U",
+    "#TILVEKST",
+    "#ADEL#VEI",
+    "ANIS#BARN",
+    "#KOSTELIG",
+    "#ATEISME#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AH",
+      "2": "TILVEKST",
+      "3": "ADEL",
+      "4": "VEI",
+      "5": "ANIS",
+      "6": "BARN",
+      "7": "KOSTELIG",
+      "8": "ATEISME"
+    },
+    "down": {
+      "1": "STANKA",
+      "2": "IDIOT",
+      "3": "LESSE",
+      "4": "AVL",
+      "5": "TI",
+      "6": "HE",
+      "7": "BES",
+      "8": "KVALM",
+      "9": "SERIE",
+      "10": "UTING"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "godlyd",
+      "2": "ekspansjon",
+      "3": "nobilitet",
+      "4": "krøttersti",
+      "5": "krydder",
+      "6": "familieforøkelse",
+      "7": "fornøyelig",
+      "8": "livsanskuelse"
+    },
+    "down": {
+      "1": "dunstet",
+      "2": "dumskalle",
+      "3": "laste av",
+      "4": "framkall",
+      "5": "Titan",
+      "6": "Helium",
+      "7": "appelleres",
+      "8": "indisponert",
+      "9": "sekvens",
+      "10": "uvane"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "fallback-pair",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "fallback-pair",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "manual",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "cross-verified",
+      "9": "cross-verified",
+      "10": "model+db"
+    }
+  }
+}

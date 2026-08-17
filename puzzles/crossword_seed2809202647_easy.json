@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 16:40:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.##.",
+    "#........",
+    "#........",
+    "#....#...",
+    "#........",
+    "......#.."
+  ],
+  "solved_layout": [
+    "###L#O##K",
+    "#OVERDRAR",
+    "#METODENE",
+    "#GRID#AKT",
+    "#INNDELES",
+    "KRAGER#TE"
+  ],
+  "answers": {
+    "across": {
+      "1": "OVERDRAR",
+      "2": "METODENE",
+      "3": "GRID",
+      "4": "AKT",
+      "5": "INNDELES",
+      "6": "KRAGER",
+      "7": "TE"
+    },
+    "down": {
+      "1": "OMGIR",
+      "2": "VERNA",
+      "3": "LETING",
+      "4": "RODDE",
+      "5": "ODD",
+      "6": "ER",
+      "7": "REAL",
+      "8": "ANKET",
+      "9": "KRETSE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "overleverer",
+      "2": "strategiene",
+      "3": "avlat",
+      "4": "litografi",
+      "5": "differensieres",
+      "6": "skuldre",
+      "7": "utstille"
+    },
+    "down": {
+      "1": "omslutter",
+      "2": "bevoktet",
+      "3": "søking",
+      "4": "padlet",
+      "5": "eldritch",
+      "6": "utgjør",
+      "7": "renhårig",
+      "8": "beklagd seg",
+      "9": "sirkle"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "synonymordboka",
+      "6": "synonymordboka",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "triple-verified"
+    }
+  }
+}

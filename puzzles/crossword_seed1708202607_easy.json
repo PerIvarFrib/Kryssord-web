@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-08-05 22:04:30",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#..#",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "###DC#LA#",
+    "#BRILJERT",
+    "#ØYE#UTRU",
+    "ARK#AKTER",
+    "#SEANSENE",
+    "#ARGT#REN"
+  ],
+  "answers": {
+    "across": {
+      "1": "DC",
+      "2": "LA",
+      "3": "BRILJERT",
+      "4": "ØYE",
+      "5": "UTRU",
+      "6": "ARK",
+      "7": "AKTER",
+      "8": "SEANSENE",
+      "9": "ARGT",
+      "10": "REN"
+    },
+    "down": {
+      "1": "BØRSA",
+      "2": "RYKER",
+      "3": "DIE",
+      "4": "AG",
+      "5": "CL",
+      "6": "ANT",
+      "7": "JUKS",
+      "8": "LETTER",
+      "9": "ARRENE",
+      "10": "TUREN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "600",
+      "2": "Solfège-tone",
+      "3": "skrytt",
+      "4": "synsorgan",
+      "5": "usannferdig",
+      "6": "bilag",
+      "7": "arkivalier",
+      "8": "framføringene",
+      "9": "illsint",
+      "10": "aseptisk"
+    },
+    "down": {
+      "1": "musketten",
+      "2": "rakner",
+      "3": "suge",
+      "4": "Sølv",
+      "5": "Klor",
+      "6": "travel",
+      "7": "narreri",
+      "8": "svever",
+      "9": "stilkene",
+      "10": "togreisa"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "manual",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "synonymet",
+      "4": "manual",
+      "5": "manual",
+      "6": "synonymordboka",
+      "7": "triple-verified",
+      "8": "synonymet",
+      "9": "synonymet",
+      "10": "triple-verified"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 14:27:01",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..###.",
+    "#........",
+    "....#....",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###HF###U",
+    "#SFINKSER",
+    "STEV#VENN",
+    "BRA#DENGE",
+    "#AVBILDER",
+    "#KLOSTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "HF",
+      "2": "SFINKSER",
+      "3": "STEV",
+      "4": "VENN",
+      "5": "BRA",
+      "6": "DENGE",
+      "7": "AVBILDER",
+      "8": "KLOSTER"
+    },
+    "down": {
+      "1": "SB",
+      "2": "STRAK",
+      "3": "FEAVL",
+      "4": "HIV",
+      "5": "BO",
+      "6": "FN",
+      "7": "DIS",
+      "8": "KVELT",
+      "9": "SENDE",
+      "10": "ENGER",
+      "11": "URNER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Hafnium",
+      "2": "griffer",
+      "3": "omkved",
+      "4": "kompis",
+      "5": "anvendelig",
+      "6": "pryle",
+      "7": "visualiserer",
+      "8": "monasterium"
+    },
+    "down": {
+      "1": "Antimon",
+      "2": "ubrutt",
+      "3": "krøtteroppdrett",
+      "4": "løft",
+      "5": "fristed",
+      "6": "Forente nasjoner",
+      "7": "flimmer",
+      "8": "massakrert",
+      "9": "overbringe",
+      "10": "grønnsvær",
+      "11": "amforaer"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "synonymet",
+      "7": "triple-verified",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "synonymordboka",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "synonymet",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "cross-verified",
+      "11": "cross-verified"
+    }
+  }
+}

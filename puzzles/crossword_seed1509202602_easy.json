@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 11:47:28",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..#.#",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##K#MD#G#",
+    "#ANGIVERI",
+    "TSAR#DRAS",
+    "#IBIS#OSE",
+    "#ABSORBER",
+    "#TAKSERT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MD",
+      "2": "ANGIVERI",
+      "3": "TSAR",
+      "4": "DRAS",
+      "5": "IBIS",
+      "6": "OSE",
+      "7": "ABSORBER",
+      "8": "TAKSERT"
+    },
+    "down": {
+      "1": "ASIAT",
+      "2": "KNABBA",
+      "3": "GRISK",
+      "4": "MI",
+      "5": "SOS",
+      "6": "DVD",
+      "7": "RE",
+      "8": "EROBR",
+      "9": "GRASET",
+      "10": "ISER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "1500",
+      "2": "falskhet",
+      "3": "kalif",
+      "4": "treneres",
+      "5": "storkefugl",
+      "6": "dufte",
+      "7": "assimiler",
+      "8": "evaluert"
+    },
+    "down": {
+      "1": "thailending",
+      "2": "nasket",
+      "3": "gnieraktig",
+      "4": "Solfège-tone",
+      "5": "Nødsignal",
+      "6": "Filmplate",
+      "7": "Solfège-tone",
+      "8": "overvinn",
+      "9": "vegetasjonen",
+      "10": "klaker"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "synonymordboka",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "synonymordboka",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "manual",
+      "6": "manual",
+      "7": "manual",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "synonymordboka"
+    }
+  }
+}

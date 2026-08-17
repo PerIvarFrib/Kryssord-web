@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 08:53:16",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#.#.",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###AC#S#U",
+    "#STRUKTUR",
+    "#KOK#REST",
+    "KUN#LEKSE",
+    "#BENYTTER",
+    "#BRENSEL#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AC",
+      "2": "STRUKTUR",
+      "3": "KOK",
+      "4": "REST",
+      "5": "KUN",
+      "6": "LEKSE",
+      "7": "BENYTTER",
+      "8": "BRENSEL"
+    },
+    "down": {
+      "1": "SKUBB",
+      "2": "TONER",
+      "3": "ARK",
+      "4": "NE",
+      "5": "CU",
+      "6": "LYN",
+      "7": "KRETS",
+      "8": "STEKTE",
+      "9": "USSEL",
+      "10": "URTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Aktinium",
+      "2": "organisering",
+      "3": "fres",
+      "4": "fossil",
+      "5": "eneste",
+      "6": "hjemmearbeid",
+      "7": "anvender",
+      "8": "vedkubbe"
+    },
+    "down": {
+      "1": "puff",
+      "2": "melodonter",
+      "3": "bilag",
+      "4": "Neon",
+      "5": "Kobber",
+      "6": "lysblink",
+      "7": "runding",
+      "8": "sauterte",
+      "9": "falleferdig",
+      "10": "bonsaier"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "manual",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "synonymet"
+    }
+  }
+}

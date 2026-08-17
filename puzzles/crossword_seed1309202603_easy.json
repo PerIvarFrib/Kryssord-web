@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 10:45:36",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.###.#.",
+    ".........",
+    "#........",
+    "#...#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "##K###A#B",
+    "SILKEPUTA",
+    "#NORMALEN",
+    "#FRI#RAND",
+    "#ATLETENE",
+    "#MELD#REN"
+  ],
+  "answers": {
+    "across": {
+      "1": "SILKEPUTA",
+      "2": "NORMALEN",
+      "3": "FRI",
+      "4": "RAND",
+      "5": "ATLETENE",
+      "6": "MELD",
+      "7": "REN"
+    },
+    "down": {
+      "1": "INFAM",
+      "2": "KLORTE",
+      "3": "KRILL",
+      "4": "EM",
+      "5": "ED",
+      "6": "PART",
+      "7": "AULAER",
+      "8": "TENNE",
+      "9": "BANDEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "puten",
+      "2": "kuranten",
+      "3": "ubundet",
+      "4": "linning",
+      "5": "toppidrettsmennene",
+      "6": "advar",
+      "7": "aseptisk"
+    },
+    "down": {
+      "1": "daddelverdig",
+      "2": "haka",
+      "3": "lite sjødyr",
+      "4": "Europamesterskap",
+      "5": "trylleformel",
+      "6": "dose",
+      "7": "forelesningssaler",
+      "8": "oppflamme",
+      "9": "populasjonen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "synonymet",
+      "3": "synonymet",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "synonymet",
+      "3": "model+db",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "synonymet",
+      "7": "triple-verified",
+      "8": "triple-verified",
+      "9": "triple-verified"
+    }
+  }
+}

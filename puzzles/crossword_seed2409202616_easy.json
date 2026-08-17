@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 15:06:52",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    ".....#...",
+    "...#.....",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###D#M#V#",
+    "#STATUSEN",
+    "PLAGE#KRY",
+    "BOM#GLASS",
+    "#SIGNERTE",
+    "#SLI#SPER"
+  ],
+  "answers": {
+    "across": {
+      "1": "STATUSEN",
+      "2": "PLAGE",
+      "3": "KRY",
+      "4": "BOM",
+      "5": "GLASS",
+      "6": "SIGNERTE",
+      "7": "SLI",
+      "8": "SPER"
+    },
+    "down": {
+      "1": "PB",
+      "2": "SLOSS",
+      "3": "TAMIL",
+      "4": "DAG",
+      "5": "GI",
+      "6": "TEGN",
+      "7": "MU",
+      "8": "LES",
+      "9": "SKARP",
+      "10": "VERSTE",
+      "11": "NYSER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "verdigheten",
+      "2": "svøpe",
+      "3": "innbilsk",
+      "4": "mønsås",
+      "5": "trekasse",
+      "6": "påtegna",
+      "7": "grisk",
+      "8": "fusjonerer"
+    },
+    "down": {
+      "1": "Bly",
+      "2": "rivaliserte",
+      "3": "indisk",
+      "4": "høstjevndøgn",
+      "5": "donere",
+      "6": "grafem",
+      "7": "Gresk bokstav",
+      "8": "studer",
+      "9": "kløktig",
+      "10": "uhumskeste",
+      "11": "hoster"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "synonymordboka",
+      "7": "cross-verified",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "cross-verified",
+      "9": "synonymet",
+      "10": "model+db",
+      "11": "model+db"
+    }
+  }
+}

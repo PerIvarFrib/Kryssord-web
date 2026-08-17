@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 08:27:43",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.##.#..#",
+    "#........",
+    "....#....",
+    "#........",
+    "#........",
+    "#....#..#"
+  ],
+  "solved_layout": [
+    "#F##C#IR#",
+    "#AVSANNET",
+    "ULIK#ENDA",
+    "#SKRIBLER",
+    "#KLUBBENE",
+    "#TARM#DE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "IR",
+      "2": "AVSANNET",
+      "3": "ULIK",
+      "4": "ENDA",
+      "5": "SKRIBLER",
+      "6": "KLUBBENE",
+      "7": "TARM",
+      "8": "DE"
+    },
+    "down": {
+      "1": "FALSKT",
+      "2": "VIKLA",
+      "3": "SKRUR",
+      "4": "CA",
+      "5": "IBM",
+      "6": "NEBB",
+      "7": "INNLED",
+      "8": "REDENE",
+      "9": "TARE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Iridium",
+      "2": "tilbakeviste",
+      "3": "usammenlignbar",
+      "4": "fremdeles",
+      "5": "noterer",
+      "6": "sverda",
+      "7": "kroppskanal",
+      "8": "Tyskland"
+    },
+    "down": {
+      "1": "usannferdig",
+      "2": "svirret",
+      "3": "vrir",
+      "4": "Kalsium",
+      "5": "dataselskap",
+      "6": "snute",
+      "7": "introduser",
+      "8": "grottene",
+      "9": "sjøplante"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "manual"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "synonymet",
+      "9": "model+db"
+    }
+  }
+}

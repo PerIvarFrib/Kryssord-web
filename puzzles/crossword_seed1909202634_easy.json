@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 13:49:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..##.#",
+    "#........",
+    "...#.....",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###CD##B#",
+    "#PERIFERE",
+    "PIN#ARKET",
+    "ORDE#ESKE",
+    "#KOMPLEKS",
+    "#EGOISME#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CD",
+      "2": "PERIFERE",
+      "3": "PIN",
+      "4": "ARKET",
+      "5": "ORDE",
+      "6": "ESKE",
+      "7": "KOMPLEKS",
+      "8": "EGOISME"
+    },
+    "down": {
+      "1": "PO",
+      "2": "PIRKE",
+      "3": "ENDOG",
+      "4": "CR",
+      "5": "EMO",
+      "6": "DIA",
+      "7": "PI",
+      "8": "FRELS",
+      "9": "EKSEM",
+      "10": "BREKKE",
+      "11": "ETES"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Kompaktplate",
+      "2": "marginaler",
+      "3": "Hemmelig kode",
+      "4": "bilaget",
+      "5": "antyde",
+      "6": "trekasse",
+      "7": "problematisk",
+      "8": "selvopptatthet"
+    },
+    "down": {
+      "1": "Polonium",
+      "2": "trevle",
+      "3": "dessuten",
+      "4": "Krom",
+      "5": "subkultur",
+      "6": "fora",
+      "7": "3,14",
+      "8": "forløs",
+      "9": "overfølsomhet",
+      "10": "briste",
+      "11": "slukes"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "synonymordboka",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "triple-verified",
+      "11": "cross-verified"
+    }
+  }
+}

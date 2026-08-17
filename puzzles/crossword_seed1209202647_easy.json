@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 10:40:48",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.##.##",
+    "#........",
+    ".........",
+    "#.....#..",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#B#U##H##",
+    "#ALTANENE",
+    "BLOKKERES",
+    "#UVISS#PS",
+    "#BEKJEMPA",
+    "#ANKE#BEY"
+  ],
+  "answers": {
+    "across": {
+      "1": "ALTANENE",
+      "2": "BLOKKERES",
+      "3": "UVISS",
+      "4": "PS",
+      "5": "BEKJEMPA",
+      "6": "ANKE",
+      "7": "BEY"
+    },
+    "down": {
+      "1": "BALUBA",
+      "2": "LOVEN",
+      "3": "UTKIKK",
+      "4": "AKSJE",
+      "5": "NESE",
+      "6": "HER",
+      "7": "MB",
+      "8": "NEPPE",
+      "9": "ESSAY"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "verandaene",
+      "2": "forhindres",
+      "3": "tvilrådig",
+      "4": "supplement",
+      "5": "motsto",
+      "6": "beklage",
+      "7": "mogul"
+    },
+    "down": {
+      "1": "lurveleven",
+      "2": "statutten",
+      "3": "patrulje",
+      "4": "kvote",
+      "5": "kjake",
+      "6": "delvis",
+      "7": "dataenhet",
+      "8": "lite trolig",
+      "9": "litterær artikkel"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "synonymordboka",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "model+db"
+    }
+  }
+}

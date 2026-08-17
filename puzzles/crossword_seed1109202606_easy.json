@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-03 09:54:38",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####.#.##",
+    "#........",
+    "#........",
+    "....#....",
+    "#........",
+    "..#......"
+  ],
+  "solved_layout": [
+    "####D#S##",
+    "#USKOLERT",
+    "#HENVISER",
+    "LYTE#KODE",
+    "#REISENDE",
+    "GE#KORGEN"
+  ],
+  "answers": {
+    "across": {
+      "1": "USKOLERT",
+      "2": "HENVISER",
+      "3": "LYTE",
+      "4": "KODE",
+      "5": "REISENDE",
+      "6": "GE",
+      "7": "KORGEN"
+    },
+    "down": {
+      "1": "UHYRE",
+      "2": "SETE",
+      "3": "KNEIK",
+      "4": "DOV",
+      "5": "SO",
+      "6": "LIKER",
+      "7": "SESONG",
+      "8": "REDDE",
+      "9": "TREEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "uutdannet",
+      "2": "refererer",
+      "3": "skavank",
+      "4": "applikasjon",
+      "5": "vandrende",
+      "6": "Germanium",
+      "7": "bagen"
+    },
+    "down": {
+      "1": "kjempestort",
+      "2": "ørelappstol",
+      "3": "bakketopp",
+      "4": "pianissimo",
+      "5": "Solfège-tone",
+      "6": "nyter",
+      "7": "filmtid",
+      "8": "bistå",
+      "9": "løken"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "synonymet",
+      "5": "model+db",
+      "6": "manual",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "cross-verified",
+      "9": "synonymet"
+    }
+  }
+}
