@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 12:19:38",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "...#....."
+  ],
+  "solved_layout": [
+    "##U#SO###",
+    "#STENGSLA",
+    "SALDO#PEN",
+    "#LEE#BEST",
+    "#VILLNISA",
+    "MED#EPLER"
+  ],
+  "answers": {
+    "across": {
+      "1": "SO",
+      "2": "STENGSLA",
+      "3": "SALDO",
+      "4": "PEN",
+      "5": "LEE",
+      "6": "BEST",
+      "7": "VILLNISA",
+      "8": "MED",
+      "9": "EPLER"
+    },
+    "down": {
+      "1": "SALVE",
+      "2": "UTLEID",
+      "3": "EDEL",
+      "4": "SNO",
+      "5": "LE",
+      "6": "OG",
+      "7": "BNP",
+      "8": "SPEIL",
+      "9": "LESSE",
+      "10": "ANTAR"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Solfège-tone",
+      "2": "sperringene",
+      "3": "margin",
+      "4": "underbar",
+      "5": "formå",
+      "6": "vinnere",
+      "7": "krattskogene",
+      "8": "samt",
+      "9": "steinfrukter"
+    },
+    "down": {
+      "1": "remedium",
+      "2": "leaset",
+      "3": "fyrstelig",
+      "4": "slynge",
+      "5": "skratte",
+      "6": "samt",
+      "7": "Bruttonasjonalprodukt",
+      "8": "brennglass",
+      "9": "laste av",
+      "10": "annammer"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "synonymet",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "model+db",
+      "10": "cross-verified"
+    }
+  }
+}

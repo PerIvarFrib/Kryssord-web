@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 10:56:39",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#..##.#",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "#J#GD##S#",
+    "#UTBREDTE",
+    "GRY#OPIUM",
+    "#ISS#OSEN",
+    "#STYRKENE",
+    "#TENNENE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "GD",
+      "2": "UTBREDTE",
+      "3": "GRY",
+      "4": "OPIUM",
+      "5": "ISS",
+      "6": "OSEN",
+      "7": "STYRKENE",
+      "8": "TENNENE"
+    },
+    "down": {
+      "1": "JURIST",
+      "2": "TYSTE",
+      "3": "GB",
+      "4": "SYN",
+      "5": "DRO",
+      "6": "RN",
+      "7": "EPOKE",
+      "8": "DISEN",
+      "9": "STUENE",
+      "10": "EMNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Gadolinium",
+      "2": "propagerte",
+      "3": "bli dag",
+      "4": "marihuana",
+      "5": "romstasjon",
+      "6": "myrraen",
+      "7": "kampåndene",
+      "8": "munndelene"
+    },
+    "down": {
+      "1": "apologet",
+      "2": "utlevere",
+      "3": "Storbritannia",
+      "4": "visjon",
+      "5": "unnslapp",
+      "6": "Radon",
+      "7": "tidbolk",
+      "8": "flimmeret",
+      "9": "gemakkene",
+      "10": "studieområde"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "synonymet",
+      "4": "cross-verified",
+      "5": "fallback-pair",
+      "6": "triple-verified",
+      "7": "triple-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "triple-verified",
+      "8": "synonymet",
+      "9": "model+db",
+      "10": "model+db"
+    }
+  }
+}

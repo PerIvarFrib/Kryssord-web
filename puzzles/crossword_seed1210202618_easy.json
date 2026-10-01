@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 12:35:15",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..###.",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "###MD###G",
+    "#SPIKRENE",
+    "ANE#KONEN",
+    "#ULV#UTSE",
+    "#SLINGRER",
+    "STEILHET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "MD",
+      "2": "SPIKRENE",
+      "3": "ANE",
+      "4": "KONEN",
+      "5": "ULV",
+      "6": "UTSE",
+      "7": "SLINGRER",
+      "8": "STEILHET"
+    },
+    "down": {
+      "1": "SNUST",
+      "2": "PELLE",
+      "3": "MI",
+      "4": "VII",
+      "5": "DKK",
+      "6": "NL",
+      "7": "ROUGH",
+      "8": "ENTRE",
+      "9": "NESET",
+      "10": "GENER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "1500",
+      "2": "boltene",
+      "3": "forfar",
+      "4": "forloveden",
+      "5": "gråbein",
+      "6": "utvelge",
+      "7": "slurer",
+      "8": "stridbarhet"
+    },
+    "down": {
+      "1": "spionert",
+      "2": "pirke",
+      "3": "Solfège-tone",
+      "4": "7",
+      "5": "Dansk krone",
+      "6": "Nederland",
+      "7": "røff",
+      "8": "kontribusjon",
+      "9": "landtunga",
+      "10": "arvefaktorer"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "synonymet",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "manual",
+      "5": "manual",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "cross-verified",
+      "9": "triple-verified",
+      "10": "synonymordboka"
+    }
+  }
+}

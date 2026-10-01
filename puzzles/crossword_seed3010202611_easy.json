@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 16:46:02",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##L#PR###",
+    "#SYMBOLSK",
+    "#KNY#REVY",
+    "KUSKE#GAL",
+    "#BJELLENE",
+    "#BASTANT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "PR",
+      "2": "SYMBOLSK",
+      "3": "KNY",
+      "4": "REVY",
+      "5": "KUSKE",
+      "6": "GAL",
+      "7": "BJELLENE",
+      "8": "BASTANT"
+    },
+    "down": {
+      "1": "SKUBB",
+      "2": "LYNSJA",
+      "3": "MYKES",
+      "4": "PB",
+      "5": "ELT",
+      "6": "ROR",
+      "7": "LA",
+      "8": "LEGEN",
+      "9": "SVANT",
+      "10": "KYLE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Praseodym",
+      "2": "figurlig",
+      "3": "klynking",
+      "4": "syngespill",
+      "5": "forkue",
+      "6": "psykopatisk",
+      "7": "ringeklokkene",
+      "8": "ugjennomtrengelig"
+    },
+    "down": {
+      "1": "puff",
+      "2": "massakrert",
+      "3": "bløtgjøres",
+      "4": "Bly",
+      "5": "preparer",
+      "6": "styrestang",
+      "7": "Solfège-tone",
+      "8": "homeopaten",
+      "9": "forgikk",
+      "10": "slynge"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "synonymet",
+      "6": "synonymet",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "cross-verified"
+    }
+  }
+}

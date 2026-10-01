@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 17:06:52",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..####.",
+    "#........",
+    "#........",
+    "...#....#",
+    "#........",
+    ".....#..."
+  ],
+  "solved_layout": [
+    "##PA####B",
+    "#FORVERRE",
+    "#RETINAEN",
+    "BIT#RIGG#",
+    "#GEDIGENT",
+    "VINYL#REM"
+  ],
+  "answers": {
+    "across": {
+      "1": "PA",
+      "2": "FORVERRE",
+      "3": "RETINAEN",
+      "4": "BIT",
+      "5": "RIGG",
+      "6": "GEDIGENT",
+      "7": "VINYL",
+      "8": "REM"
+    },
+    "down": {
+      "1": "FRIGI",
+      "2": "POETEN",
+      "3": "ART",
+      "4": "DY",
+      "5": "VIRIL",
+      "6": "ENIG",
+      "7": "RAGER",
+      "8": "REGNE",
+      "9": "BEN",
+      "10": "TM"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Protaktinium",
+      "2": "vanskeliggjøre",
+      "3": "netthinna",
+      "4": "munnfull",
+      "5": "tauverk",
+      "6": "kjempestort",
+      "7": "grammofonplate",
+      "8": "wire"
+    },
+    "down": {
+      "1": "løslate",
+      "2": "lyrikeren",
+      "3": "egenhet",
+      "4": "Dysprosium",
+      "5": "mannhaftig",
+      "6": "accord",
+      "7": "strutter",
+      "8": "evaluere",
+      "9": "skjelett",
+      "10": "Tulium"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "triple-verified",
+      "6": "synonymordboka",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "model+db",
+      "10": "manual"
+    }
+  }
+}

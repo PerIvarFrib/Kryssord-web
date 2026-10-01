@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 13:15:15",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    ".....#...",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####AS##F",
+    "#PSYKISKE",
+    "SOPTE#KRE",
+    "#TAR#URAN",
+    "#TREFFENE",
+    "#ETTROMS#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AS",
+      "2": "PSYKISKE",
+      "3": "SOPTE",
+      "4": "KRE",
+      "5": "TAR",
+      "6": "URAN",
+      "7": "TREFFENE",
+      "8": "ETTROMS"
+    },
+    "down": {
+      "1": "POTTE",
+      "2": "SPART",
+      "3": "YTRET",
+      "4": "AKE",
+      "5": "FR",
+      "6": "SI",
+      "7": "UFO",
+      "8": "SKREM",
+      "9": "KRANS",
+      "10": "FEENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Aksjeselskap",
+      "2": "sjelelige",
+      "3": "støvsaug",
+      "4": "firfoting",
+      "5": "velger",
+      "6": "atombrensel",
+      "7": "episodene",
+      "8": "boligtype"
+    },
+    "down": {
+      "1": "trekasse",
+      "2": "rasjonert",
+      "3": "ordla",
+      "4": "kjøre",
+      "5": "Frankrike",
+      "6": "Solfège-tone",
+      "7": "Flyvende tallerken",
+      "8": "forskrekk",
+      "9": "halo",
+      "10": "trolla"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "synonymordboka",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "manual",
+      "7": "manual",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "cross-verified"
+    }
+  }
+}

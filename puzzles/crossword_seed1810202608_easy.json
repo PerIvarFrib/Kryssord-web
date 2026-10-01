@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 13:58:59",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.###.##",
+    ".........",
+    "#........",
+    "..#......",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "##H###V##",
+    "DUELLERES",
+    "#KROATISK",
+    "DL#SKISKO",
+    "#OBJEKTET",
+    "#KRI#KANT"
+  ],
+  "answers": {
+    "across": {
+      "1": "DUELLERES",
+      "2": "KROATISK",
+      "3": "DL",
+      "4": "SKISKO",
+      "5": "OBJEKTET",
+      "6": "KRI",
+      "7": "KANT"
+    },
+    "down": {
+      "1": "UKLOK",
+      "2": "HER",
+      "3": "BR",
+      "4": "LOSJI",
+      "5": "LAKE",
+      "6": "ETIKK",
+      "7": "VRISTA",
+      "8": "ESKEN",
+      "9": "SKOTT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "krangles",
+      "2": "slavisk språk",
+      "3": "Desiliter",
+      "4": "sportsskotøy",
+      "5": "gjenstanden",
+      "6": "purre",
+      "7": "ansats"
+    },
+    "down": {
+      "1": "uintelligent",
+      "2": "delvis",
+      "3": "Brom",
+      "4": "husrom",
+      "5": "abbor",
+      "6": "morallære",
+      "7": "ankelen",
+      "8": "skåla",
+      "9": "skjel"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "manual",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "synonymordboka",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "synonymordboka",
+      "8": "cross-verified",
+      "9": "cross-verified"
+    }
+  }
+}

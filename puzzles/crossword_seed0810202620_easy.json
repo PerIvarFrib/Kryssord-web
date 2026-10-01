@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 11:36:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#.###.",
+    "#........",
+    "#........",
+    "#....#...",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##O#H###Y",
+    "#AVGIFTEN",
+    "#MANNFOLK",
+    "#PLAN#KLE",
+    "#REGENTEN",
+    "MENE#VARE"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVGIFTEN",
+      "2": "MANNFOLK",
+      "3": "PLAN",
+      "4": "KLE",
+      "5": "REGENTEN",
+      "6": "MENE",
+      "7": "VARE"
+    },
+    "down": {
+      "1": "AMPRE",
+      "2": "OVALEN",
+      "3": "GNAGE",
+      "4": "HINNE",
+      "5": "FF",
+      "6": "NV",
+      "7": "TOKTA",
+      "8": "ELLER",
+      "9": "YNKENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "momsen",
+      "2": "sexbombe",
+      "3": "strategi",
+      "4": "dandere",
+      "5": "makthaveren",
+      "6": "forfekte",
+      "7": "medlemskap"
+    },
+    "down": {
+      "1": "gretne",
+      "2": "rundinga",
+      "3": "kryste",
+      "4": "membran",
+      "5": "Fortissimo",
+      "6": "Nordvest",
+      "7": "turneene",
+      "8": "alias",
+      "9": "jamringene"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "model+db",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "fallback-pair",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "manual",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "model+db"
+    }
+  }
+}

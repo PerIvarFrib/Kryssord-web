@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 11:47:47",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#.###.",
+    "#........",
+    "....#....",
+    "#........",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "##K#X###B",
+    "#AVSETTER",
+    "SLIT#ORKA",
+    "#IDYLLISK",
+    "#BERYKTET",
+    "WIRE#ATM#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVSETTER",
+      "2": "SLIT",
+      "3": "ORKA",
+      "4": "IDYLLISK",
+      "5": "BERYKTET",
+      "6": "WIRE",
+      "7": "ATM"
+    },
+    "down": {
+      "1": "ALIBI",
+      "2": "KVIDER",
+      "3": "STYRE",
+      "4": "XE",
+      "5": "LY",
+      "6": "TOLKA",
+      "7": "TRITT",
+      "8": "EKSEM",
+      "9": "BRAKT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "avskjediger",
+      "2": "jobbing",
+      "3": "slitasjene",
+      "4": "landlig",
+      "5": "illgjetent",
+      "6": "kabel",
+      "7": "Minibank"
+    },
+    "down": {
+      "1": "påskudd",
+      "2": "nedstemtheter",
+      "3": "direksjon",
+      "4": "Xenon",
+      "5": "fristed",
+      "6": "fortolket",
+      "7": "ledsagelse",
+      "8": "overfølsomhet",
+      "9": "medført"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "manual"
+    },
+    "down": {
+      "1": "synonymordboka",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "synonymordboka",
+      "8": "cross-verified",
+      "9": "triple-verified"
+    }
+  }
+}

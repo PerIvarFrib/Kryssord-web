@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 11:07:55",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.##.",
+    "#........",
+    ".....#...",
+    "#........",
+    ".........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "###R#P##S",
+    "#GRATIALE",
+    "BRUNE#NAT",
+    "#UTELUKKE",
+    "AVERTERER",
+    "#ENE#REI#"
+  ],
+  "answers": {
+    "across": {
+      "1": "GRATIALE",
+      "2": "BRUNE",
+      "3": "NAT",
+      "4": "UTELUKKE",
+      "5": "AVERTERER",
+      "6": "ENE",
+      "7": "REI"
+    },
+    "down": {
+      "1": "GRUVE",
+      "2": "RUTEN",
+      "3": "RANERE",
+      "4": "TELT",
+      "5": "PI",
+      "6": "UER",
+      "7": "ANKRE",
+      "8": "LAKEI",
+      "9": "SETER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "addisjon",
+      "2": "sautere",
+      "3": "syntese",
+      "4": "ekskludere",
+      "5": "proklamerer",
+      "6": "gudsforlatt",
+      "7": "prosesjon"
+    },
+    "down": {
+      "1": "høl",
+      "2": "autostradaen",
+      "3": "bankrøvere",
+      "4": "bosatt",
+      "5": "3,14",
+      "6": "rødfisk",
+      "7": "dregger",
+      "8": "oppasser",
+      "9": "ørelappstoler"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "triple-verified",
+      "6": "synonymordboka",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "synonymordboka",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "model+db",
+      "7": "synonymet",
+      "8": "triple-verified",
+      "9": "cross-verified"
+    }
+  }
+}

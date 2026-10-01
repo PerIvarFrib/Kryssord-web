@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-09-02 14:03:41",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    "#...#....",
+    ".....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##S#ER##G",
+    "#DOKTORER",
+    "#ISA#VAIE",
+    "UNIKE#SMI",
+    "#GALLUPEN",
+    "#SLETTES#"
+  ],
+  "answers": {
+    "across": {
+      "1": "ER",
+      "2": "DOKTORER",
+      "3": "ISA",
+      "4": "VAIE",
+      "5": "UNIKE",
+      "6": "SMI",
+      "7": "GALLUPEN",
+      "8": "SLETTES"
+    },
+    "down": {
+      "1": "DINGS",
+      "2": "SOSIAL",
+      "3": "KAKLE",
+      "4": "ET",
+      "5": "ELT",
+      "6": "ROV",
+      "7": "UT",
+      "8": "RASPE",
+      "9": "EIMES",
+      "10": "GREIN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "utgjør",
+      "2": "allmennleger",
+      "3": "kulsa",
+      "4": "blafre",
+      "5": "eksepsjonelle",
+      "6": "støpe",
+      "7": "gjennomsynet",
+      "8": "elimineres"
+    },
+    "down": {
+      "1": "duppeditt",
+      "2": "konvivial",
+      "3": "slarve",
+      "4": "slafs",
+      "5": "preparer",
+      "6": "naskeri",
+      "7": "fram",
+      "8": "sleike",
+      "9": "snuses",
+      "10": "kongle"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "cross-verified",
+      "3": "synonymet",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "synonymet",
+      "6": "triple-verified",
+      "7": "synonymordboka",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "synonymet"
+    }
+  }
+}

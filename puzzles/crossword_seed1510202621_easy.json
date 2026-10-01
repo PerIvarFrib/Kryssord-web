@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 13:33:11",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.##.##.#",
+    ".........",
+    "#...#....",
+    "#........",
+    "#........",
+    "#..#....."
+  ],
+  "solved_layout": [
+    "#U##H##S#",
+    "FLUEFISKE",
+    "#ENN#SKUR",
+    "#MIDDELET",
+    "#POTETENE",
+    "#AN#LEDET"
+  ],
+  "answers": {
+    "across": {
+      "1": "FLUEFISKE",
+      "2": "ENN",
+      "3": "SKUR",
+      "4": "MIDDELET",
+      "5": "POTETENE",
+      "6": "AN",
+      "7": "LEDET"
+    },
+    "down": {
+      "1": "ULEMPA",
+      "2": "UNION",
+      "3": "ENDT",
+      "4": "HF",
+      "5": "DEL",
+      "6": "ISETE",
+      "7": "SKLED",
+      "8": "SKUENE",
+      "9": "ERTET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "friluftsaktivitet",
+      "2": "dessuten",
+      "3": "snøvær",
+      "4": "formuen",
+      "5": "jordepla",
+      "6": "prefiks",
+      "7": "forestått"
+    },
+    "down": {
+      "1": "skavanken",
+      "2": "liga",
+      "3": "sluttført",
+      "4": "Hafnium",
+      "5": "bolk",
+      "6": "tilfrosset",
+      "7": "rutsjet",
+      "8": "utsynene",
+      "9": "hetset"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "synonymordboka",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "fallback-pair",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "manual",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "model+db"
+    }
+  }
+}

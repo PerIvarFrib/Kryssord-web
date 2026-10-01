@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 10:38:09",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    "#....#...",
+    "....#....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "##M#MC###",
+    "#MORALSKE",
+    "#AMEN#KOS",
+    "GREI#KULL",
+    "#INNBILLE",
+    "#ATTAKKER"
+  ],
+  "answers": {
+    "across": {
+      "1": "MC",
+      "2": "MORALSKE",
+      "3": "AMEN",
+      "4": "KOS",
+      "5": "GREI",
+      "6": "KULL",
+      "7": "INNBILLE",
+      "8": "ATTAKKER"
+    },
+    "down": {
+      "1": "MARIA",
+      "2": "MOMENT",
+      "3": "REINT",
+      "4": "MAN",
+      "5": "BA",
+      "6": "CL",
+      "7": "KIK",
+      "8": "SKULK",
+      "9": "KOLLE",
+      "10": "ESLER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "1100",
+      "2": "sømmelige",
+      "3": "bibelord",
+      "4": "velbehag",
+      "5": "fagmessig",
+      "6": "skoleklasse",
+      "7": "oppdikte",
+      "8": "stormangrep"
+    },
+    "down": {
+      "1": "helgennavn",
+      "2": "dreis",
+      "3": "uskyldsrent",
+      "4": "dusk",
+      "5": "Barium",
+      "6": "Klor",
+      "7": "gløtt",
+      "8": "unnasluntring",
+      "9": "fjellknatt",
+      "10": "tamdyr"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "synonymordboka",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymet",
+      "3": "model+db",
+      "4": "synonymet",
+      "5": "manual",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "model+db",
+      "9": "triple-verified",
+      "10": "model+db"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 16:35:10",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "###B#D###",
+    "#TUAREGEN",
+    "#ARGA#ALE",
+    "OBO#DINGS",
+    "#BEVILGET",
+    "#ARMODENE"
+  ],
+  "answers": {
+    "across": {
+      "1": "TUAREGEN",
+      "2": "ARGA",
+      "3": "ALE",
+      "4": "OBO",
+      "5": "DINGS",
+      "6": "BEVILGET",
+      "7": "ARMODENE"
+    },
+    "down": {
+      "1": "TABBA",
+      "2": "UROER",
+      "3": "BAG",
+      "4": "VM",
+      "5": "RADIO",
+      "6": "DE",
+      "7": "ILD",
+      "8": "GANGE",
+      "9": "ELGEN",
+      "10": "NESTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vandreren",
+      "2": "harmete",
+      "3": "amme",
+      "4": "orkesterinstrument",
+      "5": "duppeditt",
+      "6": "donert",
+      "7": "usselhetene"
+    },
+    "down": {
+      "1": "feiltakelsene",
+      "2": "skremmer",
+      "3": "plastpose",
+      "4": "Verdensmesterskap",
+      "5": "mottakerapparat",
+      "6": "Tyskland",
+      "7": "flammehav",
+      "8": "herme",
+      "9": "hjortedyret",
+      "10": "nærværende"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "manual",
+      "5": "model+db",
+      "6": "manual",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "model+db",
+      "10": "cross-verified"
+    }
+  }
+}

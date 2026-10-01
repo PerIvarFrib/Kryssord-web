@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 14:05:48",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#..##.#",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#G#PL##E#",
+    "#OTTEFULL",
+    "ODE#VALSE",
+    "#TID#NIKK",
+    "#APOTEKET",
+    "#SEGL#TRE"
+  ],
+  "answers": {
+    "across": {
+      "1": "PL",
+      "2": "OTTEFULL",
+      "3": "ODE",
+      "4": "VALSE",
+      "5": "TID",
+      "6": "NIKK",
+      "7": "APOTEKET",
+      "8": "SEGL",
+      "9": "TRE"
+    },
+    "down": {
+      "1": "GODTAS",
+      "2": "TEIPE",
+      "3": "PT",
+      "4": "DOG",
+      "5": "LEV",
+      "6": "TL",
+      "7": "FANE",
+      "8": "ULIKT",
+      "9": "ELSKER",
+      "10": "LEKTE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Polen",
+      "2": "bekymringsfull",
+      "3": "serenade",
+      "4": "felg",
+      "5": "sommeruke",
+      "6": "triks",
+      "7": "utsalget",
+      "8": "signet",
+      "9": "vedkubbe"
+    },
+    "down": {
+      "1": "autoriseres",
+      "2": "klebe",
+      "3": "Portugal",
+      "4": "enda",
+      "5": "livnær deg",
+      "6": "Tallium",
+      "7": "vimpel",
+      "8": "usammenlignbart",
+      "9": "frier",
+      "10": "spildra"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "synonymordboka",
+      "5": "model+db",
+      "6": "synonymordboka",
+      "7": "model+db",
+      "8": "cross-verified",
+      "9": "cross-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "manual",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "synonymet"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 16:26:13",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.##..#.",
+    "#........",
+    "#........",
+    "......#..",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##N##OL#A",
+    "#HASTVERK",
+    "#OPERERES",
+    "SPANER#NL",
+    "#PLAGGENE",
+    "#AMT#ISA#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OL",
+      "2": "HASTVERK",
+      "3": "OPERERES",
+      "4": "SPANER",
+      "5": "NL",
+      "6": "PLAGGENE",
+      "7": "AMT",
+      "8": "ISA"
+    },
+    "down": {
+      "1": "HOPPA",
+      "2": "NAPALM",
+      "3": "SENAT",
+      "4": "TREG",
+      "5": "OVERGI",
+      "6": "LER",
+      "7": "ES",
+      "8": "RENNA",
+      "9": "AKSLE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Olympiske leker",
+      "2": "hurtighet",
+      "3": "tjenestegjøres",
+      "4": "søker",
+      "5": "Nederland",
+      "6": "dressene",
+      "7": "Dansk fylke",
+      "8": "kulsa"
+    },
+    "down": {
+      "1": "hesten",
+      "2": "Brannstoffer",
+      "3": "forsamling",
+      "4": "langtekkelig",
+      "5": "avlevere",
+      "6": "hukrer",
+      "7": "Spania",
+      "8": "kloakken",
+      "9": "bære"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "fallback-pair",
+      "8": "synonymet"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "fallback-pair",
+      "3": "fallback-pair",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "model+db",
+      "9": "fallback-pair"
+    }
+  }
+}

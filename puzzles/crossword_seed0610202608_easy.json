@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 11:15:37",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..##.",
+    "#........",
+    ".....#...",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####AR##A",
+    "#KOLLEGER",
+    "ANROP#LIM",
+    "LADD#SAKE",
+    "#SEDVANEN",
+    "#KNEIKER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AR",
+      "2": "KOLLEGER",
+      "3": "ANROP",
+      "4": "LIM",
+      "5": "LADD",
+      "6": "SAKE",
+      "7": "SEDVANEN",
+      "8": "KNEIKER"
+    },
+    "down": {
+      "1": "AL",
+      "2": "KNASK",
+      "3": "ORDEN",
+      "4": "LODDE",
+      "5": "ALP",
+      "6": "VI",
+      "7": "RE",
+      "8": "SAK",
+      "9": "GLANE",
+      "10": "EIKER",
+      "11": "ARMEN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Argon",
+      "2": "partnere",
+      "3": "oppringning",
+      "4": "klister",
+      "5": "hose",
+      "6": "brygg",
+      "7": "prosedyren",
+      "8": "skrenter"
+    },
+    "down": {
+      "1": "Aluminium",
+      "2": "snadder",
+      "3": "formulering",
+      "4": "peila",
+      "5": "nunatak",
+      "6": "6",
+      "7": "Solfège-tone",
+      "8": "rettstvist",
+      "9": "gløtte",
+      "10": "cruiseskip",
+      "11": "fotbladet"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "fallback-pair",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "synonymordboka",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "manual",
+      "8": "synonymet",
+      "9": "triple-verified",
+      "10": "synonymet",
+      "11": "triple-verified"
+    }
+  }
+}
