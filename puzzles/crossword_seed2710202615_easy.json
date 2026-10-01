@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 16:11:55",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.##.##",
+    "#........",
+    ".........",
+    "#....#...",
+    "#........",
+    "....#...#"
+  ],
+  "solved_layout": [
+    "#S#A##D##",
+    "#KONTOENE",
+    "SUFFIKSET",
+    "#BRAM#ISE",
+    "#BELEGGER",
+    "HAST#ANT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "KONTOENE",
+      "2": "SUFFIKSET",
+      "3": "BRAM",
+      "4": "ISE",
+      "5": "BELEGGER",
+      "6": "HAST",
+      "7": "ANT"
+    },
+    "down": {
+      "1": "SKUBBA",
+      "2": "OFRES",
+      "3": "ANFALT",
+      "4": "TIME",
+      "5": "OK",
+      "6": "GA",
+      "7": "DESIGN",
+      "8": "NESET",
+      "9": "ETER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "bankkontiene",
+      "2": "endelsen",
+      "3": "kyt",
+      "4": "krave",
+      "5": "blokkerer",
+      "6": "raskhet",
+      "7": "travel"
+    },
+    "down": {
+      "1": "knubbet",
+      "2": "avståes",
+      "3": "invadert",
+      "4": "kalkulere",
+      "5": "jaord",
+      "6": "Gallium",
+      "7": "formgivning",
+      "8": "landtunga",
+      "9": "oksygen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "synonymet",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "cross-verified"
+    }
+  }
+}

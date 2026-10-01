@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 22:54:15",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#####..##",
+    "#........",
+    ".........",
+    "......#..",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "#####SA##",
+    "#MASSAKRE",
+    "RESPEKTER",
+    "HITLER#VG",
+    "#EMIRATER",
+    "#RAD#LINE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SA",
+      "2": "MASSAKRE",
+      "3": "RESPEKTER",
+      "4": "HITLER",
+      "5": "VG",
+      "6": "EMIRATER",
+      "7": "RAD",
+      "8": "LINE"
+    },
+    "down": {
+      "1": "RH",
+      "2": "MEIER",
+      "3": "ASTMA",
+      "4": "SPLID",
+      "5": "SEER",
+      "6": "SAKRAL",
+      "7": "AKT",
+      "8": "TI",
+      "9": "REVEN",
+      "10": "ERGRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "talte",
+      "2": "terrorhandling",
+      "3": "overhold",
+      "4": "tyranner",
+      "5": "dagbladet",
+      "6": "fyrstedømmer",
+      "7": "sekvens",
+      "8": "galon"
+    },
+    "down": {
+      "1": "Rhodium",
+      "2": "pløyer",
+      "3": "overfølsomhet",
+      "4": "kontrovers",
+      "5": "iakttager",
+      "6": "fredhellig",
+      "7": "litografi",
+      "8": "Titan",
+      "9": "luringa",
+      "10": "forarge"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "manual",
+      "9": "triple-verified",
+      "10": "triple-verified"
+    }
+  }
+}

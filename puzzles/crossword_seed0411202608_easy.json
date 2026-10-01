@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 18:50:59",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#.#.",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###CS#K#M",
+    "#HOMOFILI",
+    "LUN#TONEN",
+    "#KAV#LOKK",
+    "#ENEEIERE",
+    "#SIGNERE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CS",
+      "2": "HOMOFILI",
+      "3": "LUN",
+      "4": "TONEN",
+      "5": "KAV",
+      "6": "LOKK",
+      "7": "ENEEIERE",
+      "8": "SIGNERE"
+    },
+    "down": {
+      "1": "HUKES",
+      "2": "ONANI",
+      "3": "CM",
+      "4": "VEG",
+      "5": "SOT",
+      "6": "EN",
+      "7": "FOLIE",
+      "8": "KINOER",
+      "9": "LEKRE",
+      "10": "MINKE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Cesium",
+      "2": "seksualitet",
+      "3": "koselig",
+      "4": "danselåten",
+      "5": "jobbing",
+      "6": "dusk",
+      "7": "besittere",
+      "8": "påtegne"
+    },
+    "down": {
+      "1": "klamres",
+      "2": "masturbasjon",
+      "3": "Centimeter",
+      "4": "motorvei",
+      "5": "rummy",
+      "6": "uno",
+      "7": "cellofan",
+      "8": "filmforestillinger",
+      "9": "søte",
+      "10": "skrumpe"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "synonymet",
+      "7": "model+db",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "triple-verified"
+    }
+  }
+}

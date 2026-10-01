@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 11:54:13",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#.###",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "##FN#D###",
+    "#NEDRUSTE",
+    "BOL#EKORN",
+    "#TEGN#LOS",
+    "#ANINGENE",
+    "#TEV#IRER"
+  ],
+  "answers": {
+    "across": {
+      "1": "FN",
+      "2": "NEDRUSTE",
+      "3": "BOL",
+      "4": "EKORN",
+      "5": "TEGN",
+      "6": "LOS",
+      "7": "ANINGENE",
+      "8": "TEV",
+      "9": "IRER"
+    },
+    "down": {
+      "1": "NOTAT",
+      "2": "FELENE",
+      "3": "ND",
+      "4": "GIV",
+      "5": "RENN",
+      "6": "DUK",
+      "7": "GI",
+      "8": "SOLER",
+      "9": "TRONE",
+      "10": "ENSER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Forente nasjoner",
+      "2": "avvæpne",
+      "3": "bopeler",
+      "4": "murmeldyr",
+      "5": "grafem",
+      "6": "bilfører",
+      "7": "forutanelsene",
+      "8": "vellukt",
+      "9": "sinner"
+    },
+    "down": {
+      "1": "merknad",
+      "2": "fiolinene",
+      "3": "Neodym",
+      "4": "fornyelse",
+      "5": "farting",
+      "6": "forheng",
+      "7": "donere",
+      "8": "stjernetåker",
+      "9": "kongestol",
+      "10": "besiktiger"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "synonymordboka",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "synonymordboka",
+      "8": "synonymordboka",
+      "9": "synonymordboka"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "manual",
+      "4": "synonymordboka",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "synonymet",
+      "9": "model+db",
+      "10": "cross-verified"
+    }
+  }
+}

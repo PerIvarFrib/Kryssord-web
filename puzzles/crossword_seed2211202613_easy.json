@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 22:03:28",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#....#...",
+    "#...#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####LA#F#",
+    "#ESSENSEN",
+    "#KNAK#KRI",
+    "#SUM#SAGE",
+    "FORBILDER",
+    "#STATUEN#"
+  ],
+  "answers": {
+    "across": {
+      "1": "LA",
+      "2": "ESSENSEN",
+      "3": "KNAK",
+      "4": "KRI",
+      "5": "SUM",
+      "6": "SAGE",
+      "7": "FORBILDER",
+      "8": "STATUEN"
+    },
+    "down": {
+      "1": "EKSOS",
+      "2": "SNURT",
+      "3": "SAMBA",
+      "4": "LEK",
+      "5": "IT",
+      "6": "AN",
+      "7": "SLU",
+      "8": "SKADE",
+      "9": "FERGEN",
+      "10": "NIER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Solfège-tone",
+      "2": "duften",
+      "3": "knirk",
+      "4": "purre",
+      "5": "restbeløp",
+      "6": "skjære av",
+      "7": "ledestjerner",
+      "8": "bautasteinen"
+    },
+    "down": {
+      "1": "avgass",
+      "2": "forurettet",
+      "3": "latinamerikansk dans",
+      "4": "forlystelse",
+      "5": "Italia",
+      "6": "prefiks",
+      "7": "kløktig",
+      "8": "brekkasje",
+      "9": "motorbåten",
+      "10": "siffer"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "synonymordboka",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "triple-verified",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "fallback-pair",
+      "7": "synonymordboka",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "fallback-pair"
+    }
+  }
+}

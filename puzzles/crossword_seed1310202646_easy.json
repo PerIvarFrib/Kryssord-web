@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 13:11:46",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    "#....#...",
+    "#...#....",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####LP#F#",
+    "#OKSESTEK",
+    "#MJUK#VIA",
+    "#VEG#VERS",
+    "GENERERES",
+    "#INNBITTE"
+  ],
+  "answers": {
+    "across": {
+      "1": "LP",
+      "2": "OKSESTEK",
+      "3": "MJUK",
+      "4": "VIA",
+      "5": "VEG",
+      "6": "VERS",
+      "7": "GENERERES",
+      "8": "INNBITTE"
+    },
+    "down": {
+      "1": "OMVEI",
+      "2": "KJENN",
+      "3": "SUGEN",
+      "4": "LEK",
+      "5": "RB",
+      "6": "PS",
+      "7": "VEI",
+      "8": "TVERT",
+      "9": "FEIRET",
+      "10": "KASSE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "grammofonplate",
+      "2": "roastbiff",
+      "3": "gummiaktig",
+      "4": "gjennom",
+      "5": "motorvei",
+      "6": "prosadikt",
+      "7": "avstedkommes",
+      "8": "uforsonlige"
+    },
+    "down": {
+      "1": "ekstratur",
+      "2": "opplev",
+      "3": "forsluken",
+      "4": "forlystelse",
+      "5": "Rubidium",
+      "6": "supplement",
+      "7": "krøttersti",
+      "8": "prompt",
+      "9": "berømmet",
+      "10": "mugge"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "model+db",
+      "10": "synonymet"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 14:09:33",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#.##",
+    ".........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "###ML#B##",
+    "HAUGESUND",
+    "AND#SKREV",
+    "#SEX#LEVE",
+    "#ELIMINER",
+    "#STIM#ENG"
+  ],
+  "answers": {
+    "across": {
+      "1": "ML",
+      "2": "HAUGESUND",
+      "3": "AND",
+      "4": "SKREV",
+      "5": "SEX",
+      "6": "LEVE",
+      "7": "ELIMINER",
+      "8": "STIM",
+      "9": "ENG"
+    },
+    "down": {
+      "1": "HA",
+      "2": "ANSES",
+      "3": "UDELT",
+      "4": "MG",
+      "5": "XII",
+      "6": "LES",
+      "7": "MM",
+      "8": "SKLI",
+      "9": "BURENE",
+      "10": "NEVEN",
+      "11": "DVERG"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Milliliter",
+      "2": "by i rogaland",
+      "3": "fugl",
+      "4": "opptegnet",
+      "5": "kjønnsakt",
+      "6": "eksistere",
+      "7": "avskaff",
+      "8": "klynge",
+      "9": "grønnsvær"
+    },
+    "down": {
+      "1": "besitte",
+      "2": "evalueres",
+      "3": "ubeskåret",
+      "4": "Magnesium",
+      "5": "12",
+      "6": "studer",
+      "7": "Millimeter",
+      "8": "skrense",
+      "9": "grottene",
+      "10": "håndflata",
+      "11": "homunculus"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "fallback-pair",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "synonymordboka",
+      "9": "cross-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "synonymet",
+      "11": "cross-verified"
+    }
+  }
+}

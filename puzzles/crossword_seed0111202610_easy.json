@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 18:20:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "#S#D#U###",
+    "#KREATIVE",
+    "#VELT#NEI",
+    "HUG#LANGE",
+    "#LEDELSER",
+    "SPLITTER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "KREATIVE",
+      "2": "VELT",
+      "3": "NEI",
+      "4": "HUG",
+      "5": "LANGE",
+      "6": "LEDELSER",
+      "7": "SPLITTER"
+    },
+    "down": {
+      "1": "SKVULP",
+      "2": "REGEL",
+      "3": "DEL",
+      "4": "DI",
+      "5": "ATLET",
+      "6": "UT",
+      "7": "ALT",
+      "8": "INNSE",
+      "9": "VEGER",
+      "10": "EIER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "fantasifulle",
+      "2": "kollbøtte",
+      "3": "avvisning",
+      "4": "appetitt",
+      "5": "hyse",
+      "6": "direksjoner",
+      "7": "inndeler"
+    },
+    "down": {
+      "1": "skvalp",
+      "2": "lovbestemmelse",
+      "3": "bolk",
+      "4": "livberg",
+      "5": "toppidrettsmannen",
+      "6": "fram",
+      "7": "all",
+      "8": "begripe",
+      "9": "motorveier",
+      "10": "besitter"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "synonymet",
+      "6": "triple-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "synonymordboka",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "triple-verified",
+      "10": "triple-verified"
+    }
+  }
+}

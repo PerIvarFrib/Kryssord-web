@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 20:04:11",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#..####",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "#U#LI####",
+    "#SKINGRES",
+    "#SOV#RAMP",
+    "SEK#RENNE",
+    "#LEGENDEN",
+    "#TRANSITT"
+  ],
+  "answers": {
+    "across": {
+      "1": "LI",
+      "2": "SKINGRES",
+      "3": "SOV",
+      "4": "RAMP",
+      "5": "SEK",
+      "6": "RENNE",
+      "7": "LEGENDEN",
+      "8": "TRANSITT"
+    },
+    "down": {
+      "1": "USSELT",
+      "2": "KOKER",
+      "3": "LIV",
+      "4": "GA",
+      "5": "IN",
+      "6": "REN",
+      "7": "GRENS",
+      "8": "RANDI",
+      "9": "EMNET",
+      "10": "SPENT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Litium",
+      "2": "hvines",
+      "3": "dupp",
+      "4": "pjokk",
+      "5": "Svensk krone",
+      "6": "småspringe",
+      "7": "fabelen",
+      "8": "passering"
+    },
+    "down": {
+      "1": "ynkverdig",
+      "2": "putrer",
+      "3": "tilværelse",
+      "4": "Gallium",
+      "5": "India",
+      "6": "aseptisk",
+      "7": "rip",
+      "8": "en kolstad",
+      "9": "objektet",
+      "10": "lydhør"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "synonymet",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "triple-verified"
+    }
+  }
+}

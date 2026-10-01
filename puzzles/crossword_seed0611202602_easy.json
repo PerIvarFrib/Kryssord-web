@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:28:56",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#.##",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "###OS#S##",
+    "#KURVBALL",
+    "#ANK#ETUI",
+    "PSI#SVING",
+    "#TOLLEREN",
+    "CANYONER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OS",
+      "2": "KURVBALL",
+      "3": "ANK",
+      "4": "ETUI",
+      "5": "PSI",
+      "6": "SVING",
+      "7": "TOLLEREN",
+      "8": "CANYONER"
+    },
+    "down": {
+      "1": "KASTA",
+      "2": "UNION",
+      "3": "ORK",
+      "4": "LY",
+      "5": "SV",
+      "6": "SLO",
+      "7": "BEVEN",
+      "8": "SATIRE",
+      "9": "LUNER",
+      "10": "LIGN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vanndamp",
+      "2": "basketball",
+      "3": "klandr",
+      "4": "dispenser",
+      "5": "Gresk bokstav",
+      "6": "snarvisitt",
+      "7": "betjenten",
+      "8": "raviner"
+    },
+    "down": {
+      "1": "hivene",
+      "2": "liga",
+      "3": "belastning",
+      "4": "fristed",
+      "5": "Sørvest",
+      "6": "innmater",
+      "7": "beklemtheta",
+      "8": "humor",
+      "9": "protesjerer",
+      "10": "likn"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "synonymordboka",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "synonymet",
+      "10": "model+db"
+    }
+  }
+}

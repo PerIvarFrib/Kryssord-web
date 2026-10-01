@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:55:32",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.####.#",
+    "#........",
+    "#........",
+    "...#.....",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##B####P#",
+    "#HENVISES",
+    "#ALIENERE",
+    "ENG#STILK",
+    "#DIKTERES",
+    "FLAU#TENT"
+  ],
+  "answers": {
+    "across": {
+      "1": "HENVISES",
+      "2": "ALIENERE",
+      "3": "ENG",
+      "4": "STILK",
+      "5": "DIKTERES",
+      "6": "FLAU",
+      "7": "TENT"
+    },
+    "down": {
+      "1": "HANDL",
+      "2": "BELGIA",
+      "3": "NI",
+      "4": "KU",
+      "5": "VEST",
+      "6": "INTET",
+      "7": "SEIRE",
+      "8": "PERLEN",
+      "9": "SEKST"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "henspilles",
+      "2": "fremmedgjøre",
+      "3": "grønnsvær",
+      "4": "fruktknute",
+      "5": "beordres",
+      "6": "slukøret",
+      "7": "oppglødd"
+    },
+    "down": {
+      "1": "selg",
+      "2": "natoland",
+      "3": "Nikkel",
+      "4": "kvige",
+      "5": "bluse",
+      "6": "ubestemt pronomen",
+      "7": "klarer",
+      "8": "merkverdigheta",
+      "9": "kvart"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "synonymordboka"
+    }
+  }
+}

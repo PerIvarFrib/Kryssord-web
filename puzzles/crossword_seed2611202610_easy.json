@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 23:05:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.###.#",
+    "#........",
+    ".........",
+    "#....#...",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "#G#P###A#",
+    "#OSLOMANN",
+    "HATEFULLE",
+    "#LEIR#PEP",
+    "#ENDELIGE",
+    "UNG#RING#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OSLOMANN",
+      "2": "HATEFULLE",
+      "3": "LEIR",
+      "4": "PEP",
+      "5": "ENDELIGE",
+      "6": "UNG",
+      "7": "RING"
+    },
+    "down": {
+      "1": "GOALEN",
+      "2": "STENG",
+      "3": "PLEID",
+      "4": "OFRER",
+      "5": "MU",
+      "6": "LI",
+      "7": "ALPIN",
+      "8": "ANLEGG",
+      "9": "NEPE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "austlending",
+      "2": "hatske",
+      "3": "fristed",
+      "4": "illskreik",
+      "5": "sluttlige",
+      "6": "daggammel",
+      "7": "syklus"
+    },
+    "down": {
+      "1": "destinasjonen",
+      "2": "stopp igjen",
+      "3": "preparert",
+      "4": "frambringer",
+      "5": "Gresk bokstav",
+      "6": "Litium",
+      "7": "skiidrett",
+      "8": "kompetanse",
+      "9": "kålplante"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "synonymet"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "model+db",
+      "5": "manual",
+      "6": "manual",
+      "7": "model+db",
+      "8": "cross-verified",
+      "9": "model+db"
+    }
+  }
+}

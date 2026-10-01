@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:51:23",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "###K#P#S#",
+    "#PANORAMA",
+    "#ADAM#KIL",
+    "ARV#VESLE",
+    "#TABELLEN",
+    "#IRRITERE"
+  ],
+  "answers": {
+    "across": {
+      "1": "PANORAMA",
+      "2": "ADAM",
+      "3": "KIL",
+      "4": "ARV",
+      "5": "VESLE",
+      "6": "TABELLEN",
+      "7": "IRRITERE"
+    },
+    "down": {
+      "1": "PARTI",
+      "2": "ADVAR",
+      "3": "KNA",
+      "4": "BR",
+      "5": "OMVEI",
+      "6": "PR",
+      "7": "ELT",
+      "8": "AKSLE",
+      "9": "SMILER",
+      "10": "ALENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "litografi",
+      "2": "bibelby",
+      "3": "buktning",
+      "4": "avanse",
+      "5": "ørlille",
+      "6": "aktivitetsplanen",
+      "7": "besvære"
+    },
+    "down": {
+      "1": "vielse",
+      "2": "varsku",
+      "3": "knuge",
+      "4": "Brom",
+      "5": "ekstratur",
+      "6": "Praseodym",
+      "7": "preparer",
+      "8": "bære",
+      "9": "gapskratter",
+      "10": "adskilt"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "synonymet",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "fallback-pair",
+      "3": "synonymet",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "synonymet",
+      "8": "fallback-pair",
+      "9": "triple-verified",
+      "10": "cross-verified"
+    }
+  }
+}

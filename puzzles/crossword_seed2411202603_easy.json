@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 22:11:11",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#####.##.",
+    ".........",
+    ".........",
+    "#...#....",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#####V##K",
+    "AVISLESER",
+    "SIRKULERE",
+    "#ROA#LITT",
+    "#INNDELES",
+    "#LINK#ETE"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVISLESER",
+      "2": "SIRKULERE",
+      "3": "ROA",
+      "4": "LITT",
+      "5": "INNDELES",
+      "6": "LINK",
+      "7": "ETE"
+    },
+    "down": {
+      "1": "AS",
+      "2": "VIRIL",
+      "3": "IRONI",
+      "4": "SKANN",
+      "5": "LU",
+      "6": "DK",
+      "7": "VELLE",
+      "8": "SEILE",
+      "9": "ERTET",
+      "10": "KRETSE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "mediebruker",
+      "2": "versere",
+      "3": "lykksaligheta",
+      "4": "en anelse",
+      "5": "differensieres",
+      "6": "kobling",
+      "7": "jafse"
+    },
+    "down": {
+      "1": "Aksjeselskap",
+      "2": "mannhaftig",
+      "3": "latterliggjørelse",
+      "4": "gjennomsøking",
+      "5": "Lutetium",
+      "6": "Danmark",
+      "7": "sprudle",
+      "8": "sykle",
+      "9": "hetset",
+      "10": "sirkle"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "synonymet",
+      "4": "synonymet",
+      "5": "triple-verified",
+      "6": "model+db",
+      "7": "triple-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "manual",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "triple-verified"
+    }
+  }
+}

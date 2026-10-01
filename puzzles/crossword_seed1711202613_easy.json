@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:14:50",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.##.#.##",
+    "#........",
+    "#........",
+    "#...#....",
+    ".........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "#F##B#I##",
+    "#OMHANDLA",
+    "#ROVDYRET",
+    "#TRE#TEIT",
+    "FASTSETTE",
+    "#UKER#TAR"
+  ],
+  "answers": {
+    "across": {
+      "1": "OMHANDLA",
+      "2": "ROVDYRET",
+      "3": "TRE",
+      "4": "TEIT",
+      "5": "FASTSETTE",
+      "6": "UKER",
+      "7": "TAR"
+    },
+    "down": {
+      "1": "FORTAU",
+      "2": "MORSK",
+      "3": "HVETE",
+      "4": "BAD",
+      "5": "SR",
+      "6": "NYTE",
+      "7": "IDRETT",
+      "8": "LEITA",
+      "9": "ATTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "vedrørte",
+      "2": "hannulven",
+      "3": "vedkubbe",
+      "4": "dustete",
+      "5": "definere",
+      "6": "tidsskifter",
+      "7": "velger"
+    },
+    "down": {
+      "1": "gangvei",
+      "2": "ergelig",
+      "3": "matkorn",
+      "4": "forsamlingssted",
+      "5": "Strontium",
+      "6": "konsumere",
+      "7": "gymnastikk",
+      "8": "snoket",
+      "9": "enda en gang"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "triple-verified",
+      "6": "triple-verified",
+      "7": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "model+db",
+      "4": "synonymet",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "model+db"
+    }
+  }
+}

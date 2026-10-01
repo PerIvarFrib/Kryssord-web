@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-11-01 12:25:22",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..##.",
+    "#........",
+    "#...#....",
+    "#....#...",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##G#OL##I",
+    "#ELSKEREN",
+    "#NOK#REDD",
+    "#DRAS#GIR",
+    "FEILTOLKE",
+    "#REPOSET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OL",
+      "2": "ELSKEREN",
+      "3": "NOK",
+      "4": "REDD",
+      "5": "DRAS",
+      "6": "GIR",
+      "7": "FEILTOLKE",
+      "8": "REPOSET"
+    },
+    "down": {
+      "1": "ENDER",
+      "2": "GLORIE",
+      "3": "SKALP",
+      "4": "OK",
+      "5": "STO",
+      "6": "LER",
+      "7": "OS",
+      "8": "REGLE",
+      "9": "EDIKT",
+      "10": "INDRE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Olympiske leker",
+      "2": "forloveden",
+      "3": "Norsk krone",
+      "4": "angstfull",
+      "5": "treneres",
+      "6": "overleverer",
+      "7": "misoppfatter",
+      "8": "platået"
+    },
+    "down": {
+      "1": "avrundinger",
+      "2": "honnør",
+      "3": "parykk",
+      "4": "jaord",
+      "5": "skara",
+      "6": "hukrer",
+      "7": "vanndamp",
+      "8": "anekdote",
+      "9": "bekjentgjørelse",
+      "10": "ego"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "synonymordboka",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "triple-verified",
+      "10": "cross-verified"
+    }
+  }
+}

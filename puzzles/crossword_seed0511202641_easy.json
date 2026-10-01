@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:25:09",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..###",
+    "#........",
+    "....#....",
+    "#....#...",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####ZN###",
+    "#AVKROKER",
+    "SKIR#TAPE",
+    "#TSAR#SLI",
+    "KONFEKTEN",
+    "#RETIRERT"
+  ],
+  "answers": {
+    "across": {
+      "1": "ZN",
+      "2": "AVKROKER",
+      "3": "SKIR",
+      "4": "TAPE",
+      "5": "TSAR",
+      "6": "SLI",
+      "7": "KONFEKTEN",
+      "8": "RETIRERT"
+    },
+    "down": {
+      "1": "AKTOR",
+      "2": "VISNE",
+      "3": "KRAFT",
+      "4": "ZR",
+      "5": "REI",
+      "6": "NOT",
+      "7": "KR",
+      "8": "KASTE",
+      "9": "EPLER",
+      "10": "REINT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Sink",
+      "2": "krinkler",
+      "3": "funklende",
+      "4": "forlegge",
+      "5": "kalif",
+      "6": "grisk",
+      "7": "sukkertøyet",
+      "8": "avgått"
+    },
+    "down": {
+      "1": "rettsaktør",
+      "2": "forulykke",
+      "3": "maktinstans",
+      "4": "Zirkonium",
+      "5": "prosesjon",
+      "6": "fangstnett",
+      "7": "Norsk valuta",
+      "8": "dumpe",
+      "9": "steinfrukter",
+      "10": "uskyldsrent"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "synonymordboka",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "model+db",
+      "10": "model+db"
+    }
+  }
+}

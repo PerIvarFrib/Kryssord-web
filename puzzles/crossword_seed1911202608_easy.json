@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:28:22",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#..##",
+    "#........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###B#SN##",
+    "#SPIONERE",
+    "III#POSEN",
+    "#GLIP#EIE",
+    "GEORGINER",
+    "#STRIDER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SN",
+      "2": "SPIONERE",
+      "3": "III",
+      "4": "POSEN",
+      "5": "GLIP",
+      "6": "EIE",
+      "7": "GEORGINER",
+      "8": "STRIDER"
+    },
+    "down": {
+      "1": "SIGES",
+      "2": "PILOT",
+      "3": "BI",
+      "4": "IRR",
+      "5": "OPPGI",
+      "6": "SNO",
+      "7": "ID",
+      "8": "NESENE",
+      "9": "REIER",
+      "10": "ENER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Tinn",
+      "2": "avlytte",
+      "3": "3",
+      "4": "pungen",
+      "5": "glugg",
+      "6": "besitte",
+      "7": "kurvplanter",
+      "8": "opponerer"
+    },
+    "down": {
+      "1": "senkes",
+      "2": "bilfører",
+      "3": "Bismut",
+      "4": "korrosjon",
+      "5": "henlegge",
+      "6": "slynge",
+      "7": "Identifikasjon",
+      "8": "tinningene",
+      "9": "prosesjoner",
+      "10": "bestemenn"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "manual",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "synonymordboka",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "synonymet",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "synonymordboka"
+    }
+  }
+}

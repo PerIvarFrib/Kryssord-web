@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-11-01 11:36:54",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#.###",
+    "#........",
+    "#....#...",
+    "...#.....",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##NA#E###",
+    "#FORGUDER",
+    "#ERTE#ISE",
+    "LIM#SLAKN",
+    "#LEKTOREN",
+    "PERU#VENE"
+  ],
+  "answers": {
+    "across": {
+      "1": "NA",
+      "2": "FORGUDER",
+      "3": "ERTE",
+      "4": "ISE",
+      "5": "LIM",
+      "6": "SLAKN",
+      "7": "LEKTOREN",
+      "8": "PERU",
+      "9": "VENE"
+    },
+    "down": {
+      "1": "FEILE",
+      "2": "NORMER",
+      "3": "ART",
+      "4": "KU",
+      "5": "GEST",
+      "6": "EU",
+      "7": "LOV",
+      "8": "DIARE",
+      "9": "ESKEN",
+      "10": "RENNE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Natrium",
+      "2": "oppvurderer",
+      "3": "forulempe",
+      "4": "krave",
+      "5": "klister",
+      "6": "skrump",
+      "7": "privatlæreren",
+      "8": "søramerikansk land",
+      "9": "blodkara"
+    },
+    "down": {
+      "1": "misse",
+      "2": "kodekser",
+      "3": "egenhet",
+      "4": "kvige",
+      "5": "kroppsbevegelse",
+      "6": "Den europeiske union",
+      "7": "kodeks",
+      "8": "magesjuke",
+      "9": "skåla",
+      "10": "småspringe"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "triple-verified",
+      "8": "model+db",
+      "9": "cross-verified"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "model+db",
+      "9": "cross-verified",
+      "10": "cross-verified"
+    }
+  }
+}

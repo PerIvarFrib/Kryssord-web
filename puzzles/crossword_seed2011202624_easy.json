@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:49:07",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#..##",
+    ".........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###C#NE##",
+    "PRISFALLA",
+    "DOM#AVLYS",
+    "#MATT#ENE",
+    "#AGITERER",
+    "#NEDERST#"
+  ],
+  "answers": {
+    "across": {
+      "1": "NE",
+      "2": "PRISFALLA",
+      "3": "DOM",
+      "4": "AVLYS",
+      "5": "MATT",
+      "6": "ENE",
+      "7": "AGITERER",
+      "8": "NEDERST"
+    },
+    "down": {
+      "1": "PD",
+      "2": "ROMAN",
+      "3": "IMAGE",
+      "4": "CS",
+      "5": "TID",
+      "6": "FATTE",
+      "7": "NAV",
+      "8": "ER",
+      "9": "ELLERS",
+      "10": "LYNET",
+      "11": "ASER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Neon",
+      "2": "verdiøkningene",
+      "3": "avstraffelse",
+      "4": "avblås",
+      "5": "sorgfull",
+      "6": "gudsforlatt",
+      "7": "utfordrer",
+      "8": "sist"
+    },
+    "down": {
+      "1": "Palladium",
+      "2": "biografi",
+      "3": "illustrasjon",
+      "4": "Cesium",
+      "5": "sommeruke",
+      "6": "begripe",
+      "7": "brennpunkt",
+      "8": "utgjør",
+      "9": "dessuten",
+      "10": "belysninga",
+      "11": "spør"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "synonymet",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "synonymordboka",
+      "7": "triple-verified",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "manual",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "synonymordboka",
+      "10": "synonymordboka",
+      "11": "cross-verified"
+    }
+  }
+}

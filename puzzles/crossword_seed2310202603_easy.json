@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 14:45:00",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    "#....#...",
+    "....#....",
+    ".........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "##B#AH###",
+    "#TRAPESET",
+    "#RUVE#KLE",
+    "FINS#SILT",
+    "AVSLAPPET",
+    "#STORYER#"
+  ],
+  "answers": {
+    "across": {
+      "1": "AH",
+      "2": "TRAPESET",
+      "3": "RUVE",
+      "4": "KLE",
+      "5": "FINS",
+      "6": "SILT",
+      "7": "AVSLAPPET",
+      "8": "STORYER"
+    },
+    "down": {
+      "1": "FA",
+      "2": "TRIVS",
+      "3": "BRUNST",
+      "4": "AVSLO",
+      "5": "APE",
+      "6": "AR",
+      "7": "HE",
+      "8": "SPY",
+      "9": "SKIPE",
+      "10": "ELLER",
+      "11": "TETT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "godlyd",
+      "2": "firkanten",
+      "3": "dunge",
+      "4": "dandere",
+      "5": "forekommer",
+      "6": "filtrert",
+      "7": "avspent",
+      "8": "hendelsesforløp"
+    },
+    "down": {
+      "1": "Solfège-tone",
+      "2": "blomstrer opp",
+      "3": "sexlyst",
+      "4": "tilbakeviste",
+      "5": "herme",
+      "6": "Argon",
+      "7": "Helium",
+      "8": "upchuck",
+      "9": "transportere",
+      "10": "alias",
+      "11": "kloss"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "fallback-pair",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "triple-verified",
+      "7": "triple-verified",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "manual",
+      "8": "synonymordboka",
+      "9": "synonymordboka",
+      "10": "cross-verified",
+      "11": "model+db"
+    }
+  }
+}

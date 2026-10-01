@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 20:34:06",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.###..#",
+    "#........",
+    "#.....#..",
+    "#........",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "##K###BE#",
+    "#KLESVASK",
+    "#RENTA#SO",
+    "#ABSORBER",
+    "#STORMENE",
+    "HJEM#TYST"
+  ],
+  "answers": {
+    "across": {
+      "1": "BE",
+      "2": "KLESVASK",
+      "3": "RENTA",
+      "4": "SO",
+      "5": "ABSORBER",
+      "6": "STORMENE",
+      "7": "HJEM",
+      "8": "TYST"
+    },
+    "down": {
+      "1": "KRASJ",
+      "2": "KLEBTE",
+      "3": "ENSOM",
+      "4": "STOR",
+      "5": "VARMT",
+      "6": "BA",
+      "7": "BEY",
+      "8": "ESSENS",
+      "9": "KORET"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Beryllium",
+      "2": "rengjøring",
+      "3": "uttellinga",
+      "4": "Solfège-tone",
+      "5": "assimiler",
+      "6": "vestavindene",
+      "7": "fristed",
+      "8": "ordknapp"
+    },
+    "down": {
+      "1": "kollisjon",
+      "2": "klistrete",
+      "3": "venneløs",
+      "4": "kjempediger",
+      "5": "glohett",
+      "6": "Barium",
+      "7": "mogul",
+      "8": "godlukta",
+      "9": "sanggruppen"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "synonymordboka",
+      "6": "triple-verified",
+      "7": "cross-verified",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "cross-verified",
+      "9": "model+db"
+    }
+  }
+}

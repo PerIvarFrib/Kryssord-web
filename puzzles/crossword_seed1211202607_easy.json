@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 20:10:43",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####.#..#",
+    "#........",
+    "#...#....",
+    "#........",
+    ".........",
+    "#..#....#"
+  ],
+  "solved_layout": [
+    "####Z#FR#",
+    "#SALAMIEN",
+    "#KLE#ANGA",
+    "#UVISSHET",
+    "PRODUSENT",
+    "#TR#TETT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "FR",
+      "2": "SALAMIEN",
+      "3": "KLE",
+      "4": "ANGA",
+      "5": "UVISSHET",
+      "6": "PRODUSENT",
+      "7": "TR",
+      "8": "TETT"
+    },
+    "down": {
+      "1": "SKURT",
+      "2": "ALVOR",
+      "3": "LEID",
+      "4": "ZA",
+      "5": "SUT",
+      "6": "MASSE",
+      "7": "FINHET",
+      "8": "REGENT",
+      "9": "NATT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Frankrike",
+      "2": "kjøttpålegget",
+      "3": "dandere",
+      "4": "buka",
+      "5": "beklemthet",
+      "6": "litterat",
+      "7": "Tyrkia",
+      "8": "kloss"
+    },
+    "down": {
+      "1": "spylt",
+      "2": "beherskelse",
+      "3": "bistått",
+      "4": "Sør-Afrika",
+      "5": "kvide",
+      "6": "flere",
+      "7": "fornemhet",
+      "8": "makthaver",
+      "9": "mørketid"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "synonymet",
+      "7": "manual",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "model+db"
+    }
+  }
+}

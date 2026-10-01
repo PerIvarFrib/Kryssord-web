@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 22:05:53",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###.#.#.#",
+    "#........",
+    "...#.....",
+    "#....#...",
+    ".........",
+    "#...#...."
+  ],
+  "solved_layout": [
+    "###V#U#E#",
+    "#SKYSSENE",
+    "KAV#MANEN",
+    "#LIKE#KRE",
+    "EIENDELER",
+    "#GRY#MENE"
+  ],
+  "answers": {
+    "across": {
+      "1": "SKYSSENE",
+      "2": "KAV",
+      "3": "MANEN",
+      "4": "LIKE",
+      "5": "KRE",
+      "6": "EIENDELER",
+      "7": "GRY",
+      "8": "MENE"
+    },
+    "down": {
+      "1": "SALIG",
+      "2": "KVIER",
+      "3": "VY",
+      "4": "KNY",
+      "5": "SMED",
+      "6": "USA",
+      "7": "EM",
+      "8": "ENKLE",
+      "9": "ENEREN",
+      "10": "ENERE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "spedisjonene",
+      "2": "jobbing",
+      "3": "mustasjen",
+      "4": "samme",
+      "5": "firfoting",
+      "6": "løsører",
+      "7": "bli dag",
+      "8": "forfekte"
+    },
+    "down": {
+      "1": "frydefull",
+      "2": "vegrer",
+      "3": "kjangs",
+      "4": "klynking",
+      "5": "hovslager",
+      "6": "Amerikas forente stater",
+      "7": "Europamesterskap",
+      "8": "upretensiøse",
+      "9": "frontfiguren",
+      "10": "bestemenn"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "synonymordboka",
+      "6": "triple-verified",
+      "7": "synonymet",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "model+db",
+      "6": "manual",
+      "7": "manual",
+      "8": "model+db",
+      "9": "model+db",
+      "10": "synonymordboka"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 15:49:10",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..###.",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    ".....#..."
+  ],
+  "solved_layout": [
+    "###TR###A",
+    "#HOVEDSAK",
+    "HOR#VOKST",
+    "#SKO#DUKE",
+    "#TERROREN",
+    "HERME#KNE"
+  ],
+  "answers": {
+    "across": {
+      "1": "TR",
+      "2": "HOVEDSAK",
+      "3": "HOR",
+      "4": "VOKST",
+      "5": "SKO",
+      "6": "DUKE",
+      "7": "TERROREN",
+      "8": "HERME",
+      "9": "KNE"
+    },
+    "down": {
+      "1": "HOSTE",
+      "2": "ORKER",
+      "3": "TV",
+      "4": "ORM",
+      "5": "REV",
+      "6": "RE",
+      "7": "DODO",
+      "8": "SKURK",
+      "9": "ASKEN",
+      "10": "AKTENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Tyrkia",
+      "2": "grunnplan",
+      "3": "utukt",
+      "4": "ekspandert",
+      "5": "støvlett",
+      "6": "cachere",
+      "7": "underkuelsen",
+      "8": "etterlikne",
+      "9": "fotblad"
+    },
+    "down": {
+      "1": "luftveisplage",
+      "2": "bekjemper",
+      "3": "Fjernsyn",
+      "4": "snok",
+      "5": "gluping",
+      "6": "Solfège-tone",
+      "7": "utdødd fugl",
+      "8": "gangster",
+      "9": "soten",
+      "10": "bilaga"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "synonymet",
+      "6": "synonymordboka",
+      "7": "model+db",
+      "8": "triple-verified",
+      "9": "triple-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "synonymet",
+      "3": "manual",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "model+db",
+      "8": "cross-verified",
+      "9": "model+db",
+      "10": "cross-verified"
+    }
+  }
+}

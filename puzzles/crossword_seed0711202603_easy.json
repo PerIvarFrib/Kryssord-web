@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:31:45",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..###.",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "........#"
+  ],
+  "solved_layout": [
+    "###SI###V",
+    "#SELVISKE",
+    "#TRU#NARR",
+    "DOG#ANMOD",
+    "#KRANGLET",
+    "AKELEIEN#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SI",
+      "2": "SELVISKE",
+      "3": "TRU",
+      "4": "NARR",
+      "5": "DOG",
+      "6": "ANMOD",
+      "7": "KRANGLET",
+      "8": "AKELEIEN"
+    },
+    "down": {
+      "1": "STOKK",
+      "2": "ERGRE",
+      "3": "SLU",
+      "4": "AL",
+      "5": "IV",
+      "6": "ANE",
+      "7": "INNGI",
+      "8": "SAMLE",
+      "9": "KROEN",
+      "10": "VERDT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Solfège-tone",
+      "2": "egoistiske",
+      "3": "islam",
+      "4": "pappskalle",
+      "5": "enda",
+      "6": "oppfordr",
+      "7": "duellert",
+      "8": "prydplanten"
+    },
+    "down": {
+      "1": "kjepp",
+      "2": "forarge",
+      "3": "kløktig",
+      "4": "Aluminium",
+      "5": "4",
+      "6": "forfar",
+      "7": "bibringe",
+      "8": "akkumulere",
+      "9": "puben",
+      "10": "god for"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "triple-verified",
+      "8": "fallback-pair"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "manual",
+      "5": "manual",
+      "6": "synonymet",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "model+db",
+      "10": "model+db"
+    }
+  }
+}

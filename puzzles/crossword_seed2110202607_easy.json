@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 14:25:46",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "######.#.",
+    "#........",
+    "......#..",
+    "#........",
+    "#........",
+    "....#...."
+  ],
+  "solved_layout": [
+    "######B#U",
+    "#AVSPEILT",
+    "ELITEN#ER",
+    "#ANEKDOTE",
+    "#REKTOREN",
+    "EMNE#GEST"
+  ],
+  "answers": {
+    "across": {
+      "1": "AVSPEILT",
+      "2": "ELITEN",
+      "3": "ER",
+      "4": "ANEKDOTE",
+      "5": "REKTOREN",
+      "6": "EMNE",
+      "7": "GEST"
+    },
+    "down": {
+      "1": "ALARM",
+      "2": "VINEN",
+      "3": "STEKE",
+      "4": "PEKT",
+      "5": "ENDOG",
+      "6": "BI",
+      "7": "ORE",
+      "8": "LETES",
+      "9": "UTRENT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "gjenspeila",
+      "2": "rikfolket",
+      "3": "utgjør",
+      "4": "kort fortelling",
+      "5": "skolelederen",
+      "6": "studieområde",
+      "7": "kroppsbevegelse"
+    },
+    "down": {
+      "1": "nødsignal",
+      "2": "pilsneren",
+      "3": "fritere",
+      "4": "orientert",
+      "5": "dessuten",
+      "6": "Bismut",
+      "7": "hempe",
+      "8": "utforskes",
+      "9": "uforberedt"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "synonymordboka",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "model+db",
+      "5": "model+db",
+      "6": "model+db",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "cross-verified",
+      "4": "synonymordboka",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "synonymordboka",
+      "8": "triple-verified",
+      "9": "model+db"
+    }
+  }
+}

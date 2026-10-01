@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 10:59:04",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####.#.#.",
+    ".........",
+    "#.....#..",
+    "#........",
+    "#........",
+    "#....#..."
+  ],
+  "solved_layout": [
+    "####K#I#N",
+    "BESTRIDDE",
+    "#LURES#IV",
+    "#SPISSENE",
+    "#KENNELEN",
+    "#ARNE#TRE"
+  ],
+  "answers": {
+    "across": {
+      "1": "BESTRIDDE",
+      "2": "LURES",
+      "3": "IV",
+      "4": "SPISSENE",
+      "5": "KENNELEN",
+      "6": "ARNE",
+      "7": "TRE"
+    },
+    "down": {
+      "1": "ELSKA",
+      "2": "SUPER",
+      "3": "TRINN",
+      "4": "KRESNE",
+      "5": "ISSE",
+      "6": "ID",
+      "7": "ELT",
+      "8": "DINER",
+      "9": "NEVENE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "imøtegikk",
+      "2": "snytes",
+      "3": "4",
+      "4": "nebbene",
+      "5": "hundegården",
+      "6": "boligplattform",
+      "7": "vedkubbe"
+    },
+    "down": {
+      "1": "beundret",
+      "2": "diner",
+      "3": "skoleklasse",
+      "4": "kravfulle",
+      "5": "kjeve",
+      "6": "Identifikasjon",
+      "7": "preparer",
+      "8": "lunsj",
+      "9": "klørne"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "triple-verified",
+      "3": "manual",
+      "4": "model+db",
+      "5": "synonymordboka",
+      "6": "synonymordboka",
+      "7": "cross-verified"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "triple-verified",
+      "6": "manual",
+      "7": "synonymet",
+      "8": "cross-verified",
+      "9": "model+db"
+    }
+  }
+}

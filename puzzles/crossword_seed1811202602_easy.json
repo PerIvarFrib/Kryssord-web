@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:17:33",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##..#..#.",
+    "#........",
+    "...#.....",
+    "#....#...",
+    "#........",
+    "#...#...#"
+  ],
+  "solved_layout": [
+    "##BY#HA#K",
+    "#PERSONEN",
+    "SER#APATI",
+    "#SLEM#RIS",
+    "#TILDEKKE",
+    "#OND#SIK#"
+  ],
+  "answers": {
+    "across": {
+      "1": "BY",
+      "2": "HA",
+      "3": "PERSONEN",
+      "4": "SER",
+      "5": "APATI",
+      "6": "SLEM",
+      "7": "RIS",
+      "8": "TILDEKKE",
+      "9": "OND",
+      "10": "SIK"
+    },
+    "down": {
+      "1": "PESTO",
+      "2": "BERLIN",
+      "3": "YR",
+      "4": "ELD",
+      "5": "SAMD",
+      "6": "HOP",
+      "7": "ES",
+      "8": "ANARKI",
+      "9": "ETIKK",
+      "10": "KNISE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "forstad",
+      "2": "besitte",
+      "3": "individualiteten",
+      "4": "beskuer",
+      "5": "sløvhet",
+      "6": "daddelverdig",
+      "7": "buksevann",
+      "8": "kamuflere",
+      "9": "forrædersk",
+      "10": "brisling"
+    },
+    "down": {
+      "1": "grønn saus",
+      "2": "tysk universitetsby",
+      "3": "slaps",
+      "4": "peisflamme",
+      "5": "enig",
+      "6": "populasjon",
+      "7": "Spania",
+      "8": "rådløshet",
+      "9": "morallære",
+      "10": "gapskratte"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "triple-verified",
+      "5": "triple-verified",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "cross-verified",
+      "10": "cross-verified"
+    },
+    "down": {
+      "1": "fallback-pair",
+      "2": "model+db",
+      "3": "cross-verified",
+      "4": "model+db",
+      "5": "synonymordboka",
+      "6": "synonymet",
+      "7": "manual",
+      "8": "synonymordboka",
+      "9": "model+db",
+      "10": "triple-verified"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:46:40",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "######.#.",
+    ".........",
+    "#........",
+    "......#..",
+    "#........",
+    "...#....#"
+  ],
+  "solved_layout": [
+    "######V#F",
+    "SADISMENE",
+    "#BILVEIER",
+    "FYLDIG#VI",
+    "#STENGENE",
+    "OSE#TELT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "SADISMENE",
+      "2": "BILVEIER",
+      "3": "FYLDIG",
+      "4": "VI",
+      "5": "STENGENE",
+      "6": "OSE",
+      "7": "TELT"
+    },
+    "down": {
+      "1": "ABYSS",
+      "2": "DILTE",
+      "3": "ILDE",
+      "4": "SVINT",
+      "5": "MEGGE",
+      "6": "VEI",
+      "7": "EL",
+      "8": "NEVNT",
+      "9": "FERIE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "nådeløshetene",
+      "2": "autostradaer",
+      "3": "dyptgående",
+      "4": "6",
+      "5": "kjeppene",
+      "6": "dufte",
+      "7": "bosatt"
+    },
+    "down": {
+      "1": "Avgrunnen",
+      "2": "traske",
+      "3": "fyre",
+      "4": "ekspress",
+      "5": "tjukk kvinne",
+      "6": "krøttersti",
+      "7": "slaps",
+      "8": "påpekt",
+      "9": "sommertur"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "cross-verified",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "synonymordboka"
+    },
+    "down": {
+      "1": "fallback-pair",
+      "2": "model+db",
+      "3": "synonymordboka",
+      "4": "cross-verified",
+      "5": "model+db",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "triple-verified",
+      "9": "model+db"
+    }
+  }
+}

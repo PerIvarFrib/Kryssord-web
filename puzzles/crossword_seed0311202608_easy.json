@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 18:41:40",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..###",
+    "#........",
+    ".....#...",
+    "#...#....",
+    ".........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####PS###",
+    "#IVARETAR",
+    "ISETE#USA",
+    "#LIT#ENES",
+    "PATENTENE",
+    "#MANDATER"
+  ],
+  "answers": {
+    "across": {
+      "1": "PS",
+      "2": "IVARETAR",
+      "3": "ISETE",
+      "4": "USA",
+      "5": "LIT",
+      "6": "ENES",
+      "7": "PATENTENE",
+      "8": "MANDATER"
+    },
+    "down": {
+      "1": "ISLAM",
+      "2": "VEITA",
+      "3": "ATTEN",
+      "4": "PRE",
+      "5": "ND",
+      "6": "SE",
+      "7": "ETA",
+      "8": "TUNET",
+      "9": "ASENE",
+      "10": "RASER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "supplement",
+      "2": "verner",
+      "3": "tilfrosset",
+      "4": "Amerikas forente stater",
+      "5": "forventning",
+      "6": "forlikes",
+      "7": "aktstykka",
+      "8": "ombud"
+    },
+    "down": {
+      "1": "trosretning",
+      "2": "autostradaen",
+      "3": "myndig",
+      "4": "favør",
+      "5": "Neodym",
+      "6": "Sverige",
+      "7": "Gresk bokstav",
+      "8": "gårdsplassen",
+      "9": "gudene",
+      "10": "herkomster"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "triple-verified",
+      "3": "model+db",
+      "4": "manual",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "synonymet",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "fallback-pair",
+      "4": "synonymordboka",
+      "5": "manual",
+      "6": "manual",
+      "7": "manual",
+      "8": "synonymet",
+      "9": "fallback-pair",
+      "10": "cross-verified"
+    }
+  }
+}

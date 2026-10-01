@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-11-01 11:46:40",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..#.#",
+    "#........",
+    ".....#...",
+    "....#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "####OM#G#",
+    "#VASSLAUS",
+    "TAVLE#GLO",
+    "ORKA#FELG",
+    "#MOBBEREN",
+    "#EMBETET#"
+  ],
+  "answers": {
+    "across": {
+      "1": "OM",
+      "2": "VASSLAUS",
+      "3": "TAVLE",
+      "4": "GLO",
+      "5": "ORKA",
+      "6": "FELG",
+      "7": "MOBBEREN",
+      "8": "EMBETET"
+    },
+    "down": {
+      "1": "TO",
+      "2": "VARME",
+      "3": "AVKOM",
+      "4": "SLABB",
+      "5": "OSE",
+      "6": "BE",
+      "7": "ML",
+      "8": "FET",
+      "9": "AGERE",
+      "10": "GULLET",
+      "11": "SOGN"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "hvis",
+      "2": "nedbørsfattig",
+      "3": "skriveplate",
+      "4": "glane",
+      "5": "slitasjene",
+      "6": "hjuldel",
+      "7": "plageren",
+      "8": "officiet"
+    },
+    "down": {
+      "1": "ektepar",
+      "2": "oppvarming",
+      "3": "familieforøkelser",
+      "4": "skittsekk",
+      "5": "dufte",
+      "6": "Beryllium",
+      "7": "Milliliter",
+      "8": "overspist",
+      "9": "utføre",
+      "10": "auet",
+      "11": "nordal"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "model+db",
+      "3": "model+db",
+      "4": "cross-verified",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "fallback-pair",
+      "8": "synonymordboka"
+    },
+    "down": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "triple-verified",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "manual",
+      "8": "cross-verified",
+      "9": "fallback-pair",
+      "10": "synonymordboka",
+      "11": "model+db"
+    }
+  }
+}

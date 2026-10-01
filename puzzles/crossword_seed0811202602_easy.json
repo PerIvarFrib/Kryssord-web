@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 19:35:33",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#.#..##",
+    "#........",
+    "#....#...",
+    "#........",
+    ".........",
+    "#..#....#"
+  ],
+  "solved_layout": [
+    "#F#A#CU##",
+    "#AVVENTES",
+    "#RAKK#GNI",
+    "#GROSSIST",
+    "BESMITTET",
+    "#TL#LITT#"
+  ],
+  "answers": {
+    "across": {
+      "1": "CU",
+      "2": "AVVENTES",
+      "3": "RAKK",
+      "4": "GNI",
+      "5": "GROSSIST",
+      "6": "BESMITTET",
+      "7": "TL",
+      "8": "LITT"
+    },
+    "down": {
+      "1": "FARGET",
+      "2": "VARSL",
+      "3": "AVKOM",
+      "4": "EKSIL",
+      "5": "CN",
+      "6": "STI",
+      "7": "UTGITT",
+      "8": "ENSET",
+      "9": "SITT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Kobber",
+      "2": "imøtesees",
+      "3": "bermer",
+      "4": "frottere",
+      "5": "antikvar",
+      "6": "besudlet",
+      "7": "Tallium",
+      "8": "en anelse"
+    },
+    "down": {
+      "1": "blågrå",
+      "2": "advar",
+      "3": "familieforøkelser",
+      "4": "deportasjon",
+      "5": "Kina",
+      "6": "motorvei",
+      "7": "offentliggjort",
+      "8": "måpt",
+      "9": "son"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "synonymordboka",
+      "4": "synonymordboka",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "manual",
+      "8": "synonymet"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "manual",
+      "6": "triple-verified",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "synonymordboka"
+    }
+  }
+}

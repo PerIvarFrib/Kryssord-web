@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 18:31:59",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "###..#.#.",
+    "#........",
+    "...#.....",
+    "#...#....",
+    "#........",
+    "#.......#"
+  ],
+  "solved_layout": [
+    "###NA#G#F",
+    "#UFORMELL",
+    "EVA#KENYA",
+    "#IBM#SINT",
+    "#SEANSENE",
+    "#SLIMETE#"
+  ],
+  "answers": {
+    "across": {
+      "1": "NA",
+      "2": "UFORMELL",
+      "3": "EVA",
+      "4": "KENYA",
+      "5": "IBM",
+      "6": "SINT",
+      "7": "SEANSENE",
+      "8": "SLIMETE"
+    },
+    "down": {
+      "1": "UVISS",
+      "2": "FABEL",
+      "3": "NO",
+      "4": "MAI",
+      "5": "ARK",
+      "6": "NM",
+      "7": "MESSE",
+      "8": "GENIET",
+      "9": "LYNNE",
+      "10": "FLATE"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Natrium",
+      "2": "uanstrengt",
+      "3": "husmor",
+      "4": "Østafrikansk land",
+      "5": "dataselskap",
+      "6": "fortørnet",
+      "7": "framføringene",
+      "8": "klissete"
+    },
+    "down": {
+      "1": "tvilrådig",
+      "2": "myte",
+      "3": "Norge",
+      "4": "vårmåned",
+      "5": "bilag",
+      "6": "Norgesmesterskap",
+      "7": "kirkesang",
+      "8": "smartingen",
+      "9": "humør",
+      "10": "platå"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "synonymordboka",
+      "3": "cross-verified",
+      "4": "fallback-pair",
+      "5": "model+db",
+      "6": "triple-verified",
+      "7": "model+db",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "model+db",
+      "5": "cross-verified",
+      "6": "manual",
+      "7": "triple-verified",
+      "8": "cross-verified",
+      "9": "cross-verified",
+      "10": "triple-verified"
+    }
+  }
+}

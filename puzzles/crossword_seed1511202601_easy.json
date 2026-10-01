@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 20:40:18",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "####..###",
+    "#........",
+    "....#....",
+    ".....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "####IL###",
+    "#AVKREFTA",
+    "HVOR#SORG",
+    "EGGET#LUE",
+    "#ANNULLER",
+    "#VAKTPOST"
+  ],
+  "answers": {
+    "across": {
+      "1": "IL",
+      "2": "AVKREFTA",
+      "3": "HVOR",
+      "4": "SORG",
+      "5": "EGGET",
+      "6": "LUE",
+      "7": "ANNULLER",
+      "8": "VAKTPOST"
+    },
+    "down": {
+      "1": "HE",
+      "2": "AVGAV",
+      "3": "VOGNA",
+      "4": "KRENK",
+      "5": "IR",
+      "6": "TUT",
+      "7": "LES",
+      "8": "LP",
+      "9": "FOLLO",
+      "10": "TRUES",
+      "11": "AGERT"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "framdrift",
+      "2": "imøtegått",
+      "3": "overalt",
+      "4": "tristhet",
+      "5": "incitert",
+      "6": "flosshatt",
+      "7": "avskaff",
+      "8": "patrulje"
+    },
+    "down": {
+      "1": "Helium",
+      "2": "leverte",
+      "3": "kalesjevognen",
+      "4": "fornærm",
+      "5": "Iridium",
+      "6": "snute",
+      "7": "studer",
+      "8": "grammofonplate",
+      "9": "område i norge",
+      "10": "terroriseres",
+      "11": "utført"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "cross-verified",
+      "2": "triple-verified",
+      "3": "synonymordboka",
+      "4": "triple-verified",
+      "5": "cross-verified",
+      "6": "cross-verified",
+      "7": "triple-verified",
+      "8": "cross-verified"
+    },
+    "down": {
+      "1": "manual",
+      "2": "fallback-pair",
+      "3": "model+db",
+      "4": "model+db",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "cross-verified",
+      "8": "synonymordboka",
+      "9": "model+db",
+      "10": "triple-verified",
+      "11": "fallback-pair"
+    }
+  }
+}

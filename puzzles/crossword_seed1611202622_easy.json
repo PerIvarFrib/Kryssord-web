@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-31 21:02:20",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#.#..####",
+    "#........",
+    "#...#....",
+    "...#.....",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "#P#IX####",
+    "#AVSLUTTA",
+    "#SOS#TVIL",
+    "ASK#UVETT",
+    "#ISOLERTE",
+    "#VEGVISER"
+  ],
+  "answers": {
+    "across": {
+      "1": "IX",
+      "2": "AVSLUTTA",
+      "3": "SOS",
+      "4": "TVIL",
+      "5": "ASK",
+      "6": "UVETT",
+      "7": "ISOLERTE",
+      "8": "VEGVISER"
+    },
+    "down": {
+      "1": "PASSIV",
+      "2": "VOKSE",
+      "3": "ISS",
+      "4": "OG",
+      "5": "XL",
+      "6": "ULV",
+      "7": "UTVEI",
+      "8": "TVERS",
+      "9": "TITTE",
+      "10": "ALTER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "9",
+      "2": "aborterte",
+      "3": "Nødsignal",
+      "4": "betenkelighet",
+      "5": "kistel",
+      "6": "tankeløshet",
+      "7": "atskilte",
+      "8": "veistolpe"
+    },
+    "down": {
+      "1": "verbalform",
+      "2": "ekspandere",
+      "3": "romstasjon",
+      "4": "samt",
+      "5": "40",
+      "6": "gråbein",
+      "7": "fluktveg",
+      "8": "diagonalt",
+      "9": "skimte",
+      "10": "landemerker"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "cross-verified",
+      "3": "manual",
+      "4": "triple-verified",
+      "5": "synonymordboka",
+      "6": "model+db",
+      "7": "triple-verified",
+      "8": "model+db"
+    },
+    "down": {
+      "1": "model+db",
+      "2": "cross-verified",
+      "3": "fallback-pair",
+      "4": "cross-verified",
+      "5": "manual",
+      "6": "cross-verified",
+      "7": "model+db",
+      "8": "synonymordboka",
+      "9": "triple-verified",
+      "10": "synonymordboka"
+    }
+  }
+}

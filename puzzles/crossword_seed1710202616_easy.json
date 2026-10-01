@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-10-01 13:51:19",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "#####..#.",
+    "#........",
+    "#........",
+    ".....#...",
+    "#........",
+    "#.....#.."
+  ],
+  "solved_layout": [
+    "#####NA#B",
+    "#ANAKONDA",
+    "#BYSYKKEL",
+    "MOSES#ENS",
+    "#RENSINGA",
+    "#TREEN#EM"
+  ],
+  "answers": {
+    "across": {
+      "1": "NA",
+      "2": "ANAKONDA",
+      "3": "BYSYKKEL",
+      "4": "MOSES",
+      "5": "ENS",
+      "6": "RENSINGA",
+      "7": "TREEN",
+      "8": "EM"
+    },
+    "down": {
+      "1": "ABORT",
+      "2": "NYSER",
+      "3": "ASENE",
+      "4": "KYSSE",
+      "5": "NOK",
+      "6": "IN",
+      "7": "ANKEN",
+      "8": "DENGE",
+      "9": "BALSAM"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "Natrium",
+      "2": "slange",
+      "3": "tohjuling",
+      "4": "sindres",
+      "5": "måp",
+      "6": "vaskingen",
+      "7": "løken",
+      "8": "Europamesterskap"
+    },
+    "down": {
+      "1": "svangerskapsavbrudd",
+      "2": "hoster",
+      "3": "gudene",
+      "4": "kjærtegne",
+      "5": "Norsk krone",
+      "6": "India",
+      "7": "kjæremålet",
+      "8": "pryle",
+      "9": "nardussalve"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "manual",
+      "2": "fallback-pair",
+      "3": "triple-verified",
+      "4": "synonymordboka",
+      "5": "cross-verified",
+      "6": "model+db",
+      "7": "synonymet",
+      "8": "manual"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "fallback-pair",
+      "4": "triple-verified",
+      "5": "manual",
+      "6": "manual",
+      "7": "cross-verified",
+      "8": "synonymet",
+      "9": "model+db"
+    }
+  }
+}

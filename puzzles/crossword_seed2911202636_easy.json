@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "Crossword Grid",
+    "type": "grid_only",
+    "generated_by": "Kryssord Generator (word2clue_pipeline)",
+    "generation_date": "2026-11-01 12:20:22",
+    "model_used": "norbert-multipos-word2clue",
+    "pairs_db_path": "data\\pairs\\word2clue_pairs_db.pkl",
+    "difficulty": "easy"
+  },
+  "layout": [
+    "##.#..###",
+    "#........",
+    "....#....",
+    "#....#...",
+    "#........",
+    "#........"
+  ],
+  "solved_layout": [
+    "##K#PS###",
+    "#FLYTENDE",
+    "SLIM#KURV",
+    "#ARTE#TON",
+    "#GRENDENE",
+    "#GARNERER"
+  ],
+  "answers": {
+    "across": {
+      "1": "PS",
+      "2": "FLYTENDE",
+      "3": "SLIM",
+      "4": "KURV",
+      "5": "ARTE",
+      "6": "TON",
+      "7": "GRENDENE",
+      "8": "GARNERER"
+    },
+    "down": {
+      "1": "FLAGG",
+      "2": "KLIRRA",
+      "3": "YMTER",
+      "4": "PT",
+      "5": "ENN",
+      "6": "SEK",
+      "7": "DE",
+      "8": "NUTER",
+      "9": "DRONE",
+      "10": "EVNER"
+    }
+  },
+  "clues": {
+    "across": {
+      "1": "supplement",
+      "2": "uhandgripelig",
+      "3": "spytt",
+      "4": "korg",
+      "5": "ta form",
+      "6": "trall",
+      "7": "tettbebyggelsene",
+      "8": "danderer"
+    },
+    "down": {
+      "1": "vimpel",
+      "2": "skranglet",
+      "3": "tisker",
+      "4": "Portugal",
+      "5": "dessuten",
+      "6": "Svensk krone",
+      "7": "Tyskland",
+      "8": "bergtopper",
+      "9": "dovenper",
+      "10": "ekspertiser"
+    }
+  },
+  "clue_sources": {
+    "across": {
+      "1": "model+db",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "triple-verified",
+      "5": "fallback-pair",
+      "6": "synonymet",
+      "7": "triple-verified",
+      "8": "triple-verified"
+    },
+    "down": {
+      "1": "triple-verified",
+      "2": "model+db",
+      "3": "triple-verified",
+      "4": "manual",
+      "5": "synonymordboka",
+      "6": "manual",
+      "7": "manual",
+      "8": "triple-verified",
+      "9": "synonymordboka",
+      "10": "triple-verified"
+    }
+  }
+}
